@@ -1,0 +1,29 @@
+#content-sidebar-wrap > div.DA_NewHeader > h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 16px !important;
+}
+#content-sidebar-wrap > div.DA_NewHeader > p:nth-child(2) {
+    text-align: center;
+    padding-bottom: 8px;
+}
+#DA_Navigation {
+    margin-top: 20px;
+    background: #58b3e0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#DA_Navigation a {
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid white;
+}
+
+#DA_Navigation > a:nth-child(5) {
+    border: none;
+}

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 749px) {
+#shopify-section-header-logo > header > div > div.header__top-right-actions > ul > li.header__cart > a > div > svg {
+	color: #000;
+}
+.usp-bar__container {
+	background: #000 !important;
+}
+#shopify-section-product > section > div > div.grid > div:nth-child(2) > div > div > div > form > div.product__actions--holder > div.product__actions > div.selector-wrapper.js > div > div.option-box.active {
+	background: #000 !important;
+}
+}

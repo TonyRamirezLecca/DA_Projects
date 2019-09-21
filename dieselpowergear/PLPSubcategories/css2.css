@@ -1,0 +1,123 @@
+#var2Wrapper {
+    display: flex; 
+    position: relative;
+}
+#var2SubWrapper {
+    flex: 10;
+    margin-left: 210px;
+}
+.shopGallery {
+    flex: 1;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    top: 0;
+}
+.shopGallery > div {
+    height: 190px;
+    width: 180px;
+    position: relative;
+    margin: 8px 0;
+}
+.shopGallery > div:first-child {
+    margin-top: 0;
+}
+
+.galleryImgCtn {
+    height: 100%;
+    width: 100%;
+}
+.galleryImgCtn img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+.shopGallery > div > a > h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-family: karla;
+    font-size: 20px;
+}
+.shopGallery > div > a > h1 > br {
+    display: none;
+}
+.darkenImg {
+    background: #000;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.addBorder {
+    border: 7px solid #fb9900;
+}
+
+@media screen and (max-width: 1109px) {
+    #var2Wrapper {
+        flex-direction: column;
+    }
+    #var2SubWrapper {
+        margin: 0;
+    }
+    .shopGallery {
+        position: relative;
+        flex-direction: row;
+    }
+    .shopGallery > div:nth-child(1) {
+        margin: 20px;
+    }
+    .shopGallery > div {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.shopGallery {
+	    width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 40px 10px;
+	}
+	.shopGallery > div {
+	    margin: 4px;
+	    height: 150px;
+	    width: 47%;
+	}
+	.shopGallery > div:nth-child(1) {
+        margin: 4px;
+    }
+	.shopGallery > div > a > h1 {
+	    font-size: 18px
+	}
+	.shopGallery > div > a > h1 > br {
+        display: block;
+    }
+	
+}
+@media screen and (max-width: 462px) {
+    .shopGallery {
+        padding: 0 0 30px 0;
+    }
+    .shopGallery > div > a > h1 {
+	    font-size: 14px
+	}
+    .shopGallery > div {
+        height: 100px;
+        margin: 2px;
+    }
+	.shopGallery > div:nth-child(1) {
+        margin: 2px;
+    }
+}

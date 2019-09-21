@@ -1,0 +1,120 @@
+/*** CSS 1 ***/
+
+/*Makes slider full screen*/
+.slick-list.draggable {
+	padding: 0 !important;
+	max-width: 100%;
+}
+.slick-list.draggable a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*Navigation arrows are on top*/
+.slick-arrow {
+	position: absolute;
+	z-index: 3;
+	height: 100%;
+	max-width: 30px;    
+}
+
+/*Select slide images and height*/
+.slick-slide {
+	min-height: 600px !important;
+}
+.slide1 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slide1hero.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 600px;
+	background-position: 50% 50%;
+}
+.slide2 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slide2hero.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 600px;
+		background-position: 50% 50%;
+
+}
+.slide3 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slide3hero.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 600px;
+	background-position: 50% 50%;
+}
+@media screen and (min-width: 1340px) {
+    .slick-slide {
+        min-height: 700px !important;
+    }
+    .slide1 {
+        background-size: cover;
+    }
+    .slide2 {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+	.slick-slide {
+		min-height: 500px !important;
+	}
+    .slide1 {
+        height: 500px;
+    }
+    .slide2 {
+        height: 500px;
+    }
+    .slide3 {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 900px) {
+		.slick-slide {
+			min-height: 400px !important;
+		}
+    .slide1 {
+        height: 400px;
+    }
+    .slide2 {
+        height: 400px;
+    }
+    .slide3 {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 750px) {
+		.slick-slide {
+			min-height: 350px !important;
+		}
+    .slide1 {
+        height: 350px;
+    }
+    .slide2 {
+        height: 350px;
+    }
+    .slide3 {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 650px) {
+		.slick-slide {
+			min-height: 300px !important;
+		}
+    .slide1 {
+        height: 300px;
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slide1hero_mobile.jpg);
+    }
+    .slide2 {
+        height: 300px;
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slide2hero_mobile.jpg);
+    }
+    .slide3 {
+        height: 300px;
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/slid3hero_mobile.jpg)
+    }
+}
+
+

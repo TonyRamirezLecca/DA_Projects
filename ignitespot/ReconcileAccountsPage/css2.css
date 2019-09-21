@@ -1,0 +1,134 @@
+.SuperDA_Wrapper {
+    display: flex;
+}
+.DA_Wrapper {
+    max-width: 800px;
+    width: 50vw;
+}
+.DA_Banner .textWrapper {
+    background: #dfefff;
+    width: 500px;
+    max-width: 38vw;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+}
+.DA_Banner .textWrapper h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+    margin-right: 18%;
+}
+.DA_Banner .textWrapper h6 {
+
+     margin: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-right: 18%;
+    margin-bottom: 20px;
+    
+}
+.DA_Banner .textWrapper a {
+    background: #f6921e;
+    color: white;
+    width: 230px;
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#fireguyCtn {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+#fireguyCtn img {
+}
+
+
+@media screen and (max-width: 1115px) {
+    .DA_Banner .textWrapper {
+        top: 200px;
+    }
+    .SuperDA_Wrapper {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .DA_Banner .textWrapper {
+        top: 0;
+        min-width: 100vw;
+    }
+    #fireguyCtn {
+        left: calc(50% - 220px);
+    }
+    .DA_Wrapper {
+        width: 100vw;
+    }
+    body > div.header-container-wrapper > div > div > div > div > div > div > div > div {
+    display: none !important;
+    }
+    .body-container.container-fluid {
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .DA_Banner .textWrapper h1 {
+        display: None;
+    }
+ 
+    .DA_Banner .textWrapper {
+        height: 150px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+   .DA_Banner .textWrapper h6 {
+        margin-left: 26%;
+        margin-right: 0;
+        margin-top: 15px;
+        width: 230px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .DA_Banner .textWrapper a {
+        margin-left: 17%;
+        margin-right: 18px;
+        width: unset;
+        font-size: 14px;
+        padding-top: 6px;
+        padding-botom: 6px;
+    }
+    #fireguyCtn {
+        left: 15%;
+    }
+        .SuperDA_Wrapper {
+        margin-top: 0px;
+    }
+        .body-container.container-fluid {
+        padding-top: 170px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #fireguyCtn {
+        left: 10%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #fireguyCtn {
+        left:5%;
+    }
+}

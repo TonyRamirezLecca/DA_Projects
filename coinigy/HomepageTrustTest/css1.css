@@ -1,0 +1,172 @@
+.DA_Banner {
+    height: 100%;
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    margin-bottom: 25px;
+    position: relative;
+}
+.whiteBackground {
+    position: absolute;
+    width: 100vw;
+    min-height: 100%;
+    top: 0;
+    background: white;
+}
+.bannerHeader {
+    margin: 0;
+}
+.bannerHeader h1 {
+    font-size: 32px !important;
+    color: #303840 !important;
+    text-shadow: none !important;
+    min-width: 100%;
+    text-align: center;
+    display: inline !important;
+    padding-top: 10px !important;
+}
+.bannerHeader h1 br {
+    display: none;
+}
+.DA_Banner a {
+    background: #2AABEF;
+    padding: 15px;
+    width: 270px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    color: white;
+    font-style: normal !important;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: .5px;
+    position: relative;
+    z-index: 2;
+}
+
+/*Inside the text*/
+.textImgWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width:75%;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+.textImgWrapper > div {
+    margin: 5px 15px !important;
+
+}
+ .textImgWrapper br {
+
+}
+ .textImgWrapper span {
+
+}
+.textImgWrapper div h1 {
+    font-size: 18px !important;
+    color: #303840 !important;
+    text-shadow: none !important;
+    font-weight: 300 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.textImgWrapper .imgCtn {
+    margin-bottom: 15px;
+}
+.textImgWrapper > div:nth-child(4) .imgCtn {
+    transform: scale(1.1);
+    margin-bottom: 20px;
+}
+.textImgWrapper > div:nth-child(1) .imgCtn {
+    transform: scale(.9);
+    margin-bottom: 12px;
+}
+
+
+
+#mainimage .row {
+    display: flex;
+    flex-direction: column;
+}
+.bannerHeader span {
+    display: none;
+}
+#headerSpan {
+    display: inline;
+}
+#banner2 {
+    display: none;
+}
+
+@media screen and (max-width: 994px) {
+    #banner2 {
+        display: flex;
+    }
+    #banner1 {
+        display: none;
+    }
+    .DA_Banner {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .bannerHeader {
+        margin-top: 40px; 
+    }
+    .bannerHeader h1 {
+        font-size: 40px !important;
+        line-height: 30px;
+    }
+    .bannerHeader h1 span {
+        font-weight: 300;
+        font-size: 26px;
+        letter-spacing: 0px;
+    }
+    .bannerHeader h1 br {
+        display: block;
+    }
+     .textImgWrapper br {
+        display: none;
+    }
+    .textImgWrapper {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100%;
+        width: 80%;
+        justify-content: center;
+    }
+    .textImgWrapper div {
+        display: flex; 
+    }
+    .textImgWrapper div h1 {
+        text-align: left !important;
+    }
+    .textImgWrapper .imgCtn {
+        margin-right: 20px;
+    }
+    .imgCtn img {
+        object-fit: contain;
+        min-width: 35px;
+    }
+    .bannerHeader span {
+        display: inline;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bannerHeader h1 {
+        font-size: 32px !important;
+    }
+    .bannerHeader h1 span {
+        font-size: 21px;
+    }
+    .textImgWrapper div h1 {
+        font-size: 16px !important;
+    }
+    .imgCtn img {
+        min-width: 30px;
+    }
+}

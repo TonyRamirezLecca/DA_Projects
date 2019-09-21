@@ -1,0 +1,42 @@
+body > .row > .col-sm-3 {
+	display: none;
+}
+body > .row > .col-sm-9 {
+	width: 100%;
+}
+.TEXTIMGCONTAINER {
+	max-width: 1280px;
+	margin: 7px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.TEXTIMGCONTAINER div {
+	margin: 0 10px;
+}
+.TEXTIMGCONTAINER div h1 {
+	font-size: 22px;
+	color: #777 !important;
+	text-align: center;
+	font-weight: 600;
+}
+body > div.TEXTIMGCONTAINER > div:nth-child(1) > div > h1 {
+	white-space: nowrap !important;
+}
+.iconClass {
+	color: #ff4081;
+	margin-right: 3px;
+}
+
+@media screen and (max-width: 1280px) {
+	.TEXTIMGCONTAINER div h1 {
+		white-space: normal;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.TEXTIMGCONTAINER {
+		flex-wrap: wrap;
+		padding-bottom: 40px;
+	}
+}

@@ -1,0 +1,28 @@
+#ctaButton {
+	font-size: 12px;
+	font-weight: 700;
+	background: #FFD300;
+	padding: 12px 40px;
+	color: black;
+	text-align: center;
+	max-width: 190px;
+}
+#page-row-1 > div > div.owl-stage-outer > div > div > div > div > div > div > p {
+}
+
+.lets-talk {
+	display: none !important;
+}
+.cell.small-12.medium-8.large-6 {
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 639px) {
+	#ctaButton {
+		max-width: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+}

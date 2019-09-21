@@ -1,0 +1,38 @@
+.logoContainer {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    padding: 3px
+}
+
+.logoImgContainer {
+padding: 4px;
+
+margin: 0;
+transform: translateY(4px)
+
+}
+.logoImg {
+
+    margin: 0;
+    padding: 0;
+}
+.logoText {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+    
+    @media screen and (max-width: 799px) {
+        .logoContainer {
+            width: 100%
+        }
+        .logoText {
+            font-size: 12px;
+        }
+        .logoImg {
+            width: 85%;
+        }
+    }

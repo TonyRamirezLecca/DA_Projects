@@ -1,0 +1,35 @@
+/*CSS 2*/
+
+#product-options-wrapper > .last {
+    display: none;
+}
+
+.newValuesCtn {
+    margin-top: 100px;
+}
+.newValuesSection {
+    margin-bottom: 25px;
+}
+.newValuesSection h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.sectionFlexCtn {
+    
+}
+.newContent {
+    flex: 1;
+    margin: 5px;
+    padding: 0px 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.newContent input {
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+}
+.activeGift {
+
+}

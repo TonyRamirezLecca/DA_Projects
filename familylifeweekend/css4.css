@@ -1,0 +1,120 @@
+.wrapperForAddToCart{
+   text-align: left;
+    white-space: nowrap;
+}
+
+.dsproductcontinuebtn {
+	display: none;
+
+}
+.dsproductaddsummary .button3L.soActionBtn {
+    font-weight: 600;
+    padding: 10px 30px;
+    margin: 0;
+    margin-left: -5px;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 165px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+
+.wrapperForDescription {
+    display: flex;
+    flex-wrap: nowrap;
+   
+   }
+
+.dsproductimagecontainer {
+    max-width: 315px;
+
+}
+.dsproductdetailsmallcontainer {
+	margin-top: 25px;
+}
+.dsGiveAsGiftSelection {
+	display: none;
+}
+#PRODSKU {
+	display: none;
+}
+
+div[data-product-role="productname"] > h2 {
+    color: #898D8D;
+    margin-bottom: 0;
+}
+.dsproductprice > span:first-child {
+    display: none;
+}
+.dsproductprice > span:nth-child(2) {
+    margin-left: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #83CB71
+}
+.dsSmallPageDivider {
+    height: 1px;
+    width: 150px;
+    margin: 15px 0;
+    background: #C5C5C5;
+}
+
+#tbQuantity {
+    border-radius: 0;
+    width: 40px;
+    background: #F9F9F9;
+    color: #969696;
+    margin: 0;
+    border: none;
+    text-align: center;
+    min-height: 100%;
+    padding: 10px;
+}
+
+#ProductDetailsAttributes {
+    display: none;
+}
+
+.StockHint_InStock {
+    display: none;
+}
+
+.dsproductqty {
+    display: none;
+}
+.newText {
+    padding: 20px 0;
+    padding-top: 0px;
+    text-align: left;
+    font-size: 18px;
+    color: #898D8D
+}
+
+#soMainContent {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+.wrapperForDescription {
+
+    flex-wrap: wrap;
+    width: 100vw;
+   }
+   #soMainContent {
+       width: 100vw;
+
+   }
+   #soContentWrapper {
+       width: 100vw;
+       margin: 0;
+       padding: 0;
+   }
+   .dsproductdetailsmallcontainer {
+       margin: 0 auto;
+       width: 90%
+   }
+ 
+}

@@ -1,0 +1,93 @@
+#ocst_form > div.DA_Wrapper > div.cim-shipping-section > div.col-md-6 {
+    display: None;
+}
+#ocst_form > div.DA_Wrapper > div.cim-shipping-section > div.cim-shipping-address-listing-wrapper > div.cim-list-shipping-address.cim-form-field-row.select-row {
+    max-width: 400px;
+}
+
+.DA_Wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#ocst_form > div.DA_Wrapper > div.cim-shipping-section {
+    margin-right: 40px;
+}
+
+.DA_Wrapper div:nth-child(1) {
+    flex: 1;
+}
+.DA_Wrapper div:nth-child(2) {
+    flex: 1;
+}
+.cim-shipping-address-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cim-shipping-address-listing-wrapper > .cim-shipping-address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100% !important;
+    max-width: 570px;
+    border-bottom: 1px solid #42494F;
+}
+.cim-shipping-address {
+    min-height: 0px; !important;
+}
+.cim-set-as-default-wrapper {
+    white-space: nowrap;
+}
+
+
+.buttonWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cim-item-actions-row {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-group {
+}
+
+@media screen and (max-width: 991px) {
+    div#content-container.container {
+        margin: 0 0 !important;
+        width: 100%;
+    }
+    .DA_Wrapper {
+        flex-direction: column;
+    }
+    .col-md-6 fill-shipp-add {
+        max-width: 570px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .cim-shipping-address-listing-wrapper > .cim-shipping-address {
+        display: none;
+    }
+    .mobile-selected {
+        display: block !important;
+    }
+    .DA_Wrapper {
+        flex-direction: column;
+    }
+    .buttonWrap {
+        display: block
+    }
+    .cim-item-actions-row {
+        display: block;
+    }
+    .cim-shipping-address-listing-wrapper > .cim-shipping-address {
+        border: none;
+    }
+    .col-md-6 fill-shipp-add {
+        max-width: 400px !important;
+    }
+}

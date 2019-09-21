@@ -1,0 +1,70 @@
+.cart__note {
+    display: none;
+}
+.collapse-drawer {
+    display: block;
+        min-height: 100px;
+        max-height: 100px;
+        padding: 13px 15px;
+        animation: closeTextBox 500ms forwards !important;
+  		overflow-y: hidden;
+}
+.open-drawer {
+    display: block;
+    min-height: 0px;
+    max-height: 0px;
+    padding: 0px;
+	animation: openTextBox 500ms forwards;
+  overflow-y: hidden;
+}
+
+@keyframes openTextBox {
+    0% {
+        min-height: 0px;
+        max-height: 0px;
+        padding: 0px;
+        overflow-y: hidden !important;
+    }
+    99% {
+        min-height: 100px;
+        max-height: 100px;
+        padding: 13px 15px;
+      	overflow-y: hidden !important;
+    }
+    100% {
+        min-height: 100px;
+        max-height: 100px;
+        padding: 13px 15px;
+        overflow-y: auto !important;
+    }
+}
+@keyframes closeTextBox {
+    0% {
+        min-height: 100px;
+        max-height: 100px;
+        padding: 13px 15px;
+        overflow-y: hidden !important;
+    }
+  100% {
+            min-height: 0px;
+        max-height: 0px;
+        padding: 0px;
+        opacity: 0;
+        cursor: default;
+        overflow-y: hidden !important;
+  }
+
+}
+
+
+
+#shopify-section-cart-template > div > div > form > div > div.grid__item.cart__buttons.text-right.small--text-center.medium-up--one-half > p.cart__taxes {
+	font-size: 10px;
+}
+#shopify-section-cart-template > div > div > div.cart-heading > div > div:nth-child(1){
+	cursor: pointer;
+}
+#shopify-section-cart-template > div > div > div.cart-heading > div > div:nth-child(2) {
+	cursor: pointer;
+}
+  

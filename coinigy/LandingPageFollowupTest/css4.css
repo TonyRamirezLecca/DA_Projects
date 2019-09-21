@@ -1,0 +1,72 @@
+body > .row > .col-sm-3 {
+    display: none;
+}
+body > .row > .col-sm-9 {
+    width: 100%;
+}
+
+.grayBackground {
+    background: #e8e8e8;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+.testimonialContainer {
+    height: 35vw;
+    width: 90vw;
+    max-height: 400px;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonialContainer > div:nth-child(1) {
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/Testimonial-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80%;
+    width: 25%;
+}
+.testimonialContainer > div:nth-child(2) {
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/Testimonial-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80%;
+    width: 25%;
+}
+.testimonialContainer > div:nth-child(3) {
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/Testimonial-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80%;
+    width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+    .testimonialContainer {
+        flex-direction: column;
+        max-height: unset;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .testimonialContainer div {
+        width: 275px !important;
+        min-width: 275px;
+        height: 200px !important;
+        margin: 20px 10px;
+    }
+    .testimonialContainer > div:nth-child(1) {
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/quote-mobile.png);
+    }
+    .testimonialContainer > div:nth-child(2) {
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/Testimonial-2-mobile.png);
+    }
+    .testimonialContainer > div:nth-child(3) {
+        background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/Testimonial-3-mobile.png);
+           
+    }
+
+}

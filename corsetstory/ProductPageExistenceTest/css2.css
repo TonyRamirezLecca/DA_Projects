@@ -1,0 +1,15 @@
+div.product__details {
+    display: none;
+}
+
+@media screen and (max-width: 749px)  {
+    .da_wrap {
+        margin: 0 auto;
+    }
+}
+
+.da_wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}

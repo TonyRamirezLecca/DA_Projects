@@ -1,0 +1,47 @@
+#ocst_form > div.cim-shipping-section > div:nth-child(9) {
+    display: none;
+}
+.cim-ship-to-this-address-button {
+    margin-top: 0;
+}
+
+.addressCTA {
+    padding: 10px 0px;
+    width: 250px;
+    border: none;
+    color: #42494f;
+    border: 1px solid #42494f;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+.cim-shipping-address-display {
+    height: 130px;
+}
+
+.hideForm {
+	display: none !important;
+}
+.cim-shipping-address {
+    min-height: 30px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .addressCTA {
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cim-shipping-address {
+         min-height: 30px !important;
+    }
+}
+
+

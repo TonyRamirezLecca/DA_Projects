@@ -1,0 +1,61 @@
+.shopGallery {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.shopGallery > div {
+    height: 210px;
+    width: 200px;
+    position: relative;
+    margin: 20px;
+}
+
+.galleryImgCtn {
+    height: 100%;
+    width: 100%;
+}
+.galleryImgCtn img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+.shopGallery > div > a > h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-family: karla;
+    font-size: 20px;
+}
+.darkenImg {
+    background: #000;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.addBorder {
+    border: 7px solid #fb9900;
+}
+@media screen and (max-width: 767px) {
+	.shopGallery {
+	    width: 100%;
+	    flex-wrap: wrap;
+	}
+	.shopGallery > div {
+	    margin: 4px;
+	    height: 180px;
+	    width: 47%;
+	}
+}

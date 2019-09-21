@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+	.stickyBtnsContainer {
+		display: none;
+	}
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    .stickyBtnsContainer {
+        height: 80px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.stickyBtnsContainer {
+	position: fixed;
+	z-index: 10000;
+	bottom: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: white;
+	height: 60px;
+	padding: 0 10px;
+}
+
+
+.signInBtn {
+  	font-size: 3.1vw !important;
+	flex: 48%;
+	padding: 12px;
+	background: black;
+	color: white;
+	font-weight: 600;
+	margin: 10px;
+    white-space: nowrap;
+}
+.signInBtn:hover, .signInBtn:focus {
+	color: white;
+}
+
+.signUpBtn {
+  	font-size: 3.1vw !important;
+	flex: 48%;
+	padding: 12px;
+	background: white;
+	color: black;
+	border: 2px solid black;
+	font-weight: 600;
+	margin: 10px;
+	white-space: nowrap;
+}
+}

@@ -1,0 +1,93 @@
+.hero-slideshow .hero__cta_button {
+	white-space: normal !important;
+}
+
+.usaBanner {
+	margin: 0;
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Legion+Tires/hp-highlight/Screen+Shot+2019-06-18+at+1.10.07+PM.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 280px;
+}
+.usaBanner > div > div:nth-child(1) {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.usaBanner > div > div:nth-child(1) h1 {
+	font-size: 44px;
+	min-height: 100%;
+	color: white;
+	position: relative;
+	margin: 0;
+	padding-top: 7px;
+	text-align: center;
+	font-family: karla
+}
+.usaBanner > div > div:nth-child(1) h1 img {
+	padding-left: 20px;
+	transform: translateY(3px);
+}
+
+.usaBanner > div > div:nth-child(2) {
+	margin: 0 auto;
+}
+.usaBanner > div > div:nth-child(2) h2{
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+	font-family: karla
+}
+.shopTiresBtn {
+	background: #ec2929;
+	color: white;
+	padding: 13px 40px;
+	font-weight: 500;
+	border-radius: 5px;
+	text-transform: uppercase;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+.featured-collection.section-padding .shopTiresBtn {
+	margin: 50px auto;
+}
+.cover-details-desktop.section-padding .shopTiresBtn {
+	margin: 20px auto;
+}
+
+#MainContent .featured-collection {
+	position: relative;
+	padding-bottom: 160px;
+}
+
+@media screen and (max-width: 1023px) {
+	.cover-details-desktop.section-padding p {
+		margin-bottom: 30px !important;
+	}
+	.featured-collection.section-padding .shopTiresBtn {
+		text-align: center;
+		white-space: nowrap;
+	}
+	.cover-details-desktop.section-padding .shopTiresBtn {
+		position: relative;
+		transform: translateX(0);
+		left: unset;
+		white-space: nowrap;
+	}
+	.usaBanner > div > div:nth-child(2) h2{
+		font-size: 19px;
+		text-align: center;
+		padding: 0 5px;
+	}
+	.usaBanner > div > div:nth-child(1) h1{
+		font-size: 32px;
+		text-align: center;
+	}
+}

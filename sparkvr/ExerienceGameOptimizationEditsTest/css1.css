@@ -1,0 +1,35 @@
+.sqs-block-button-element--small.sqs-block-button-element {
+	font-size: 15px;
+}
+.Mobile-overlay-nav-item {
+	padding: 0;
+	margin: 5px 0;
+}
+#block-yui_3_17_2_1_1555032840072_9603 > div > h3 {
+	font-size: 20px;
+}
+#block-yui_3_17_2_1_1555032840072_9603 > div > h2 {
+	font-size: 40px;
+}
+#block-5cafe8e9e79c707b9cc01134 > div > h1 {
+	font-size: 60px;
+}
+
+._hj-f5b2a1eb-9b07_survey_description {
+	font-size: 20px !important;
+}
+#_hj-f5b2a1eb-9b07_survey_invite_container > div > div._hj-f5b2a1eb-9b07_survey_title {
+	font-size: 24px !important;
+}
+
+@media screen and (max-width: 999px) {
+	.sqs-block-button-element--small.sqs-block-button-element {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#game-tiles > div > div > div.meta-description > p {
+		font-size: 18px;
+	}
+}

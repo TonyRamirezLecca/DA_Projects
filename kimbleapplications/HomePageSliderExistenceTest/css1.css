@@ -1,0 +1,261 @@
+.slick-list.draggable {
+	padding: 0 !important;
+}
+.slick-arrow {
+	position: absolute;
+	z-index: 3;
+	max-width: 30px;  
+	display: none;  
+}
+
+
+#page-row-1 > button.slick-next.slick-arrow {
+	display: none !important;
+}
+#page-row-1 > button.slick-prev.slick-arrow {
+	display: none !important;
+}
+
+
+.slick-dots {
+	transform: translateY(-40px);
+	background: transparent;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+li[role="presentation"] {
+    padding: 1px !important;
+    height: 20px !important;
+    width: 5px !important;
+}
+li[role="presentation"] button::before {
+    color: white !important;
+    width: 5px !important;
+    height: 10px !important;
+    padding: 0px !important;
+}
+
+/*
+.slick-dots li button:before {
+	display: none;
+}
+
+
+.hideDot {
+	display: none;
+	position: absolute;
+	top: 0;
+	color: rgb(200,200,200,.5);
+}
+.dot {
+	position: absolute;
+	top: 0;
+	color: rgb(200,200,200,.5)
+
+}
+.slick-active .hideDot {
+	display: inline-block !important;
+}
+.slick-active .dot {
+	display: none;
+}
+.slick-dots li {
+	margin: 0;
+}
+*/
+
+
+.lets-talk {
+	display: none !important;
+}
+
+
+.slideImg1 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-mountain.jpg);
+	height: 580px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+}
+.slideImg2 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-diver.jpg);
+	height: 580px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.slideImg3 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-tightrope.jpg);
+	height: 580px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.slideImg4 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-climber.jpg);
+	height: 580px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.slideImg5 {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-ice-climbers.jpg);
+	height: 580px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+
+.superSlideTxtCtn {
+    position: relative;
+    top: 50%;
+	transform: translatey(-50%);
+    max-width: 76.875rem;
+    padding: 0 1.875rem;
+	margin: 0 auto;
+	font-size: 20px;
+}
+.slideTextCtn {
+	width: 585px;
+	position: relative;
+	z-index: 0;
+	padding: 40px;
+	padding-top: 30px;
+}
+.darkenBackground {
+	background: #242126;
+	opacity: .54;
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.slideTextCtn h1 {
+	font-size: 40px;
+	line-height: 56px;
+	margin-top: 0;
+}
+.slideTextCtn h4 {
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 35px !important;
+	font-weight: 700;
+}
+.slideTextCtn a {
+	font-size: 12px;
+	font-weight: 700;
+	background: #FFD300;
+	padding: 12px 40px;
+	color: black;
+}
+.rightBtn {
+    margin-left: 10px;
+    bottom: 0;
+	right:44%;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 300ms;
+	cursor: pointer;
+		z-index: 10
+
+}
+.leftBtn { 
+    margin-right: 10px;   
+    bottom: 0;
+	left: 44%;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 300ms;
+	cursor: pointer;
+	z-index: 10;
+}
+.leftBtn:hover {
+	opacity: .5;
+}
+.rightBtn:hover {
+	opacity: .5;
+}
+
+
+@media screen and (max-width: 859px) {
+	.slideTextCtn {
+		width: 500px;
+		margin: 0 auto;
+	}
+	.slideTextCtn h1 {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.slideTextCtn h4 {
+		font-size: 22px;
+		line-height: 26px;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	.slideImg1 {
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-mountain-mobile.jpg);
+		height: 606px !important;
+	}
+	.slideImg2 {
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-diver-mobile.jpg);
+		height: 606px !important;
+	}
+	.slideImg3 {
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-tightrope-mobile.jpg);
+		height: 606px !important;
+	}
+	.slideImg4 {
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-climber-mobile.jpg);
+		height: 606px !important;
+	}
+	.slideImg5 {
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/kimble/HomePageSliderExistence/hero-ice-climbers-mobile.jpg);
+		height: 606px !important;
+	}
+	.superSlideTxtCtn {
+	    max-width: 100%;
+	    width: 100%;
+		transform: initial;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		top: 100%;
+		transform: translateY(-100%);
+	}
+	.slideTextCtn {
+	    width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+		top: 100%;
+	}
+	.slideTextCtn h1 {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.slideTextCtn h4 {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 18px !important;
+	}
+	.slideTextCtn a {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.slick-dots {
+		transform: translateY(-8px);
+	}
+
+}
+
+

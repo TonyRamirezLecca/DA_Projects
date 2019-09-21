@@ -1,0 +1,13 @@
+.da_wrap {
+    display: none;
+}
+
+.product__details {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 749px) {
+    .product__details {
+        margin-top: 5px;
+    }
+}

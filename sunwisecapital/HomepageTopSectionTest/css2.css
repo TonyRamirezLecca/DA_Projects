@@ -1,0 +1,338 @@
+#master-slider-main-widget-3 {
+	min-height: 400px;
+}
+.headerContainer {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.headerImg {
+	position: absolute;
+	min-width: 100%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -2;
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/sun-wise-capital/HomepageTopSection/girlSmilingv2v4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+}
+.headerImgFilter {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+
+}
+.subHeaderContainer {
+	max-width: 70vw;
+	margin-right: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 520px;
+	padding: 10px;
+}
+.headerText {
+	max-width: 65%;
+	margin-left: 30px;
+
+}
+.headerText h1 span:nth-child(3) {
+	font-weight: 100;
+}
+.headerText h1 {
+	font-size: 38px !important;
+	font-weight: 500 !important;
+	line-height: 50px;
+	color: white;
+	text-align: center;
+	font-family: lato !important;
+	text-align: right;
+
+}
+.headerText h4 {
+	font-size: 22px !important;
+	color: #eee;
+	line-height: 23px !important;
+	text-align: left;
+	font-family: lato !important;
+
+}
+
+.headerBtn {
+	color: #fff !important;
+	background: #6cad3e;
+	max-width: 600px;
+	width: 350px;
+	border-radius: 30px;
+	font-weight: 600 !important;
+	font-size: 20px !important;
+	padding: 5px;
+	text-align: center;
+	font-family: lato !important;
+	text-transform: uppercase;
+	margin: 35px 0;
+
+}
+.headerBtn:hover {
+	text-decoration: none;
+}
+
+.iconsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: 
+}
+.iconTextWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 20px;
+}
+
+.iconWrapper {
+	flex: 1;
+}
+.iconWrapper img {
+	max-width: 80%;
+}
+.iconTextWrapper h2 {
+	flex: 2;
+	font-size: 30px !important;
+	color: white;
+	margin: 0;
+	white-space: nowrap;
+	font-family: lato !important;
+}
+
+.featuredBannerContainer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100vw !important;
+}
+.featuredBannerWrapper {
+	background: rgb(255,255,255,.8);
+	height: 90px; 
+	width: 100%;
+	position: relative;
+	display: none;
+}
+.featuredBannerWrapper img {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	padding-right: 90px;
+	transform: scale(1.3);
+}
+.displayWordMB {
+	display: none;
+}
+
+@media screen and (max-width: 1110px) {
+	.displayWordMB {
+		display: inline;
+	}
+	.displayWordDesk {
+		display: none;
+	}
+	.subHeaderContainer {
+		max-width: 100%;
+		margin-right: 0;
+		justify-content: space-around;
+		padding-bottom: 20px;
+		align-items: flex-start;
+	}
+	.headerText {
+		max-width: 100%;
+	}
+	.headerText > h1 > span:nth-child(1) {
+		max-width: 100%;
+		display: inline-block;
+	}
+	.headerText > h1 > span:nth-child(3) {
+		max-width: 80%;
+		display: inline-block;
+	}
+	.headerText h1 {
+		font-size: 34px !important;
+		text-align: left;
+		max-width: 100%;
+	}
+	.headerText h4 {
+		font-size: 22px !important;
+		max-width: 65%;
+		text-align: left !important;
+		margin: 0;
+	}
+	.headerBtn {
+		max-width: 90%;
+		font-size: 20px !important;
+		margin: 10px;
+		margin-top: 20px;
+	}
+
+	.iconTextWrapper h2 {
+		font-size: 25px !important;
+	}
+	.featuredBannerContainer {
+		justify-content: center;
+	}
+	.featuredBannerWrapper {
+		padding-right: 0;
+	}
+	.featuredBannerWrapper img {
+		width: 100%;
+		transform: scale(1);
+		padding: 0 40px;
+	}
+
+}
+@media screen and (max-width: 900px) {
+	.headerText {
+		max-width: 100%;
+		margin-left: 0px;
+	}
+	.headerText > h1 > span:nth-child(1) {
+		max-width: 100%;
+		display: inline-block;
+	}
+	.headerText > h1 > span:nth-child(3) {
+		max-width: 55%;
+		display: inline-block;
+	}
+	.headerText > h1 > span:nth-child(5) {
+		max-width: 45% !important;
+		display: inline-block;
+	}
+	.headerText h1 {
+		font-size: 34px !important;
+		text-align: left;
+		max-width: 100%;
+	}
+	.headerText h4 {
+		font-size: 22px !important;
+		max-width: 65%;
+		text-align: left !important;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 718px) {
+	.iconsContainer {
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.iconWrapper {
+		max-width: 70px;
+	}
+	.iconTextWrapper {   
+		width: 100%;
+	}
+	.iconTextWrapper:nth-child(1) img{
+		margin-left: 12px;
+	}
+	.iconTextWrapper:nth-child(3) img{
+		margin-left: 5px;
+	}
+	.iconTextWrapper h2 {
+		font-size: 30px !important;
+	}
+	.headerBtn {
+		margin: 10px auto;
+	}
+	.headerText h4 {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.iconTextWrapper div h2 {
+		font-size: 22px !important;
+	}
+	.iconsContainer > div > h2 {
+		font-size: 26px !important;
+
+	}
+	.headerImg {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/sun-wise-capital/HomepageTopSection/woman_mb.jpg)
+	}
+	.headerBtn {
+		margin: 10px auto;
+		margin-top: 20px;
+	}
+	.iconWrapper img {
+		transform: scale(.7) !important;
+	}
+	.iconTextWrapper:nth-child(1) h2 {
+		transform: translatex(-15px);
+	}
+	.iconTextWrapper:nth-child(2) h2 {
+		transform: translatex(-15px);
+	}
+	.iconTextWrapper:nth-child(3) h2 {
+		transform: translatex(-15px);
+	}
+	.iconsContainer {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.iconWrapper {
+		max-width: 70px;
+	}
+	.iconTextWrapper {   
+		width: 100%;
+	}
+	.iconTextWrapper:nth-child(1) img{
+		margin-left: 12px;
+	}
+	.iconTextWrapper:nth-child(3) img{
+		margin-left: 5px;
+	}
+	.iconTextWrapper h2 {
+		font-size: 30px !important;
+	}
+	.headerText h1 {
+		font-size: 25px !important;
+		margin-left: 10px;
+	}
+	.headerText h4 {
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	.headerText > h1 > span:nth-child(1) {
+		font-weight: 800;
+		line-height: 30px;
+	}
+	.headerText > h1 > span:nth-child(3) {
+		font-size: 25px;
+		max-width: 65% !important;
+		line-height: 30px;
+		font-weight: 500;
+	}
+	.headerText > h1 > span:nth-child(5) {
+		font-weight: 800;
+		max-width: 60% !important;
+		line-height: 30px;
+	}
+}
+
+
+
+#lp-pom-image-115 .lp-pom-image-container img {
+	object-fit: contain !important;
+}

@@ -1,0 +1,63 @@
+.TEXTIMGCONTAINER div h1 {
+	font-size: 20px;
+	color: #777 !important;
+	font-weight: 400;
+}
+.iconClass {
+	color: #ff4081;
+	margin-right: 8px;
+}
+.TEXTIMGCONTAINER {
+	padding-bottom: 15px;
+}
+.lineSpacer {
+	height: 2px;
+	width: 90%;
+	margin: 0 auto;
+	background: #ededed;
+}
+#startTrial {
+    width: 100%;
+    padding: 10px 0;
+}
+.mtr-btn {
+    font-size: 17px;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .mtr-btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.TEXTIMGCONTAINER {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 85%;
+		margin: 0 auto;
+	}
+	.lineSpacer {
+		display: none;
+	}
+	.row .col-sm-3 > div:first-child {
+		display: none;
+	}
+	.row .col-sm-3 > h4 {
+		display: none;
+	}
+	.row .col-sm-3 > p:nth-child(3) {
+		display: none;
+	}
+	#startTrial {
+		margin: 10px 0;
+		width: unset;
+		padding: 10px;
+	}
+	.mtr-btn {
+	    font-size: 14px;
+	}
+}

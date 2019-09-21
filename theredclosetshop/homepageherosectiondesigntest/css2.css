@@ -1,0 +1,201 @@
+/*** CSS 2 ***/
+#shopify-section-1541652634357 {
+    display: none;
+}
+/***************/
+
+.hero-ctn {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+    height: 800px;
+}
+#hero1 {
+    height: 55%;
+    width: 100%;
+    position: relative;
+}
+#hero2 {
+    height: 45%;
+    width: 100%;
+    position: relative;
+}
+#hero3 {
+    height: 45%;
+    width: 100%;
+    position: relative;
+}
+#hero4 {
+    height: 55%;
+    width: 100%;
+    position: relative;
+}
+.hero-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 5px;
+}
+.hero-img-ctn {
+    margin: 4px;
+    border: 4px solid black;
+}
+
+.hero-header h1 {
+    font-size: 27px !important;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600 !Important;
+    padding-bottom: 0 !important;
+    line-height: 30px !important;
+
+}
+.hero-header p {
+    text-align: center;
+    margin-top: 0 !important;
+    white-space: nowrap;
+    font-size: 19px;
+    color: #000;
+}
+.hero-header {
+    position: absolute;
+    opacity: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px !important;
+
+}
+.header-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: white;
+    opacity: .95;
+}
+
+
+
+
+
+
+
+/*BACKGROUND IMAGES*/
+.hero-column:nth-child(1) > .hero-img-ctn:nth-child(1){
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/Layer+4.jpg);
+}
+.hero-column:nth-child(1) > .hero-img-ctn:nth-child(2){
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/Layer+5.jpg);
+}
+.hero-column:nth-child(2) > .hero-img-ctn:nth-child(1){
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/Layer+7.jpg);
+}
+.hero-column:nth-child(2) > .hero-img-ctn:nth-child(2){
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/red-closet-diary/HomepageHeroSectionDesign/Layer+6.jpg);
+}
+
+
+/*Hero LINK*/
+.hero-link {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+@media screen and (max-width: 840px) {
+    .hero-ctn {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center; 
+    }
+    .hero-img-ctn {
+        margin: 15px 0;
+    }
+    .hero-header h1 {
+        font-size: 22px !important;
+    }
+    .hero-header p {
+        font-size: 16px !important;
+    }
+    #hero1 {
+        min-width: 350px;
+        height: 300px;
+
+    }
+    #hero2 {
+        min-width: 350px;
+        height: 300px;
+
+    }
+    #hero3 {
+        min-width: 350px;
+        height: 300px;
+    }
+    #hero4 {
+        min-width: 350px;
+        height: 300px;
+    }
+   
+}
+
+@media screen and (max-width: 712px ) {
+     .hero-column {
+         min-width: 60%;
+    }
+}
+@media screen and (max-width: 550px ) {
+     .hero-column {
+         min-width: 95%;
+    }
+        #hero1 {
+        min-width: 300px;
+        height: 300px;
+
+    }
+    #hero2 {
+        min-width: 300px;
+        height: 300px;
+
+    }
+    #hero3 {
+        min-width: 300px;
+        height: 300px;
+    }
+    #hero4 {
+        min-width: 300px;
+        height: 300px;
+    }
+     .hero-header h1 {
+        font-size: 19px !important;
+    }
+    .hero-header p {
+        font-size: 13px !important;
+    }
+    .hero-header {
+        padding: 12px !important;
+    }
+}

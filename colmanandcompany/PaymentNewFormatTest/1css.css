@@ -1,0 +1,145 @@
+#ocst_form > div.cim-payment-section {
+    max-width: 2000px;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.form-group.cim-form-button-row {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.bask-totals {
+    border: none;
+    margin-bottom: 0px;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side {
+    width: 50%;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > h2 {
+    margin-bottom: 0;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.ocst-page-card-not-yet-billed-message {
+    font-size: 13px;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-left-side {
+    margin-right: 30px;
+}
+h2.cim-ocst-cart-summary-title, h2.cim-ocst-shipping-methods-summary-title {
+    background: none;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #42494f;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+}
+
+/*Cart Summary Container*/
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active {
+    margin-top: 60px;
+}
+
+/*Shipping Section*/
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > h2 {
+    font-size: 14px;
+    color: #008bcc;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 8px;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > thead {
+    display: None;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > h2 {
+    display: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody {
+    display: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > p {
+    margin-top: 0;
+    font-size: 13px;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div {
+    border-bottom: solid 1px #c4c4c4;
+    padding: 8px;
+    margin-top: -34px;
+}
+.showTable {
+    display: table !important;
+    width: 102%;
+}
+.showTable {
+    border:
+}
+.restoreMargin {
+    margin: 0px !important;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr:nth-child(1) {
+    border: none !important;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div {
+    border: none
+}
+.displayed-shipping-method {
+
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr:nth-child(1) > td:nth-child(1) {
+    border-top: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr:nth-child(1) > td:nth-child(2) {
+    border-top: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr:nth-child(8) > td:nth-child(1) {
+    border-bottom: 1px solid #ddd;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr:nth-child(8) > td:nth-child(2) {
+    border-bottom: 1px solid #ddd;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > div.bask-container > div.cim-ocst-estimated-shipping-methods-wrapper.active > div > table > tbody > tr > td:nth-child(2) {
+    width: 30px
+}
+
+.cim-ocst-shipping-method-disclaimer {
+    display: none;  
+}
+.showDisclaimer {
+    display: block !important;
+}
+
+
+/*Address */
+#ocst_form > div.cim-payment-section > div.cim-payment-section-left-side > div:nth-child(7) {
+    display: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-left-side > div:nth-child(8) {
+    display: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-left-side > div:nth-child(10) {
+    display: none;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-left-side > div:nth-child(13) {
+    display: none;
+}
+.form-group label {
+    color: #888 !important;
+}
+
+/*Move Sections closer*/
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active > h2 {
+    padding-top: 0;
+    margin-top :0;
+}
+#ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active {
+    margin-top: 31px
+}
+
+@media screen and (max-width: 991px) {
+    #ocst_form > div.cim-payment-section > div.cim-payment-section-right-side {
+        width: 100%;
+    }
+}

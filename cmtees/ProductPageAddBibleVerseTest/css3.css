@@ -1,0 +1,15 @@
+.verseContainer {
+    background: #e7f3ff;
+    display: flex;
+    margin: 8px 0;
+}
+.colorBlock {
+    background: #0066cc;
+    min-height: 100%;
+    width: 10px;
+    margin-right: 8px;
+}
+.verseContainer h6 {
+    font-size: 16px;
+    margin: 12px 5px;
+}

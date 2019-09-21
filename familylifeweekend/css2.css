@@ -1,0 +1,17 @@
+.wrapperForAddToCart{
+    display: flex;
+
+}
+
+.dsproductcontinuebtn {
+	display: none;
+
+}
+.dsproductaddsummary .button3L.soActionBtn {
+    font-weight: 600;
+    padding: 13px 30px;
+    margin: 0;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 165px;
+}

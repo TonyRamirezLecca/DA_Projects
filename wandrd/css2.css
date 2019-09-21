@@ -1,0 +1,22 @@
+.wrapper {
+	display: flex;
+}
+.logoContainer {
+    flex: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.logoImg {
+}
+.subWrapper {
+    flex: 50%
+}
+.swatch.clearfix {
+    white-space: nowrap;
+}
+@media screen and (min-width: 960px) {
+	.logoImg {
+		transform: translate(-40px, 40px);
+	}
+}

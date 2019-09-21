@@ -1,0 +1,56 @@
+.valuePropsContainer {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.parentNode {
+    display: flex;
+    margin: 20px auto;
+    width: 350px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.parentNode:nth-child(3) {
+    transform: translateX(10px);
+}
+.textNodeContainer {
+    flex: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%
+}
+.imgContainer {
+  
+    padding: 10px;
+}
+.imgContainer img {
+  
+    max-width: 100%;
+}
+.textNode {
+    text-align: center;
+    font-size: 13px;
+     font-family: "ITC Avant Garde Gothic",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1c1b1b;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 640px) {
+    .textNode {
+        font-size: 11px;
+    }
+    .parentNode {
+        height: 40px;
+        width: 250px;
+    }
+}
+

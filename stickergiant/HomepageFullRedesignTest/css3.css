@@ -1,0 +1,105 @@
+/*Header Text*/
+.headerCtn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+}
+.headerCtn h1 {
+	font-size: 48px;
+	margin-bottom: 0;
+	margin: 10px;
+}
+.headerCtn h2 {
+	font-size: 33px;
+	font-weight: lighter;
+	margin: 10px;
+}
+.redUnderline {
+	width: 155px;
+	height: 5px;
+	background: #DE4A2A;
+	margin-top: 10px;
+}
+
+/*Sticker Section Text*/
+.stickerSection {
+	background: #fff;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-top: 64px;
+	padding: 33px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.stickerSection p {
+	font-size: 33px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Oswald,HelveticaNeueCondensed,HelveticaNeue-Condensed,"Helvetica Neue Condensed",TeXGyreHerosCnRegular,TeXGyreHerosCn-Regular,"Arial Narrow",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.stickerContentWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stickerContent {
+	background: #F2F2F2;
+	max-width: 607px;
+	max-height: 270px;
+	margin: 20px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Sticker Section Text*/
+.stickerText {
+	flex: 1;
+}
+.stickerText h1 {
+	font-size: 27px;
+	margin: 0;
+}
+.stickerText ul {
+	margin-left: 0;
+	padding-left: 22px;
+}
+.stickerText li {
+	font-size: 17px;
+}
+.stickerText a {
+	background: #DE4A2A;
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: oswald;
+	padding: 6px 20px;
+}
+/*Sticker Section Images*/
+.stickerImgWrapper {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.stickerImgCtn {
+	max-width: 100%;
+	text-align: center;
+	min-width: 120px;
+	margin: 2px;
+}
+.stickerImgCtn:nth-child(1) {
+	width: 100%;
+}
+#sticker1 > .stickerImgWrapper > div:nth-child(1) > img {
+	transform: scale(.9);
+}
+.stickerImgCtn img {
+
+}

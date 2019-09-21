@@ -1,0 +1,148 @@
+
+.body-container-wrapper {
+    overflow-x: hidden;
+}
+.bannerBackground {
+    background: #dfefff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 250vw;
+    margin-left: -50vw;
+}
+#banner1 {
+    position: relative;
+}
+#banner1 .textCtn {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+}
+#banner1 .textCtn h1{
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#banner1 .textCtn h6{
+    margin: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#banner1 .textCtn a {
+    background: #f6921e;
+    color: white;
+    width: 230px;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+#fireguyCtn {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+#banner2 {
+    position: relative;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner2 .textCtn {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    margin-right: 10px;
+}
+#banner2 .textCtn h1{
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+}
+#banner2 .textCtn h6{
+    margin: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#banner2 .textCtn a {
+    background: #f6921e;
+    color: white;
+    width: 230px;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+#manwomanCtn {
+   width: 40%;
+   margin-right: 0px;
+   height: 220px;
+   background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/ignitespot/ReconcileAccountsPage/manwoman.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 10%;
+   margin-left: 40px;
+
+}
+#manwomanCtn img {
+    max-height: 100%;
+    width: 300px;
+    object-fit: contain;
+    display: none;
+}
+
+.textCtn br {
+    display: none;
+}
+@media screen and (max-width: 959px) {
+    #fireguyCtn {
+        display: none;
+    }
+    .textCtn br {
+        display: block;
+    }
+    #banner2 {
+        flex-direction: column;
+        height: 100%;
+    }
+    #manwomanCtn {
+        width: 50%;
+        margin-left: 0;
+        min-width: 336px;
+    }
+    #banner2 .textCtn h1 {
+        margin-top: 20px;
+    }
+    #banner2 .textCtn a {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #manwomanCtn {
+        min-width: 100vw;
+    }
+}

@@ -1,0 +1,46 @@
+.valuePropsContainer {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.parentNode {
+    display: flex;
+    padding: 10px;
+    margin: 20px 10px;
+}
+.textNodeContainer {
+    flex: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%
+}
+.imgContainer {
+    padding: 0px 20px;
+    
+}
+.imgContainer img {
+  
+    min-width: 120%;
+}
+.textNode {
+    text-align: center;
+    font-size: 17px;
+     font-family: "ITC Avant Garde Gothic",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1c1b1b;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 640px) {
+    .textNode {
+        font-size: 12px;
+    }
+}
+

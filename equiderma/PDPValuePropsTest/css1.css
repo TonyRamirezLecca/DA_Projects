@@ -1,0 +1,77 @@
+.valuePropsContainer {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 10px;
+	padding: 5px;
+}
+.parentNode {
+	display: flex;
+	margin: 8px auto;
+	width: 350px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+}
+.textNodeContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.checkmark {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-width: 350px;
+}
+.checkmark::before {
+	flex: 1;
+	font-size: 25px;
+	min-width: 40px;
+	padding-left: 40px;
+}
+.checkmark > span {
+	font-size: 13px;
+	font-family: "ITC Avant Garde Gothic",sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #1c1b1b;
+	-webkit-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	padding-left: 10px;
+	position: absolute;
+	right: 50px;
+	text-align: center;
+	width: 230px;
+	line-height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@media screen and (max-width: 640px) {
+	.textNode {
+		font-size: 11px;
+	}
+	.parentNode {
+		height: 40px;
+		width: 260px;
+	}
+	.checkmark {
+		min-width: 260px !important;
+	}
+	.checkmark::before {
+		padding-left: 0;
+		font-size: 22px;
+	}
+	.checkmark > span {
+		right: 0;
+		width: 230px
+	}
+}
+
+

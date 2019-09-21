@@ -1,0 +1,37 @@
+#product-options-wrapper > .last {
+    display: none;
+}
+
+.newValuesCtn {
+    margin-top: 100px;
+}
+.newValuesSection {
+    margin-bottom: 25px;
+}
+.newValuesSection h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.sectionFlexCtn {
+    display: flex;
+}
+.newContent {
+    flex: 1;
+    margin: 5px;
+    padding: 10px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid 1px rgba(125,152,161,.5);
+}
+.newContent p {
+    font-size: 12px;
+    text-align: center;
+}
+.activeGift {
+    background: #7fb97f;
+    color: white;
+    font-weight: 500 !important;
+}

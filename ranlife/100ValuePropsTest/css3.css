@@ -1,0 +1,16 @@
+.col-sm-8 > .col-sm-12 {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 10px 0;
+	position: relative;
+}
+.leftBackground {
+	background: #e4f2fd;
+	position: absolute;
+	height: 100%;
+	width: 200%;
+	top: 0;
+	right: -50px;
+	z-index: -1;
+}
+

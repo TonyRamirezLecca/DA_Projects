@@ -1,0 +1,51 @@
+
+.brandIconCtn {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 20px;
+}
+.brandIconCtn div {
+	margin: 0 10px;
+}
+.targetImg {
+
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/eustachi/SiteWideEbayNotice/target_long.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 60px;
+}
+.walmartImg {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/eustachi/SiteWideEbayNotice/walmart_long.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 125%;
+	width: 100px;
+	transform: translatey(-2px);
+}
+.walgreensImg {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/eustachi/SiteWideEbayNotice/walgreens_long.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 120%;
+	width: 100px;
+	transform: translateX(-30px);
+}
+.riteAidImg {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/eustachi/SiteWideEbayNotice/riteaid_icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 130%;
+	width: 30px;
+	transform: translatex(-55px);
+}
+.CVSImg {
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/eustachi/SiteWideEbayNotice/cvs_long.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 50px;
+	transform: translate(-50px, 2px)
+}

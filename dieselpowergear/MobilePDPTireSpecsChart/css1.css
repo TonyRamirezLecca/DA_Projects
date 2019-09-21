@@ -1,0 +1,579 @@
+.accordianWrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.tiresSection {
+	background: black;
+	display: flex;
+	flex-direction: column;
+	margin: 6px 0;
+}
+
+.sectionTitle {
+	background: black;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.sectionTitle h1 {
+	margin: 0;
+	font-size: 38px;
+	padding: 25px;
+	padding-right: 5px;
+	font-family: karla;
+	font-weight: 800;
+	color: white;
+}
+
+
+.contentWrapper {
+	background: black;
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+
+.contentWrapper div:nth-child(2) {
+	display: flex;
+	background: #141414;
+	justify-content: space-evenly !important;
+	align-items: center;
+	color: white;
+	margin: 2px 0;
+	padding: 0 10px;
+}
+.contentWrapper div:nth-child(2) p {
+	flex:1;
+	text-align: center;
+	margin: 16px 0px;
+}
+.contentWrapper div:nth-child(2) p:first-child {
+	flex:1.3;
+	text-align: center;
+	margin: 16px 4px;
+	text-align: left;
+}
+.contentWrapper div:nth-child(2) a {
+	flex:1;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	background: #ec2928;
+	text-transform: uppercase;
+	padding: 6px 2px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.contentWrapper div:nth-child(3) {
+	display: flex;
+	background: #141414;
+	justify-content: space-evenly !important;
+	align-items: center;
+	color: white;
+	margin: 2px 0;
+	padding: 0 10px;
+}
+.contentWrapper div:nth-child(3) p {
+	flex:1;
+	text-align: center;
+	margin: 16px 0px;
+
+}
+.contentWrapper div:nth-child(3) p:first-child {
+	flex:1.3;
+	text-align: center;
+	margin: 16px 4px;
+	text-align: left;
+}
+.contentWrapper div:nth-child(3) a {
+	flex:1;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	background: #ec2928;
+	text-transform: uppercase;
+	padding: 6px 2px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.contentWrapper div:nth-child(4) {
+	display: flex;
+	background: #141414;
+	justify-content: space-evenly !important;
+	align-items: center;
+	color: white;
+	margin: 2px 0;
+	padding: 0 10px;
+}
+.contentWrapper div:nth-child(4) p {
+	flex:1;
+	text-align: center;
+	margin: 16px 0px;
+}
+.contentWrapper div:nth-child(4) p:first-child {
+	flex:1.3;
+	text-align: center;
+	margin: 16px 4px;
+	text-align: left;
+}
+.contentWrapper div:nth-child(4) a {
+	flex:1;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	background: #ec2928;
+	text-transform: uppercase;
+	padding: 6px 2px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+
+
+
+.descriptionRow {
+	background: white;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.descriptionRow h6 {
+	background: white;
+	flex: 1;
+	text-align: center;
+	margin: 16px 0px;
+	padding: 0 4px;
+}
+
+.descriptionRow h6:last-child {
+	padding: 0;
+	margin: 0;
+}
+.descriptionRow h6:first-child {
+	flex: 1.3;
+	text-align: left;
+	padding-left: 5px;
+	margin: 0;
+}
+
+
+
+
+
+.contentWrapper {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .5s;
+}
+
+.showContent {
+	max-height: 400px !important;
+}
+
+.sectionTitle {
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	color: #ec2928;
+	font-size: 50px;
+	padding: 3px;
+}
+
+.contentWrapper div p {
+	white-space: nowrap;
+}
+.contentWrapper div p:nth-child(2) {
+	min-width: 85px;
+}
+.descriptionRow h6 {
+	text-align: center;
+}
+.descriptionRow h6:nth-child(2) {
+	min-width: 85px;
+}
+
+.contentWrapper h6:nth-child(14) {
+	margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1023px) {
+	.accordianWrapper {
+		max-width: 90%;
+	}
+	.descriptionRow h6 {
+		display: none;
+	}
+	.descriptionRow h6:nth-child(1) {
+		display: block;
+		flex: 1;
+	}
+	.descriptionRow h6:nth-child(3) {
+		display: block;
+	}
+	.descriptionRow h6:nth-child(11) {
+		display: block;
+	}
+	.descriptionRow h6:nth-child(14) {
+		display: block;
+	}
+	.contentWrapper a {
+		white-space: nowrap;
+	}
+	.contentWrapper div:nth-child(2) p {
+		display: none;
+	}
+	.contentWrapper div:nth-child(2) p:nth-child(1) {
+		display: block;
+		flex: 1;
+	}
+	.contentWrapper div:nth-child(2) p:nth-child(3) {
+		display: block;
+	}
+	.contentWrapper div:nth-child(2) p:nth-child(11) {
+		display: block;
+	}
+
+	.contentWrapper div:nth-child(3) p {
+		display: none;
+	}
+	.contentWrapper div:nth-child(3) p:nth-child(1) {
+		display: block;
+		flex: 1;
+	}
+	.contentWrapper div:nth-child(3) p:nth-child(3) {
+		display: block;
+	}
+	.contentWrapper div:nth-child(3) p:nth-child(11) {
+		display: block;
+	}
+
+	.contentWrapper div:nth-child(4) p {
+		display: none;
+	}
+	.contentWrapper div:nth-child(4) p:nth-child(1) {
+		display: block;
+		flex: 1;
+	}
+	.contentWrapper div:nth-child(4) p:nth-child(3) {
+		display: block;
+	}
+	.contentWrapper div:nth-child(4) p:nth-child(11) {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.contentWrapper a {
+
+	}
+	.contentWrapper div p:nth-child(1) {
+		min-width: 95px;
+	}
+	.descriptionRow h6:first-child {
+		min-width: 95px;
+	}
+	.descriptionRow h6:nth-child(11) {
+		max-width: 66px !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.contentWrapper a {
+		font-size: 12px !important;
+		transform: translateX(5px);
+	}
+}
+
+
+.contentWrapper div:last-child {
+	margin-bottom: 35px;
+} 
+
+.see-details-btn {
+	display: none;
+}
+
+
+/******/
+/*POP UP*/
+/******/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 85vh;
+    max-width: 600px;
+    z-index: 100;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.popup-background {
+    height: 120vh;
+    width: 100vw;
+    position: fixed;
+    top: -10vh;
+    z-index: 99;
+    background: black;
+    opacity: .3;
+}
+.tireWrap {
+    max-width: 100px;
+    width: 25%;
+    flex: .2;
+}
+.tireWrap img {
+    object-fit: contain;
+}
+.tireSize {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.popup__description-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 90%;
+	max-width: 95%;
+}
+.close-popup__X {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	color: white;
+	font-family: karla;
+    font-weight: 600;
+    font-size: 25px;
+}
+.buyNowCTA_PopUp {
+    color: white;
+    background: red;
+    margin-top: 20px;
+    padding: 8px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.descriptionRow.description__column {
+    display: flex;
+    flex-direction: column;
+    color: #444 !important;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.descriptionRow.description__column h6:last-child {
+    display: none
+}
+.description__column {
+    display: flex !important
+    flex-direction: column;
+    background: black;
+    color: #fff;
+    flex: 1;
+}
+.description__column h6 {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin: 0;
+    padding: 0 !important;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    min-width: 100% !important;
+    padding: 2px 0 !important;
+    white-space: nowrap;
+}
+.description__column p {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin: 0;
+    padding: 2px 0 !important;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+    text-align: right;
+}
+.description__column h6 br {
+	display: none;
+}
+.description__column a {
+    display: none;
+}
+#shopOtherTires {
+    font-family: karla;
+    font-size: 36px;
+    font-weight: 1000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1023px) {
+    /*Removes right Padding of parent div*/
+    .contentWrapper div {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+    /*Give padding to "Tire Size"*/
+    .tiresSection > .contentWrapper > .descriptionRow > h6:nth-child(1) {
+        margin: 16px 0px;
+        padding: 0 4px;
+    }
+	/*Remove Load Range and Max Load Titles*/
+	.tiresSection > .contentWrapper > .descriptionRow > h6:nth-child(3) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > .descriptionRow > h6:nth-child(11) {
+		display: none;
+	}
+	/*Remove Load Range and Max Load Content*/
+	.tiresSection > .contentWrapper > div:nth-child(2) > p:nth-child(3) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div:nth-child(3) > p:nth-child(3) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div:nth-child(4) > p:nth-child(3) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div:nth-child(2) > p:nth-child(11) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div:nth-child(3) > p:nth-child(11) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div:nth-child(4) > p:nth-child(11) {
+		display: none;
+	}
+	.tiresSection > .contentWrapper > div > p:nth-child(1) {
+		margin-right: 0;
+	}
+	/*See Details Button*/
+	.see-details-btn {
+		display: inline-block;
+	  flex: 1;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ec2928;
+		background: #000 !important;
+    text-transform: uppercase;
+    padding: 6px 8px !important;
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 30px;
+	}
+	.contentWrapper div a {
+	    border: 1px solid #ec2928;
+	}
+	.contentWrapper div:nth-child(1) {
+	    justify-content: space-around !important;
+	}
+	  .contentWrapper div {
+        padding-left: 0 !important;
+    }
+    .descriptionRow {
+        background: #141414;
+        border-bottom: 2px solid white;
+    }
+    div.descriptionRow > h6:nth-child(1) {
+        background: #141414;
+        color: white;
+        font-weight: 800;
+    }
+    div.descriptionRow > h6:nth-child(14) {
+        background: #141414;
+    }
+
+    .descriptionRow.description__column h6:nth-child(1) {
+        background: black;
+        color: inherit;
+    }
+    .descriptionRow.description__column {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /*Buttons*/
+    .see-details-btn {
+        font-size: 12px !important;
+        padding: 6px 0 !important;
+        margin-right: 20px
+    }
+    .contentWrapper div a {
+	    font-size: 12px !important;
+	}
+		.contentWrapper {
+	    margin: 0 10px;
+	}
+    .tireSize {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .description__column h6 {
+        font-size: 14px;
+    }
+    .description__column p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+#shopOtherTires {
+    font-family: karla;
+    font-size: 32px;
+    font-weight: 1000;
+    text-align: center;
+    white-space: nowrap;
+}
+.popup {
+    height: 95vh;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.tireSize {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.buyNowCTA_PopUp {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+}
+
+@media screen and (max-width: 330px) {
+    .tireSize {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+		.popup {
+			height: 100vh;
+		}
+
+} 
+ 

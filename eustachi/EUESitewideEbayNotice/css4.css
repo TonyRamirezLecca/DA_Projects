@@ -1,0 +1,251 @@
+.closePopUp {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.popUpBackground {
+	position: fixed;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgb(29,29,29, .7);
+	width: 100vw;
+	height: 150vh;
+}
+
+.popUp {
+	background: #4a6446;
+	max-width: 600px;
+	width: 60vw;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 1001;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 40px #222;
+	overflow: hidden;
+}
+
+.popUpText {
+	text-align: center;
+	padding-top: 85px;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.popUpText > div:nth-child(1) h1{
+	color: white;
+	margin: 0;
+	font-size: 34px;
+}
+
+.popUpText > div:nth-child(1) > div > h2{
+	color: white;
+	font-weight: 100;
+	font-size: 31px;
+	text-transform: lowercase;
+	position: relative;
+	margin: 0;
+	white-space: nowrap;
+	font-family: times;
+	font-style: italic;
+}
+.popUpText > div:nth-child(1) > div {
+	position: relative;
+	padding-bottom: 45px;
+}
+.underline {
+	background: #3e503b;
+	height: 22px;
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 66%);
+	max-width: 650px;
+}
+
+.popUpText > div:nth-child(2) > h2{
+	color: white;
+	font-weight: 300;
+	text-transform: none;
+	font-size: 24px;
+	letter-spacing: 0px;
+}
+
+
+.ctaButton {
+	background: #ea8f2d;
+	color: white;
+	margin: 3px auto;
+	padding: 30px 40px;
+	border-radius: 40px;
+	margin-top: 30px;
+	font-size: 22px;
+	text-align: center;
+	font-family: "Montserrat";
+}
+
+.logoSection {
+	background: white;
+	bottom: 0;
+	overflow: hidden;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desktopIconCtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+}
+.desktopIconCtn div {
+	max-height: 100px;
+	margin: 10px;
+}
+.desktopIconCtn div img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mobileIconCtn {
+	display: none;
+}
+.switchText1 {
+	display: none;
+}
+#switchTextBreak {
+	display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+	.switchText1 {
+		display: block;
+	}
+	.switchText2 {
+		display: none;
+	}
+	#switchTextBreak {
+		display: block;
+	}
+
+	.desktopIconCtn {
+		display: none;
+	}
+	.mobileIconCtn {
+		display: flex;
+	}
+	.mobileIconCtn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-right: 50px;
+		padding-left: 40px;
+
+	}
+	.mobileIconCtn div {
+		height: 100%;
+		margin: 8px;
+
+	}
+	.mobileIconCtn div:nth-child(5) {
+		height: 100%;
+		margin: 0;
+		transform: scale(1.5);
+	}
+	.mobileIconCtn div img {
+		max-width: 100%;
+		max-height: 70px;
+	}
+
+	.popUp {
+		width: 85%;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-center;
+		overflow: visible;
+	}
+	.popUpText > div:nth-child(1) > h1{
+		font-size: 26px;
+	}
+	.popUpText > div:nth-child(1) > div > h2{
+		white-space: normal;
+		line-height: 26px;
+		font-size: 28px;
+	}
+	.popUpText > div:nth-child(1) > div {
+		padding-bottom: 20px;
+	}
+	.underline {
+		width: 100%;
+		max-width: 180px;
+		height: 28px;
+		margin-top: -6px;
+	}
+	.ctaButton {
+		padding: 15px 15px;
+		font-size: 18px;
+		margin-bottom: 50px;
+		transform: translateY(-40px);
+	}
+	.popUpText {
+		max-width: 95%;
+		width: 500px;
+		transform: translateY(-40px);
+	}
+	.popUpText > div:nth-child(2) > h2{
+		max-width: 85%;
+		margin: 0 auto;
+		font-size: 20px;
+	}
+	.closePopUp {
+		top: -10px;
+		right: -10px;
+	}
+
+
+}
+
+@media screen and (max-width: 400px) {
+	.popUp {
+		max-height: 470px;
+	}
+	.logoSection {
+
+		height: 50px;
+	}
+
+	.popUpText > div:nth-child(1) h1{
+		font-size: 20px;
+	}
+
+	.popUpText > div:nth-child(1) > div > h2{
+
+		font-size: 25px;
+
+
+	}
+	.popUpText > div:nth-child(2) > h2{;
+		font-size: 18px;
+		max-width: 90%;
+	}
+
+	.ctaButton {
+		font-size: 15px;
+	}
+}

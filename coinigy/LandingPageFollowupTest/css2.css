@@ -1,0 +1,45 @@
+body > .row > .col-sm-3 {
+	display: none;
+}
+body > .row > .col-sm-9 {
+	width: 100%;
+}
+
+.testimonalContainer {
+	width: 100vw;
+	height: 190px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e8e8e8;
+
+}
+.testimonalContainer div {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/quote-desk.png);
+	max-width: 1000px;
+	width: 900px;
+	height: 80%;
+}
+@media screen and (max-width: 1200px) {
+	.testimonalContainer {
+		height: 170px;
+	}
+	.testimonalContainer div {
+		width: 700px;
+		height: 70%;
+	}
+}
+@media screen and (max-width: 965px) {
+	.testimonalContainer div {
+		width: 300px;
+		height: 90%;
+		background-image: url(https://disruptive-advertising.s3-us-west-2.amazonaws.com/Coinigy/landing-page-followUp/quote-mobile.png)
+	}
+	.testimonalContainer {
+		height: 290px;
+		padding: 20px 0;
+	}
+}

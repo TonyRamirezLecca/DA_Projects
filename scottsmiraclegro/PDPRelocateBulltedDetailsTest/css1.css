@@ -1,0 +1,10 @@
+.availability.in-stock {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 5px dotted black;
+}
+
+.short-description {
+    padding-bottom: 10px;  
+}
