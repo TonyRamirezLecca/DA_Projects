@@ -1,0 +1,36 @@
+.show-for-mobile {
+    display: none;
+}
+#shopify-section-cart-template > section > div > div > form > footer > div.Cart__NoteContainer.show-for-desktop > div {
+    display: block;
+}
+.DA_Wrapper > div {
+    display: none;        
+}
+@media screen and (max-width: 640px) {
+     div.Cart__Recap > klarna-placement {
+         max-width: 100% !important;
+     }
+     .DA_Wrapper {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+    .DA_Wrapper > div {
+        display: block;
+        margin-top: 0;
+    }
+    .show-for-desktop {
+        display: none;
+    }
+    .show-for-mobile {
+        display: block;
+        margin-top: 30px;
+    }
+    .Cart__Total.Heading.u-h6 {
+        font-size: 18px;
+    }
+    .Cart__Taxes.Text--subdued {
+        display: none;
+    }
+}

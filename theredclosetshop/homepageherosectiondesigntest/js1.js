@@ -46,10 +46,8 @@ whenExists('#shopify-section-1522779748898', function () {
 					infinite: true,
 					speed: 300,
 					autoplay: true,
-					autoplaySpeed: 5000,
+					autoplaySpeed: 4000,
 					slidesToShow: 1
 				});
 	});
-	
-
 });

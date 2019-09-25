@@ -1,0 +1,92 @@
+.callUsNowCTA {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    #button-row > a.button.dark {
+        display: none;
+    }
+    #button-row > a.button.ghost {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        background: #205a81;
+        border: none !important;
+    }
+    #main-header > div.container.clearfix.et_menu_container {
+        min-width: 90%;
+    }
+    #logo {
+        max-width: 100px !important;
+    }
+    .callUsNowCTA {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+        padding: 5px 20px;
+        background: #205a81;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .callUsNowCTA a{
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #button-row > a.button.dark {
+        display: none;
+    }
+    #button-row > a.button.ghost {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        background: #205a81;
+        border: none !important;
+    }
+    #main-header > div.container.clearfix.et_menu_container {
+        min-width: 90%;
+    }
+    #logo {
+        max-width: 100px !important;
+    }
+    .callUsNowCTA {
+        position: absolute;
+        display: block;
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+        padding: 5px 15px;
+        background: #205a81;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .callUsNowCTA a{
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .callUsNowCTA a {
+        font-size: 12px;
+    }
+    #logo {
+        max-width: 90px !important;
+    }
+}

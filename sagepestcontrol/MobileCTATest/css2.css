@@ -1,0 +1,47 @@
+/*** CSS 2 ***/
+
+
+
+@media screen and (max-width: 980px) {
+	.callUsNowCTA {
+		position: fixed;
+		bottom: 0;
+		z-index: 999;
+
+		display: block;
+		font-size: 25px;
+		color: #fff;
+		padding: 15px;
+		text-align: center;
+		font-weight: 700;
+		background: #205a81;
+		width: 100vw;
+		display: flex;
+		padding: 0;
+
+	}
+	.callUsNowCTA a {
+		color: #fff;
+		font-weight: 700;
+		font-size: 25px;
+		min-width: 100vw;
+		min-height: 100%;
+		padding: 15px;
+	}
+
+	#button-row > a.button.dark {
+		display: none;
+	}
+	#button-row > a.button.ghost {
+		display: block;
+		font-size: 25px;
+		color: #fff;
+		font-weight: 700;
+		border-radius: 5px;
+		padding: 15px;
+		text-align: center;
+		background: #205a81;
+		border: none !important;
+		text-transform: uppercase;
+	}
+}

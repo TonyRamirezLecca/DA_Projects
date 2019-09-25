@@ -1,0 +1,50 @@
+/*** CSS 3 ***/
+
+@media screen and (max-width: 479px) {
+.et_pb_row.et_pb_row_2.et_pb_row_4col {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 95%;
+
+}
+.et_pb_row.et_pb_row_3.et_pb_row_4col {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 95%;
+}
+
+
+.et_pb_row.et_pb_row_2.et_pb_row_4col > div {
+    max-width: 45%;
+    margin: 5px 5px !important;
+    font-size: 14px;
+
+}
+.et_pb_row.et_pb_row_3.et_pb_row_4col > div {
+    max-width: 45%;
+    margin: 5px 5px !important;
+    font-size: 14px;
+}
+
+.et_pb_jt_material_blurb_title {
+    font-size: 15px !important;
+    text-align: center;
+}
+
+
+
+.et_pb_row.et_pb_row_2.et_pb_row_4col > div > div {
+    padding: 5px !important;
+}
+.et_pb_row.et_pb_row_3.et_pb_row_4col > div > div {
+    padding: 5px !important;
+}
+	
+}
+

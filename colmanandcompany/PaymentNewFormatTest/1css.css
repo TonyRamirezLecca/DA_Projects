@@ -34,6 +34,17 @@ h2.cim-ocst-cart-summary-title, h2.cim-ocst-shipping-methods-summary-title {
     margin-bottom: 0px;
     padding-bottom: 8px;
 }
+.bask-container.restoreMargin {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+.displayed-shipping-method td:first-child {
+    padding-left: 0 !important;
+}
+.cim-ocst-shipping-methods-summary-title.showTable {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
 
 /*Cart Summary Container*/
 #ocst_form > div.cim-payment-section > div.cim-payment-section-right-side > div.cim-ocst-basket-contents-wrapper.active {
