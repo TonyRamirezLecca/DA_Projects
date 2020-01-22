@@ -1,0 +1,37 @@
+/*CSS 1*/
+
+#hs_cos_wrapper_module_14521963583842184 > div {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/hero-focus-test/v1hero.jpg) !important;
+}
+
+.newHero.heroBackground > .page-center > .heroContent > h1 > span > span {
+    display: none;
+}
+.newHero.heroBackground > .page-center > .heroContent > h3 > span > span {
+    display: none;
+}
+
+.newHero.heroBackground > .page-center > .heroContent > p:nth-child(3) {
+    display: none;
+}
+body > div.header-container-wrapper > div > div > div > div > div.row-fluid-wrapper.row-depth-1.row-number-4 > div > div {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    #hs_cos_wrapper_module_14521963583842184 > div {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/hero-focus-test/v1hero_mobile.jpg) !important;
+    }
+    .newHero.heroBackground > .page-center > .heroContent > h1 > span > span {
+        display: block;
+        line-height: 0;
+    }
+    .newHero.heroBackground > .page-center > .heroContent > h3  {
+        font-size: 21px !important;
+    }
+
+    .newHero.heroBackground > .page-center > .heroContent > h3 > span > span {
+        display: block;
+        line-height: 0;
+    }
+}

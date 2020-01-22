@@ -1,0 +1,100 @@
+/*** CSS 2 ***/
+
+#hs_cos_wrapper_module_14521963583842184 > div {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/hero-focus-test/v2hero.jpg) !important;
+    height: 500px
+}
+
+.newHero.heroBackground > .page-center > .heroContent > h1 > span > span {
+    display: none;
+}
+.newHero.heroBackground > .page-center > .heroContent > h3 > span > span {
+    display: none;
+}
+
+.newHero.heroBackground > .page-center > .heroContent > p:nth-child(3) {
+    display: none;
+}
+.heroMask {
+    background: none;
+}
+.da_display-br {
+    display: block !important;
+    line-height: 0;
+}
+
+
+/*Text Format*/
+    #hs_cos_wrapper_module_14521963583842184 > div > div.page-center {
+        display: flex;
+    }
+    .heroContent {
+        padding-left: 150px;
+    }
+    .heroContent h1, .heroContent h3, .heroContent p{
+        text-align: left !important;
+    }
+    .newHero.heroBackground > .page-center > .heroContent > h3 > span {
+        font-size: 21px !important;
+        color: #34495d !important;
+    }
+
+
+
+@media screen and (max-width: 900px) {
+    .heroContent {
+        padding-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .heroContent {
+        padding-left: 13px;
+        height: 500px;
+    }
+        #hs_cos_wrapper_module_14521963583842184 > div {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/hero-focus-test/v2hero_mobile.jpg) !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .heroContent h1, .heroContent h3, .heroContent p{
+        text-align: center !important;
+    }
+    #hs_cos_wrapper_module_14521963583842184 > div > div.page-center > div > p:nth-child(4) {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translatex(-50%);
+
+    }
+}
+
+body > div.header-container-wrapper > div > div > div > div > div.row-fluid-wrapper.row-depth-1.row-number-4 > div > div {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .newHero.heroBackground > .page-center > .heroContent > h1 > span > span {
+        display: block;
+        line-height: 0;
+    }
+    .newHero.heroBackground > .page-center > .heroContent > h3 > span {
+        font-size: 21px !important;
+        color: #34495d !important;
+    }
+    .da_display-br {
+        display: none !important;
+        line-height: 0;
+    }
+
+    .newHero.heroBackground > .page-center > .heroContent > h3 > span > span {
+        display: block;
+        line-height: 0;
+    }
+     #hs_cos_wrapper_module_14521963583842184 > div {
+        background-position: right bottom;
+}

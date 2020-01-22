@@ -1,0 +1,30 @@
+/*** CSS 3 ***/
+.da_sticky {
+    position: fixed;
+    bottom: -2px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #125d82;
+    border-top: 5px solid #aa072b;
+}
+.da_sticky a {
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    background: #2aacfd;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.da_sticky a:hover {
+    text-decoration: none;
+}

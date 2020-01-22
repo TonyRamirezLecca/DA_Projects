@@ -1,0 +1,132 @@
+/*** CSS 2 ***/
+.hello-banner {
+    background: #484848;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: 0px;
+}
+.hello-banner font:nth-child(1) {
+    color: white;
+    font-weight: 800;
+    margin-right: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.hello-banner font:nth-child(2) {
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+.hello-banner font:nth-child(2) a {
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    margin-left: 30px;
+}
+.nav-sub-menu {
+    display: none;
+}
+#new-trust {
+    display: none !important;
+}
+.global-mini-basket-wrapper {
+    position: relative;
+}
+#header-flex-container {
+    margin-right: 0px !important;
+    width: 100% !important;
+}
+#header-flex-container .logo {
+
+}
+#header-flex-container .custom-apparel-destination {
+
+}
+#header-flex-container #search {
+    
+}
+#search {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px !important;
+    justify-content: center;
+    height: 50px;
+    overflow: hidden;
+    margin-top: -5px !important;
+}
+.login-logout {
+    font-size: 14px !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 2px; 
+}
+.login-logout:hover {
+    font-size: 14px !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 2px; 
+}
+.header-search-form-phone-number {
+    font-size: 15px !important;
+    font-weight: 700;
+    margin-top: 8px;
+}
+#search .ng-scope.ng-pristine.ng-valid {
+    margin-top: 8px;
+}
+#search .search-icon {
+    top: 65px !important;
+}
+.global-mini-basket-wrapper .mobile-js-mini-basket-count {
+    border-color: #fff;
+    background: #c1272c;
+    color: #fff;
+    font-weight: 111;
+    font-size: 14px;
+    padding-top: 2px;
+}
+.global-mini-basket-wrapper .mobile-js-mini-basket {
+    background: #fff;
+}
+.custom-apparel-destination {
+    width: 200px !important;
+}
+.da_new-search-ctn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    width: 230px;
+}
+.da_new-search-ctn input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #59636a;
+    height: 34px;
+    padding-left: 5px;
+    padding-right: 28px
+}
+.da_new-search-ctn button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0;
+    top: 3px;
+}
+#global-header > .wrap > nav {
+    margin-top: 0px;
+}
+.wrap.main-body-hedaer-container .second-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.da_cart-text {
+    background: none;
+    color: #000;
+    position: absolute;
+    bottom: -11px;
+    left: 26px;
+    font-size: 12px;
+}

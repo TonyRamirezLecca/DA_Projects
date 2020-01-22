@@ -1,0 +1,14 @@
+/*** CSS 1 ***/
+#maincontent > div.columns > div > a {
+    display: none;
+}
+#sticky-product-addtocart-button {
+    margin-bottom: 15px;
+}
+.da_bulk {
+    position: absolute;
+    bottom: 8px;
+    right: 150px;
+    color: black;
+    text-decoration: underline
+}

@@ -1,0 +1,207 @@
+/*** CSS 2 ***/
+.da_form {
+	display: none;
+}
+.da_dark-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(20,20,20, .35);
+    z-index: 1;
+}
+
+.da_mobile-version {
+    display: none !important;
+}
+
+/*Hero*/
+.da_hero {
+    height: 600px;
+}
+.da_hero-content.da_desktop-version {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 100px;
+}
+.da_hero-content.da_desktop-version h1 {
+    color: white;
+    white-space: nowrap;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 3px #555;
+}
+
+.da_desktop-version .da_vp-ctn{
+    height: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+.da_desktop-version .da_vp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 7px;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 100px;
+}
+.da_desktop-version .da_vp i {
+    color: #fff;
+    margin-right: 5px;
+}
+.da_desktop-version .da_vp:nth-child(2) i {
+    margin-right: 14px;
+}
+.da_desktop-version .da_vp:nth-child(1) i {
+    margin-right: 9px;
+}
+.da_desktop-version .da_line {
+    width: 2px;
+    height: 300px;
+    background: white;
+    margin: 30px 0;
+}
+.da_desktop-version .da_sub-header {
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    font-size: 20px;
+}
+.da_desktop-version .da_cta {
+    margin-top: 15px;
+    color: white;
+    background: linear-gradient( to right, #387cb8, #58a3cd);
+    padding: 15px 45px;
+    font-size: 18px;
+    max-width: 300px;
+    text-align: center;
+}
+.da_desktop-version .da_cta::selection {
+    background: none;
+}
+.da_desktop-version .da_vp-remove {
+    display: none;
+}
+.heading-text.el-text.hero-side-text {
+    display: none;
+}
+ .heading-text.el-text {
+    display: none;
+}
+.vc_custom_heading_wrap.free-text-block {
+    display: none !important;
+}
+.da_sticker {
+    position: absolute;
+    width: 100px;
+    left: 7%;
+    top: -20%;
+}
+
+@media screen and (max-width: 974px) {
+    .da_desktop-version {
+        display: none !important;
+    }
+    .da_mobile-version.da_hero-content {
+        position: absolute;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20
+    }
+    .da_sticker {
+        display: none;
+    }
+    .da_hero {
+        height: 440px;
+    }
+    .da_hero-content {
+        margin-top: -20px;
+    }
+    .da_hero-content h1{
+        font-size: 32px !Important;
+        text-align: center;
+        margin-bottom: 20px;
+            color: white !important;
+    white-space: nowrap;
+    text-shadow: 2px 2px 3px #555;
+    }
+    .da_cta {
+        white-space: nowrap;
+            margin-top: 15px;
+    color: white;
+    background: linear-gradient( to right, #387cb8, #58a3cd);
+    padding: 12px 35px;
+    font-size: 14px;
+    max-width: 300px;
+    text-align: center;
+
+    }
+    .da_vp-ctn {
+        flex-direction: column;
+        height: 80px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 7px;
+    color: #fff;
+    font-size: 20px;
+    }
+    .da_vp {
+        margin: 6px 0;
+
+    }
+    .da_vp i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+    .da_line {
+        width: 200px;
+        margin: 14px 0;
+        height: 2px;
+        background: #fff;
+    }
+    .da_sub-header {
+        font-size: 14px;
+        color: #fff;
+            color: white;
+    text-align: center;
+    margin-top: 0;
+    }
+        .da_hero-content h1 br {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px) {
+    .da_hero-content h1 {
+        font-size: 28px !important;
+    }
+}
+
+

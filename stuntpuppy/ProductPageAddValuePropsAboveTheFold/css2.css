@@ -1,0 +1,86 @@
+/*** CSS 2 ***/
+.da_vp-ctn1 {
+    display: none;
+}
+#theoffercol > div > div > div:nth-child(4) {
+    height: 19px;
+}
+
+
+.grid__item.product-single__photos {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.da_vp-ctn2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-44%);
+    z-index: 2;
+}
+.da_vp-ctn2 > .da_vp {
+    flex: 1;
+    text-align: center;
+}
+.da_vp-ctn2 > .da_vp img {
+    height: 38px;
+    object-fit: contain;
+}
+.da_vp-ctn1 > .da_vp:nth-child(1) > img {
+    max-width: 90px;
+}
+.da_vp-ctn2 > .da_vp > p {
+    font-size: 12px;
+}
+.da_vp-ctn2 > .da_vp:last-child {
+    margin-left: -36px;
+}
+.da_vp-ctn2 > .da_vp > p > span{
+    font-weight: 600;
+    font-size: 14px;
+    color: #505052;
+}
+
+
+@media screen and (max-width: 1110px) {
+    .da_vp-ctn2 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 939px) {
+    .da_vp-ctn1 {
+       display: block;
+    }
+    .da_vp-ctn2 {
+        display: none;
+    }
+    .da_vp-ctn1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        margin-bottom: 25px;
+    }
+    .da_vp-ctn1 .da_vp {
+        text-align: center;
+        margin: 15px 0px;
+    }.da_vp-ctn1 > .da_vp > p {
+        font-size: 12px;
+    }    
+    .da_vp-ctn1 > .da_vp > p > span{
+        font-weight: 600;
+        font-size: 14px;
+        color: #505052;
+    }
+    .da_vp-ctn1 > .da_vp:nth-child(3) {
+        margin-top: 35px;
+        margin-bottom: 0px;
+    }
+}

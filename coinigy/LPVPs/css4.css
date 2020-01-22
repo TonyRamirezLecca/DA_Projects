@@ -1,0 +1,72 @@
+/*** CSS 4 ***/
+
+#da_banner {
+    height: 575px;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/LPVPs/v2hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1500px) {
+    #da_banner {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #da_banner {
+        height: 465px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #da_banner {
+        height: 405px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #da_banner {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #da_banner {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #da_banner {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #da_banner {
+        height: 550px;
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/LPVPs/v2hero-mobile.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #da_banner {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #da_banner {
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #da_banner {
+        height: 340px;
+    }
+}

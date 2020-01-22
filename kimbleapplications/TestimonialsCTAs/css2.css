@@ -1,0 +1,50 @@
+/*** CSS 2 ***/
+#da_tail-slide {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/kimble-applications/testimonial-ctas/waterfall.jpg);
+    background-size: cover;
+    min-height: 400px;
+    min-width: 100%;
+    background-position: center 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.da_slide-text {
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.da_slide-text h4 {
+    font-size: 28px;
+    text-align: center;
+}
+.da_slide-text h4 br {
+   display: none;
+}
+.da_slide-text a {
+    background-color: #ffcf01;
+    color: #242126;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    border: 0;
+    padding: 12px 16px;
+}
+
+
+
+@media screen and (max-width: 749px) {
+    .da_slide-text h4 br {
+        display: block;
+    }
+		.da_slide-text h4 {
+			font-size: 24px;
+		}
+    #da_tail-slide {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/kimble-applications/testimonial-ctas/waterfall-mobile.jpg);
+    }
+}

@@ -1,0 +1,29 @@
+/*** CSS 1 ***/
+body > div.pagewrapper > div.content-wrap > div > div.woocommerce > div > div > nav {
+    display: none;
+}
+.woocommerce .summary h1.product_title.entry-title {
+    background: none !important;
+    font-size: 28px !important;
+}
+
+.da_header-1 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .woocommerce h1.product_title.da_header-1 {
+        display: block;
+        font-size: 28px !important;
+        margin-top: -90px;
+    }
+    .da_header-2 {
+        display: none;
+    }
+    .da_shrink-text {
+    font-size: 14px;
+}
+.summary.entry-summary {
+    margin-top: -40px;
+}
+}

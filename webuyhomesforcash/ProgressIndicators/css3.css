@@ -1,0 +1,42 @@
+/*** CSS 3 ***/
+.da_progress-bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    margin: 50px 0;
+    width: 800px;
+    max-width: 90%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0px 3px 7px 0px rgba(0,0,0,0.35);
+}
+.da_step {
+    height: 100%;
+    flex: 1;
+    background: none;
+}
+.da_step:nth-child(1) {
+    background: linear-gradient(#afec97, #559e13);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.da_current {
+    background: linear-gradient(#afec97, #559e13);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.da_done {
+    background: linear-gradient(#afec97, #559e13);
+    border-radius: unset !important;
+}
+.da_line {
+	display: none;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+
+
+

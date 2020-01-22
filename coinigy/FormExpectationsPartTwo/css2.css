@@ -1,0 +1,37 @@
+/* CSS*/
+.card > aside.active > h1 {
+    margin-bottom: 0px;
+}
+.da_text-ctn {
+
+}
+.da_header {
+    font-size: 11px;
+}
+.da_list {
+
+}
+.da_check {
+    color: #00a8ee;
+    margin-right: 4px;
+}
+.da_list p {
+    display: inline-block;
+    margin: 5px;
+    font-size: 11px !important;
+    color: #00aBee;
+    font-style: italic;
+    font-weight: 500
+}
+.da_list br {
+    display: none
+}
+
+@media screen and (max-width: 400px) {
+    .da_list p {
+        margin: 5px 0px;
+    }
+    .da_list br {
+        display: block;
+    }
+}

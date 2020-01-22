@@ -1,0 +1,143 @@
+/*** CSS 2 ***/
+.section-title-black.row {
+    display: none;
+}
+.da_hero {
+    display: flex;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-widdth: 100% !important;
+    padding-top: 40px;
+    margin-top: -40px;
+}
+.da_text-ctn {
+    flex: 1;
+    max-width: 50%;
+    background: black;
+    padding: 12%;
+    padding-right: 8%;
+    padding-left: 14%;
+    display: flex;
+    flex-direction: column;
+}
+.da_header {
+}
+.da_header h2 {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 3em;
+}
+.da_header h2:nth-child(2) {
+    font-size: 3.8em;
+    margin-bottom: 24px;
+}
+.da_text-ctn ul {
+    
+}
+.da_text-ctn ul li {
+    color: #e2e2e2;
+    list-style: inside circle !important;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.da_text-ctn a {
+    color: #fff;
+    background: #f80701;
+    padding: 14px 18px;
+    margin-top: 50px !important;
+    width: 180px;
+    text-align: center;
+    font-family: swiss-924;
+    font-size: 30px;
+    letter-spacing: 1px;
+    transition: all 200ms;
+}
+.da_text-ctn a:hover {
+    background: #df0606;
+}
+
+.da_video-ctn{
+    flex: 1;
+    display: flex;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/gunskins/homepage-banner-redesign/gun.jpg) !important;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.da_video-ctn iframe {
+    display: none;
+}
+
+.da_video-ctn > a > div {
+    position: relative !important;
+    width: unset !important;
+    top: 0 !important;
+    min-height: 100%;
+    
+}
+.da_video-ctn > a > div > iframe {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: none !important;
+}
+
+
+@media screen and (max-width: 1370px) {
+    .da_text-ctn {
+        padding: 8%
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .da_hero {
+        justify-content: center;
+        margin-top: 0;
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/gunskins/homepage-banner-redesign/gun.jpg);
+        background-size: cover;
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+    .da_text-ctn {
+        padding: 8%;
+        align-items: center;
+        max-width: 100%;
+        background: rgb(0,0,0,.7)
+    }
+    .da_video-ctn {
+        display: none;
+    }
+    .da_header h2:nth-child(1) {
+        display: none;
+    }
+    .da_text-ctn a {
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .da_header {
+        min-width: 100%;
+    }
+    .da_header h2 {
+        font-size: 46px !important;
+        margin-bottom: 11px !important;
+    }
+    .da_text-ctn ul {
+        min-width: 100%;
+    }
+    .da_text-ctn ul li {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .da_text-ctn ul li {
+        font-size: 16px;
+    }
+    .da_header h2 {
+        font-size: 40px !important;
+    }
+}

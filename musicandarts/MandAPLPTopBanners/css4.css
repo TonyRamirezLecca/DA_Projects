@@ -1,0 +1,147 @@
+/*** CSS 4 ***/
+@media screen and (min-width: 680px) {
+	.da_hide-mobile {
+		display: none !important;
+	}
+}
+.da_ctn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.da_ctn > header > p {
+    white-space: nowrap;
+}
+.da_banner-ctn {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.da_banner {
+    margin: 0 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 100px;
+    bottom: 0 !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+}
+.da_banner-text {
+    width: 100%;
+}
+.da_banner-text p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+.da_banner-img {
+    padding: 20px;
+    transform: scale(1.4);
+    min-width: 70px;
+}
+.da_banner:nth-child(2) .da_banner-img {
+    transform: scale(1.1);
+}
+.da_banner-text h6 {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    line-height: 17px;
+    margin-bottom: 2px;
+}
+.da_small-text {
+    position: absolute;
+    font-size: 9px;
+    bottom: 3px;
+    right: 3px;
+}
+.da_small-text span {
+    display: inline-block;
+    font-size: 12px !important;
+    transform: translateY(-2px);
+}
+.da_banner a {
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px !important;
+    padding-left: 0px !important;
+}
+.da_banner:nth-child(1) a {
+       background: linear-gradient(180deg, rgba(178,34,34,1) 0%, rgba(119,27,28,1) 100%);
+
+}
+.da_banner:nth-child(2) a {
+background: linear-gradient(180deg, rgb(172, 43, 44) 0%, rgba(78,17,18,1) 100%);
+}
+/*Hover */
+.da_banner:nth-child(1) a:hover {
+           background: linear-gradient(180deg, rgb(213, 46, 46) 0%, rgba(119,27,28,1) 100%);
+}
+.da_banner:nth-child(2) a:hover {
+    background: linear-gradient(180deg, rgb(213, 41, 43) 0%, rgba(78,17,18,1) 100%);
+}
+
+.da_banner span {
+    font-size: 25px;
+    line-height: 1px;
+    margin-left: 5px;
+    display: inline-block;
+    padding-top: 5px;
+    transform: translatey(2px)
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .da_banner:nth-child(2) {
+        display: none;
+    }
+    .da_banner {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .da_banner-ctn {
+			margin: 0px;
+			display: flex !important;
+			margin-bottom: 35px;
+			margin-top: 25px;
+			flex-direction: column;
+			height: 100%;
+    }
+    .da_banner:nth-child(2) {
+        display: flex
+    }
+    .da_banner {
+        margin-bottom: 0px;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .da_hide-mobile {
+		}
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .da_banner {
+        font-size: 14px;
+    }
+}

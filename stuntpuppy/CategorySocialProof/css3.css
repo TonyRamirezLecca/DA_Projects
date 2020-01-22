@@ -1,0 +1,128 @@
+/*** CSS 3 ***/
+
+/*** CSS 2 ***/
+.grid-view-item__meta .spr-badge[data-rating="0.0"] {
+	display: none !important;
+}
+.spr-badge {
+	display: inline !important;
+}
+.grid-view-item__meta {
+    cursor: pointer;
+}
+.grid-view-item__meta .spr-badge-caption {
+    display: block;
+    color: #8a9298;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.grid-view-item__meta .spr-badge-caption:after {
+    content: ')'
+}
+.grid-view-item__meta .spr-badge-caption:before {
+    content: '('
+}
+.spr-badge-caption:hover {
+    border-bottom: none !important;
+}
+
+/*CSS 1*/
+.section-header.text-center {
+    margin-bottom: 10px;
+}
+
+
+/*Banner*/
+.da_banner {
+    border-left: 10px solid #000;
+    display: flex;
+    background: #f4f7f9;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.da_text-ctn {
+    position: relative;
+    margin-right: 50px;
+}
+.da_text {
+    color: #788188;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.da_reviewer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 700;
+    color: #000;
+}
+.da_img-ctn {
+    min-width: 120px;
+
+}
+.da_img {
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*Specific images for different pages*/
+.da_collar {
+
+}
+.da_leashes {
+
+}
+.da_ids {
+
+}
+.da_outerwear {
+    transform: translate(30px, 25px) scale(1.1);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .da_banner {
+        padding: 15px 5px 15px 15px;
+    }
+    .da_text-ctn {
+        z-index: 2;
+        margin-right: 0px;
+    }
+    .da_img-ctn {
+        position: absolute;
+        height: 120px;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .da_leashes {
+        max-height: 120%;
+        height: 120%;
+        transform: scale(1.5) translate(15px, 15px);
+    }
+    .da_reviewer {
+        bottom: 40px;
+        right: 50%;
+    }
+    .da_text {
+        padding-bottom: 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .da_reviewer {
+        right: unset;
+    }
+    .da_text {
+        font-size: 16px;
+    }
+}

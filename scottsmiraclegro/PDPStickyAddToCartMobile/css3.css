@@ -1,0 +1,53 @@
+/* CSS 3 */
+
+#shopify-section-pdp-banner-slider > div > div > div.pdp-block > form {
+	display: flex;
+	flex-direction: column-reverse
+}
+
+@media screen and (max-width: 1050px) {
+	/*Add to cart button*/
+	#shopify-section-pdp-banner-slider > div > div > div.pdp-block > form > div.button {
+		width: 90vw;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	#shopify-section-pdp-banner-slider > div > div > div.pdp-block > form {
+		flex-direction: column-reverse;
+		display: flex;
+	}
+
+	/* DA STICKY*/
+    .da_sticky {
+        position: fixed;
+        z-index: 99999;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #000;       
+        margin: 0;
+        cursor: pointer;
+    }
+    .da_sticky h2{
+        color: white !important;
+        font-size: 24px;
+        margin: 13px auto;
+        text-align: center;
+    }
+    .da_cart {
+        background: url(https://cdn.shopify.com/s/files/1/0068/0552/0451/t/11/assets/icon-cart-white.png);
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 20px;
+        background-size: 100% 100%;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        top: 5px;
+        transform: scale(1.4);
+    }
+
+}

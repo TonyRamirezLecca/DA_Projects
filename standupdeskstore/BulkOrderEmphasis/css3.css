@@ -1,0 +1,273 @@
+/* CSS 3 */
+
+.da_bulk-pricing-btn {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    color: #038594 !important;
+		text-decoration: underline;
+
+}
+.product-options-bottom > .box-tocart > .fieldset > .actions {
+    position: relative;
+    padding-bottom: 10px;
+}
+.product-options-bottom > .box-tocart > .fieldset {
+    padding-bottom: 30px
+}
+
+.fieldset > .actions > .addon-arrow {
+    /* position: relative !important; */
+    top: 0;
+    left: 137px;
+    width: 70px;
+		display: inline-block;
+}
+.addon-arrow {
+	display: none;
+}
+
+
+@media screen and (max-width: 999px) {
+    .da_bulk-pricing-btn {
+        margin-left: 76px;
+        margin-top: 10px;
+    }
+    .da_atc-wrapper > button {
+        min-width: 80%
+    }
+    .da_atc-wrapper > .addon-arrow {
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+        .fieldset > .actions > .addon-arrow {
+        position: relative;
+        left: 0;
+    }
+    .fieldset > .actions {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 613px) {
+    .da_bulk-pricing-btn {
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+    .da_atc-wrapper {
+        max-width: 80%;
+        margin-left: 0px;
+    }
+    .fieldset > .actions > .addon-arrow {
+        position: relative;
+        left: 0;
+        margin-right: 46px;
+    }
+    .fieldset > .actions {
+        display: flex;
+    }
+    .fieldset > .actions > button {
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 529px) {
+    .da_bulk-pricing-btn {
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+    .da_atc-wrapper > button {
+        min-width: 70%
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-left: auto;
+        text-align: left;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .da_bulk-pricing-btn {
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+    .da_atc-wrapper > button {
+        min-width: 70%;
+        font-size: 15px !important;
+        white-space: nowrap;
+    }
+    .da_atc-wrapper > .addon-arrow {
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-left: 10px;
+        text-align: left;
+        max-width: 80%;
+    }
+    .da_atc-wrapper img {
+        transform: scale(.8);
+        margin-left: 13px;
+    }
+}
+
+
+
+
+
+
+
+/* CSS 3 */
+
+.da_bulk-pricing-btn {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    color: #038594 !important;
+		text-decoration: underline;
+
+}
+.product-options-bottom > .box-tocart > .fieldset > .actions {
+    position: relative;
+    padding-bottom: 10px;
+}
+.product-options-bottom > .box-tocart > .fieldset {
+    padding-bottom: 30px
+}
+
+.fieldset > .actions > .addon-arrow {
+    /* position: relative !important; */
+    top: 0;
+    left: 137px;
+    width: 70px;
+		display: inline-block !important;
+}
+.addon-arrow {
+	display: none !important;
+}
+
+
+@media screen and (max-width: 999px) {
+    .da_bulk-pricing-btn {
+        margin-top: 10px;
+        margin-left: 14%;
+    }
+    .da_atc-wrapper > button {
+        min-width: 80%
+    }
+    .da_atc-wrapper > .addon-arrow {
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+        .fieldset > .actions > .addon-arrow {
+        position: relative;
+        left: 0;
+    }
+    .fieldset > .actions {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 613px) {
+    .da_bulk-pricing-btn {
+        margin-top: 10px;
+        margin-left: 7%;
+    }
+    .da_atc-wrapper {
+        max-width: 80%;
+        margin-left: 0px;
+    }
+    .fieldset > .actions > .addon-arrow {
+        position: relative;
+        left: 0;
+        margin-right: 46px;
+    }
+    .fieldset > .actions {
+        display: flex;
+    }
+    .fieldset > .actions > button {
+        white-space: nowrap;
+    }
+
+
+}
+
+@media screen and (max-width: 529px) {
+    .da_bulk-pricing-btn {
+        margin-top: 10px;
+        margin-left: 4.5%;
+    }
+    .da_atc-wrapper > button {
+        min-width: 70%
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-left: auto;
+        text-align: left;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .da_bulk-pricing-btn {
+        margin-left: 9.5%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .da_bulk-pricing-btn {
+        margin-left: 7.5%;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .da_bulk-pricing-btn {
+        margin-left: 6.5%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .da_bulk-pricing-btn {
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .da_bulk-pricing-btn {
+        margin-top: 10px;
+    }
+    .da_atc-wrapper > button {
+        min-width: 70%;
+        font-size: 15px !important;
+        white-space: nowrap;
+    }
+    .da_atc-wrapper > .addon-arrow {
+    }
+    .da_atc-wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-left: 10px;
+        text-align: left;
+        max-width: 80%;
+    }
+    .da_atc-wrapper img {
+        transform: scale(.8);
+        margin-left: 13px;
+    }
+}
+
+

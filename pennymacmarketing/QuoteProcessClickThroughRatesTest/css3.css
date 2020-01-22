@@ -1,0 +1,39 @@
+/*** CSS 3 ***/
+.transition-container > div > .question-layout {
+    position: relative;
+    padding-top: 80px
+}
+.transition-container > div > .question-layout > .question {
+    margin-bottom: -10px;
+}
+.da_banner {
+    background: #f1c400;
+    position: absolute;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_banner h5 {
+    color: #053087;
+    font-size: 23px;
+}
+.da_banner h5 br {
+    display: none;
+}
+.da_banner h5 span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .da_banner h5 {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .da_banner h5 br {
+        display: block;
+    }
+}

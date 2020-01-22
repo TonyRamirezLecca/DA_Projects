@@ -1,0 +1,10 @@
+/*** CSS 3 ***/
+.da_new-btn {
+    padding: 5px 10px;
+    background: white;
+    border: 2px solid;
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-top: -5px;
+    text-decoration: none;
+}

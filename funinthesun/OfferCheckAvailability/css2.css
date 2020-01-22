@@ -1,0 +1,137 @@
+/*** CSS 2 ***/
+
+.da_headline {
+	text-align: center;
+}
+.da_blue-text {
+    font-weight: 600;
+}
+.da_icon {
+    display: none !important;
+}
+.da_cta {
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
+}
+.da_cta2 {
+	display:none;
+}
+.da_cta span {
+    color: #29a8ff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.da_cta-parent {
+    background: white !important;
+    padding-left: 10px !important;
+    border: 2px solid #29a8ff !important;
+
+}
+.da_image {
+    margin-right: 30px;
+    margin-top: 30px;
+    transform: translateY(-20px);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .da_icon {
+        display: none !important;
+    }
+    .da_cta-parent img {
+        display: none;
+    }
+    #reservation > div > div > div > div:nth-child(2) > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(2) > div > div p.da_headline {
+    	font-size: 40px !important;
+    }
+
+		.da_cta {
+			display: none !important;
+		}
+	.da_cta-parent {
+	   background: #4cbbff !important;
+	  border: none !important;
+	  padding: 10px !important;
+	  margin: 20px;
+	}
+	.da_cta2 {
+			display: inline-block !important;
+			color: #fff;
+	}
+	#reservation > div > div > div > div:nth-child(2) > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+	#reservation > div > div > div > div:nth-child(2) > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(2) > div > div {
+    	display: flex !important;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	min-width: 100%;
+	}
+    .da_image {
+    	width: 300px
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .da_headline {
+        white-space: nowrap !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .da_blue-text {
+        font-weight: 600;
+        max-width: 90%;
+    }
+    .da_icon {
+		
+    }
+    .da_cta {
+        max-width: 90% !important;
+        font-size: 14px !important;
+    }
+    .da_cta2 {
+    	font-size: 14px;
+    	padding: 0 5px;
+    }
+    .da_cta-parent {
+                padding: 11px 0px !important;
+                margin: 5px;
+    }
+    .da_image {
+		
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .da_cta2 {
+        font-size: 12px !important;
+    }
+    #reservation > div > div > div > div:nth-child(2) > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(2) > div > div p.da_headline {
+    	font-size: 30px !important;
+    }
+    .da_blue-text {
+        font-weight: 600;
+        max-width: 90%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .da_cta {
+        font-size: 12px !important;
+    }
+    #reservation > div > div > div > div.brz-bg-content > div > div > div:nth-child(3) > div > div > div > div.brz-tabs__items:nth-child(2) > div.brz-tabs__item--content > div > div > div > div > div > div > div.brz-columns > div > div > div:nth-child(1) > div > div > p {
+        font-size: 30px !important;
+    }
+}

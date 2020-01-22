@@ -1,0 +1,162 @@
+/*** CSS 3 ***/
+    .product-single__box.js-product-single-box {
+        position: relative !important;
+    }
+    .product-single__box.js-product-single-box.scroll-to-fixed-fixed {
+        position: relative !important;
+        left: 0px !important;
+				top: 0px !important;
+    }
+    .product-single__content.js-sr-loaded {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .da_banner-ctn {
+        background: rgba(235,235,235,1.00);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px 30px 30px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+
+    }
+    .da_banner-inner-ctn {
+        max-width: 1300px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .da_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        padding-bottom: 50px;
+    }
+    .da_header h2 {
+        text-align: center;
+    }
+    .da_header span br {
+        display: none;
+    }
+    .da_underline {
+        background: rgba(33,33,33,1.00);
+        height: 4px;
+        width: 45px;
+        text-align: center;
+        margin-top: -15px;
+    }
+    .da_banner-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .da_section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        margin: 0px 30px;
+    }
+    .da_img-ctn {
+        max-height: 220px;
+        min-height: 220px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #fff;
+    }
+    .da_img-ctn img {
+        height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .da_section:nth-child(3) img {
+        object-fit: contain;
+    }
+    .da_section:nth-child(1) img {
+        min-height: 100%;
+    }
+    
+    .da_section-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .da_section-text h5 {
+        line-height: 22px;
+        margin-bottom: 0px;
+        font-size: 19px;
+    }
+    .da_section-text p {
+        margin-top: -18px;
+        line-height: 18px;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .da_section:nth-child(3) img {
+        display: none;
+    }
+    .da_section:nth-child(3) .da_img-ctn{
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ill-currency/pdp-social-proof-additional-content/shirt.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fefcfd;
+    }
+
+
+@media screen and (max-width: 981px) {
+    .da_banner-content {
+        flex-direction: column;
+    }
+    .da_header span br {
+        display: block;
+    }
+    .da_header br {
+        display: none;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .da_banner-ctn {
+        padding: 0px;
+        margin-top: 0px !important;
+    }
+    .da_header {
+        min-width: 100%;
+        padding-bottom: 40px;
+    }
+    .da_header h2 {
+        font-size: 17px;
+        width: 100%;
+    }
+    .da_section {
+        margin-bottom: 30px;
+    }
+    .da_section-text {
+        background: #fff;
+        margin-top: 0px;
+        padding: 8px;
+        padding-top: 12px;
+    }
+    .da_section-text h5 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .da_section-text p {
+        font-size: 14px;
+        margin-top: -28px;
+    }
+}

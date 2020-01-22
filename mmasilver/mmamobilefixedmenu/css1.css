@@ -1,0 +1,113 @@
+/*** CSS 1 ***/
+.backToTop {
+    bottom: 80px;
+}
+#siteHeader > div > div {
+    display: flex;
+    justify-content: center;
+}
+.col-md-6.text-center.headerCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.da_fixed-footer {
+    position: fixed;
+    bottom: 0;
+    background: red;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+}
+.da_footer-section {
+    flex: 1;
+    background: black;
+    border-right: 1px solid #7a7a7a;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+.da_footer-section:last-child {
+    border: none;
+}
+.da_footer-section p {
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.da_sign-in {
+
+}
+.da_sign-up {
+
+}
+.da_menu {
+
+}
+.da_menu .da_img-ctn div {
+    min-height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 3.8px 0px;
+}
+.da_menu .da_img-ctn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    width: 33px;
+}
+.da_search {
+
+}
+.da_cart {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.da_cart > .da_img-ctn {
+    position: relative;
+    margin-bottom: 0px;
+    display: flex;
+    margin-right: 6px;
+    height: 30px;
+}
+.cartItem {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mma-silver/mobile-fixed-menu/shopping-bag.png);
+}
+.cartItemWrapp {
+	list-style: none;
+	height: 20px !important;
+}
+
+.da_img-ctn {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 130px !important;
+}
+#menu {
+    z-index: 101;
+}
+
+
+@media screen and (max-width: 767px) {
+		.da_hide-search {
+			display: none !important;
+		}
+}

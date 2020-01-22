@@ -1,0 +1,330 @@
+/*** CSS 1 ***/
+
+    .da_plus-text {
+			display: none;
+		}
+.da_container {
+    background: #f3ede3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+.da_section1-header {
+    width: 100%;
+    text-align: center;
+
+}
+.da_section1-header h2{
+    font-size: 40px;
+    font-family: Arvo;
+    max-width: 1200px;
+    border-bottom: 1px solid black;
+    margin: 30px auto 0px auto;
+    padding-bottom: 15px;
+
+}
+.da_section1-info {
+    background: rgb(255,255,255, .7);
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.da_section1-info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #727377;
+}
+.da_section1-info-title h6{
+    flex: 1;
+    text-align: center;
+    font-family: Spinnaker,sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 6px;
+
+}
+.da_section1-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+}
+.da_section1-price {
+    flex: 1;
+    text-align: center;
+}
+.da_section1-crossed-out {
+    text-decoration: line-through;
+    color: rgba(114,115,119,1.00);
+    font-family: Noto Serif Regular;
+    font-size: 24px;
+}
+.da_section1-price-blue {
+    font-size: 30px;
+    color: #29a8ff;
+    font-family: Arvo;
+    font-weight: 600;
+}
+
+
+
+/*Section 2*/
+.da_section2 {
+    background: #f3ede3 !important;
+    min-width: 100vw;
+}
+.da_section2 .da_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+}
+.da_section2-header {
+    width: 100%;
+    text-align: center;
+}
+.da_section2-header h2 {
+    font-size: 40px;
+    font-family: Arvo;
+    max-width: 1200px;
+    border-bottom: 1px solid black;
+    margin: 10px auto 20px auto;
+    padding-bottom: 13px;
+}
+.da_section2-content-ctn {
+    display: flex;
+    justify-content: center;
+}
+.da_section2-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 6px;
+    margin: 0px 10px;
+    min-height:  !important;
+}
+.da_section2-content-img-ctn {
+    min-height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+}
+.da_section2-content-img-ctn img {
+    object-fit: cover;
+}
+.da_section2-content-text {
+    text-align: center;
+}
+.da_section2-content-text h6 {
+    color: #292E3A;
+    font-family: Arvo !important;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.da_section2-content-text p {
+    font-family: Spinnaker,sans-serif;
+    font-size: 16px;
+    color: #79797B;
+    padding: 0px 15px;
+}
+.da_vp-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 50px 0;
+}
+.da_vp-ctn {
+    flex: 1;
+}
+.da_vp {
+    margin: 5px 0;
+    white-space: nowrap;
+    font-family: Spinnaker,sans-serif;
+}
+.da_vp i {
+    margin-right: 10px;
+}
+.da_plus {
+    flex: .5;
+    text-align: center;
+    font-size: 20px;
+    color: #29a8ff;
+}
+
+
+/*Aloha read more section*/
+.da_aloha-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 80px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.da_aloha-section h1 {
+    font-family: arvo;
+    font-size: 40px;
+}
+.da_aloha-section h4 {
+        font-family: Spinnaker,sans-serif;
+        letter-spacing: 1px;
+}
+.da_aloha-section p {
+        font-family: Spinnaker,sans-serif;
+}
+.da_aloha-section span {
+    color: #29a8ff;
+}
+.da_underline-aloha {
+    height: 1px;
+    width: 700px;
+    background: #2c323d;
+    margin-bottom: 20px;
+}
+.da_read-more {
+    border: 1px solid #29a8ff;
+    border-radius: 3px;
+    padding: 1px 22px;
+}
+.da_read-more:hover {
+    border-color: #496ea5;
+}
+.da_section1-info-mobile {
+    display: none;
+}
+
+.da_section3-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+        margin-top: 20px;
+        padding: 0px 20px;
+
+}
+.da_section3-wrapper h1 {
+        font-family: arvo;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .da_section1-info-mobile {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        margin: 25px;
+        width: 94%;
+        justify-content: center;
+        align-items: center;
+    }
+    .da_mobile-section {
+        display: flex;
+        justify-content: space-between;;
+        align-items: center;
+        width: 85%;
+        border-bottom: 1px solid #2c323d;
+        padding: 20px 0;
+    }
+    .da_mobile-title {
+        font-family: Spinnaker,sans-serif;
+        font-size: 32px;
+        flex: 2;
+    }
+    .da_mobile-price {
+        flex: 1;
+        text-align: center;
+    }
+    .da_mobile-section:nth-child(3) {
+        border-bottom: none;
+    }
+    .da_section1-header h2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .da_section1-info {
+        display: none;
+    }   
+    .da_section2 .da_container {
+        margin-bottom: 0px;
+    }
+    .da_section2-content-ctn {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .da_section2-content {
+        background: #fff;
+        margin-bottom: 15px;
+    }
+    .da_section2-header h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .da_vp-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        white-space: normal !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .da_plus {
+        display: none;
+    }
+    .da_vp-ctn {
+        flex: none;
+    }
+    .da_vp {
+        margin: 10px;
+    }
+    .da_vp:first-child {
+        margin-top: 0px;
+    }
+    .da_aloha-section {
+        text-align: center;
+    }
+    .da_underline-aloha {
+        max-width: 70%;
+    }
+    .da_plus-text {
+				display: block;
+        font-family: Arvo;
+        font-weight: 800;
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .da_aloha-section {
+        margin: 20px auto 40px auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .da_vp-banner {
+        font-size: 14px;
+    }
+
+}

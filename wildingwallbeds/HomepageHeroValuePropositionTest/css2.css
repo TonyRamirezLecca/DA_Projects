@@ -1,0 +1,144 @@
+/*** CSS 2 ***/
+
+.da_video {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.da_hero {
+	background: rgba(70,70,70, .7);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 3
+}
+.da_headline {
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 45px;
+	margin-top: 35px;
+}
+.da_headline span br {
+	display: none;
+}
+.da_hero a {
+	background: #cea24c; 
+	color: white;
+	margin: 0 auto;
+	padding: 10px 90px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.da_hero a:hover {
+	background: #cda65a; 
+}
+.da_hero p br {
+    display: none;
+}
+.da_hero p {
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    font-family: raleway;
+}
+.da_banner {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 300px;
+    height: 70px;
+    background: none !important;
+    padding: 0 !important;
+}
+.da_banner-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/wilding-wallbeds/homepage-hero-value-proposition/banner.png);
+}
+
+
+@media screen and (max-width: 850px) {
+
+}
+
+
+@media screen and (max-width: 680px) {
+    .da_hero p {
+        margin: 50px auto;
+    }
+    .da_hero p br {
+        display: block;
+    }
+    .hero {
+		height: 460px !important
+	}
+}
+
+
+@media screen and (max-width: 420px) {
+    .da_banner {
+        top: 40px;
+    }
+    .da_headline {
+        margin-top: 60px;
+    }
+}
+
+/**ZIG ZAG**/
+
+.zigzag-wrapper, .zigzag-text {
+	position: relative;
+}
+.zigzag-wrapper svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	overflow: visible;
+}
+.zigzag-wrapper svg path {
+	stroke: #cea34c;
+	stroke-width: 9;
+	fill: none;
+	stroke-dasharray: 1500;
+	-webkit-animation: dash 10s infinite;
+	animation: dash 10s infinite;
+}
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 3000;
+		opacity: 0;
+	}
+	6% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 1;
+	}
+	20% {
+		stroke-dashoffset: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+}
+

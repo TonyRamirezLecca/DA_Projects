@@ -1,0 +1,44 @@
+/*** CSS 4 ***/
+.da_box {
+    border: 1px solid #3b3a3e;
+    border-top: 1px solid #338dcb;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.da_header {
+    padding: 13px 5px;
+    background: #3b3a3e;
+    color: white;
+    width: 100.3%;
+    text-align: center;
+    font-weight: 200;
+}
+.da_subheader {
+    padding: 9px 40px;
+    border-radius: 30px;
+    border: 2px solid #338dcb;
+    margin-top: 25px;
+    color: #338dcb;
+    font-weight: 600;
+    width: 310px;
+    text-align: center;
+}
+.da_or {
+    color: #338dcb;
+    font-style: italic;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .da_box {
+        display: none;
+    }
+}

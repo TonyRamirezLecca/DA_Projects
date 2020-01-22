@@ -1,0 +1,21 @@
+/*** CSS 1 ***/
+.da_step{
+    margin-bottom: 20px !important;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30%);
+}
+.da_content {
+    padding-top: 14px;
+    padding-bottom: 0px !important;
+    color: #31afdf;
+    font-weight: 600;
+}
+.da_underline {
+    height: 2px;
+    width: 150px;
+    background: #053087;
+    margin: 0 auto;
+    margin-top: 6px;
+}

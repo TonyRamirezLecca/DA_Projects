@@ -1,0 +1,33 @@
+/* CSS 3 */
+div.fm-timestamp {
+    display: none;
+}
+.da_links {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_links a {
+    border-right: 2px solid black;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.da_links a:last-child {
+    border-right: none;
+}
+
+@media screen and (max-width: 631px) {
+    .da_links {
+        flex-direction: column;
+        margin: 50px 0 20px 0;
+    }
+    .da_links a {
+        border-right: none;
+        text-decoration: underline;
+        font-weight: 500;
+        padding: 0 10px;
+        line-height: 25px;
+        margin: 5px;
+    }
+}

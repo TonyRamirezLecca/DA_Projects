@@ -1,0 +1,219 @@
+/*** CSS 1 ***/
+.detail-article-page {
+    min-width: 75% !important;
+    margin-left: 12.5% !important;
+    margin-right: 12.5% !important;
+    padding: 50px 35px 50px 35px !important; 
+}
+.detail-article-page > .social-sharing-module {
+    position: absolute;
+    left: -50px;
+    top: 90px;
+}
+.detail-article-page img {
+    max-width: 240px !important;
+    margin-left: 0px !important;
+}
+.related-products-module {
+    display: none !important;
+}
+.detail-article-wrap{
+    background: #fff !important;
+}
+
+.detail-article-wrap > div{
+    background: #fff !important;
+    padding-top: 20px
+}
+
+.da_ctn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 40px;
+    height: 500px;
+}
+.da_header {
+    font-family: Lato;
+    font-size: 26px; 
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.da_title {
+    font-family: "Jockey One",sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration-color: #fff !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.da_section-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.da_section-ctn > a > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_section-ctn > a {
+    flex: 1;
+    margin: 10px 30px 60px 30px;
+    padding: 40px 10px;
+    height: 340px !important;
+    background: #fff;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.da_section-ctn  img {
+    overflow: hidden;
+    object-fit: contain !important;
+    max-height: 130px !important;
+}
+.da_shop-now {
+    margin-top: 30px;
+    display: block;
+    background: #ed1c24 !important;
+    color: #fff;
+    padding: 8px 26px;
+     text-decoration: underline;
+  text-decoration-color: #ed1c24
+}
+.da_shop-now:hover {
+   background: #d8181f !important;
+     text-decoration-color: #d8181f;
+
+}
+
+.da_rating button {
+    background: transparent;
+    border: none;
+}
+.da_6-items {
+    min-height: 890px !important;
+}
+.da_4-items {
+    min-height: 890px !important;
+}
+.da_5-items {
+    min-height: 890px !important;
+}
+
+@media screen and (max-width: 959px) {
+    .detail-article-page > .social-sharing-module {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .da_header {
+        font-size: 22px !important;
+        text-align: center;
+    }
+    .da_ctn {
+        min-height: 1200px;
+    }
+    .da_inner-ctn {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    .da_2-items {
+        min-height: 850px !important;
+    }
+    .da_section-ctn {
+        flex-direction: column;
+    }
+    .da_section-ctn > a {
+        width: 100%
+    }
+    .detail-article-page {
+        width: 100%;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 10px !important;
+    }   
+    .detail-article-page > .social-sharing-module {
+        left: 0;
+    }
+    .da_6-items {
+        min-height: 2320px !important;
+    }
+    .da_4-items {
+        min-height: 1580px !important;
+    }
+    .da_5-items {
+        min-height: 1950px !important;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .da_4-items {
+        min-height: 1620px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .detail-article-page img {
+        max-width: 100% !important;
+
+    }
+		.detail-article-page {
+        padding-right: 0px !important;
+        padding-top: 20px !important;
+		}
+}
+
+@media screen and (max-width: 400px) {
+    .related-product-item > .clearfix > span >  a {
+        margin-top: 10px;
+        margin-bottom: 0px
+    }
+    .da_section-ctn > div {
+        width: 100%;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    .da_header {
+        font-size: 20px !important;
+    }
+    .da_ctn {
+        min-height: 1000px;
+    }
+    .da_title {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+        .da_2-items {
+       min-height: 900px !important;
+    }
+    .da_ctn {
+        min-height: 1250px;
+    }
+        .da_6-items {
+        min-height: 2370px !important;
+    }
+        .da_4-items {
+        min-height: 1660px !important;
+    }
+        .da_5-items {
+        min-height: 1990px !important;
+    }
+}
+
+
+

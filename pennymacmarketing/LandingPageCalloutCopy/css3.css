@@ -1,0 +1,13 @@
+/*** CSS 3 ***/
+.col-sm-1.d-none.d-sm-block {
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center;
+    transform: translateY(40px);
+}
+img#badge {
+    object-fit: contain;
+    height: 400px;
+    overflow: visible;
+    width: 500px;
+}

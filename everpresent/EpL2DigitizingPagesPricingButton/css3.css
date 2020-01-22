@@ -1,0 +1,47 @@
+/*** CSS 3 ***/
+
+
+#wi-content > .container:first-child > article > span > span a {
+	margin-left: 15px;
+	width: 200px;
+}
+#wi-content > .container:first-child .maxbutton-12.maxbutton.maxbutton-national > span {
+	white-space: nowrap;
+}
+
+
+.da_new-button br {
+    display: none;
+}
+.da_new-button {
+    display: inline;
+    font-size: 18px;
+    font-family: philosopher, sans-serif
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+        #wi-content > .container:first-child > article > span > span {
+	   display: flex;
+	   width: 100%;
+	   flex-direction: column;
+	   justify-content: center;
+	   align-items: center;
+    }
+    .da_new-button br {
+        display: block;
+    }
+    .da_new-button {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    #wi-content > .container:first-child > article > span > span a {
+	   margin-left: 0px;
+	   width: 200px;
+    }
+}

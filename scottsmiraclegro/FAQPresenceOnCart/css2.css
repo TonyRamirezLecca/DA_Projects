@@ -1,0 +1,64 @@
+/*CSS 2*/
+.da_faq {
+    padding: 0 30px;
+    background: #fafafa;
+    padding-bottom: 45px;
+}
+.da_header h1 {
+    font-size: 19px;
+    color: #7d98a1;
+}
+.da_accordian {
+    
+}
+.da_accordian-item {
+
+}
+.da_accordian-header {
+    display: flex;
+    font-weight: 500;
+    cursor: pointer;
+}
+.da_accordian-header h5 {
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+.da_accordian-header span {
+    font-size: 14px;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.da_plus {
+}
+.da_minus {
+}
+.da_accordian-answer {
+	display: none;
+	padding-left: 20px;
+	margin: 4px 0 20px 0;
+	color: #666;
+}
+
+/*Drop Down Functionality*/
+.contentWrapper {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .5s;
+}
+.showContent {
+	max-height: 400px !important;
+}
+.hide_plus_minus {
+	display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .da_faq {
+        padding: 0 5px;
+        background: #fafafa;
+        padding-bottom: 45px;
+    }
+}

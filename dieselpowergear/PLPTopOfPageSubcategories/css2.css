@@ -1,0 +1,24 @@
+/*** CSS 2 ***/
+@media only screen and (max-width: 749px){
+    div.page-width > header{
+        padding-top: 20px;
+    }
+    h1.section-header__title{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    button.collection-filters-toggle{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0;
+        border-color: #a2a2a2;
+        margin-bottom: 25px;
+    }
+    div.collection-sort.sort-by{
+        margin-top: 0;
+    }
+}
+body, input, textarea, button, select {
+  font-size: 15px;
+}

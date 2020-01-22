@@ -1,0 +1,135 @@
+/*** CSS 2 ***/
+
+.mm-menu.mm-offcanvas.mm-hasnavbar-top-1.mm-current.mm-opened {
+    z-index: 230;
+}
+
+.col-md-6.text-center.headerCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items
+}
+
+.da_fixed-footer {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    display: flex;
+    width: 100%;
+    z-index: 229;
+    padding-right: 10px;
+    transition: all 400ms;
+    transform: translateY(-100%);
+}
+.da_show-scroll {
+    transform: translateY(0);
+}
+
+.da_footer-section {
+    flex: 1;
+    background: white;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+.da_footer-section:last-child {
+    border: none;
+}
+.da_footer-section p {
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 100;
+    white-space: nowrap;
+    display: none;
+}
+
+.da_logo {
+	padding-right: 30%;
+	padding-top: 15px;
+	padding-bottom: 18px;
+}
+.da_logo img {
+    max-height: 48px;
+    padding-left: 18px;
+}
+.da_sign-in {
+
+}
+.da_sign-up {
+
+}
+.da_menu {
+    margin-left: 3px;
+}
+.da_menu .da_img-ctn div {
+    min-height: 4px;
+    width: 100%;
+    background: #000;
+    margin: 3px 0px;
+}
+.da_menu .da_img-ctn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    width: 33px;
+}
+.da_search {
+    font-size: 22px !important;
+    margin-bottom: 5px;
+
+}
+.da_search .da_img-ctn {
+    position: absolute;
+}
+.da_cart {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.da_cart > .da_img-ctn {
+    position: relative;
+    margin-bottom: 7px;
+    display: flex;
+    margin-right: 8px;
+    height: 30px;
+}
+.da_cart > .da_img-ctn > .cartItemWrapp:first-child {
+    display: none;
+}
+.da_cartItem {
+    background-size: 100%;
+}
+.da_cartItem > span{
+        font-weight: 800;
+        margin-left: 0px;
+
+}
+.cartItemWrapp {
+	list-style: none;
+	height: 20px !important;
+}
+
+.da_img-ctn {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+		.da_hide-search {
+			display: none !important;
+		}
+}

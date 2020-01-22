@@ -1,0 +1,177 @@
+/*** CSS 2 ***/
+.da_faq a{
+	color: #404040;
+	font-family: inherit;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 4px 0px;
+	vertical-align: top;
+	display: block;
+	border: 0;
+}
+
+.da_blog {
+	dislay: flex;
+	flex-direction: column;
+}
+.da_blog li a  {
+	color: #404040;
+	font-family: inherit;
+	font-size: 17px !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal !important;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 4px 0px;
+	vertical-align: top;
+	display: block;
+	border: 0;
+}
+
+#mega-menu-wrap-primary-menu > ul > li:nth-child(4) > ul > li > a {
+	white-space: nowrap;
+}
+ #mega-menu-wrap-primary-menu > ul > li:nth-child(4) > ul  {
+	display: flex !important;
+}
+
+/*Remove bundles and extra*/
+#mega-menu-wrap-primary-menu > ul > li:nth-child(1) > ul > li:nth-child(2) {
+    display: none !important;
+}
+#mega-menu-wrap-primary-menu > ul > li:nth-child(1) > ul > li:nth-child(3) {
+    display: none !important;
+}
+#mega-menu-wrap-primary-menu > ul > li:nth-child(2) > ul > li:nth-child(2) {
+    display: none !important;
+}
+
+/*Extras*/
+.da_extras-btn {
+    height: 200px;
+}
+.da_extras-btn:hover ul {
+    display: flex !important;
+    visibility: visible !important;
+}
+
+.da_extras-btn > ul {
+    min-width: 100vw;
+}
+
+@media screen and (min-width: 1021px) {
+    .da_extra-btn > ul {
+        position: absolute;
+        margin-left: 0px;
+    }
+}
+
+.da_extras-btn > ul > li {
+    flex: .3;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.da_extras-btn > ul > li >a{
+    font-size: 20px !important;
+    font-weight: 700;
+    color: #333 !important;
+    border-bottom: 3px solid red !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 8px !important;
+    padding-right: 220px !important;
+    white-space: nowrap;
+    max-width: 40px !important;
+}
+.da_extras-btn ul li ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    
+}
+.da_extras-btn ul > li > ul li {
+    margin: 5px 0!important;
+}
+.da_extras-btn ul > li > ul > a {
+    margin: 5px 0 !important;
+}
+.da_extras-btn ul > li > ul  a {
+    	color: #404040;
+	font-family: inherit;
+	font-size: 17px !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal !important;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 4px 0px;
+	vertical-align: top;
+	display: block;
+	border: 0;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 1366px) {
+    .da_faq a{
+        font-size: 12px
+    }
+    .da_blog li a  {
+        font-size: 12px !important;
+    }
+    .da_extras-btn > ul > li >a{
+        font-size: 12px !important;
+    }
+    .da_extras-btn ul > li > ul  a {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .da_faq a{
+        font-size: 16px
+    }
+    .da_blog li a  {
+        font-size: 16px !important;
+    }
+    .da_extras-btn > ul > li >a{
+        font-size: 20px !important;
+        min-width: 100% !important;
+        padding-right: calc(100vw - 230px) !important
+    }
+    .da_extras-btn ul > li > ul  a {
+        font-size: 16px !important;
+    }
+	#mega-menu-wrap-primary-menu > ul > li:nth-child(4) > ul {
+		flex-direction: column;
+	}
+		#mega-menu-wrap-primary-menu > ul > li:nth-child(4) > ul.da_toggle-learn {
+	    display: none !important;
+	}
+
+	.da_bloga {
+		font-size: 16px !important;
+	}
+	.da_faq a {
+		font-size: 16px !important;
+	}
+	.da_extras-btn:hover ul {
+        display: unset !important;
+        visibility: unset !important;
+    }
+    #mega-menu-wrap-primary-menu > ul > li:nth-child(3).da_extras-btn ul{
+        display: none !important;
+    }
+    #mega-menu-wrap-primary-menu > ul > li:nth-child(3).da_extras-btn ul.da_toggle-extras{
+        display: flex !important;
+        flex-direction: column;
+    }
+     #mega-menu-wrap-primary-menu > ul > li:nth-child(3).da_extras-btn ul.da_toggle-extras > li > ul{
+        display: flex !important;
+        flex-direction: column;
+    }
+
+}

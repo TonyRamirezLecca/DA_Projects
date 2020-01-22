@@ -1,0 +1,73 @@
+/*** CSS 3 ***/
+.da_headline {
+}
+.da_blue-text {
+    font-weight: 600;
+}
+.da_icon {
+    
+}
+.da_cta {
+
+}
+.da_image {
+
+}
+#nc_icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .da_icon {
+        display: none !important;
+    }
+    .da_image {
+        max-width: 50%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .da_headline {
+        white-space: nowrap !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .da_blue-text {
+        font-weight: 600;
+        max-width: 90%;
+    }
+    .da_icon {
+
+    }
+    .da_cta {
+        max-width: 100% !important;
+        font-size: 14px !important;
+        padding: 0 20px !important;
+    }
+    .da_cta-parent {
+                padding: 11px 0px !important;
+    }
+    .da_image {
+
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .da_cta {
+        font-size: 12px !important;
+    }
+    .da_headline {
+        font-size: 2px !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .da_cta {
+        font-size: 12px !important;
+        padding: 0 5px !important;
+    }
+    #reservation > div > div > div > div.brz-bg-content > div > div > div:nth-child(3) > div > div > div > div.brz-tabs__items:nth-child(2) > div.brz-tabs__item--content > div > div > div > div > div > div > div.brz-columns > div > div > div:nth-child(1) > div > div > p {
+        font-size: 30px !important;
+    }
+}

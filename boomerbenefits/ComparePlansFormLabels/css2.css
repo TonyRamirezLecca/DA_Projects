@@ -1,0 +1,23 @@
+/*** CSS 2 ***/
+div.gform_wrapper form.two-step-form .gfield label.da-label {
+    display: block !important;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+#input_11_1_3_container,
+#input_11_1_6_container,
+form.two-step-form div.ginput_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#input_11_1_3_container > *:not(label),
+#input_11_1_6_container > *:not(label),
+div.gform_wrapper form.two-step-form div.ginput_container > *:not(label) {
+    width: 65% !important;
+    margin-left: 10px !important;
+}

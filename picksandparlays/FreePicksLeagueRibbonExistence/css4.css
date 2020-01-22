@@ -1,0 +1,4 @@
+/*** CSS 4 ***/
+.container.grid:nth-child(2) > main nav[role="navigation"] > ul.filter-nav {
+	display: none;
+}

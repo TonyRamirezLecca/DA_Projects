@@ -1,0 +1,21 @@
+/*** CSS 3 ***/
+
+div.gform_wrapper form.two-step-form .gfield label.da-label {
+    display: block !important;
+    font-size: 16px;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+div.gform_wrapper form.two-step-form .gfield label.da-label[for="input_11_4"],
+div.gform_wrapper form.two-step-form .gfield label.da-label[for="input_11_11"] {
+    visibility: visible;
+}
+
+#input_11_4, #input_11_11 {
+    margin-left: 0;
+}
+
+.da_show-state {
+    visibility: visible !important;
+}

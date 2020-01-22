@@ -1,0 +1,95 @@
+/*** CSS 1 ***/
+.da_progress-bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    margin: 50px 0;
+}
+.da_step {
+    height: 35px;
+    width: 35px;
+    background: none;;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.da_step:nth-child(1) {
+        border: 2px solid #77e74c;
+}
+.da_current {
+    border: 2px solid #77e74c;
+}
+.da_done {
+    background: #77e74c;
+    border: 2px solid #77e74c;
+}
+.da_line {
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .da_line {
+        width: 30px;
+    }
+    .da_step {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .da_progress-bar {
+        margin: 30px 0;
+    }
+    .da_line {
+        width: 25px;
+    }
+    .da_step {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .da_progress-bar {
+        margin: 25px 0;
+    }
+    .da_line {
+        width: 20px;
+    }
+    .da_step {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .da_progress-bar {
+        margin: 25px 0;
+    }
+    .da_line {
+        width: 15px;
+    }
+    .da_step {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .da_progress-bar {
+        margin: 30px 0;
+    }
+    .da_line {
+        width: 12px;
+    }
+    .da_step {
+        height: 12px;
+        width: 12px;
+    }
+}

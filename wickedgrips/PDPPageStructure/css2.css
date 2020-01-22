@@ -1,0 +1,103 @@
+/* CSS 2 */
+
+#tab-description > h2 {
+    font-size: 30px !important;
+}
+#tab-additional_information > h2 {
+    font-size: 30px !important;
+}
+.da_underline-h2 {
+    height: 1px;
+    width: 211px;
+    background: #fff;
+    margin-top: 3px;
+}
+#tab-additional_information > h2 > .da_underline-h2 {
+    width: 425px;
+}
+.variations_form.cart {
+    margin-bottom: 20px !important;
+}
+.woocommerce a.da_description-link {
+    cursor: pointer;
+    margin-right: 20px;
+    color: #ffffff !important;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: italic;
+}
+.woocommerce a.da_information-link {
+    cursor: pointer;
+    color: #ffffff !important;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: italic;
+}
+.product_meta {
+    margin-top: 26px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .da_description-link {
+        display: none;
+    }
+    .da_information-link {
+        display: none;
+    }
+    .product_meta {
+        font-size: 15px;
+    }
+    .inner-section .woocommerce-tabs ul.tabs.wc-tabs {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: visible !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs{
+    overflow: visible: !important;
+    border-radius: 0 !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li{
+    background: none !important;
+    border: none !important;
+    flex: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: visible !important;
+}
+.woocommerce-tabs.wc-tabs-wrapper {
+    overflow: visible !important;
+}
+.inner-section .woocommerce-tabs ul.tabs.wc-tabs > li > a{
+    background: none !important;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.da_red {
+    background: #9d0300;
+    position: absolute;
+    height: 115%;
+    width: 54%;
+
+}
+.da_move-left {
+    left: 0;
+    bottom: 0;
+}
+.da_move-right {
+    right: 0;
+    bottom: 0;
+}
+.da_move-text-left {
+    margin-bottom: 8px;
+}
+.da_move-text-right {
+    margin-right: 22px;
+    transform: translateY(-3px);
+}
+}

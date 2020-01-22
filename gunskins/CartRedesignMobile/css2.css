@@ -1,0 +1,16 @@
+/*** CSS 2 ***/
+
+#cart > ul > li:nth-child(1) > span {
+    display: none;
+}
+#mobile-menu > li:nth-child(1) > span {
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    #mobile-header {
+        position: absolute;
+    }
+
+}
+

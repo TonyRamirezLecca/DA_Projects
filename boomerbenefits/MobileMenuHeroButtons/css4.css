@@ -1,0 +1,45 @@
+/* CSS 4 */
+
+body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > li {
+    margin: 0px 25px;
+    font-weight: 800
+}
+body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > li > a{
+    font-weight: 700
+}
+.da_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.da_list li {
+    margin: 0 5px;
+    flex: 1;
+    min-width: 20px;
+}
+.da_list li a {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .da_list li a {
+        font-size: 14px;
+    }
+    body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > li > a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .da_list li a {
+        font-size: 12px;
+    }
+    body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > li > a{
+        font-size: 12px;
+    }
+}

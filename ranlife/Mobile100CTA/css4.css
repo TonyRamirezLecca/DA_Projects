@@ -1,0 +1,36 @@
+/*** CSS 4 ***/
+
+body > div.container > div > div.col-sm-8.\|\|.col-md-8 > a.btn.\|\|.visible-xs {
+    display : none !important;
+}
+
+.container > .row > .col-sm-8 > .quick-form:nth-child(10) {
+	display: none;
+}
+
+.container > .row > .col-sm-8 > .quick-form:nth-child(5) {
+	margin-top: 20px;
+}
+
+.da_container {
+    margin: 0 20px;
+}
+
+.da_apply-now2 {
+    background: #4babf6;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+    margin-top: 20px;
+    display: block;
+    padding: 5px;
+    position: relative;
+    background-color: #15abf6;
+    overflow: visible;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    transition: ease all .3s;
+    border-bottom: 2px solid #217aa7;
+    text-align: center;
+}

@@ -1,0 +1,512 @@
+/*** CSS 1 ***/
+.da_header {
+    height: 90px;
+}
+
+/* Hero */
+.da_hero {
+    height: 700px;
+    position: relative;
+    background: #34495e;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+.da_hero-content-wrapper {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 670px;
+}
+.da_hero-header {
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: none;
+    margin-bottom: 15px;
+        line-height: 35px;
+
+}
+.da_hero-header > span {
+    font-size: 50px;
+    font-weight: 300;
+}
+.da_hero-header > span br {
+    display: none;
+}
+.da_header-underline {
+    font-size: 30px !important;
+}
+.da_hero-content-wrapper > p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+.da_hero-cta {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 13px 20px;
+    background: #f6921e;
+    border-radius: 10px;
+    text-align: center;
+}
+.da_hero-img {
+    position: absolute;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/cfo-page-redesign-fix/hero_desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    height: 101%;
+    width: 100%;
+    top: 0px;
+    z-index: 2
+}
+
+
+
+/*Section 2*/
+.da_section2 {
+     max-width: 1800px;
+     margin: 85px auto 0px auto;
+     padding: 0 80px;
+}
+.da_section2-top-section {
+    position: relative;
+}
+.da_section2-top-section h2 {
+    color: #34495e;
+    margin-bottom: 12px;
+}
+.da_section2-top-section p {
+    padding-top: 18px;
+}
+.da_section2_underline {
+    background: #f6921e;
+    height: 2px;
+    width: 160px;
+    position: absolute;
+}
+
+.da_section2-bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+.da_section2-bottom-section-text {
+    padding-bottom: 50px;
+}
+.da_section2-bottom-section-text h4 {
+        color: #34495e;
+
+}
+.da_section2-bottom-section-text p {
+    padding-top: 10px;
+}
+.da_section2-bottom-section-list {
+
+}
+.da_section2-list-item {
+    margin: 10px 0;
+}
+.da_check {
+    margin-right: 14px;
+    color: #34495e;
+}
+
+.da_section2-bottom-section-img-ctn {
+    flex: 1;
+}
+.da_section2-bottom-section-img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/cfo-page-redesign-fix/ryan_desktop.png);
+}
+
+
+
+/* EXAMPLES OF WHAT YOUll GET AS A CFO CLIENT*/
+.da_section3 {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.da_section3 .ignite-icon-text {
+    background: #34495e;
+}
+.da_section3 .ignite-icon-text-header h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+}.da_section3 .ignite-icon-text-header p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 300;
+}
+.da_section3 .ignite-icon-text-header p:nth-child(2) br:nth-child(1){
+    display: none;
+}
+.da_section3 .ignite-icon-text-header p:nth-child(3) {
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.da_section3 .ignite-icon-text-box h4 {
+    color: white !important;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.da_section3 .ignite-icon-text-box {
+    color: white !important;
+    font-weight: 300;
+}
+.da_section3 .ignite-icon-text-box > img {
+    width: 120px !important;
+    padding-bottom: 15px;
+}
+
+
+
+/*How can a CFO help your company*/
+.da_section4 {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.da_section4-text-ctn {
+    flex: 1;
+}
+.da_section4-text-ctn h2 {
+    font-weight: 300;
+}
+.da_section4-text-ctn p {
+    
+}
+.da_section4-text-ctn h6 {
+    font-size: 18px;
+    margin: 22px 0;
+}
+.da_section4-text-ctn ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-bottom: 110px
+}
+.da_section4-text-ctn li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.da_section4-img-ctn {
+    flex: .8;
+    position: relative;
+    padding-left: 30px;
+    height: 100%;
+}
+.da_section4-img {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/cfo-page-redesign-fix/folding-arms-guy.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -35px;
+    z-index: 2;
+}
+
+
+
+
+
+
+/*Why Ignite Spot*/
+.da_section5 {
+    background: #34495e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 30px 0;
+    margin-top: -40px;
+    position: relative;
+    z-index: 3 !important;
+}
+.da_section5 h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.da_section5-vp-ctn {
+    display: flex;
+    padding-top: 30px;
+}
+.da_section5-vp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 0 40px;
+}
+.da_section5-img-header {
+    text-align: center;
+}
+.da_section5-img {
+    padding-bottom: 10px;
+}
+.da_section5-img-header h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.da_section5-vp p {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+/*Review Section*/
+.da_section6 {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #34495e;
+}
+.da_section6-img-ctn {
+    
+}
+.da_section6-img-ctn img {
+
+}
+.da_section6-subheader {
+    max-width: 650px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.da_section6 h6 {
+    margin-bottom: 0px;
+}
+.da_section6 p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.da_section6-stars {
+
+}
+.da_section6-stars img {
+
+}
+
+
+@media screen and (max-width: 1147px) {
+    .da_section2-bottom-section {
+        flex-direction: column;
+    }
+    .da_section2-bottom-section-img-ctn {
+        flex: 1;
+        height: 300px;
+    }
+    .da_section2-bottom-section-img {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 1114px) {
+    .body-container.container-fluid {
+        padding-top: 80px;
+    }
+    .da_section4 {
+        flex-direction: column;
+    }
+    .da_section4-text-ctn ul {
+        padding-bottom: 30px;
+    }
+    .da_section4-img-ctn {
+        min-height: 500px;
+        flex: 1;
+        position: relative;
+        padding-left: 0px;
+        text-align: center;
+        margin-top: -80px
+    }
+    .da_section4-img {
+        background-position: center;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
+
+@media screen and (max-width: 959px) {
+    .da_header {
+        height: unset;
+    }
+    .da_hero {
+        overflow: hidden;
+        height: 600px;
+    }
+    .da_hero-img {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/cfo-page-redesign-fix/hero_mobile.jpg);
+        height: 100%;
+        background-position: center;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .da_hero-blue {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background: rgba(64, 92, 119, 0.67);
+    }
+    .da_hero-content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 670px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .da_hero-header {
+        border-bottom: none;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 100;
+        text-transform: none;
+        margin-bottom: 15px;
+        color: white;
+    }
+    .da_hero-header > span {
+        font-size: 55px;
+        font-weight: 300;
+    }
+    .da_hero-header > span br {
+        display: block;
+    }
+    .da_header-underline {
+        font-size: 24px !important;
+        border-bottom: 1px solid #fff;
+    }
+    .da_hero-content-wrapper > p {
+        color: white;
+    }
+    /*Section 2 mobile*/
+    .da_section2 {
+        margin-top: 60px;
+    }
+        .da_section2 {
+        padding: 0px 30px;
+    }
+    .da_section4 {
+        padding: 0px 30px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .da_section5-vp-ctn {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .da_section5 > h6 {
+        font-size: 24px !important;
+    }
+    .da_section5 h6 {
+        font-size: 18px;
+    }
+    .da_section5-vp {
+        max-width: 500px;
+        margin-top: 40px;
+    }
+    .da_section2-bottom-section-list {
+        font-size: 15px;
+    }
+    .da_section2-bottom-section-text {
+        padding-bottom: 10px;
+    }
+
+    /*Section 3*/
+    .da_section3 {
+        color: white;
+        position: relative;
+        z-index: -2;
+    }
+    .da_section3 .ignite-icon-text {
+        padding-top: 20px;
+    }
+    .da_section3 .ignite-icon-text-header h2 {
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px
+    }
+    .da_section3 .ignite-icon-text-header p:nth-child(2) {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .da_section3 .ignite-icon-text-header p:nth-child(2) br:nth-child(1){
+        display: block;
+    }
+    .da_section3 .ignite-icon-text-header p:nth-child(3) {
+        font-weight: 300;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .da_hero {
+        height: 650px;
+    }
+    .da_section2 {
+        padding: 0px 10px;
+    }
+        .da_section2-bottom-section-list {
+        font-size: 12px;
+    }
+    .da_section2-bottom-section-img {
+        background-position: center 100%;
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/ignite-spot/cfo-page-redesign-fix/ryan_mobile.png);
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+    .da_hero {
+        height: 680px;
+    }
+    .da_hero-cta {
+        font-size: 16px;
+    }
+    .da_section2-bottom-section-img-ctn{
+        height: 270px;
+    }
+}
+
+
+body.hs-content-id-8728290211.hs-site-page.page.hs-content-path-cfo-services.hs-content-name-cfo-services {}

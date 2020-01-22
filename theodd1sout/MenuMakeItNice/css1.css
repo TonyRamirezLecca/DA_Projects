@@ -1,0 +1,99 @@
+/* CSS 1 */
+
+.account {
+    display: none;
+}
+#menu > .site-nav {
+    display: none;
+}
+.da_grid-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.da_row a {
+    flex: 1;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    font-weight: 600;
+}
+.da_shop-all {
+    background: #7db2ed;
+}
+.da_shop-all:hover {
+    background: #96c0ef !important;
+}
+
+.da_shirts {
+    background: rgba(210, 36, 36, 0.8);
+}
+.da_shirts:Hover {
+    background: rgba(232, 59, 59, 0.8) !important;
+}
+
+.da_plushies {
+    background: rgb(155, 81, 224, .6)
+}
+.da_plushies:hover {
+    background: rgba(176, 112, 236, 0.6) !important;
+}
+
+.da_games {
+    background: rgb(141, 194, 126, 1)
+}
+.da_games:hover {
+    background: rgb(176, 214, 167) !important;
+}
+
+.da_hats {
+    background: #e6a938;
+}
+.da_hats:hover {
+    background: #efb74f !important;
+}
+
+.da_accessories {
+    background: #39b9b9;
+}
+.da_accessories:hover {
+    background: #57d4d4 !important;
+}
+
+
+/*HEADER*/
+header.util {
+    background-color: #d7e7fe !important;
+    border-bottom: 4px solid #000;
+}
+header.util > .wrapper {
+    background: none !important;
+    position: relative;
+    z-index: 2;
+}
+.currency-picker {
+    background-color: #fff !important;
+    border: none !important;
+}
+.da_wave {
+    width: 100vw;
+    background: white;
+    height: 40px;
+    position: absolute;
+    bottom: 7px;
+    border-bottom-right-radius: 65%;
+    border-bottom-left-radius: 5%;
+    transform: rotate(1deg);
+    z-index: 1;
+}

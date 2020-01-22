@@ -1,0 +1,229 @@
+/*** CSS 1 ***/
+.money {
+	color: black;
+}
+.middle-product-detail {
+	display: none;
+}
+.da_content-description br{
+    display: none;
+}
+.da_content-description p {
+    margin-bottom: 5px;
+}
+.da_middot {
+	font-size: 15px;
+}
+.da_check-compatability {
+	color: red;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.da_check-compatability:hover {
+	text-decoration: none;
+}
+.da_learn-how {
+	color: red;
+	text-decoration: underline;
+}
+/*Add to Cart Length*/
+#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button {
+	min-width: 240px;
+}
+/*Move Shopping cart icon*/
+#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button > i:before {	
+	margin-left: 55px;
+}
+/*DA PRODUCT IMAGE*/
+.da_product-img-wrapper {
+	margin-top: 45px;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+}
+.da_product-image1 {
+	object-fit: contain;
+	min-height: 800px;
+	max-width: 1800px;
+	width: 100%;
+	background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/haven-lock/havenLock1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.da_product-image2 {
+	object-fit: contain;
+	min-height: 800px;
+	max-width: 1800px;
+	width: 100%;
+	background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/haven-lock/havenLock2.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+     .da_product-image1 {
+        min-height: 700px;
+    }
+    .da_product-image2 {
+        min-height: 700px
+    }
+}
+
+@media screen and (max-width: 950px) {
+     .da_product-image1 {
+        min-height: 650px
+    }
+    .da_product-image2 {
+        min-height: 650px
+    }
+}
+
+@media screen and (max-width: 900px) {
+     .da_product-image1 {
+        min-height: 600px
+    }
+    .da_product-image2 {
+        min-height: 600px
+    }
+}
+@media screen and (max-width: 850px) {
+     .da_product-image1 {
+        min-height: 550px;
+    }
+    .da_product-image2 {
+        min-height: 550px;
+    }
+}
+@media screen and (max-width: 800px) {
+     .da_product-image1 {
+        min-height: 500px
+    }
+    .da_product-image2 {
+        min-height: 500px
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+	/*Add to Cart Length*/
+
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button {
+		min-width: 200px;
+	}
+	/*Move Shopping cart icon*/
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button > i:before {	
+		margin-left: 35px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.da_product-image1 {
+		object-fit: contain;
+		min-height: 900px;
+		max-width: 1800px;
+		width: 100%;
+		background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/haven-lock/havenLock1-mobile.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.da_product-image2 {
+		object-fit: contain;
+		min-height: 900px;
+		max-width: 1800px;
+		width: 100%;
+		background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/haven-lock/havenLock2-mobile.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+	.da_content-description br{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+     .da_product-image1 {
+        min-height: 800px
+    }
+    .da_product-image2 {
+        min-height: 800px
+    }
+}
+@media screen and (max-width: 500px) {
+     .da_product-image1 {
+        min-height: 700px
+    }
+    .da_product-image2 {
+        min-height: 700px
+    }
+}
+
+@media screen and (max-width: 475px) {
+     .da_product-image1 {
+        min-height: 600px
+    }
+    .da_product-image2 {
+        min-height: 600px
+    }
+}
+@media screen and (max-width: 390px) {
+     .da_product-image1 {
+        min-height: 550px
+    }
+    .da_product-image2 {
+        min-height: 550px
+    }
+}
+
+@media screen and (max-width: 375px) {
+	/*Add to Cart Length*/
+
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button {
+		min-width: 200px;
+	}
+	/*Move Shopping cart icon*/
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button > i:before {	
+		margin-left: 35px;
+	}
+	 .da_product-image1 {
+        min-height: 520px
+    }
+    .da_product-image2 {
+        min-height: 520px
+    }
+}
+
+@media screen and (max-width: 345px) {
+	/*Add to Cart Length*/
+
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button {
+		min-width: 180px;
+	}
+	/*Move Shopping cart icon*/
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button > i:before {	
+		margin-left: 30px;
+	}
+		 .da_product-image1 {
+        min-height: 470px
+    }
+    .da_product-image2 {
+        min-height: 470px
+    }
+}
+
+@media screen and (max-width: 330px) {
+	/*Add to Cart Length*/
+
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button {
+		min-width: 170px;
+	}
+	/*Move Shopping cart icon*/
+	#product-main-form > div.product-options-bottom > div > div.actions > div > div > div > button > i:before {	
+		margin-left: 25px;
+	}
+			 .da_product-image1 {
+        min-height: 450px
+    }
+    .da_product-image2 {
+        min-height: 450px
+    }
+}

@@ -1,0 +1,162 @@
+/* CSS 2*/
+.home-category-tiles-container {
+    width: 100%;
+}
+.da_mobile {
+    display: none !important;
+}
+.da_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    margin-bottom: 20px;
+}
+.da_row li {
+    flex: 1;
+    height: 100% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 20px;
+    padding: 0px !important;
+    overflow: hidden;
+    cursor: pointer;
+}
+.da_row:nth-child(1) li:nth-child(1) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Baby.jpg)
+}
+.da_row:nth-child(1) li:nth-child(2) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Kids.jpg)
+}
+.da_row:nth-child(1) li:nth-child(3) {
+    margin-right: 0px;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Home.jpg)    
+}
+.da_row:nth-child(2) li:nth-child(1) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Decor.jpg)    
+}
+.da_row:nth-child(2) li:nth-child(2) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/New+To+Mocka.jpg)    
+}
+.da_row:nth-child(2) li:nth-child(3) {
+    margin-right: 0px;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Sale.jpg)    
+}
+.da_row a {
+    background: rgb(255,255,255, .6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 500ms;
+    font-size: 22px;
+    font-weight: 500;
+}
+.da_row a:hover {
+    background: rgb(0, 184, 224, .6);
+    color: #fff !important;
+}
+.da_row li:hover a {
+    background: rgb(0, 184, 224, .6);
+    color: #fff !important;
+}
+.da_row br {
+
+}
+.da_row a span {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .da_row {
+        height: 260px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .da_desktop {
+        display: none !important;
+    }
+    .da_row {
+        flex-wrap: wrap;
+        height: unset;
+        
+    }
+    .da_mobile {
+        display: flex !important;
+    }
+    .da_row li {
+        min-width: 200px;
+        margin-right: 10px;
+        min-height: 200px !important;
+        float: none !important;
+    }
+    .da_row li:nth-child(2n) {
+        margin-right: 0px;
+    }
+    .da_row:nth-child(3) li:nth-child(1) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Baby.jpg)
+    }
+    .da_row:nth-child(3) li:nth-child(2) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Kids.jpg)
+    }
+    .da_row:nth-child(3) li:nth-child(3) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Home.jpg)    
+    }
+    .da_row:nth-child(3) li:nth-child(4) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Decor.jpg)    
+    }
+    .da_row:nth-child(3) li:nth-child(5) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/New+To+Mocka.jpg)    
+    }
+    .da_row:nth-child(3) li:nth-child(6) {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/mocka/au-homepage-product-category-test/Sale.jpg)    
+    }
+    .da_row a span {
+        font-weight: 500;
+        font-size: 20px;
+    }   
+    .da_row a {
+        font-size: 18px;
+    } 
+}
+
+
+@media screen and (max-width: 460px) {
+    .da_row li {
+        min-width: 150px;
+        min-height: 160px !important;
+    }
+    .da_row a span {
+        font-size: 16px;
+    }   
+    .da_row a {
+        font-size: 14px;
+    } 
+		.home-category-tiles-container {
+			width: 100%;
+			margin: 0px !important;
+		}
+}
+
+
+@media screen and (max-width: 370px) {
+    .da_row li {
+        min-width: 140px;
+    }
+    .da_row:nth-child(3) li:nth-child(2n -1) {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,99 @@
+/*** CSS 1 ***/
+.woocommerce-cart-form__cart-item.cart_item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_product-outer-wrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+}
+.da_product-inner-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.product-thumbnail {
+    flex: 1.8;
+    margin-bottom: 0px !important;
+}
+.product-name {
+    margin: 3px 0 !important
+}
+.product-name a {
+    float: none;
+    display: inline !important;
+}
+.da_product-inner-wrap .product-price {
+    text-align: left !important;
+}
+
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+    text-align: left !important;
+}
+.product-price {
+    margin: 3px 0px !important;
+}
+.product-price > span {
+    float: none !important;
+}
+.product-price:before {
+    float: none !important;
+}
+.product-quantity {
+    margin: 0px 0 0 0 !important;
+    display: flex;
+}
+.product-quantity input {
+    float: none !important;
+    display: inline !important;
+    height: 15px !important;
+    width: 30px !important;
+    border-bottom: 1px solid black;
+    margin-left: 5px !important;
+
+    padding: 0px 5px 0px 5px !important;
+}
+.quantity.default {
+    width: 100% !important;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: center;
+}
+.quantity.default > .da_insert {
+    margin-right: 4px;
+}
+.product-subtotal {
+    margin-bottom: 0 !important;
+    margin-top: 0px;
+}
+
+
+/*Edit the BEFORE*/
+.product-name:before {
+	display: none !important;
+}
+.product-price:before {
+	display: none !important;
+}
+.product-quantity:before {
+	display: none !important;
+}
+
+.product-quantity > div {
+    height: 25px !important;
+}
+.product-subtotal:before {
+	display: none !important;
+}
+
+
+/*Remove Button*/
+.product-remove  a { 
+    position: absolute !important;
+    right: 0;
+}

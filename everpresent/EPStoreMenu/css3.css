@@ -1,0 +1,25 @@
+/*** CSS 3 ***/
+
+#mega-menu-item-11235 > ul:nth-child(2) {
+    display: none !important;
+}
+#mega-menu-item-11235 a{
+    background: #fff !important;
+    color: #666 !important;;
+        padding-right: 10px !important;
+
+}
+#mega-menu-item-11235:hover a {
+    background: #71abba !important;
+    color: #fff !important;
+}
+#mega-menu-item-11235 a:after{
+    display: none !important;
+}   
+
+
+@media screen and (max-width: 681px) {
+    #mega-menu-item-11235 a {
+        background: #dddddd !important;
+    }
+}

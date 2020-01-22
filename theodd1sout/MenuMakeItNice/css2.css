@@ -1,0 +1,53 @@
+/*** CSS 2 ***/
+.account {
+    display: none;
+}
+#menu > .site-nav {
+    display: none;
+}
+
+.da_grid-ctn {
+    display: flex;
+    flex-direction: column;
+}
+.da_row {
+    display: flex;
+    flex-direction: column;
+}
+.da_row:first-child a:first-child {
+    border-top: 1px solid #000;
+}
+.da_row a {
+    border-bottom: 1px solid #000;
+    border-right: none;
+    font-weight: 800;
+    color: #000 !important;
+    padding: 8px 10px;
+}
+
+
+/*HEADER*/
+header.util {
+    background-color: #d7e7fe !important;
+    border-bottom: 4px solid #000;
+}
+header.util > .wrapper {
+    background: none !important;
+    position: relative;
+    z-index: 2;
+}
+.currency-picker {
+    background-color: #fff !important;
+    border: none !important;
+}
+.da_wave {
+    width: 100vw;
+    background: white;
+    height: 40px;
+    position: absolute;
+    bottom: 7px;
+    border-bottom-right-radius: 65%;
+    border-bottom-left-radius: 5%;
+    transform: rotate(1deg);
+    z-index: 1;
+}

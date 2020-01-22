@@ -1,0 +1,15 @@
+/*** CSS 1 ***/
+.da_faq {
+	color: #404040;
+	font-family: inherit;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 4px 0px;
+	vertical-align: top;
+	display: block;
+	border: 0;
+}

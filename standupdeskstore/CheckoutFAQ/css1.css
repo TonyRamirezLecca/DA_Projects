@@ -1,0 +1,91 @@
+/*CSS 1*/
+.da_drop-down {
+    background: #f5f5f5;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: -20px;
+}
+.da_header {
+    display: flex;
+    align-items: center;
+}
+.da_header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #313131;
+}
+.da_toggle-btn {
+    color: #EF5A28;
+    border-radius: 4px;
+    border: 2px solid #EF5A28;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.da_toggle-btn:hover {
+    border: 2px solid #e7430e;
+    color: #ed4712;
+}
+.da_drop-down-content-ctn {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 600ms;
+}
+.da_drop-down-section {
+    margin: 10px 0 30px 0;
+}
+.da_drop-down-section h1 {
+    margin-bottom: 15px;
+}
+.da_drop-down-text {
+
+}
+.da_drop-down a {
+    color: #777;
+}
+
+.da_angle-down {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.da_angle-up {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+/*Drop Down*/
+.da_slide-down {
+    max-height: 1000px; !important;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .da_header {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .da_toggle-btn {
+        margin-left: 0px;
+    }
+    .da_header h2 {
+        font-size: 16px;
+    }
+    .da_drop-down-section:nth-child(1) {
+        margin-top: 20px;
+    }
+    .da_drop-down-section h1 {
+        font-size: 18px;
+    }
+    .da_drop-down-text {
+        font-size: 14px;
+    }
+}

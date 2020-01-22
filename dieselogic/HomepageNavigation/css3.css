@@ -1,0 +1,120 @@
+/*** CSS 3 ***/
+.da_dodge {
+    cursor: pointer;
+}
+.da_dodge a {
+
+}
+.da_dodge:hover ul {
+    display: flex !important;
+}
+.da_dodge ul {
+    display: none !important;
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100px;
+    width: 200px !important;
+    padding: 10px 30px;
+    border-top: 6px solid #f1d45f;
+}
+.da_dodge ul li a{
+    color: #555 !important;
+    background: #fff !important;
+}
+.da_dodge ul li:hover a{
+    color: #13AABB !important;
+    background: #fff !important;
+}
+
+
+
+
+.da_chevy {
+    cursor: pointer;
+}
+.da_chevy a {
+}
+.da_chevy:hover ul {
+    display: flex !important;
+}
+.da_chevy ul {
+    display: none !important;
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100px;
+    width: 330px !important;
+    padding: 10px 30px;
+        border-top: 6px solid #f1d45f;
+
+}
+.da_chevy ul li a{
+    color: #555 !important;
+    background: #fff !important;
+}
+.da_chevy ul li:hover a{
+    color: #13AABB !important;
+    background: #fff !important;
+}
+
+
+
+
+
+
+.da_ford {
+    cursor: pointer;
+}
+.da_ford:hover ul {
+    display: flex !important;
+}
+.da_ford ul {
+    position: absolute;
+    z-index: 101;
+    background: #fff;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100px;
+    width: 300px !important;
+    padding: 10px 30px;
+    display: none !important;
+        border-top: 6px solid #f1d45f;
+
+}
+.da_ford ul li a{
+    color: #555 !important;
+    background: #fff;
+}
+.da_ford ul li:hover a {
+    color: #13AABB !important;
+}
+
+
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_ford:hover {
+    background: #f7d444;
+}
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_dodge:hover {
+    background: #f7d444;
+}
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_chevy:hover {
+    background: #f7d444;
+}
+
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_ford:hover > a{
+    color: #000 !important;
+}
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_dodge:hover > a{
+    color: #000 !important;
+}
+#MainNav .mainNavContent ul li.current, #MainNav .mainNavContent ul .da_chevy:hover > a{
+    color: #000 !important;
+}

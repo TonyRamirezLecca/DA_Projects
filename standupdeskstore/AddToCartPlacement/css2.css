@@ -1,0 +1,304 @@
+/* CSS 2 */
+.addto-sticky.sticky-fixed {
+    bottom: 0;
+    top: unset;
+    background: #c4c4c4;
+}
+.addto-sticky.da_sticky-forever {
+    position: fixed !important;
+    bottom: 0 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    height: 80px;
+        top: unset;
+            background: #c4c4c4;
+}
+#___ratingbadge_0 {
+    display: none !important;
+}
+.addto-sticky.da_sticky-forever .product-name {
+    display: none;  
+}
+.addto-sticky .box-tocart .fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addto-sticky .box-tocart .fieldset > .price{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ef5928;
+}
+
+
+/* Edits */
+#product-addtocart-button {
+	display: none;
+}
+.product-options-bottom .input-text.qty {
+	display: none;
+}
+.addon-arrow {
+	display: none !important;
+}
+.da_sticky-forever .fieldset > .price:nth-child(1) {
+    display: none;
+}
+.da_sticky-forever .yotpoBottomLine > .yotpo:nth-child(1) {
+	display: none !important;
+}
+.da_show-reviews-please {
+	display: block !important;
+}
+.da_sticky-forever .yotpoBottomLine > .yotpo.show-reviews {
+    display: inline-block !important;
+}
+
+.da_value-props-ctn1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.da_value-props-ctn2 {
+    display: none;
+}
+.da_value-prop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+.da_value-prop h4 {
+    margin: 0px
+}
+.da_value-prop h6 {
+    margin: 0px;
+    font-weight: 400
+}
+
+.da_image1 {
+    background-image: url('https://smhttp-ssl-79919.nexcesscdn.net/static/version1571671434/frontend/EBSCO/copper/en_US/images/icons/guarantee.png');
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.da_image2 {
+    background-image: url('https://smhttp-ssl-79919.nexcesscdn.net/static/version1571671434/frontend/EBSCO/copper/en_US/images/icons/shipping.png');
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/*Hide Mobile Stuff*/
+.bulk-discounts {
+	display: none;
+}
+.da_mobile {
+    display: none;
+}
+.da_add-to-cart-ctn {
+    display: flex;
+    position: relative;
+    overflow: visible !important;
+}
+.da_bulk-pricing {
+    color: #444;
+    border: 1px solid #444;
+    overflow: visible;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    padding: 3px 20px;
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateX(140px)
+}
+.da_arrow-displayed {
+    transform: translateX(0px);
+}
+.addon-arrow.display {
+    overflow: visible !important;
+}
+.addon-arrow img {
+    right: 130px;
+    top: 44px;
+    z-index: -1;
+    width: 50px
+}
+
+/*Hide second ATC*/
+.column.main > .da_add-to-cart-ctn {
+    display: none;
+}
+.column.main > .da_add-to-cart-ctn .addon-arrow.display {
+    display: none;
+}
+
+/*Hide qtn text*/
+.control .da_qty {
+    display: none;
+}
+
+.da_move-vp-up {
+    margin-top: -40px;
+}
+
+
+
+/* Bottom banner */
+.addto-sticky.sticky-fixed {
+    bottom: 0;
+    top: unset;
+}
+#___ratingbadge_0 {
+    display: none !important;
+}
+.addto-sticky.sticky-fixed .product-name {
+    display: none;  
+}
+.addto-sticky .box-tocart .fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addto-sticky .box-tocart .fieldset > .price{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ef5928;
+}
+
+.swell-tab {
+    display: none !important
+}
+
+@media screen and (max-width: 1150px) {
+    .da_value-props-ctn1 {
+        display: none;
+    }
+    .da_value-props-ctn2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .column.main > .da_add-to-cart-ctn {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        max-width: 600px;
+        margin: 20px auto;
+        margin-top: 35px;
+    }
+    .da_bulk-pricing {
+        position: relative;
+        right: 0px;
+        height: 35px;
+        border-radius: 2px;
+        padding: 0px 18px;
+    }
+    .da_add-to-cart-ctn {
+        display: none;
+    }
+    .da_add-to-cart-ctn input[type="number"] {
+        width: 35px;
+        text-align: center;
+    }
+    .da_add-to-cart-ctn .field.qty {
+        margin-bottom: 2px;
+    }
+    .da_add-to-cart-ctn #product-addtocart-button {
+        width: 100%;
+        height: 35px;
+        margin: 10px 0px;
+    }
+    .da_add-to-cart-ctn .control .da_qty {
+        display: block;
+        position: absolute;
+        top: -20px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    /*Show Mobile Stuff*/
+    .da_mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .da_mobile-qty {
+
+    }
+    .da_qty {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .da_mobile-input {
+        width: 35px;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        margin-top: 4px;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+    }
+    .da_mobile-atc {
+        background: #ef5928;
+        color: white;
+        font-size: 18px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+    .da_mobile-bulk {
+        background: #fff;
+        color: #777;;
+        font-size: 18px;
+        border-radius: 3px;
+        border: 1px solid #777;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (max-width: 469px) {
+    .addto-sticky.da_sticky-forever .box-tocart .fieldset > .price {
+        display: none;
+    }
+}

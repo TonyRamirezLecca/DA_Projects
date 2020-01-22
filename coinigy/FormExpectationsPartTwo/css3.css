@@ -1,0 +1,22 @@
+/*** CSS 3 ***/
+.da_text {
+    background: #29a8ef;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 15px 70px;
+    line-height: 20px;
+    font-family: roboto;
+    margin-top: 0px;
+		text-align: center;
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .da_text {
+        padding: 15px 30px;
+    }
+}

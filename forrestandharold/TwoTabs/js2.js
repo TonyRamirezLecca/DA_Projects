@@ -16,11 +16,8 @@ function whenExists(elements, callback) {
 	}, 100);
 }
 
-whenExists('.yotpo.bottomLine,.product-swatchess,#product-form-6657100101 > div.product-options > div.product-swatchess > div > div.swatch-element.color.black-olive.available > label', function () {
+whenExists('#product-form-6657100101 > div.product-options > div.product-swatchess', function () {
 	console.log("DA_Script");
-
-	//Inserts Tabs
-	$('<div class="tabs_container"><div class="two-tone-tab">Two-Tone</div><div class="monochrome-tab"><div class="monochrome-tab_absolute"></div>Monochrome</div></div>').prependTo('.product-swatchess');
 
 
 	//Moves Rating Section into Color Section
@@ -30,13 +27,22 @@ whenExists('.yotpo.bottomLine,.product-swatchess,#product-form-6657100101 > div.
 	$('.two-tone-tab').addClass('two-tone-tab_active');
 
 	//Seperate colors with classes
-	$('div[data-value="Red"]').addClass('color_monochrome');
-	$('div[data-value="Blue"]').addClass('color_monochrome');
-	$('div[data-value="Navy"]').addClass('color_monochrome');
-	$('div[data-value="Charcoal Grey"]').addClass('color_monochrome');
-	$('div[data-value="Pebble-Grain Black"]').addClass('color_monochrome');
 	$('.swatch-element.available').addClass('color_two-tone');
+	$('div[data-value="Red"]').addClass('color_monochrome');
+	$('div[data-value="Red"]').addClass('hidethispermanently');
+	$('div[data-value="Red"]').removeClass('color_two-tone');
+	$('div[data-value="Blue"]').addClass('color_monochrome');
+	$('div[data-value="Blue"]').addClass('hidethispermanently');
+	$('div[data-value="Blue"]').removeClass('color_two-tone');
+	$('div[data-value="Navy"]').addClass('color_monochrome');
+	$('div[data-value="Navy"]').addClass('hidethispermanently');
+	$('div[data-value="Navy"]').removeClass('color_two-tone');
+	$('div[data-value="Charcoal Grey"]').addClass('color_monochrome');
+	$('div[data-value="Charcoal Grey"]').addClass('hidethispermanently');
+	$('div[data-value="Charcoal Grey"]').removeClass('color_two-tone');
+	$('div[data-value="Pebble-Grain Black"]').addClass('color_monochrome');
 	$('div[data-value="Pebble-Grain Black"]').removeClass('color_two-tone');
+	$('div[data-value="Pebble-Grain Black"]').addClass('hidethispermanently');
 
 	//Add a wrapper around the swatches
 	$('.color_two-tone').wrap('<div class="swatchesWrapper"></div>');
@@ -47,29 +53,18 @@ whenExists('.yotpo.bottomLine,.product-swatchess,#product-form-6657100101 > div.
 		$('.swatch-element.soldout').addClass('hidethispermanently');
 		$('.swatchesWrapper_monochrome').hide();
 
-
-	//VAR 2 COLOR CHANGES
-	$('<div class="topColor"></div><div class="bottomColor"></div>').appendTo('#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(3) > div > label');
-	
-	$('.two-tone-tab').click(() => {
-		//Changes Tab Look
-		$('.two-tone-tab').addClass('two-tone-tab_active');
-		$('.monochrome-tab').removeClass('monochrome-tab_active');
-		//Change Buttons
-		$('.color_two-tone').removeClass('hidethispermanently');
-		$('.color_monochrome').addClass('hidethispermanently');
-		$('.swatchesWrapper').show();
-		$('.swatchesWrapper_monochrome').hide();
-	});
-
-	$('.monochrome-tab').click(() => {
-		//Changes Tab Look
+	//Show Monochrome
 		$('.monochrome-tab').addClass('monochrome-tab_active');
-		$('.two-tone-tab').removeClass('two-tone-tab_active');
-		//Change Buttons
-		$('.color_two-tone').addClass('hidethispermanently');
 		$('.color_monochrome').removeClass('hidethispermanently');
-		$('.swatchesWrapper').hide();
 		$('.swatchesWrapper_monochrome').show();
-	});
+
+	/* Wrap Two-Tone */
+	jQuery('.swatchesWrapper').wrapAll('<div class="da_two-tone__container"><div class="da_two-tone-swatch__wrapper"></div></div>');
+	jQuery('.swatchesWrapper_monochrome').wrapAll('<div class="da_monochrome__container"><div class="da_monochrome__wrapper"></div></div>');
+
+	/*Add Category Header */
+	$('<div class="da_two-tone__header">Two-Tone</div>').prependTo('.da_two-tone__container');
+	$('<div class="da_monochrome__header">Monochrome</div>').prependTo('.da_monochrome__container');
 });
+
+

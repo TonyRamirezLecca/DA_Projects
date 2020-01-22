@@ -1,0 +1,101 @@
+/*** CSS 4 ***/
+div.fm-timestamp {
+    display: none;
+
+}
+.da_links {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_links a {
+    border-right: 2px solid black;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.da_links a:last-child {
+    border-right: none;
+}
+.app-page-section.app-page-section-info {
+    margin-top: 0px !important;
+    background: black;
+}
+.app-page-section.app-page-section-info h2 {
+    color: white;
+}
+.app-page-section.app-page-section-info .app-description {
+    color: white;
+}
+
+
+
+
+.app-page-section.app-page-section-info {
+    height: 200px
+}
+.app-page-section-info-content {
+    height: 200px;
+    max-width: 80% !important;
+}
+.app-info-image {
+    left: -30px;
+}
+.app-info-content {
+    position: absolute;
+    right: 0;
+}
+.app-description {
+    padding-right: 35%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .app-description {
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .app-description {
+        padding-right: 5%;
+    }
+}
+
+
+
+@media screen and (max-widtH: 767px) {
+    .app-info-image {
+        left: 0px;
+    }
+    .app-info-content {
+        position: relative;
+        right: 0;
+    }
+    .app-page-section.app-page-section-info {
+        height: 100%;
+    }
+    .app-page-section-info-content {
+        height: 100%;
+        max-width: 80% !important;
+    }
+    .app-description {
+        padding-right: 0%;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .da_links {
+        flex-direction: column;
+        margin: 50px 0 20px 0;
+    }
+    .da_links a {
+        border-right: none;
+        text-decoration: underline;
+        font-weight: 500;
+        padding: 0 10px;
+        line-height: 25px;
+        margin: 5px;
+    }
+
+}

@@ -1,0 +1,66 @@
+/*** CSS 2 ***/
+
+#wi-content > .container:first-child > article > span > span a {
+	margin-left: 10px;
+}
+#wi-content > .container:first-child .maxbutton-12.maxbutton.maxbutton-national > span {
+	white-space: nowrap;
+}
+
+#wi-content > .container:first-child > article > span > span {
+}
+
+.da_new-button {
+    width: 200px;
+    border: 1px solid rgb(28, 158, 185);
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: arial;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 175px;
+    height: 51px;
+    background-color: white;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.da_new-button:hover {
+    background-color: rgba(21, 122, 143, 1);
+    color: white;
+    text-decoration: none;
+    border-color: rgba(21,122,143,1);
+    box-shadow: 0px 0px 2px 0px #333;
+}
+
+
+@media screen and (max-width: 500px) {
+	#wi-content > .container:first-child > article > span > span a {
+		margin-left: 5px;
+		width: 140px;
+	}
+	.mb-text {
+		font-size: 14px !important;
+	}
+	.da_new-button {
+		margin-right: 2px;
+		width: 140px;
+	}
+}
+@media screen and (max-width: 400px) {
+	#wi-content > .container:first-child > article > span > span a {
+		margin-left: 10px;
+		width: 120px;
+	}
+	.mb-text {
+		font-size: 12px !important;
+	}
+	.da_new-button {
+		margin-right: 10px;
+		width: 120px;
+	}
+}

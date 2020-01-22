@@ -1,0 +1,3 @@
+Change images
+Shrink images on mobile so they fit on two rows
+Change the leather image to black

@@ -1,0 +1,29 @@
+/*** CSS 3 ***/
+.da_wrapper {
+    display: flex;
+}
+.da_wrapper > .rw-right {
+    display: flex !important;
+    white-space: nowrap;
+}
+.da_wrapper > .rw-right > div {
+    font-size: 12px !important;
+}
+
+.rw-contents > .rw-right {
+    display: none !important;
+}
+.rw-contents > .rw-left {
+    display: none !important;
+}
+.rw-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.da_sub-text p{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #888;
+}

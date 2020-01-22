@@ -1,0 +1,44 @@
+
+/*=====================DA IMPLEMENTATION=====================*/
+/*========================Jan 15, 2020=======================*/
+/* Move Mobile CTA's around, by making duplicate from desktop*/
+/*===========================================================*/
+.da_implement-mobile {
+ 	display: none !important; 
+}
+@media screen and (max-width: 991px) {
+  .da_implement-desktop {
+     display: none !important; 
+  }
+  .da_implement-mobile {
+     display: block !important;
+  }
+  .product-head-right {
+   	 
+  }
+  p#da-warranty {
+    margin-top: -10px !important;
+  }
+  .product-head-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-head-right h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .product-head-right > h2 > span > span {
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    font-family: gotham;
+  }
+  .product-head-right > div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

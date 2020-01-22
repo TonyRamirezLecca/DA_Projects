@@ -1,0 +1,19 @@
+.da_faq{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.da_faq a {
+    color: black;
+    font-weight: 500;
+}
+.da_faq a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .da_faq {
+        margin-bottom: 26px;
+        margin-top: 20px;
+    }
+}

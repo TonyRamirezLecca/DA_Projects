@@ -1,0 +1,133 @@
+/*** CSS 1 ***/
+@media screen and (min-width: 680px) {
+	.da_hide-mobile {
+		display: none !important;
+	}
+}
+.da_ctn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.da_ctn > header > p {
+    white-space: nowrap;
+}
+.da_banner-ctn {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.da_banner {
+    margin: 0 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 100px;
+    text-align: center;
+    bottom: 0 !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.da_banner a {
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_banner:nth-child(1) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/music-and-arts/plp-top-banners/beginner.png);
+}
+.da_banner:nth-child(1) a {
+       background-color: rgba(167, 10, 0, 0.8);
+}
+.da_banner:nth-child(2) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/music-and-arts/plp-top-banners/intermediate.png);
+}
+.da_banner:nth-child(2) a {
+    background: rgba(117, 7, 0, 0.8);
+}
+.da_banner:nth-child(3) {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/music-and-arts/plp-top-banners/staff.png);
+}
+.da_banner:nth-child(3) a {
+    background: rgb(0,0,0,.5);
+}
+/*Hover */
+.da_banner:nth-child(1) a:hover {
+    background: rgba(200, 36, 25, 0.8);
+}
+.da_banner:nth-child(2) a:hover {
+    background: rgba(156, 26, 18, 0.8);
+}
+.da_banner:nth-child(3) a:hover {
+    background: rgb(0,0,0,.6);
+}
+.da_banner span {
+    font-size: 25px;
+    line-height: 1px;
+    margin-left: 5px;
+    display: inline-block;
+    padding-top: 5px;
+    transform: translatey(2px)
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .da_banner:nth-child(3) {
+        display: none;
+    }
+    .da_banner {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+
+    .da_banner:nth-child(3) {
+        display: flex
+    }
+    .da_banner-ctn {
+        display: flex !important;
+				margin: 0px;
+				margin-bottom: 35px;
+        margin-top: 25px;
+    }
+    .da_banner {
+        margin-bottom: 0px;
+    }
+		/*
+    .da_hide-mobile {
+        display: flex !important;
+				margin: 0px;
+				margin-bottom: 35px;
+        margin-top: 25px;
+    }
+.hide-for-small-only {
+	display: block !important;
+}
+*/
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .da_banner {
+        font-size: 14px;
+        margin: 0px 3px;
+    }
+    .da_banner span {
+        height: 20px;
+        display: inline-block;
+    }
+}

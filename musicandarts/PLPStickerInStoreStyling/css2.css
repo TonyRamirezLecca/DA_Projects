@@ -1,0 +1,19 @@
+/*** CSS 2 ***/
+.da_in-store {
+    background: #b32018;
+    color: #fff;
+}
+.da_in-store .sticker__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_in-store .sticker__name img {
+    max-height: 15px;
+    margin-right: 5px;
+
+}/*** CSS 2 ***/
+.da_in-store {
+    background: #b32018;
+    color: #fff;
+}

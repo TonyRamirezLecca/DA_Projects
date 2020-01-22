@@ -1,0 +1,25 @@
+/*** CSS 4 ***/
+.da_progress-bar {
+    margin: 70px 0 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+.da_step {
+    display: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 100;
+    
+}
+.da_step:nth-child(1) {
+    
+}
+.da_step.da_current {
+    display: block;
+}
+.da_line {
+	display: none;
+}
+
+
+

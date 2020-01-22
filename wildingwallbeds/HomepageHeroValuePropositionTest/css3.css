@@ -1,0 +1,373 @@
+/*** CSS 3 ***/
+
+.da_video {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.da_hero-overlay {
+	min-height: 580px !important;
+}
+
+.da_btn-v3 {
+    font-weight: 600;
+    background: #cea24c; 
+    color: white;
+    margin: 0 auto;
+    padding: 20px 90px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    max-height: 48px;
+		max-width: 300px;
+}
+/*sLider 1*****/
+.da_slider {
+	min-height: 580px;
+	position: relative;
+	z-index: 3;
+}
+
+
+/**********SLIDE 1***********/
+
+.da_hero1 {
+    background: rgba(70,70, 70, .6);
+		min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  	position: relative;
+  	z-index: 3
+}
+.da_hero1 .da_headline {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 45px
+}
+.da_hero1 .da_headline span br {
+    display: none;
+}
+.da_hero1 .da_value-props {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.da_hero1 .da_value-props-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/wilding-wallbeds/homepage-hero-value-proposition/valueprops_desktop.png);
+}
+.da_hero1 a {
+    background: #cea24c; 
+    color: white;
+    margin: 0 auto;
+    padding: 10px 90px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.da_hero1 a:hover {
+    background: #cda65a; 
+}
+@media screen and (max-width: 850px) {
+    .da_hero1 .da_value-props {
+        height: 200px;
+
+    }
+    .da_hero1 .da_value-props-img {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/wilding-wallbeds/homepage-hero-value-proposition/valueprops_mobile.png);
+    }
+}
+@media screen and (max-width: 680px) {
+    .da_hero1 .da_headline span br {
+        display: block;
+    }
+}
+@media screen and (max-width: 420px) {
+    .da_hero1 .da_value-props {
+        width: 90%;
+    }
+}
+
+
+/**********SLIDE 2***********/
+
+.da_hero2 {
+	background: rgba(70,70, 70, .6);
+	min-height: 580px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 3
+}
+.da_hero2 .da_headline {
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 45px;
+	margin-top: 35px;
+}
+.da_hero2 .da_headline span br {
+	display: none;
+}
+.da_hero2 a {
+	background: #cea24c; 
+	color: white;
+	margin: 0 auto;
+	padding: 10px 90px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.da_hero2 a:hover {
+	background: #cda65a; 
+}
+.da_hero2 p br {
+    display: none;
+}
+.da_hero2 p {
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 20px;
+    font-family: raleway;
+}
+.da_hero2 .da_banner {
+	display: none;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 300px;
+	height: 70px;
+}
+.da_hero2 .da_banner-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/wilding-wallbeds/homepage-hero-value-proposition/banner.png);
+}
+@media screen and (max-width: 680px) {
+    .da_hero2 p {
+        margin: 50px auto;
+    }
+    .da_hero2 p br {
+        display: block;
+    }
+    .da_hero1 .da_value-props-img {
+    height: 100%;
+    width: 90%;
+    margin 0 auto;
+}
+}
+@media screen and (max-width: 420px) {
+    .da_hero2 .da_banner {
+        top: 40px;
+    }
+    .da_hero2 .da_headline {
+        margin-top: 0px;
+    }
+}
+
+
+/**********SLIDE 4***********/
+
+/**********SLIDE 3***********/
+.da_hero3 {
+	background: rgba(70,70, 70, .6);
+	min-height: 580px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 3
+}
+.da_hero3 .da_headline {
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 45px;
+	margin-top: 35px;
+}
+.da_hero3 .da_headline  br {
+	display: none;
+}
+.da_hero3 a {
+	background: #cea24c; 
+	color: white;
+	margin: 0 auto;
+	padding: 10px 90px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.da_hero3 a:hover {
+	background: #cda65a; 
+}
+.da_hero3 p span br {
+    display: none;
+}
+.da_hero3 p {
+    font-style: italic;
+    text-align: center;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    font-family: raleway;
+    width: 600px;
+    max-width: 100%;
+    color: #fff;
+    font-size: 18px;
+		line-height: 24px;
+}
+.da_hero3 h6 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.da_hero3 .da_banner {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 300px;
+    height: 70px;
+    display: none;
+}
+.da_hero3 .da_banner-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/wilding-wallbeds/homepage-hero-value-proposition/banner.png);
+}
+@media screen and (max-width: 680px) {
+    .da_hero3 .da_headline {
+        margin-top: 0px;
+    }
+    .da_hero3 p span br {
+        display: block;
+    }
+    .da_hero3 p br {
+        display: none;
+    }
+ 
+	.da_hero3 .da_headline  br {
+	   display: block;
+    }
+    #content > section.hero > div > div > div > div:nth-child(4) > div {
+        transform: translate(-50%, -65%);
+    }
+}
+
+
+
+/*Slide 4*/
+
+#content > section.hero > div:nth-child(4) {
+    background-image: url('https://storage.googleapis.com/vw-wallbedsbywilding/images/hero-bg.jpg');
+    background: url(https://storage.googleapis.com/vw-wallbedsbywilding/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+
+}
+#content > section.hero > div:nth-child(4) > div{
+    background-color: rgba( 70,70,70, .5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: center;
+    min-width: 100vw;
+
+}
+#content > section.hero > div:nth-child(4) > div a {
+    max-width: 400px;
+    margin: 15px auto;
+		padding: 10px 90px;
+}
+
+#content > section.hero > div > div > div > div:nth-child(4) {
+        background-color: rgba( 70,70,70, .6);
+
+}
+
+#content > section.hero > div > div > div > div:nth-child(4) > div > h1 {
+    font-size: 40px !important;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+
+
+/**ZIG ZAG**/
+
+.zigzag-wrapper, .zigzag-text {
+	position: relative;
+}
+.zigzag-wrapper svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	overflow: visible;
+}
+.zigzag-wrapper svg path {
+	stroke: #cea34c;
+	stroke-width: 9;
+	fill: none;
+	stroke-dasharray: 1500;
+	-webkit-animation: dash 10s infinite;
+	animation: dash 10s infinite;
+}
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 3000;
+		opacity: 0;
+	}
+	6% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 1;
+	}
+	20% {
+		stroke-dashoffset: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		opacity: 0;
+	}
+}
+

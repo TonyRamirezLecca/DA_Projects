@@ -1,0 +1,16 @@
+/*** CSS 2 ***/
+.da_features-ctn {
+    padding: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .da_features-ctn {
+        padding: 40px 15px;
+    }
+    .da_features-ctn a {
+        display: block;
+    }
+    .da_features-ctn h3 {
+        font-size: 24px !important;
+    }
+}

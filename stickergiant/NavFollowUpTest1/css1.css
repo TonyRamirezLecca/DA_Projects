@@ -1,0 +1,280 @@
+/*** CSS 1 ***/
+.da_menu {
+    visibility: hidden;
+}
+.da_sticky-footer {
+    visibility: hidden;
+}
+.da_hamburger {
+    display: none;
+}
+.da_cart {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background: #fff;
+    }
+    .mobile-menu__dropdown {
+        display: none;
+    }
+    body > header > nav > button {
+        display: none;
+    }
+    body > header > div > div.nav__wrap {
+        display: none;
+    }
+
+    /*White Bar*/
+    .da_white-bar {
+        height: 35px;
+        width: 100vw;
+    }
+    /*Nav Bar Icons*/
+    .l-header-wrap.cf {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .l-header-wrap.cf .brand {
+        transform: scale(1.3);
+    }
+    .da_hamburger {
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+        color: black;
+    }
+    .mobile-menu__cart {
+        display: none;
+    }
+    body > header > div.l-header-wrap.cf > a {
+        text-decoration: none;
+    }
+    .da_cart {
+        font-size: 35px;
+        display: block;
+        color: #333;
+    }
+
+    .mobile-menu__search {
+        text-align: center;
+    }
+
+    /*Menu*/
+    .da_hide-menu {
+        display: none !important;
+    }
+    .da_show-menu {
+        visibility: visible;
+    }
+    .da_menu {
+        visibility: unset !important;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 70vw;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    .da_menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+    .da_X {
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 50px;
+        font-weight: 100 !important;
+    }
+    .da_menu-items a {
+        color: black;
+        text-decoration: none;
+    }
+        .da_menu-items a:nth-child(2) p {
+        border-bottom: solid 2px #ccc;
+    }
+    .da_menu-items a:last-child {
+        background: #EE3c24;
+        color: white;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+
+    /****SEARCH BAR****/
+    .l-mobile-menu.cf {
+        max-width: 70vw;
+        margin: 12px auto;
+        border-radius: 30px;
+        border: 2px solid #dadada;
+        background: #fff;
+        height: 30px
+    }
+    input[type=text] {
+        transform: translateY(-3px);
+    }
+    .mobile-menu__search .qs__s, .mobile-menu__search .qs__t {
+        height: 30px;
+        width: 30px;
+    }
+    .mobile-menu__search .qs__t {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/sticker-giant/nav-follow-up-test-1/zoom-2%403x.png);
+    }
+    .is-open-qs .mobile-menu__search .qs__t {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/sticker-giant/nav-follow-up-test-1/x-mark-32.png);
+    }
+
+
+
+    /**Sticky FOOTER**/
+    .footer__bottom {
+        margin-bottom: 70px !important;  
+    }
+    .da_sticky-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        z-index: 101;
+        visibility: visible;
+        background: #febe1b;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .da_sticky-footer a {
+        color: #333;
+        text-decoration: none;
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+    }
+    .da_sticky-footer div {
+        flex: 1;
+        position: relative;
+    }
+     .da_sticky-footer div img:nth-child(1) {
+        position: absolute;
+        left: 50%;
+        transform: translate(-30%, -95%);
+        flex: 1;
+        max-height: 300px;
+        max-width: 100px;
+    }
+    .da_sticky-footer img {
+        max-width: 60px;
+        max-height: 30px;
+    }
+    
+
+    /****FOOTER****/
+    body > footer > nav > div.footer__sticker-resources.cf {
+        display: none;
+    }
+    .footer__bottom {
+        display: none;
+    }
+    .da_footer__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+        padding-top: 30px;
+        background: white;
+    }
+    .da_footer-site-links {
+        display: flex;
+        justify-content: center;
+        margin: 24px 0;
+    }
+    .da_footer-site-links a {
+        color: #ee3c24;
+        text-decoration: none;
+        font-size: 12px;
+        border-right: 1px solid #ee3c24;
+        padding: 0 8px
+    }
+    .da_footer-site-links a:last-child {
+        border: none;
+    }
+
+    .da_flag-section__new .ig__flag{
+        transform: scale(1.5);
+    }
+    .da_flag-section__new .utils__link.with-triangle::after {
+        border-top-color: #333;
+        transform: scale(.6) translate(-10px, -4px);
+    }
+    .da_flag-section__new .utils__link {
+        border: none;
+    }
+    .da_footer-address {
+        font-size: 14px;
+        line-height: 10px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .da_footer-sticker-story {
+        max-width: 200px;
+        margin: 20px 0;
+        margin-top: 0px;
+    }
+    .da_footer-social-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80vw;
+        max-width: 400px;
+    }
+    .da_footer-social-links a {
+        width: 40px;
+        margin: 5px;
+    }
+    .da_footer-copyright {
+        margin-bottom: 60px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .da_footer-site-links a {
+        font-size: 10px;
+        padding: 0 4px;
+    }
+    .da_footer-address {
+        font-size: 11px;
+        line-height: 6px;
+        margin: 10px 0;
+    }
+    .da_footer-sticker-story {
+        max-width: 130px;
+        margin: 20px 0;
+        margin-top: 0px;
+    }
+    .da_footer-social-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 65vw;
+        max-width: 400px;
+    }
+    .da_footer-social-links a {
+        width: 30px;
+        margin: 3px;
+    }
+    .da_footer-copyright {
+        font-size: 10px;
+        text-align: center;
+    }
+     .da_sticky-footer div img:nth-child(1) {
+        max-width: 70px;
+    }
+}

@@ -1,0 +1,62 @@
+/*** CSS 1 ***/
+#mega-menu-item-11235 > ul:nth-child(2) {
+    display: none !important;
+}
+
+#mega-menu-item-11235 {
+    position: relative !important;
+    z-index: 999;
+}
+
+#mega-menu-item-11235 > .da_menu {
+    width: 140%;
+    margin-left: 0px;
+    background: #fff;
+    z-index 9999999;
+}
+.da_menu {
+    position: absolute;
+}
+.da_menu > li:hover {
+    background: #71abba;
+    color: #fff;
+}
+.da_menu > li:hover a {
+    color: #fff;
+}
+.da_menu > li {
+    list-style: none;
+    background: #e8e8e8;
+    border-bottom: 1px solid #71abba;
+        cursor: pointer;
+
+}
+.da_menu > li:last-child {
+    border-bottom: none;
+}
+.da_menu > li a {
+    color: #333333 ;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none !important;
+    padding: 8px;
+}
+
+.da_rotate-arrow:after {
+        transform: rotate(0deg) !important;    
+}
+.da_rotate-arrow-temp:after {
+        transform: rotate(0deg) !important;    
+}
+
+@media screen and (max-width: 681px) {
+    .da_menu {
+        position: relative;
+    }
+    .da_rotate-arrow:after {
+        transform: rotate(180deg) !important;    
+    }
+    .da_rotate-arrow-temp:after{
+        transform: rotate(0deg) !important;
+    }
+}

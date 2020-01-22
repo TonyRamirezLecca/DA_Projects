@@ -1,0 +1,256 @@
+/*** CSS 1 ***/
+
+/*Breadcrumbs*/
+.da_breadcrumbs {
+    margin: 30px auto;
+    width: 1200px;
+    justify-self: center;
+    display: block;
+    max-width: 82vw;
+}
+.da_breadcrumbs span {
+    color: black;
+}
+.da_breadcrumbs a, .da_breadcrumbs span:before{
+    color: black !important;
+}
+/*****END BREADCRUMBS****/
+
+/**Header*/
+#columns > div > h1 {
+   display: none;
+}
+#manufacturers_block_left {
+    display: none;
+}
+
+
+/*NAV BAR*/
+
+/*****END NAV BAR****/
+
+
+    .da_data-sheet-header {
+			cursor: pointer;
+		}
+		.da_details-header {
+			cursor: pointer;
+		}
+
+
+/*Viewed Products Section*/
+#viewed-products_block_left {
+    max-width: 300px;
+    background: #efefef;
+    margin: 30px 0;
+    padding-bottom: 8px;
+    margin-top: 0px;
+}
+#viewed-products_block_left .clearfix {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+/*** END DROP DOWN FUNCTIONALITY ***/
+
+
+/*Hide stock availability*/
+#availability_value {
+    display: none;
+}
+
+
+/*Change background behind add to cart*/
+#add_to_cart {
+    background: #e1e1e1;
+    margin-bottom: 0px !important; 
+    padding-bottom: 2px;
+    margin-top: 0px;
+}
+.content_prices {
+
+}
+.product_attributes {
+    background: #e1e1e1;
+    margin-bottom: 0px !important;
+}
+#quantity_wanted_p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_quantity-wrapper {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_quantity-wrapper a {
+    margin: 0 !important;
+}
+.da_quantity-wrapper input {
+    width: 70% !important;
+}
+#quantity_wanted_p label {
+    text-align: left !important;
+    width: 90% !important;
+    font-weight: 800;
+    color: black !important;
+    font-size: 14px !important;
+}
+
+/*RIGHT COLUMN WITH SOCIAL ICONS*/
+.pb-right-column {
+    height: 100% !important;
+    flex: 1;
+    padding-bottom: 30px;
+}
+.pb-center-column {
+    flex: 1;
+}
+.da_column-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    
+}
+.socialsharing_product {
+    margin-bottom: 10px;
+}
+#usefull_link_block {
+    margin-top: 0px;
+    width: 65%
+}
+.pb-right-column .warning_inline {
+    display: none !important;
+    max-width: 220px;
+}
+.pb-center-column #usefull_link_block {
+    display: none
+}
+.pb-center-column .socialsharing_product {
+    display: none;
+}
+
+
+@media screen and (max-width: 876px) {
+    /**** MOBILE MENU ****/
+
+/***** END END END END END ****/
+}
+
+
+/*************************NEW EDITS***********************/
+
+.da_mobile-menu .da_manufacturers-list-mobile {
+    display: none;
+}
+
+/*********************************************************/
+
+
+@media screen and (max-width: 767px) {
+    /* Start DROP DOWN FUNCTIONALITY */
+    .da_data-sheet-header {
+        background: #efefef;
+        padding: 8px;
+        margin-bottom: 0px !important;
+    }
+    .da_details-header {
+        background: #efefef;
+        padding: 8px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    /**End Drop Down**/
+
+    /**Position of social**/
+    .da_column-wrapper {
+        flex-direction: column-reverse
+    }
+    /**End of position**/
+    .da_breadcrumbs {
+        max-width: 90vw;
+    }
+    #columns > div > h1 {
+       margin-top: 0px;
+       padding: 0 20px;
+       text-align: center;
+       display: block;
+       margin-bottom: 30px;
+    }
+    .da_column-wrapper {
+        padding-left: 0px;
+    }
+    .pb-right-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .pb-right-column .warning_inline {
+        display: block !important;
+    }
+    .warning_inline {
+        margin-bottom: 15px !important;
+    }
+    #usefull_link_block {
+        margin-top: 0px;
+        width: 25%
+    }
+    .da_column-wrapper > div > .socialsharing_product {
+        display: none;
+    }
+    .da_column-wrapper > div > #usefull_link_block {
+        display: none;
+    }
+    .da_email-btns {
+        display: block !important;
+        margin-bottom: 20px;
+        margin-top: -39px !important;
+
+    }
+    .da_social-btns {
+        display: block !important;
+        margin-top: -20px;
+        padding-bottom: 60px;
+    }
+    .da_quantity-wrapper {
+        min-width: 100%;
+        justify-content: flex-start;
+    } 
+    .da_quantity-wrapper input {
+        max-width: 40%;
+    }
+    #quantity_wanted_p label {
+        width: 100% !important;
+        font-weight: 800;
+        color: black !important;
+        font-size: 14px !important;
+        margin-left: 4px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #header > div.mod_head > div > div {
+        padding: 0px 10px;
+    }
+    #header_logo {
+        padding: 0px 5px;
+    }
+    .da_phone {
+        margin: 0 2px;
+    }
+    .da_cart {
+        margin: 0 2px;
+
+    }
+    .da_search {
+        margin: 0 2px;
+
+    }
+}

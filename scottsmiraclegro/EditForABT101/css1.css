@@ -1,0 +1,164 @@
+/*** CSS 1 ***/
+div.fm-timestamp {
+    display: none;
+}
+
+/***VAR 1 EDITS***/
+.da_how-it-works {
+   padding: 30px 60px;
+   font-family: lato !important;
+   display: flex;
+   flex-direction: column;
+}
+.da_header {
+    margin-bottom: 40px;
+    margin-left: 70px;
+}
+.da_header h2 {
+    margin-bottom: 8px;
+}
+.da_header p {
+    font-size: 16px;
+		font-family: platform;
+}
+.da_row {
+    display: flex;
+    margin: 30px 0;
+    flex: 1;
+}
+
+.da_img1 {
+    height: 200px;
+    width: 300px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0068/0552/0451/files/how-it-works-1_1280x.gif?v=1546638757);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.da_img2 {
+    height: 200px;
+    width: 300px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0068/0552/0451/files/how-it-works-2_1280x.gif?v=1546638774);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.da_img3 {
+    height: 200px;
+    width: 300px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0068/0552/0451/files/how-it-works-3_1280x.gif?v=1546638789);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.da_number1 {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 600;
+    background: #FFD200;
+    border-radius: 50%;
+    padding-top: 13px;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 40px
+    
+}
+.da_number2 {
+width: 48px;
+    height: 48px;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.01px;
+    line-height: normal;
+    font-weight: 600;
+    background: #FFD200;
+    border-radius: 50%;
+    padding-top: 13px;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.da_number3 {
+width: 48px;
+    height: 48px;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.01px;
+    line-height: normal;
+    font-weight: 600;
+    background: #FFD200;
+    border-radius: 50%;
+    padding-top: 13px;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.da_text {
+    font-size: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.da_text h4 {
+    font-size: 24px; 
+}
+.da_text p {
+	font-family: platform;
+}
+
+
+@media screen and (max-width: 840px) {
+    .da_how-it-works {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .da_header {
+        margin-left: 0px;
+    }
+    .da_header h2 {
+        text-align: center;
+        font-size: 38px;
+    }
+    .da_header p {
+        text-align: center;
+    }
+    .da_row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        flex: 1;
+    }
+    .da_number1 {
+        margin-right: 0px;
+        margin-top: 15px
+    }
+    .da_number2 {
+        margin-right: 0px;
+        margin-top: 15px
+    }
+    .da_number3 {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+    .da_text {
+        padding-top: 14px;
+        text-align: center;
+    }
+    .da_text h4 {
+        font-size: 24px; 
+        margin-top:
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .da_how-it-works {
+        padding: 0 20px;
+    }
+}

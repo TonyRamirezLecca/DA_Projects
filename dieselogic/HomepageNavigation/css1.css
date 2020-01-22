@@ -1,0 +1,179 @@
+/*** CSS 1 ***/
+.da_shop-product-dropdown {
+    position: absolute;
+    z-index: 101;
+    background: #f5f5f5;
+    width: 670px;
+    opacity: 0;
+    display: none;
+    margin-top: 0px;
+    border-top: 6px solid #f1d45f;
+}
+.mainNavItem.shopProducts:hover .da_shop-product-dropdown {
+    opacity: 0;
+    display: block;
+    animation: fadeInShopProducts 400ms forwards ;
+}
+@keyframes fadeInShopProducts {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.da_drop-down-ctn {
+    display: flex;
+    height: 610px;
+    width: 100%;
+}
+
+/*Left right side*/
+.da_left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-right: 1px solid #dadada;
+    padding: 20px 55px;
+}
+.da_right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px 55px;
+}
+
+/*Drop Down Section*/
+.da_dropdown-object {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+    margin: 5px 0px;
+}
+.da_dropdown-object h6 {
+    text-align: left;
+    width: 100%;
+    font-family: Oswaldbold;
+    font-weight: 800 !important;
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: #383636 !important;
+}
+.da_dropdown-object:hover h6 {
+    color: #13AABB !important;
+}
+
+/*Img*/
+.da_dropdown-img-wrap {
+    height: 75px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #afafaf;
+}
+.da_dropdown-img {
+    object-fit: cover;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.da_right-side > .da_dropdown-object:nth-child(3) .da_dropdown-img {
+    transform: translate(-50%, -65%);
+}
+
+/*Gray Bar*/
+.da_grey-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 17px;
+    background: #dadada;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    /**********MOBILE **********/
+    .da_shop-by-vehicle-mobile {
+        display: none !important;
+    }
+    .da_shop-by-vehicle-mobile li {
+        background: #4a525f;
+    }
+    .da_shop-by-vehicle-mobile li:Hover {
+        background: #3b3f46 !important;
+    }
+    .da_shop-by-vehicle-mobile a {
+        position: relative;
+    }
+    .da_shop-by-vehicle-mobile.da_shop-by-vehicle-slide-down {
+        display: table !important;
+    }
+
+
+
+    .da_mobile-shop-by-product {
+        cursor: pointer;
+    }
+    .da_mobile-shop-by-product a {
+        position: relative;
+    }
+    .da_mobile-shop-by-product .da_drop-down-ctn {
+        height: 100%;
+        background: #4a525f;
+    }
+    .da_mobile-shop-by-product .da_shop-product-dropdown {
+        position: relative;
+        width: 100%;
+        opacity: 1;
+        margin-top: 57px
+    }
+    .da_mobile-shop-by-product .da_left-side {
+        border: none;
+        padding: 10px;
+    }
+    .da_mobile-shop-by-product .da_right-side {
+        padding: 10px;
+    }
+    .da_mobile-shop-by-product .da_dropdown-object {
+        max-height: 80px !important;
+        height: 0px !important;
+        padding: 0px !important;
+        min-height: 100px;
+        border: none !important;
+        cursor: pointer;
+    }
+    .da_mobile-shop-by-product h6 {
+        font-size: 16px;
+        color: #fff !important;
+    }
+
+    .da_mobile-shop-by-product .da_dropdown-img-wrap {
+        height: 60px;
+    }
+
+    .da_mobile-shop-by-product .da_right-side > .da_dropdown-object:nth-child(3) .da_dropdown-img {
+        transform: translate(-50%, -60%);
+    }
+
+    #MainNav .mainNavContent ul .da_up, #MainNav .mainNavContent ul .da_down, #MainNav .mainNavContent ul .da_up2, #MainNav .mainNavContent ul .da_down2 {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 25px;
+    }
+    #MainNav .mainNavContent ul span {
+        display: block !important;
+    }
+
+}

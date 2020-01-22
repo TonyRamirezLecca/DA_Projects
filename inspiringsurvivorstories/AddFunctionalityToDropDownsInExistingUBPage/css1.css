@@ -1,0 +1,74 @@
+/*** CSS 1 ***/
+.da_new-section {
+    background-color: #176B9D;
+    font-family: lato;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.da_headline {
+    color: #fff;
+    font-size: 36px;
+    font-family: fjalla one;
+    text-align: center;
+		margin-top: 20px;
+    margin-bottom: 40px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.da_accordion {
+
+}
+.da_accordion-tab {
+    margin: 30px 0;
+}
+.da_accordion-tab h6 {
+	color: white !important;
+    background-color: #5A97B8;
+    font-size: 18px;
+    padding: 13px 10px;
+		cursor: pointer;
+}
+.da_plus {
+   font-size: 18px;
+   margin-right: 40px;
+	 display: inline-block;
+	 min-width: 11px;
+}
+.da_minus {
+    font-size: 18px;
+    margin-right: 40px;
+	 display: inline-block;
+	 min-width: 11px;
+}
+.da_accordion-text {
+	color: white !important;
+	font-size: 18px;
+	padding: 30px 0;
+	overflow: hidden;
+	height: auto;
+	transition: all 400ms;
+}
+ .da_hide-paragraph {
+     height: 0px;
+     padding: 0px;
+ }
+ .da_hide-plus-minus {
+	 display: none;
+ }
+
+
+@media screen and (max-width: 600px) {
+    .da_accordion-tab h6{
+        font-size: 15px;
+    }
+    .da_shift {
+        margin-left: 52px;
+    }
+}

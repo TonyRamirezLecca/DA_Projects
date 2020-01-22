@@ -1,0 +1,32 @@
+/*** CSS 4 ***/
+.article-text > .da_premium-btn {
+    display: none;
+}
+.da_free-pick {
+    display: flex;
+}
+.da_free-pick > .da_premium-btn {
+    display: flex;
+    font-size: 17px;
+    margin-top: -9px;
+    margin-left: 20px;
+    flex: 1;
+}
+.article-container > .promo.promo-all.active {
+	max-height: 0px;
+	margin: 0;
+}
+
+
+@media screen and (max-width: 1075px) {
+    .article-text > .da_premium-btn {
+        display: block;
+    }
+    .article-text > .da_premium-btn a{
+        margin-left: 0;
+    }
+
+    .da_free-pick > .da_premium-btn {
+        display: none;
+    }
+}

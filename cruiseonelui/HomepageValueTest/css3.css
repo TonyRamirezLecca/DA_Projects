@@ -1,0 +1,52 @@
+/* Css3 */
+.section-callout > .section-body > .shell.shell-normal {
+    max-width: 1350px;
+}
+.da_outer-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: center;
+}
+.da_paragraph-wrap {
+    flex: 1;
+    padding-right: 100px;
+    text-align: left;
+    color: #002f56;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_outer-wrap iframe {
+    flex: 1;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .da_outer-wrap {
+        flex-direction: column-reverse;
+        min-height: 600px;
+    }
+    .da_paragraph-wrap {
+        padding-right: 0px;
+        min-height: 100px;
+        max-height: 100%;
+        margin-bottom: -100px;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .da_outer-wrap {
+        margin-top: 10px;
+    }
+    .da_paragraph-wrap {
+        padding: 20px 0;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .btn.btn-large {
+        margin-top: -40px;
+    }
+}

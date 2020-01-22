@@ -1,0 +1,27 @@
+/*CSS 1 */
+#da_banner {
+    height: 475px;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/LPVPs/v1hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+    #da_banner {
+        height: 350px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #da_banner {
+        height: 260px;
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/LPVPs/v1hero-mobile.jpg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #da_banner {
+        height: 220px;
+    }
+}

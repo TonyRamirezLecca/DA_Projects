@@ -1,0 +1,190 @@
+/*** CSS 1 ***/
+
+/*Blinds Box Sizing*/
+.da_row-1 > div > div > div > div{
+    max-width: 46.5%;
+}
+/*Shutters Box Sizing*/
+.da_row-2 > div > div > div > div {
+    max-width: 46.5%;
+}
+
+
+/*Form Positioning*/
+.da_form {
+    position: absolute !important;
+    right: 35px !important;
+    top: 0 !important;
+    height: 628px !important;
+    max-width: 479px !important;
+    width: 43.5vw !important;
+		z-index: 20;
+}
+.da_form .row-inner {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+.da_form .pos-top.pos-center.align_left.column_parent.col-lg-12.single-internal-gutter {
+    padding: 0 !important;
+}
+
+/*Hero*/
+.da_hero {
+    height: 600px;
+}
+.da_hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_hero-content h1 {
+    color: white;
+    white-space: nowrap;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 3px #555;
+}
+.da_hero-content h1 br {
+    display: none;
+}
+.da_cta {
+    margin-top: 15px;
+    color: white;
+    background: linear-gradient( to right, #387cb8, #58a3cd);
+    padding: 15px 45px;
+    font-size: 18px;
+}
+.da_cta::selection {
+    background: none;
+}
+.da_vp {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0 !important;
+    width: 75vw;
+}
+.heading-text.el-text {
+    display: none;
+}
+.vc_custom_heading_wrap.free-text-block {
+    display: none !important;
+}
+.da_sticker {
+    position: absolute;
+    width: 130px;
+    top: -90%;
+    left: -9%;
+}
+
+
+
+@media screen and (max-width: 959px) {
+    .da_row-1 > div > div > div > div{
+        max-width: 100%;
+    }
+
+    .da_row-2 > div > div > div > div {
+        max-width: 100%;
+    }
+    .da_form {
+        right: 35px !important;
+        top: 0 !important;
+        height: 628px !important;
+        max-height: 900px !important;
+        max-width: 479px !important;
+        width: 43.5vw !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .da_sticker {
+        display: none;
+    }
+    .da_hero {
+        height: 400px;
+    }
+    .da_hero-content {
+        margin-top: -50px;
+    }
+    .da_hero-content h1{
+        font-size: 32px !Important;
+        text-align: center;
+    }
+    .da_cta {
+        white-space: nowrap;
+    }
+}
+
+
+
+@media screen and (max-width: 630px) {
+    .da_form .infusion-recaptcha {
+       font-size: 11px !important; 
+    }
+    .da_hero-content h1 br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .da_shutters .empty-space.empty-single{
+        display: none;
+    }
+    .da_blinds .empty-space.empty-single{
+        display: none;
+    }
+    .da_motorized {
+        margin-bottom: 15px;
+    }
+    .da_drapery {
+        margin-top: 15px;
+    }
+    .da_form .infusion-recaptcha {
+       font-size: 18px !important; 
+    }
+    .da_blinds {
+        margin-bottom: 30px;
+    }
+    .da_form {
+        position: relative !important;
+        right: 0 !important;
+        top: 0 !important;
+        height: 558px !important;
+        max-height: 900px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        margin-right: 36px !important;
+        margin-top: 25px !important;
+    }
+
+}
+@media screen and (max-width: 410px) {
+        .da_vp > div > span {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .da_form .infusion-recaptcha {
+       font-size: 14px !important; 
+    }
+
+
+}
+
+@media screen and (max-width: 340px) {
+    .da_form .infusion-recaptcha {
+       font-size: 14px !important; 
+    }
+    .da_form {
+        height: 630px !important;
+    }
+}

@@ -1,0 +1,41 @@
+/*** CSS 1 ***/
+.da_label {
+    position: absolute;
+    transform: translate(-70px, 7px);
+    font-weight: 600 !important;
+    font-size: 15px;
+}
+.da_filter {
+    transform: translate(-3px, 2px);
+}
+.collection .grid .collection-container {
+    width: 100%;
+}
+.collection .grid .collection-container .box.product{
+    width: 25%;
+}
+    .da_filter  optgroup {
+       display: none !important
+    }
+
+@media screen and (max-width: 800px) {
+    .da_label {
+        display: none;
+    }
+    .da_filter {
+        transform: translate(0px, 2px);
+    }
+    div#bc-sf-filter-top-sorting {
+        display: none !important;
+    }
+    #bc-sf-filter-top-display-type {
+        transform: translateX(3px)
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .collection .grid .collection-container .box.product{
+        width: 50%;
+    }
+}
+

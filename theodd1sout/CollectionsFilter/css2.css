@@ -1,0 +1,73 @@
+/*** CSS 2 ***/
+.collection .grid .collection-container {
+    width: 100%;
+}
+.collection .grid .collection-container .box.product{
+    width: 25%;
+}
+
+.da_filter-ctn {
+    transform: translateY(-15px);
+    margin-bottom: 20px;
+}
+.da_filter-btn {
+    color: #000;
+    text-decoration: none;
+    margin: 0 6px;
+    border: 2px solid #444;
+    padding: 4px 18px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+.da_filter-ctn2 {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .da_filter-ctn {
+        display: none;
+    }
+    .da_filter-ctn2 {
+        display: block;
+        transform: none;
+        margin-top: 17px;
+        margin-bottom: 35px;
+    }
+    .da_filter-btn {
+        padding: 10px 14px;
+    }
+    .collection-header .sort-by {
+        border-top: 1px solid #ededed;
+    }
+    header.collection-header>.container {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .collection .grid .collection-container .box.product{
+        width: 50%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .da_filter-btn {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .da_filter-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .da_filter-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

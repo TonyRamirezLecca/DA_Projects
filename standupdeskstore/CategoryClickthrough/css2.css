@@ -1,0 +1,14 @@
+/*** CSS 2 ***/
+.da_text-ctn {
+    background: #ebebeb;
+    min-height: 120px;
+    max-width: 70%;
+    margin: 10px auto;
+    border-radius: 2px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-weight: 600;
+}

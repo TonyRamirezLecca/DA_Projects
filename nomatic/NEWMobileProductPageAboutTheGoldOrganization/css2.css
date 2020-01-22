@@ -1,0 +1,58 @@
+/* CSS 2*/
+
+.da_price-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_price-section h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.da_price-section > h2 > span > span {
+    font-weight: 700 !important;
+    font-size: 24px;
+    font-family: gotham;
+}
+.da_price-section > div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Move entire section up*/
+.product-single__photos.col-lg-30 {
+    margin-top: -30px;
+}
+
+
+/*ATC*/
+.product-btns  .col-md-60.col-xl-60.product-btn-mobile {
+    display: none;
+}
+.col-md-60.col-xl-60.product-btn-mobile.sticky {
+    display: none;
+}
+.sticky {
+    position: relative !important;
+}
+.da_new-cta {
+    display: block !important;
+    padding: 0 15px !important;
+}
+
+.da_scroll {
+    position: fixed !important;
+    padding: 0 !important;
+}
+
+
+/* CSS 2 EDITS*/
+.product-single__photos.col-lg-30 {
+	margin-bottom: -10px;
+}
+
+

@@ -1,0 +1,27 @@
+/*** CSS 2 ***/
+.da_img {
+	position: absolute;
+	top: 46%;
+	left: 15px;
+	transform: translateY(-50%);
+	max-width: 30px;
+	max-height: 30px;
+}
+body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > ul > li {
+	position: relative;
+}
+body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > ul > li > a{
+	text-align: left;
+	padding-left: 65px;
+}
+
+
+@media screen and (max-width: 360px) {
+	.da_img {
+		left: 10px;
+	}
+	body > div.site-container > div.site-inner > div > main > div.hero-area > div > div.one-third.quote-box > div.medicare-mobile-list > ul > li > a{
+		padding-left: 50px;
+		font-size: 15px;
+	}
+}

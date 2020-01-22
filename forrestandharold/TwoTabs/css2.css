@@ -1,3 +1,4 @@
+/*Formatting for Headline*/
  .product-title.desktopvisible  {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;  
@@ -7,144 +8,91 @@
 }
 
 
-.tabs_container {
-    margin-top: 12px;
-    margin-left: -50px;
-    display: flex;
+/*Category Text (monochrome, two-tone)*/
+
+
+
+
+/*Hide Sold out swatch (Lime, Aqua, Yellow, Olive)*/
+.swatch-element.color.grey-yellow.available.color_two-tone {
+    display: none;
 }
-.two-tone-tab {
-    padding: 7px 66px;
-    color: black;
-    cursor: pointer;
-    background: #f3f3f3;
+.swatch-element.color.grey-aqua.available.color_two-tone {
+    display: none;
 }
-.monochrome-tab {
-    padding: 7px 50px;
-    color: black;
-    cursor: pointer;
-    position: relative;
-    background: #f3f3f3;
+.swatch-element.color.black-olive.available.color_two-tone {
+    display: none;
 }
 
 
-.two-tone-tab_active {
-    border-top: 1px solid #f3f3f3;
-    background: white !important;
-}
-.monochrome-tab_active {
-    border-top: 1px solid #f3f3f3;
-    border-right: 1px solid #f3f3f3;
-    background: white !important;
-}
-.monochrome-tab_absolute {
-    height: 100%;
-    width: 100vw;
-    top: 0;
-    left: 100%;
-    position: absolute;
-    border-bottom: 1px solid #f3f3f3;
-}
 
-
-div[data-value="Pebble-Grain Black"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-    border-radius: 0 !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(23) > div > label {
-    border-radius: 0 !important;
-    background-size: 120%;
-    background-position: 50% 50%;
-
-}
+/*Swatches Shape*/
 .color_monochrome {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(1) !important;
+    margin: 0 !important;
 }
 .color_two-tone {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100% !important;
-    height: 100% !important;
-}
+    margin: 0 !important;
 
-body .swatch label {
-    border-radius: 0;
-    height: 100% !important;
-    width: 100% !important;
-    background-repeat: no-repeat;
-    transform: translatex(-4px);
+}
+.da_two-tone-swatch__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.da_monochrome-swatch__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .swatchesWrapper {
-    display: inline-block;
-    overflow: hidden;
-    height: 40px;
-    width: 60px;
-    margin: 0 10px 10px 0;
+    display: inline-block !important;
+
 }
 .swatchesWrapper_monochrome {
-    display: inline-block;
-    overflow: hidden;
-    height: 40px;
-    width: 60px;
-    margin: 0 10px 10px 0;
+    display: inline-block !important;
 }
 
-/*NEW IMAGES FOR THE COLORS*/
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(3) > div > label {
-    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/charcoal-rust.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(5) > div > label {
-    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/navy-stone.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(7) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/espresso-slate.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(9) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/grey-yellow.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(11) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-lime.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(13) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-grey.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(15) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/navy-rust.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(17) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-brown.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(19) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-blue.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(21) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-red.jpg) !important;
-}
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(26) > div > label {
-        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/forrest-and-harold/two-tabs/black-olive.jpg) !important;
-}
+/*Swatches Size*/
+   	.swatchesWrapper {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 0px 0px 0 !important;
+		transform: scale(.8);
+	}
+	.swatchesWrapper_monochrome {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 0px 0px 0 !important;
+		transform: scale(.8);
+	}	
+
+
+
+
 
 
 @media screen and (max-width: 770px) {
-body.template-product .swatch input:checked + label {
-    border: none;
-    box-shadow: none;
-}
-    .monochrome-tab_absolute {
-        display: none
+    /*Gets rid of flex for wrapper*/
+    .da_two-tone-swatch__wrapper {
+        display: initial !important;
+        flex-wrap: wrap;
     }
+    .da_monochrome-swatch__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*Gets rid of shadow on click*/
+    body.template-product .swatch input:checked + label {
+        border: none;
+        box-shadow: none;
+    }
+    /*Center Review STARS*/
     #product-form-6657100101 > div.product-options > div.product-swatchess > div.yotpo.bottomLine {
         text-align: center;
         display: flex;
@@ -152,82 +100,69 @@ body.template-product .swatch input:checked + label {
         justify-content: center;
         margin-bottom: 10px;
     }
-    .tabs_container {
-         margin: 0 !important;
-         padding: 0 !important;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 103vw;
-         margin-left: -30px !important;
-    
-    }
-    #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix {
-        display: block;
-    }
-    .two-tone-tab {
-        padding: 7px 0px;
-        color: black;
-        cursor: pointer;
-         background: #f3f3f3;
-         flex: 1;
-    }
-    .monochrome-tab {
-         padding: 7px 0;;
-         color: black;
-         cursor: pointer;
-         position: relative;
-        background: #f3f3f3;
-        flex: 1;
-    }
-    .two-tone-tab_active {
-      border-top: 1px solid #f3f3f3;
-      background: white !important;
-    }
-    .monochrome-tab_active {
-       border-top: 1px solid #f3f3f3;
-       border-right: none;
-       background: white !important;
-    }
-
-    .swatch.clearfix {
-        text-align: left !important;
-    }
+    /*Centers "Color: Charcoal/Rust" text */
     #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div.header {
-        text-align: center;
+        text-align: left;
+        margin: 15px 0px;
     }
 
-body .swatch label {
-    background-position: 50% 50%;
-    background-size: 120%;
-    border-radius: 0;
-    min-height: 120px !important;
-    min-width: 120px !important;
-    transform: translateX(-4px);
-    background-repeat: no-repeat;
-    flex: 1;
+    #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix {
+        width: 100%;
+        text-align: left;
+    }
+    #product-form-6657100101 > div.product-options > div.product-swatchess {
+        width: 100%;
+    }
+
+    /*Swatches Size*/
+   	.swatchesWrapper {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 5px 0px 0 !important;
+		transform: scale(1);
+	}
+	.swatchesWrapper_monochrome {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 5px 0px 0 !important;
+		transform: scale(1);
+	}
+	/*Correct margin after 3rd two tone*/
+	#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div.da_two-tone__container > div.da_two-tone-swatch__wrapper > div:nth-child(3) {
+	    margin-right: 0 !important;
+	}
+
+
+	/*Spacing for categories*/
+	.da_two-tone__header {
+	    margin-bottom: 10px;
+	}
+	.da_two-tone__container {
+	    margin-bottom: 15px !important
+	}
+    .da_monochrome__header {
+	    margin-bottom: 10px;
+	}
 }
 
-.swatchesWrapper {
-}
-.color_two-tone {
-    justify-content: center;
-    align-items: center;
 
+
+
+
+
+@media screen and (max-width: 380px) {
+    /*Swatches Size*/
+   	.swatchesWrapper {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 0px 0px 0 !important;
+		transform: scale(.9);
+	}
+	.swatchesWrapper_monochrome {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 0px 0px 0 !important;
+		transform: scale(.9);
+	}
 }
 
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div > div {
-    display: flex;
-
-}
-
-.color_monochrome {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-  
-}

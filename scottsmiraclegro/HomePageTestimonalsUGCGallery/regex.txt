@@ -1,0 +1,13 @@
+Collections Regex
+
+\/aerogardens.html|\/aerogardens\/.*|\/seed-kits.html|\/seed-kits\/.*|\/grow-lights.html|\/grow-lights\/.*|\/accessories.html|\/accessories\/.*
+
+
+
+
+Product Pages Regex
+
+
+\/farm-base\.html|\/farm-plus\.html|\/harvest-elite.*|\/harvest-base\.html|\/harvest-360\.html|\/bounty-elite.*|\/bounty\.html|\/sprout\.html|\/harvest-premium-classic\.html|\/harvest-.*-classic.*|\/farm-xl.html|\/grow-anything-seed.*|\/bok-choi-seed.*|\/swiss-chard.*|\/shishito-pepper-seed.*|\/banana-pepper.*|\/farm-seed-pod.*|\/mighty-mini.*|\/custom-herb-seed.*|\/gourmet-herb.*|\/salad-bar-seed.*|\/scarborough-fair.*|\/custom-(flower|tomato|salad).*|\/heirloom-lettuc.*|\/golden-harvest.*|\/herbie-snapdragon.*|\/cascading-petunias.*|\/herbie-mint-ice-cream|\/love-blooms-seed.*|\/herbie-.*|\/salad-.*-.*|\/pesto-basil.*|\/salsa-garden.*|italian-herbs.*|\/cherry-tomato.*|\/pizza-herb.*|\/custom-.*-.*|\/romaine-seed.*|\/international-.*-.*|\/chili-.*-.*|\/herb-.*-.*|\/fresh-tea-seed.*|\/traditional-.*|\/mountain-.*|flower-.*-.*|\/asian-.*-.*|\/lots-of-lavender.*|\/english-.*-.*|\/jalapeno-.*-.*|\/thai-.*-.*|\/cocktail-.*-.*|\/rainbow-.*-.*|\/incredible-.*-.*|\/spring-.*-.*|\/phlox-.*|\/anaheim-.*-.*|\/cayenne-.*|\/ghost-.*|\/poblano-.*|\/vibrant-.*|\/zinnia-.*-.*|\/rosemary-.*|\/beet-.*|\/green-.*|\/mixed-.*|red-.*-.*|\/heirloom-.*-.*|\/italian-.*|\/lots-of-.*|\/colorful-.*|\/sweet-.*|\/mega-.*|\/lavender-.*|\/miracle-.*-.*|\/aerogarden-.*-.*|\/ag3-.*|\/2-pack-.*|\/grow-bulbs-for-all-3.*|\/maxgrow-.*|\/value-pack.*|\/the-.*-.*|\/replacement-.*|\/be-the-.*|\/1-liter.*|\/easy-.*-.*|\/plant-.*-.*|\/rinse-.*-.*|\/no-spill-.*|\/garden-.*-.*|\/power-.*-.*|\/universal-.*|\/grow-.*|\/pod-.*|\/50-.*|\/chunk-.*|\/supergrow-.*|\/mezzaluna-.*|\/airstones-.*|\/soft-tie.*|\/oxygen-.*
+
+

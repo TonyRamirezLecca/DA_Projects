@@ -1,0 +1,33 @@
+/* CSS 1 */
+
+@media screen and (max-width: 500px) {
+
+
+
+	/*Move entire section up*/
+	.product-single__photos.col-lg-30 {
+		margin-top: -30px;
+	}
+
+
+	/*ATC*/
+	.product-btns  .col-md-60.col-xl-60.product-btn-mobile {
+		display: none;
+	}
+	.col-md-60.col-xl-60.product-btn-mobile.sticky {
+		display: none;
+	}
+	.sticky {
+		position: relative !important;
+	}
+	.da_new-cta {
+		display: block !important;
+		padding: 0 15px !important;
+	}
+
+	.da_scroll {
+		position: fixed !important;
+		padding: 0 !important;
+	}
+
+}

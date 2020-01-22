@@ -1,0 +1,6 @@
+/*** CSS 1 ***/
+@media screen and (max-width: 480px) {
+    .equal-columns--outside-trim .small-down--one-whole:nth-of-type(1n+1) {
+        width: 100% !important;
+    }
+}

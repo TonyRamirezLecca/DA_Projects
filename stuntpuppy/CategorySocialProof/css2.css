@@ -1,0 +1,26 @@
+/*** CSS 2 ***/
+.grid-view-item__meta .spr-badge[data-rating="0.0"] {
+	display: none !important;
+}
+.spr-badge {
+	display: inline !important;
+}
+.grid-view-item__meta {
+    cursor: pointer;
+}
+.grid-view-item__meta .spr-badge-caption {
+    display: block;
+    color: #8a9298;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.grid-view-item__meta .spr-badge-caption:after {
+    content: ')'
+}
+.grid-view-item__meta .spr-badge-caption:before {
+    content: '('
+}
+.spr-badge-caption:hover {
+    border-bottom: none !important;
+}

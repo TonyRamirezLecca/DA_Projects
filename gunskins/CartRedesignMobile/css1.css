@@ -1,0 +1,190 @@
+/* CSS 1 */
+
+/*Remove Google Ratings*/
+#___ratingbadge_0 {
+    display: none !important;
+}
+/*Remove Update Cart Button*/
+#update-cart {
+    display: none;
+}
+
+/*Countdown*/
+
+/*error code*/
+.da_error-code-parent {
+    transform: translateY(-76px);
+}
+
+/* Note Section */
+#showNotebutton {
+    display: none !important;
+}
+#hideNotebutton {
+    display: none !important;
+}
+#cart-notes {
+    position: relative;
+}
+.da_note {
+    display: flex !important;
+    right: 200px;
+    justify-content: flex-end;
+    height: 70px;
+}
+.da_note textarea {
+    width: 32% !important;
+    transform: translateY(-70px);
+    height: 30px !important;
+    padding: 8px 8px !important;
+    font-size: 12px;
+}
+.da_note textarea::placeholder {
+    font-style: italic;
+    color: #aaa;
+    font-family: sans-serif;
+}
+
+
+/*Coupon Section*/
+.da_coupon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+.da_coupon-btn {
+    border-radius: 4px;
+    background: #cbcbcb !important;
+    margin-bottom: 0px !important;
+    margin-left: 5px;
+    min-width: 50%;
+}
+.da_coupon-input {
+    border-radius: 4px;
+    border-color: #cbcbcb !important;
+    font-size: 14px !important;
+    min-width: 180px !important;
+}
+.da_coupon-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+/*Subtotal*/
+.da_subtotal-wrapper {
+    display: flex;
+}
+.da_subtotal {
+    font-family: swiss-924;
+    font-size: 26px;
+    margin-right: 70px;
+    text-transform: uppercase;
+}
+.da_total-price {
+}
+
+
+@media screen and (max-width: 980px) {
+    .da_note textarea {
+        width: 49% !important;
+    }
+    .da_subtotal-wrapper {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #delivery_timer_wrapper {
+    padding-top: 80px !important;
+    transform: translateY(40px);
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.da_error-code-parent {
+    transform: translateY(-15px);
+    float: none !important;
+    display: block;
+    min-width: 100%;
+    text-align: center;
+}
+.da_error-code-parent span {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.da_move-timer-down {
+    transform: translateY(70px) !important;
+}
+    .da_note textarea {
+        width: 100% !important;
+        transform: none;
+    }
+    .da_note {
+        height: 100px;
+    }
+    #checkout {
+        margin-bottom: 50px !important;
+    }
+    .da_coupon-wrapper {
+        margin: 0 auto !important;
+        min-width: unset;
+    }
+    .da_coupon-wrapper-parent {
+        min-width: 100%;
+    }
+    .da_coupon-btn {
+
+    }
+    .da_coupon-input {
+
+    }
+    #cartform > table > tbody > tr.sub-total.da_subtotal-section > td:nth-child(2) {
+        display: none;
+    }
+    #shopping-cart .sub-total{
+        width: 91vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto !important;
+        position: absolute;
+    }
+
+    /*Subtotal*/
+    .da_subtotal-wrapper {
+        margin-top: 50px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .da_subtotal {
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 583px) {
+    .da_error-code-parent {
+    transform: translateY(-35px);
+}
+
+.da_move-timer-down {
+    transform: translateY(75px) !important;
+}
+}
+
+
+@media screen and (max-width: 385px) {
+    .da_coupon-input {
+        min-width: 100px !important;
+    }
+    .da_coupon-input::placeholder {
+        font-size: 12px;
+    }
+}
+
+

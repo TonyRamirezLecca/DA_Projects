@@ -1,3 +1,4 @@
+/*TAB SECTION*/
  .product-title.desktopvisible  {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;  
@@ -5,12 +6,17 @@
 .yotpo.bottomLine {
     margin-top: -15px;
 }
-
+.swatch .swatch-element.soldout label {
+    opacity: 1 !important;
+}
 
 .tabs_container {
     margin-top: 12px;
     margin-left: -50px;
     display: flex;
+		max-width: 102vw;
+		overflow: hidden;
+
 }
 .two-tone-tab {
     padding: 7px 66px;
@@ -25,8 +31,6 @@
     position: relative;
     background: #f3f3f3;
 }
-
-
 .two-tone-tab_active {
     border-top: 1px solid #f3f3f3;
     background: white !important;
@@ -45,104 +49,52 @@
     border-bottom: 1px solid #f3f3f3;
 }
 
+/*Hide Sold out swatch (Aqua, Yellow, Olive)*/
+#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(42) {
+    display: none !important;
+}
+#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(9) {
+    display: none !important;
+}
+#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(25) {
+    display: none !important;
+}
+#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(46) {
+	display: none !important;
+}
 
-.swatch-element.available {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
-div[data-value="Red"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
-div[data-value="Blue"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
-div[data-value="Navy"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
-div[data-value="Charcoal Grey"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
-div[data-value="Pebble-Grain Black"] {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120%;
-    height: 120%;
-}
+/*Swatches Shape*/
 .color_monochrome {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120%;
-    height: 120%;
 }
 .color_two-tone {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120%;
-    height: 120%;
-}
 
-body .swatch label {
-    background-position: 55% 50%;
-    background-size: 150%;
-    border-radius: 0;
-    height: 200px !important;
-    width: 300px;
-    transform: rotate(60deg) translateX(-4px);
-    background-repeat: no-repeat;
 }
 .swatchesWrapper {
     display: inline-block;
-    overflow: hidden;
-    height: 40px;
-    width: 60px;
-    margin: 0 10px 10px 0;
+
 }
 .swatchesWrapper_monochrome {
-    display: inline-block;
-    overflow: hidden;
-    height: 40px;
-    width: 60px;
-    margin: 0 10px 10px 0;
+    display: inline-block !important;
 }
 
+/*NEW IMAGES FOR THE COLORS*/
+
+
+
 @media screen and (max-width: 770px) {
-body.template-product .swatch input:checked + label {
-    border: none;
-    box-shadow: none;
-}
-    .monochrome-tab_absolute {
-        display: none
+
+    /*Gets rid of shadow on click*/
+    body.template-product .swatch input:checked + label {
+        border: none;
+        box-shadow: none;
     }
+    /*Center Review STARS*/
     #product-form-6657100101 > div.product-options > div.product-swatchess > div.yotpo.bottomLine {
         text-align: center;
         display: flex;
@@ -150,6 +102,7 @@ body.template-product .swatch input:checked + label {
         justify-content: center;
         margin-bottom: 10px;
     }
+    /*Makes Tabs (Two-Tone | Monochrome) Full width*/
     .tabs_container {
          margin: 0 !important;
          padding: 0 !important;
@@ -158,15 +111,10 @@ body.template-product .swatch input:checked + label {
          align-items: center;
          width: 103vw;
          margin-left: -30px !important;
-    
-    }
-    #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix {
-        display: block;
     }
     .two-tone-tab {
         padding: 7px 0px;
         color: black;
-        cursor: pointer;
          background: #f3f3f3;
          flex: 1;
     }
@@ -178,6 +126,7 @@ body.template-product .swatch input:checked + label {
         background: #f3f3f3;
         flex: 1;
     }
+    /*Adjusts Tab borders for mobile*/
     .two-tone-tab_active {
       border-top: 1px solid #f3f3f3;
       background: white !important;
@@ -187,37 +136,56 @@ body.template-product .swatch input:checked + label {
        border-right: none;
        background: white !important;
     }
-
-    .swatch.clearfix {
-        text-align: left !important;
-    }
+    
+    /*Centers "Color: Charcoal/Rust" text */
     #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div.header {
-        text-align: center;
+        text-align: left;
+        margin: 15px 0px;
     }
 
-body .swatch label {
-    background-position: 50% 50%;
-    background-size: 120%;
-    border-radius: 0;
-    min-height: 120px !important;
-    min-width: 120px !important;
-    transform: rotate(60deg) translateX(-4px);
-    background-repeat: no-repeat;
-    flex: 1;
-}
-
-.swatchesWrapper {
-}
-.color_two-tone {
-    justify-content: center;
-    align-items: center;
-}
-
-#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div > div {
-    display: flex;
+    #product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix {
+        width: 100%;
+        text-align: left;
+    }
 
 }
 
 
-  
+@media screen and (max-width: 390px) {
+    body .product-swatchess .swatch label {
+        transform: scale(.9)
+    }
+   	.swatchesWrapper {
+		width: 33px;
+		height: 25px;
+		margin: 0 2px 2px 0 !important;
+	}
+	.swatchesWrapper_monochrome {
+		width: 33px;
+		height: 25px;
+		margin: 0 2px 2px 0 !important;
+	}	
+	/*Height of swatches text container */
+	#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix {
+	    height: 100px;
+	}
+
 }
+
+@media screen and (max-width: 340px) {
+    body .product-swatchess .swatch label {
+        transform: scale(.8)
+    }
+   	.swatchesWrapper {
+		width: 30px;
+		height: 25px;
+		margin: 0 2px 2px 0 !important;
+	}
+	.swatchesWrapper_monochrome {
+		width: 30px;
+		height: 25px;
+		margin: 0 2px 2px 0 !important;
+	}	
+
+}
+

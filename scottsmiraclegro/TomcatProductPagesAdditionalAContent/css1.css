@@ -1,0 +1,305 @@
+/*** CSS 1 ***/
+body {
+    max-width: 100vw !important;
+}
+
+.da_gray {
+    background: #f4f4f4;
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    z-index: -1;
+    top: 0;
+    transform: translateX(-40%)
+}
+.da_section-ctn {
+    display: block !important;
+}
+.da_section-ctn > div h4 {
+    font-family: 'open sans condensed', Verdana,Helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 300px;
+}
+.da_section-ctn > div p {
+    font-size: 18px;
+}
+.da_no-padding {
+    margin: 0px !important;
+}
+.da_no-padding.da_new-section1, .da_no-padding.da_new-section2, .da_no-padding.da_new-section3, .da_no-padding.da_new-section4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/******SECTION 1*******/
+.da_new-section1 {
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    padding: 20px 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+.da_text-section1 {
+    flex: 1;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.da_text-section1 h4 {
+    font-size: 26px;
+    margin-bottom: 3px;
+        margin-top: -10px;
+    width: 450px !important;
+
+}
+.da_text-section1 p {
+    font-size: 16px;
+}
+.da_img1 {
+    flex: 1;
+    padding-left: 30px;
+}
+
+/******SECTION 2*********/
+.da_new-section2 {
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+.da_text-section2 {
+    flex: 1;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_no-padding.da_new-section2 .da_img2 {
+    padding-left: 0px;
+    padding-right: 30px;
+    flex: 1;
+}
+.da_no-padding.da_new-section2 .da_text-section2 {
+    padding-right: 0px;
+    padding-left: 30px;
+}
+.da_text-section2 li {
+    width: 100%;
+}
+.da_text-section2 h4 {
+    font-size: 26px;
+    margin-bottom: 3px;
+    margin-top: -10px;
+    width: 450px !important;
+}
+.da_text-section2 p {
+    font-size: 16px;
+}
+.da_img2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding-left: 30px;
+}
+
+
+/******SECTION 3*******/
+.da_new-section3 {
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    padding: 20px 40px;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.da_text-section3 {
+    flex: 1;
+    padding-right: 0px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.da_text-section3 h4 {
+    font-size: 26px;
+    margin-bottom: 3px;
+    margin-top: -10px;
+}
+.da_text-section3 p {
+    font-size: 16px;
+    max-width: 300px;
+}
+.da_img3 {
+    flex: 1;
+    padding-left: 30px;
+}
+
+/********Section 4 ************/
+.da_new-section4 {
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    padding: 20px 40px;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.da_text-section4 {
+    flex: 1;
+    padding-right: 0px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.da_text-section4 h4 {
+    font-size: 26px;
+    margin-bottom: 3px;
+    margin-top: -10px;
+}
+.da_text-section4 p {
+    font-size: 16px;
+    max-width: 300px;
+}
+.da_img4 {
+    flex: 1;
+    padding-left: 30px;
+}
+
+
+
+
+@media screen and (max-width: 859px) {
+    .da_no-padding.da_new-section1, .da_no-padding.da_new-section2, .da_no-padding.da_new-section3, .da_no-padding.da_new-section4 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .key-feature-section-divide {
+        margin-bottom: 0px !important;
+    }
+    .da_section-ctn > div p {
+        font-size: 14px;
+    }
+    .da_section-ctn > div h4 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .da_text-section1, .da_text-section2, .da_text-section3, .da_text-section4 {
+        padding: 0px 20px !important;
+        max-width: 420px;
+    }
+    .da_img1, .da_img2, .da_img3, .da_img4 {
+        padding: 0px !important;
+    }
+
+    .da_new-section1 {
+        margin-bottom: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 20px 30px;
+    }
+    .da_img1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .da_text-section1 {
+        padding-right: 0px;
+    }
+    .da_text-section1 h4 {
+        margin-top: 15px;
+        width: 100% !important;
+    }
+
+    .da_new-section2 {
+        margin-bottom: 0px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 20px 30px;
+    }
+    .da_new-section2.da_no-padding {
+        flex-direction: column !important;
+    }
+    .da_img2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .da_text-section2 {
+        padding-right: 0px;
+    }
+    .da_text-section2 h4 {
+        margin-top: 25px;
+        width: 100% !important;
+    }
+
+
+    .da_new-section3 {
+        margin-bottom: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 20px 30px;
+        margin-top: 20px;
+    }
+    .da_img3 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .da_text-section3 {
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100% !important;
+    }
+    .da_text-section3 h4 {
+        margin-top: 15px;
+        width: 100% !important;
+    }
+    .da_text-section3 p {
+        min-width: 100% !important;
+    }
+
+
+
+
+        .da_new-section4 {
+        margin-bottom: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 20px 30px;
+        margin-top: 20px;
+    }
+    .da_new-section4.da_no-padding {
+        flex-direction: column !important;
+    }
+        .da_text-section4 h4 {
+        margin-top: 15px;
+        width: 100% !important;
+    }
+
+        .da_text-section4 {
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100% !important;
+    }
+        .da_text-section4 p {
+        min-width: 100% !important;
+    }
+        .da_img4 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}

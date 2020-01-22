@@ -1,0 +1,176 @@
+/*** CSS 3 ***/
+
+/* Reviews */
+div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(1) > div > div > div > div > div.ts-reviews-rating-options > a {
+    display: none;
+}
+
+.da_review-ctn {
+    background: #f2f2f2;
+    padding: 10px;
+    width: 380px;
+		margin-top: 30px;
+}
+.da_review-line1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.da_stars {
+    margin: 0 20px 10px 0;
+}
+.da_review-line1 h6 {
+    display: inline;
+    font-weight: lighter !important;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.da_review-line1 img {
+    max-width: 100px;
+    justify-self: flex-end;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+.da_review {
+}
+.da_review p {
+    color: #777 !important;
+}
+.da_link {
+    color: #28a4de;
+    text-decoration: underline;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1430px) {
+    .da_review-ctn {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .da_review-ctn {
+        width: 330px;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .da_review-ctn {
+        width: 325px;
+    }
+    .da_stars {
+        margin: 0 10px 10px 0;
+    }
+    .da_review-line1 img {
+        margin-left: 10px;
+    }
+    .da_link {
+        font-size: 13px;
+    }
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(2) {
+        max-width: 40%;
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1310px) {
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .da_review-line1 {
+        align-items: center;
+        justify-content: center;
+    }
+     div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(2) {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(2) > div {
+        margin-top: -15px;
+    }
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(2) > div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #qp-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;       
+    }
+    #qp-container > div {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .da_review-ctn {
+        width: 100%;
+    }
+    .da_review-ctn {
+        display: flex;
+        flex-direction: column;
+    }
+    .da_review p {
+        text-align: center;
+    }
+    .da_link {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .da_review-ctn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .da_review-line1 {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .da_review-line1 h6 {
+        font-size: 14px !important;
+    }
+    .da_review p {
+        text-align: left;
+        font-size: 14px;
+    }
+    .da_link {
+        width: 100% !important;
+        text-align: left;
+    }
+    div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(1) {
+        padding: 0 8px;
+    }
+     div[data-section-type="product"] > div > div.col-lg-30.product-description > div > div.product-head > div > div:nth-child(2) {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .da_link {
+        font-size: 12px;
+    }
+}

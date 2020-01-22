@@ -1,0 +1,113 @@
+/*** CSS 1 ***/
+ #main .sign_in #content {
+   border: none;
+   height: 550px;
+   padding-left: 30px
+  }
+  .sign_in .divOr{
+    display: none;
+  }
+  
+  .sign_in #janrainEngageEmbed .janrainContent{
+    display: none;
+  }
+
+/*My Changes*/
+.da_guestSubmit:hover {
+    background: linear-gradient(to bottom, #69bef4, #4ba4bd);
+}
+.da_button:hover {
+    background: linear-gradient(to bottom, #69bef4, #45a4bf);
+}
+#content {
+    transform: translate(40px, 10px);
+}
+  #returningCustomer {
+      border-right: 1px solid black;
+      max-width: 420px
+  }
+  .sign_in .da_guestSubmit {
+      position: absolute;
+      right: 120px;
+      top: 108px;
+      background: #2aa8d2;
+      color: white !important;
+      border: none;
+      font-weight: 600;
+      width: 235px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+	.sign_in .da_guestSubmit:hover {
+		background: linear-gradient(to bottom, #69bef4, #45a4bf);
+	}
+
+  .da_or {
+      position: absolute;
+      top: 85px;
+      font-size: 14px;
+      left: 486px;
+  }
+	#guestSubmit {
+		display: none;
+		visibility: hidden;
+		position: absolute;
+		opacity: 0;
+		transform: translateY(100vh);
+		z-index: -400;
+	}
+	input[value="Continue as a Guest"] {
+		display: none;
+	}
+
+
+	/* Mobile */
+	div[data-role="content"]   #returningCustomer {
+        border-right: 0;
+        margin: 0 auto;
+    }
+
+#login > div.ui-panel-wrapper > div.ui-content > div:nth-child(1) > h1 {
+    max-width: 420px;
+    margin: 0 auto;
+}
+	#continueCheckoutBtn {
+		display: none;
+	}
+    #login > div.ui-panel-wrapper > div.ui-content > div:nth-child(1) > h2 {
+        display: none;
+    }
+    .da_button {
+      right: 120px;
+      top: 108px;
+      margin: 0 auto;
+      background: #2aa8d2;
+      color: white !important;
+      border: none;
+      font-weight: 600;
+      width: 95vw;
+      max-width: 700px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: -10px;
+    }
+    .da_wrapper p {
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+    }
+    input[value="Checkout as guest"] {
+		display: none;
+	}

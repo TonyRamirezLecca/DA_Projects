@@ -1,0 +1,130 @@
+/* Top Shopping Cart Functionality */
+.da_shopping-cart-li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+	padding-top: 9px;
+	font-size: 20px;
+	color: #fff !important;
+	cursor: pointer;
+}
+.da_shopping-cart-li-mobile {
+	list-style: none;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	right: 5px;
+}
+.da_shopping-cart-li-mobile > .da_shopping-cart {
+	position: absolute;
+	top: -10px;
+	left: -12px;
+	font-size: 22px;
+	color: #fff;
+}
+.da_shopping-cart:hover {
+	color: #ebebeb;
+}
+/*** CSS 2 ***/
+#satcb_sticky_cart {
+	display: none !important;
+}
+.popUpBackground {
+	background: #000;
+	opacity: .3;
+	height: 150vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.popUp {
+	position: fixed;
+	z-index: 1001;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	height: 440px;
+	width: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.closePopUp {
+	position: absolute;
+	top: -2px;
+	right: 2px;;
+	font-size: 18px;
+	padding: 8px 10px 5px 5px;
+	cursor: pointer;
+	color: #fff;
+}
+.displayNone {
+	display: none;
+}
+
+.da_popup-red-bar {
+	background: #b14259;
+	height: 36px;
+	width: 100%;
+	min-widht: 100%;
+	position: absolute;
+	top: 0;
+}
+.da_proceed-to-checkout {
+	width: 300px;
+	padding: 0px !important;
+	height: 45px !important;
+	min-height: 20px !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+}
+.da_success {
+	font-size: 32px;
+	font-family: oswald;
+	font-weight: 300;
+	margin-bottom: 50px;
+	cursor: default;
+	text-align: center;
+	line-height: 35px;
+}
+.da_success br {
+	display: none;
+}
+.da_view-cart {
+	color: #000 !important;
+	text-decoration: underline;
+	font-family: oswald;
+	font-weight: 300;
+	margin-top: 10px;
+	font-size: 16px;
+	margin-top: 25px !important;
+}
+.da_continue-shopping {
+	color: #000;
+	text-decoration: underline;
+	font-weight: 300;
+	position: absolute;
+	bottom: 30px;
+}
+
+@media screen and (max-width: 750px) {
+	.popUp {
+		max-width: 350px;
+		width: 80%;
+		height: 80vh;
+	}
+	.da_success br {
+		display: block;
+	}
+	.da_proceed-to-checkout {
+		max-width: 80%;
+	}
+
+	.da_cart-drawer {
+		width: 300px;
+	}
+}

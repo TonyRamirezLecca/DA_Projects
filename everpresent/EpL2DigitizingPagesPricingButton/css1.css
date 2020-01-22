@@ -1,0 +1,7 @@
+/*** CSS 1 ***/
+#wi-content > .container:first-child .maxbutton-12.maxbutton.maxbutton-national {
+	width: 200px;
+}
+#wi-content > .container:first-child .maxbutton-12.maxbutton.maxbutton-national > span {
+	white-space: nowrap;
+}

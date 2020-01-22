@@ -1,0 +1,127 @@
+/* CSS 2 */
+
+.product_attributes{
+    padding-bottom: 2px;
+}
+#last_quantities {
+    background: #444;
+    border: none;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+#add_to_cart {
+    max-width: 75%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+#add_to_cart button {
+    padding: 0px !important;
+    background: #6db541;
+    border: none;
+}
+.product_quantity_down {
+    height: 30px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px !important;
+}
+.product_quantity_up {
+    height: 30px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px !important;
+}
+#quantity_wanted {
+    max-height: 30px !important;
+    max-width: 95px !important;
+}
+/*box background*/
+.content_prices {
+  background: #fff;
+  display: flex;
+}
+.content_prices > div > p > span {
+    color: #000 !important;
+}
+.pb-right-column {
+  background: #e1e1e1;
+  padding: 0px;
+}
+
+/* VP */
+.da_vps {
+    margin: 7px 0 10px 0;
+}
+.box-security  {
+    padding-top: 10px
+}
+.box-security > p {
+    margin-bottom: 20px;
+}
+.box-security > img {
+    margin-bottom: 10px;
+}
+#usefull_link_block {
+  display: none;
+}
+#send_friend_button:before {
+    font-family: "FontAwesome";
+    font-size: 13px;
+    content: "\f02f";
+}
+.da_v2-social-ctn {
+    display: flex;
+    background: white;
+}
+.da_v2-social-ctn > a:last-child:before {
+    content: "\f003";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    text-align: center;
+    left: 0;
+    font-weight: normal;
+}
+.da_v2-social-ctn > a, .da_v2-social-ctn button{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 4px;
+    background: none;
+    background: #e1e1e1;
+}
+.box-info-product .exclusive:hover {
+  color: #fff;
+}
+.box-info-product .exclusive:hover span {
+  color: #fff;
+}
+.da_v2-social-ctn > button:first-child {
+  margin-left: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+  .pb-right-column {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: block;
+    margin-top: -10px;
+  }
+  #add_to_cart {
+    width: 180px;
+    max-width: 67%;
+  }
+  .da_v2-social-ctn {
+    margin-bottom: 100px;
+  }
+}

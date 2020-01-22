@@ -1,0 +1,151 @@
+/* CSS 1 */
+
+#shopify-section-1563378092776 > div > div > div.feature-row__item.feature-row__text.feature-row__text--left.larger-text > h2 {
+    margin-bottom: 10px;
+}
+.da_cta-wrapper {
+    display: flex;
+    margin-top: 25px;
+}
+.da_cta-wrapper a {
+    margin: 0px !important;
+    padding: 9px 20px !important;
+    width: 167px;
+    white-space: nowrap;
+}
+.da_watch-video {
+    margin-left: 15px;
+    padding: 9px 20px;
+    background: #f8d966;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: montserrat;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+/*POP UP*/
+.popUpBackground {
+	background: #000;
+	opacity: .3;
+	height: 150vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.popUp {
+	position: fixed;
+	z-index: 1001;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	height: 470px;
+	width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+.displayNone {
+	display: none;
+}
+
+
+.popUp div {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .feature-row.aos-init.aos-animate {
+        flex-direction: column;
+    }
+    #shopify-section-1563378092776 > div > div > div.feature-row__item.feature-row__text.feature-row__text--left.larger-text {
+        width: 100vw;
+    }
+    .popUp {
+        height: 350px;
+        width: 600px;
+    }
+    .popUp div {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .popUp {
+        height: 340px;;
+        width: 90%;
+    }
+    .popUp div {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .da_cta-wrapper a {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .da_watch-video {
+         font-size: 14px !important;
+         width: 167px;
+    }   
+    .popUp {
+        height: 300px;;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .popUp {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .popUp {
+        height: 220px;
+        padding: 5px 10px
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .da_cta-wrapper a {
+         width: 140px;
+         font-size: 13px;
+    }
+    .da_watch-video {
+         font-size: 13px !important;
+         width: 140px;
+    }   
+}
+
+@media screen and (max-width: 385px) {
+    .popUp {
+        height: 210px;
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .popUp {
+        height: 190px;
+    }
+}
+
+
+

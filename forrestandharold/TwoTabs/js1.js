@@ -16,7 +16,7 @@ function whenExists(elements, callback) {
 	}, 100);
 }
 
-whenExists('.yotpo.bottomLine,.product-swatchess, #product-form-6657100101 > div.product-options > div.product-swatchess > div > div.swatch-element.color.black-olive.available > label', function () {
+whenExists('#product-form-6657100101 > div.product-options > div.product-swatchess > div > div.hidethispermanently.swatch-element.color.grey-aqua.available', function () {
 	console.log("DA_Script");
 
 	//Inserts Tabs
@@ -30,13 +30,22 @@ whenExists('.yotpo.bottomLine,.product-swatchess, #product-form-6657100101 > div
 	$('.two-tone-tab').addClass('two-tone-tab_active');
 
 	//Seperate colors with classes
-	$('div[data-value="Red"]').addClass('color_monochrome');
-	$('div[data-value="Blue"]').addClass('color_monochrome');
-	$('div[data-value="Navy"]').addClass('color_monochrome');
-	$('div[data-value="Charcoal Grey"]').addClass('color_monochrome');
-	$('div[data-value="Pebble-Grain Black"]').addClass('color_monochrome');
 	$('.swatch-element.available').addClass('color_two-tone');
+	$('div[data-value="Red"]').addClass('color_monochrome');
+	$('div[data-value="Red"]').addClass('hidethispermanently');
+	$('div[data-value="Red"]').removeClass('color_two-tone');
+	$('div[data-value="Blue"]').addClass('color_monochrome');
+	$('div[data-value="Blue"]').addClass('hidethispermanently');
+	$('div[data-value="Blue"]').removeClass('color_two-tone');
+	$('div[data-value="Navy"]').addClass('color_monochrome');
+	$('div[data-value="Navy"]').addClass('hidethispermanently');
+	$('div[data-value="Navy"]').removeClass('color_two-tone');
+	$('div[data-value="Charcoal Grey"]').addClass('color_monochrome');
+	$('div[data-value="Charcoal Grey"]').addClass('hidethispermanently');
+	$('div[data-value="Charcoal Grey"]').removeClass('color_two-tone');
+	$('div[data-value="Pebble-Grain Black"]').addClass('color_monochrome');
 	$('div[data-value="Pebble-Grain Black"]').removeClass('color_two-tone');
+	$('div[data-value="Pebble-Grain Black"]').addClass('hidethispermanently');
 
 	//Add a wrapper around the swatches
 	$('.color_two-tone').wrap('<div class="swatchesWrapper"></div>');
@@ -46,6 +55,9 @@ whenExists('.yotpo.bottomLine,.product-swatchess, #product-form-6657100101 > div
 		//default hide this 
 		$('.swatch-element.soldout').addClass('hidethispermanently');
 		$('.swatchesWrapper_monochrome').hide();
+
+	//Click Charcoal Rust for default
+	$('#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(3) > div > label').click();
 	
 	$('.two-tone-tab').click(() => {
 		//Changes Tab Look
@@ -56,6 +68,8 @@ whenExists('.yotpo.bottomLine,.product-swatchess, #product-form-6657100101 > div
 		$('.color_monochrome').addClass('hidethispermanently');
 		$('.swatchesWrapper').show();
 		$('.swatchesWrapper_monochrome').hide();
+		//Click first color swatch
+		$('#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(3) > div > label').click();
 	});
 
 	$('.monochrome-tab').click(() => {
@@ -67,5 +81,7 @@ whenExists('.yotpo.bottomLine,.product-swatchess, #product-form-6657100101 > div
 		$('.color_monochrome').removeClass('hidethispermanently');
 		$('.swatchesWrapper').hide();
 		$('.swatchesWrapper_monochrome').show();
+		//Click first color swatch
+		$('#product-form-6657100101 > div.product-options > div.product-swatchess > div.swatch.clearfix > div:nth-child(22) > div > label').click();
 	});
 });

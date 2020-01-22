@@ -1,0 +1,28 @@
+/*** CSS 1 ***/
+.da_shopping-cart-li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+	padding-top: 9px;
+	font-size: 20px;
+	color: #fff !important;
+	cursor: pointer;
+}
+.da_shopping-cart-li-mobile {
+	list-style: none;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	right: 5px;
+}
+.da_shopping-cart-li-mobile > .da_shopping-cart {
+	position: absolute;
+	top: -10px;
+	left: -12px;
+	font-size: 22px;
+	color: #fff;
+}
+.da_shopping-cart:hover {
+	color: #ebebeb;
+}
