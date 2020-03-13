@@ -1,0 +1,25 @@
+/* Addded in theme.liquid */
+/*  {{ 'bold-po.css' | asset_url | stylesheet_tag }} */
+
+.bold_cart_edit_button{
+  /* float: right; */
+  text-transform: uppercase;
+} 
+.bold_option.bold_option_dropdown {
+    column-count: 2;
+    display: -webkit-inline-box;
+    width: 40%;
+}
+
+.btn.btn--small.btn--secondary.cart__remove.bold_custom_remove_button {
+  background-color: #fff;
+  color: #3d4246;
+  border-color: #e8e9eb;
+  border-width: 1px;
+  font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 0;
+}
+

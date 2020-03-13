@@ -1,0 +1,68 @@
+/* CSS 1 */
+.d-flex-column {
+    display: none !important;
+}
+
+.col-md-6 .text-center.mb-5 {
+    display: none;
+}
+
+.da_fancy-text {
+    color: #fff;
+    font-family: Kaushan Script !important;
+    margin-bottom: 20px;
+}
+
+.da_cta-ctn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.da_cta-ctn a {
+    margin: 0px 10px !important;
+    flex: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .da_cta-ctn {
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .da_cta-ctn {
+        flex-direction: column;
+        width: unset;
+    }
+    .da_cta-ctn a {
+        margin: 10px 0px !important;
+        padding: 8px 24px !important;
+    }
+    .banner-text p {
+        font-size: 15px !important;
+        max-width: 95% !important;
+    }
+    .banner-text h1 {
+        font-size: 35px;
+        max-width: 95% !important;
+    }
+    .da_fancy-text {
+        font-size: 22px;
+    }
+    .custom-btn {
+        max-width: 90%;
+    }
+    .banner-section {
+        height: 450px !important;
+        max-height: 2000px;
+        position: relative;
+    }
+    .dark-layer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}

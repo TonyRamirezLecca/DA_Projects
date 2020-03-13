@@ -1,0 +1,133 @@
+/*** CSS 4 ***/
+
+/*** CSS 1 ***/
+@media screen and (max-width: 899px) {
+	/*NAV BAR AND SEARCH BAR*/
+		.mobileMainNavContent.mean-container {
+			height: 0px;
+		}
+		#MainNav .mainNavContent .mobileMainNavContent .mobileMenuWrap {
+			display: flex;
+		}
+		#MainNav .mainNavContent .mobileMainNavContent .mobileMenuWrap a.menuItem {
+			float: none;
+			width: unset;
+			flex: 1;
+			min-width: 25%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#MainNav {
+			padding: 0px;
+		}
+		#MainNav .mainNavContent {
+			height: 30px;
+			transition: all 400ms;
+		}
+		#MainNav .mainNavContent.da_active {
+			height: 84px;
+			transition: all 400ms;
+		}
+
+		#SearchWrap {
+			display: none;
+		}
+		input[id$="ctrlSearch_SearchButton"] {
+			display: none;
+		}
+		.da_close-search {
+			background: none;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			transform: translateY(-50%);
+			height: 25px;
+			width: 25px;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			z-index: 1;
+		}
+
+	/*CTA SECTION*/
+        .da_cta-section {
+            display: flex;
+            flex-direction: column;
+            background: #4a525f;
+            padding: 18px 0px;
+            margin-bottom: 5px;
+			margin-top: -5px;
+        }
+        .da_cta-section h2 {
+        	text-align: center;
+        	color: #fff;
+        	margin-bottom: 8px;
+        }
+        .da_cta-ctn {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+        }
+        .da_cta-ctn a {
+        	flex: 1;
+        	text-align: center;
+        	color: #41525f;
+        	background: #f7d442;
+        	padding: 8px;
+        	margin: 3px;
+        	font-weight: 800 !important;
+        	font-family: OswaldBook !Important;
+        	font-size: 14px;
+        }
+
+
+
+
+
+	#MainNav {
+		margin-bottom: 5px;
+	}
+	
+	/*CHANGE HERO*/
+	    .homeRotateWrap > div:first-child {
+            background-image: url(https://static.disruptive.co/dieselogic/pdp-hero-image-mobile/heroImgV2.png);
+	        background-size: cover;
+	        background-repeat: no-repeat;
+	        background-position: center;
+	        margin: 10px 0px !important;
+	    }
+		.da_hero-text-ctn {
+            margin: 25px 15px;
+		}
+		.da_hero-text-ctn h2 {
+		    margin: 0px;
+		    font-weight: 100 !important;
+		    font-family: oswaldlight
+		}
+
+		.da_black-text {
+		    margin: 0px;
+		    color: #3f3f3f;
+		    font-size: 20px;
+		}
+
+		.da_yellow-text {
+            color: #f7d442;
+            font-size: 22px;
+		}
+
+		.da_white-text {
+			color: #fff;
+			font-size: 16px;
+		}
+
+		.da_lightning {
+		    width: 100%;
+		    position: absolute;
+		    bottom: 10px;
+		}
+
+}

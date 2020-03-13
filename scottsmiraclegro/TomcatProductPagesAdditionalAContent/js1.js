@@ -17,6 +17,7 @@ function whenExists(elements, callback) {
 whenExists('#product-learn-region', function () {
 	/* Add class to container */
 	if (window.location.href.includes('https://www.tomcatbrand.com/en-us/products/mice/tomcat-press-n-set-mouse-trap')) {
+		console.log('1');
 		jQuery('.field.field--name-field-product-bundle-section.field--type-entity-reference-revisions.field--label-hidden.field__items').addClass('da_section-ctn');
 
 		/* Add class to first 3 children of container */
@@ -62,6 +63,7 @@ whenExists('#product-learn-region', function () {
 		jQuery('.da_section3 > div:nth-child(2)').addClass('paragraph--text-position--right');
 	}
 	else if (window.location.href.includes('https://www.tomcatbrand.com/en-us/products/more/tomcat-repellents-animal-repellent-granules')) {
+		console.log('2');
 		jQuery('.field.field--name-field-product-bundle-section.field--type-entity-reference-revisions.field--label-hidden.field__items').addClass('da_section-ctn');
 		jQuery('<div class="da_section-ctn"><section></section><section></section><section></section><section></section></div>').insertAfter('#product-detail-region');
 
@@ -80,6 +82,7 @@ whenExists('#product-learn-region', function () {
 		jQuery('<div class="da_no-padding da_new-section4"><div class=da_img4><img src=https://s3-us-west-1.amazonaws.com/static.disruptive.co/scotts/tomcat/product-pages-additional-aplus-content/GUARANTEE.png></div><div class=da_text-section4><h4>Guarantee</h4><p>' + guarantee + '</p></div><div class="da_gray"></div></div>').insertBefore('.da_section4');
 	}
 	else {
+		console.log('Other');
 		jQuery('.field.field--name-field-product-bundle-section.field--type-entity-reference-revisions.field--label-hidden.field__items').addClass('da_section-ctn');
 		jQuery('<div class="da_section-ctn"><section></section><section></section><section></section><section></section></div>').insertAfter('#product-detail-region');
 

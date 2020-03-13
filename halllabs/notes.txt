@@ -1,0 +1,90 @@
+
+hero -> slideshow.liquid
+------------------------
+#da-inside-content h1 {
+	/*Make font smaller*/
+}
+#da-inside-content p {
+	/*Make font smaller*/
+}
+
+
+HOW IT WORKS 
+------------------------
+https://my-smart-blinds.myshopify.com/admin/pages/40239923223
+
+<div class="grid grid--no-gutters hiw">
+   <center>
+      <h2>How It Works</h2>
+   </center>
+   <div class="grid__item medium-up--one-half js">
+      <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/automate-box.png?13654" alt="" />
+      <h3>Automate My Window Coverings</h3>
+      <h5>Already have window coverings you love? Make them smart!</h5>
+      <br /> <br /> 
+      <a href="#" onclick="toggle('automate-detail')">
+         <h5>SEE MORE</h5>
+         <div class="chevron-down">›</div>
+      </a>
+      <br /> <br />
+      <ol id="automate-detail" class="toggle-vert">
+         <li>
+            <h5>Choose the Automation Kit for your existing window treatments: roller shades or blinds.</h5>
+            <br /> <br /> <br /> <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/blinds_f077d9a0-5092-4508-be7c-7de31172c4c7.png?13654" alt="" />
+            <h5 class="inline">AND/OR</h5>
+            <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/rollershades.png?13654" alt="" />
+         </li>
+         <li>
+            <h5>Pick the number of Automation Kits you need.</h5>
+            <br /> <br /> <br /> <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/kits.png?13654" alt="" style="margin-left: 20%;" />
+         </li>
+         <li>
+            <h5>DIY or leave it to the pros?</h5>
+            <br /> <br />
+            <h5 class=" underline">DIY</h5>
+            <p>We'll send you your Automation Kits with simple instructions. That's it!</p>
+            <h5 class=" underline">BUY IT INSTALLED</h5>
+            <p>Sit back, relax, and wait for a pro from our network of installers to contact you for your installation. That's it!</p>
+            <div class="divider" style="margin-top: 40px;"></div>
+            <a href="/collections/automation-kits" class="btn-custom-buy hero__cta">GET STARTED</a>
+         </li>
+      </ol>
+   </div>
+   <div class="grid__item medium-up--one-half js light">
+      <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/window2.png?13654" alt="" style="opacity: 1; margin-botom: 1rem;" />
+      <h3>Customize New Window Coverings</h3>
+      <h5>Get all new custom-made window coverings sent to your doorstep.</h5>
+      <br /> <br /> 
+      <a href="#" onclick="toggle('coverings-detail')">
+         <h5>SEE MORE</h5>
+         <div class="chevron-down">›</div>
+      </a>
+      <br /> <br />
+      <ol id="coverings-detail" class="toggle-vert">
+         <li>
+            <h5>You choose: roller shades or blinds.</h5>
+            <br /> <br /> <br /> <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/blinds_f077d9a0-5092-4508-be7c-7de31172c4c7.png?13654" alt="" />
+            <h5 class="inline">AND/OR</h5>
+            <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/rollershades.png?13654" alt="" />
+         </li>
+         <li>
+            <h5>Pick the number of window coverings you need. All sizes and colors for just one flat price. </h5>
+            <br /> <br /> <br /> <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/kits.png?13654" alt="" style="margin-left: 20%;" />
+         </li>
+         <li>
+            <h5>DIY or leave it to the pros?</h5>
+            <br /> <br />
+            <h5 class=" underline">DIY</h5>
+            <p>We'll send a form following purchase to gather your measurements, mount type, color preference, and other customizations. Then we'll send you your window coverings with simple instructions. That's it!</p>
+            <h5 class=" underline">BUY IT INSTALLED</h5>
+            <p>Sit back, relax, and wait for a pro from our network of installers to contact you. They'll handle your measurement and installation. That's it!</p>
+            <div class="divider"></div>
+            <a href="/collections/window-coverings" class="btn-custom-buy hero__cta">GET STARTED</a>
+         </li>
+      </ol>
+   </div>
+</div>
+<style>
+   <!--
+      -->
+</style>

@@ -15,10 +15,8 @@ function whenExists(elements, callback) {
 		}
 	}, 100);
 }
-whenExists('.hello-banner', function () {
+whenExists('.login-logout, #search, .mini-basket-icon.img-responsive, .global-mini-basket-wrapper > a, #header-flex-container, #search .ng-scope.ng-pristine.ng-valid', function () {
 
-	document.querySelector('.hello-banner font:nth-child(1)').innerHTML = 'Free Custom Graphic or Digitized Design';
-	document.querySelector('.hello-banner font:nth-child(2)').innerHTML = 'from Coldesi-Graphics with $100 Apparel Order <a href="/blanks">Learn more</a>';
 	document.querySelector('#header-flex-container').append(document.querySelector('.global-mini-basket-wrapper')); 
 	document.querySelector('#search').prepend(document.querySelector('.login-logout'));
 	$('.mini-basket-icon.img-responsive').addClass('da_desktop-cart').attr('src', 'https://s3-us-west-1.amazonaws.com/static.disruptive.co/colman-%26-company/nav-remove-distractions/Vector+Smart+Object.png');

@@ -1,0 +1,46 @@
+/*** CSS 2 ***/
+@media screen and (max-width: 899px) {
+	#MainNav {
+		margin-bottom: 5px;
+	}
+	
+	/*CHANGE HERO*/
+	    .homeRotateWrap > div:first-child {
+            background-image: url(https://static.disruptive.co/dieselogic/pdp-hero-image-mobile/heroImgV2.png);
+	        background-size: cover;
+	        background-repeat: no-repeat;
+	        background-position: center;
+	    }
+		.da_hero-text-ctn {
+            margin: 25px 15px;
+		}
+		.da_hero-text-ctn h2 {
+		    margin: 0px;
+		    font-weight: 100 !important;
+		    font-family: oswaldlight
+		}
+
+		.da_black-text {
+		    margin: 0px;
+		    color: #3f3f3f;
+		    font-size: 20px;
+		}
+
+		.da_yellow-text {
+            color: #f7d442;
+            font-size: 22px;
+		}
+
+		.da_white-text {
+			color: #fff;
+			font-size: 16px;
+		}
+
+		.da_lightning {
+		    width: 100%;
+		    position: absolute;
+		    bottom: 10px;
+		}
+
+
+}

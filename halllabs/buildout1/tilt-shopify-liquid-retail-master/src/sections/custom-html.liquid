@@ -1,0 +1,206 @@
+<div class="page-width">
+<div class="grid grid--no-gutters image-bar image-bar--{{ section.settings.section_height }}">
+  {% case section.blocks.size %}
+    {% when 1 %}
+      {%- assign column_size = '' -%}
+    {% when 2 %}
+      {%- assign column_size = 'medium-up--one-half' -%}
+    {% when 3 %}
+      {%- assign column_size = 'medium-up--one-third' -%}
+    {% else %}
+      {%- assign column_size = 'medium-up--one-quarter' -%}
+  {% endcase %}
+
+  {% for block in section.blocks %}
+    <noscript>
+      <div class="grid__item {{ column_size }}" {{ block.shopify_attributes }}>
+        <div class="image-bar__item image-bar__item--{{ block.id }}" style="background-image: url({{ block.settings.image | img_url: '2048x' }});"></div>
+      </div>
+    </noscript>
+
+    <div class="grid__item {{ column_size }} js" {{ block.shopify_attributes }}>
+      {% if block.settings.link != blank %}
+        <a class="image-bar__link" href="{{ block.settings.link }}">
+          <div class="image-bar__item box ratio-container lazyload"
+               data-bgset="{% include 'bgset', image: block.settings.image %}"
+               data-sizes="auto"
+               data-parent-fit="cover"
+               style="background-position: {{ block.settings.alignment }}; background-image: url('{{ block.settings.image | img_url: '300x300' }});">
+      {% elsif block.settings.image != blank %}
+        <div class="image-bar__item image-bar__item--{{ block.id }} box ratio-container lazyload"
+             data-bgset="{% include 'bgset', image: block.settings.image %}"
+             data-sizes="auto"
+             data-parent-fit="cover"
+             style="background-position: {{ block.settings.alignment }}; background-image: url('{{ block.settings.image | img_url: '300x300' }});">
+      {% else %}
+        <div class="image-bar__item">
+      {% endif %}
+      <div class="image-bar__content{% if block.settings.cta_label != blank %} image-bar__overlay{% endif %}">
+        {% if block.settings.image == blank %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        {% if block.settings.cta_label != blank %}
+          <div class="image-bar__text">
+            <h3 class="image-bar__caption">
+              {% if block.settings.cta_label contains 'Pays for itself' %}
+              Pays for itself. <br> Save Time. Save Energy. Save Money.
+              {% elsif block.settings.cta_label contains 'Automate My Blinds' %}
+              Automate my exisiting blinds <br> <span class="image-bar__caption-smaller">Fits all major brands.</span>
+              {% else %}
+              {{ block.settings.cta_label | escape }}
+              {% endif %}
+            </h3>
+          </div>
+        {% endif %}
+
+
+        {% unless block.settings.button1 == blank %}
+        <center>
+          <div class="image-bar-button">
+        	<a href="{{ block.settings.button1-link }}" class="btn-custom-learn-2 hero__cta">
+           		{{ block.settings.button1 | escape }}
+       		</a>
+        {% unless block.settings.button2 == blank %}
+        	<a href="{{ block.settings.button2-link }}" class="btn-custom-learn-2 hero__cta" style="margin-left: 2rem">
+           		{{ block.settings.button2 | escape }}
+       		</a>
+        {% endunless %}
+          </div>
+        </center>
+        {% endunless %}
+
+
+
+      </div>
+      {% if block.settings.link != blank %}
+        </div></a>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+      {% endfor %}
+</div>
+</div>
+{% if section.blocks.size == 0 %}
+  {% include 'no-blocks' %}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Custom Gallery",
+    "class": "index-section index-section--flush",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "select",
+        "id": "section_height",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "x-small"
+          },
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          },
+          {
+            "label": "Extra Large",
+            "value": "x-large"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Image alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ]
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          },
+          {
+            "type": "text",
+            "id": "cta_label",
+            "label": "Caption"
+          },
+  		  {
+            "type": "text",
+            "id": "button1",
+            "label": "First Button"
+          },
+          {
+            "type": "url",
+            "id": "button1-link",
+            "label": "First Button Link"
+          },
+          {
+            "type": "text",
+            "id": "button2",
+            "label": "Second Button"
+          },
+          {
+            "type": "url",
+            "id": "button2-link",
+            "label": "Second Button Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Gallery",
+        "category": "Image",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

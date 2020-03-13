@@ -1,0 +1,304 @@
+/*** CSS 3 ***/
+.da_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.da_banner-top-wrapper {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+.da_banner-bottom-wrapper {
+    background-color: #D1D1D1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.da_banner-top {
+    background-color: #000;
+    width: 100%;
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.da_banner-top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.da_orange-text {
+    color: #f95901;
+    margin: 0px;
+    font-weight: 700
+}
+
+.da_5-dollars-off {
+    color: #fff;
+    position: relative;
+}
+.da_5-dollars-off p:last-child {
+    font-size: 12px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    white-space: nowrap;
+}
+.da_5-dollars-off img {
+
+}
+
+.da_new-members {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.da_banner-top-middle {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.da_youll-also-get {
+    margin-bottom: 0;
+}
+
+.da_ul {
+    padding-left: 0;
+}
+
+.da_li {
+    list-style-position: inside;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+.da_circle {
+    font-size: 4px;
+    margin-right: 5px;
+}
+
+.da_banner-top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.da_join-big-rewards-today {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.da_input-wrapper {
+    display: flex;
+    margin: 2px 0;
+}
+
+.da_email {
+    margin-right: 5px;
+    flex: 1.2;
+}
+
+.da_zip-code {
+    flex: 1;
+}
+
+.da_sign-up {
+    background: #f95a01;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    font-weight: 600;
+}
+
+.da_checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    width: 100%;
+    font-weight: 100;
+    padding: 8px 0;
+}
+.da_checkbox {
+    zoom: 1.8;
+    background: red;
+    margin-right: 4px;
+    transform: translateY(1px);
+}
+
+.fas.fa-times.da_times {
+    color: #fff;
+    background: #f95a01;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.da_banner-bottom {
+    background-color: #D1D1D1;
+        font-weight: 100;
+        font-size: 12px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        padding: 5px 5px;
+        max-width: 1160px;
+}
+
+.da_bottom-links {
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+}
+
+.da_mobile {
+    display: none !important;
+}
+
+
+@media screen and (max-width: 1245px) {
+    .fas.fa-times.da_times {
+        right: 32px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .da_banner-top {
+        flex-direction: column;
+    }
+    .da_banner-top-middle {
+        align-items: center;
+    }
+    .da_join-big-rewards-today {
+        text-align: center;
+    }
+    .da_checkbox-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .da_input-wrapper {
+        width: 100%;
+    }
+    .da_youll-also-get {
+        margin-bottom: -10px;
+    }
+    .da_5-dollars-off {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .da_banner {
+        max-height: 100vh;
+        overflow-y: scroll;
+        z-index: 99999;
+    }
+    .da_mobile {
+        display: block !important;
+    }
+    .da_desktop {
+        display: none !important;
+    }
+    .da_banner-top-wrapper {
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+    .da_banner-top {
+        flex-direction: column;
+        padding: 0px 18px;
+    }
+    .da_banner-bottom {
+      line-height: 13px;
+      font-size: 10px;
+    }
+    .da_banner-bottom a {
+      font-size: 10px;
+    }
+    .da_banner-top-middle {
+        align-items: flex-start;
+        padding-bottom: 0px;
+    }
+    .da_li {
+      font-size: 14px;
+    }
+    .da_join-big-rewards-today {
+        text-align: left;
+        font-size: 14px;
+    }
+    .da_checkbox-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        padding: 8px 0;
+    }
+    .da_youll-also-get {
+        margin-bottom: -10px;
+    }
+    .da_5-dollars-off {
+        margin-left: -40px;
+    }
+    .da_sign-up {
+      padding: 5px;
+      font-size: 15px;
+    }
+    .da_zip-code {
+      font-size: 14px !important;
+      padding: 4px !important;
+      padding-left: 8px !important;
+      height: 33px
+    }
+    .da_email {
+      font-size: 14px !important;
+      padding: 4px !important;
+      height: 33px;
+      padding-left: 8px !important;
+    }
+    .da_checkbox {
+      zoom: 1.5;
+      background: red;
+      margin-right: 4px;
+      transform: translateY(1px);
+  }
+  .da_banner-top-left {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+    .da_checkbox-wrapper {
+        font-size: 15px;
+    }
+    .da_times.da_mobile {
+        right: 5px !important;
+    }
+}

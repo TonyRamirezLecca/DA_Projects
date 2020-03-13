@@ -1,0 +1,854 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 p {
+	margin: 0px;
+	text-transform: unset;
+	letter-spacing: unset
+}
+li {
+	list-style: none;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+.container-fluid {
+	max-width: 1920px;
+}
+
+@media (min-width:1200px) {
+.container {
+	width: 100%;
+	max-width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+.modal {
+  	background: transparent
+}
+.modal-header {
+    padding: 15px 15px 0;
+    border-bottom: 0;
+}
+.my_smart {
+	background: url(bg.jpg)no-repeat;
+	height: 1002px;
+	padding-top: 150px;
+	margin-bottom: 78px;
+}
+.my_smart_heading {
+}
+.my_smart_heading h1 {
+	font-size: 70px;
+	font-family: "Montserrat";
+	color: rgb( 255, 255, 255 );
+	line-height: 1.014;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.my_smart_heading ul {
+	width: 284px;
+	margin: 0px auto;
+	margin-bottom: 340px
+}
+.my_smart_heading li {
+	font-size: 26px;
+	font-family: "Montserrat";
+	color: rgb( 255, 255, 255 );
+	line-height: 1.923;
+	list-style: none;
+}
+.my_smart_link {
+	border-radius: 4px;
+	background-color: rgb( 0, 173, 239 );
+	border: 3px solid rgb( 0, 173, 239 );
+	width: 215px;
+	height: 70px;
+	font-size: 24.451px;
+	font-family: "Montserrat";
+	margin: 0px auto;
+	color: rgb( 255, 255, 255 );
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 54px;
+	text-align: center;
+}
+.my_smart_link_2 {
+	border: 3px solid rgb( 255, 255, 255  );
+	border-radius: 4px;
+	background-color: rgb( 255, 255, 255 );
+	width: 215px;
+	height: 70px;
+	font-size: 24.451px;
+	font-family: "Montserrat";
+	color: #00adef;
+	font-weight: 700;
+	margin: 0px auto;
+	text-transform: uppercase;
+	line-height: 54px;
+	text-align: center;
+	margin-left: 25px
+}
+.my_smart_link_main {
+	width: 459px;
+	margin: 0px auto;
+}
+.window_cover {
+	margin-bottom: 80px;
+}
+.window_cover_heading {
+}
+.window_cover_heading h2 {
+	position: relative;
+	font-size: 40px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.775;
+	text-align: center;
+	display: table;
+	margin: 0px auto;
+	margin-bottom: 45px;
+}
+.window_cover_heading h2:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	width: 96%;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	height: 5px;
+	background: #2eb2ff;
+}
+.window_cover_heading p {
+	font-size: 20px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 500;
+	width: 1020px;
+}
+.window_cover_para {
+	margin-top: 155px;
+}
+.window_cover_para p {
+	font-size: 20px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 400;
+}
+.window_cover_img {
+	margin-top: 20px;
+}
+.MySmartBlinds {
+	background: #fbfcfd;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin-bottom: 50px;
+}
+.MySmartBlinds_heading {
+}
+.MySmartBlinds_heading h3 {
+	position: relative;
+	font-size: 40px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.775;
+	text-align: center;
+	display: table;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+.MySmartBlinds_heading h3:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	width: 96%;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	height: 6px;
+	background: #2eb2ff;
+}
+.MySmartBlinds_heading p {
+	font-size: 20px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 500;
+	width: 1020px;
+	text-align: center;
+}
+.MySmartBlinds_para {
+	margin-top: 130px;
+}
+.MySmartBlinds_para p {
+	font-size: 20px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 400;
+	margin-top: 50px;
+}
+.MySmartBlinds_img {
+	margin-top: 20px;
+	text-align: center;
+}
+.Automation_kit {
+	margin-bottom: 70px;
+}
+.window_cover_heading h6 {
+	font-size: 21px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.429;
+	text-align: center;
+	font-weight: 400;
+}
+.line_2 h2 {
+	margin-bottom: 20px;
+}
+.line_2 h6 {
+	margin-bottom: 35px;
+}
+.install_tool {
+	background: #fbfcfd;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin-bottom: 50px;
+}
+.MySmartBlinds_para a {
+	border-radius: 4px;
+	background-color: rgb( 0, 173, 239 );
+	width: 160px;
+	height: 48px;
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: rgb( 255, 255, 255 );
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 35px;
+  	margin:0px;
+}
+.tool_2 p {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.tool_2 {
+	margin-top: 85px;
+	padding-left: 25px;
+}
+.iphone {
+	margin-bottom: 70px;
+}
+.iphone_2 {
+	margin-top: 190px;
+}
+.iphone_2 a {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+.play_store a {
+	margin-right: 22px;
+}
+.Smart_home {
+	background: #fbfcfd;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin-bottom: 50px;
+}
+.Smart_home_heading h3 {
+	position: relative;
+	font-size: 38px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	text-align: center;
+	display: table;
+	margin: 0px auto;
+	line-height: 50px;
+	padding-bottom: 12px;
+	margin-bottom: 40px;
+}
+.Smart_home_heading h3:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	width: 76%;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	height: 6px;
+	background: #2eb2ff;
+}
+.Smart_home_img {
+	text-align: center;
+	margin-top: 22px;
+	margin-left: 22px;
+}
+.Smart_home_img img {
+	margin-top: 22px;
+	margin-left: 22px;
+}
+.sell_sheet {
+	margin-bottom: 70px;
+}
+.sell_sheet_heading {
+}
+.sell_sheet_heading h3 {
+	position: relative;
+	font-size: 38px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	text-align: center;
+	display: table;
+	margin: 0px auto;
+	line-height: 50px;
+	padding-bottom: 12px;
+	margin-bottom: 40px;
+}
+.sell_sheet_heading h3:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	width: 90%;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	height: 6px;
+	background: #2eb2ff;
+}
+.sell_sheet_cnt {
+	text-align: center;
+	margin-top: 25px;
+}
+.sell_sheet_cnt h4 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.sell_sheet_cnt h4 a {
+	font-size: 31px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.161;
+	font-weight: 400;
+}
+.sell_sheet_link {
+	border-radius: 4px;
+	background-color: rgb( 0, 173, 239 );
+	width: 161px;
+	/*height: 48px;*/
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: rgb( 255, 255, 255 );
+	text-transform: uppercase;
+	line-height: 40px;
+}
+.btn:hover {
+  	transition:0.3s ease-in-out;
+  	background:rgb( 61, 66, 70 );
+  	color:#FFF;
+  	border-color:rgb( 61, 66, 70 );
+}
+.sell_1 {
+	padding-right: 15px;
+}
+.sell_2 {
+	padding-left: 15px;
+}
+.benefits {
+	background: #fbfcfd;
+	padding-top: 75px;
+	padding-bottom: 45px;
+	/*margin-bottom: 50px;*/
+}
+.sell_sheet_heading p {
+	font-size: 20px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 400;
+	width: 1020px;
+	text-align: center;
+}
+.benefits_text {
+	text-align: center;
+}
+.benefits_text h3 {
+	font-size: 28px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.286;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+.benefits_text p {
+	font-size: 17px;
+	font-family: "Poppins";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.571;
+	font-weight: 400;
+}
+.benefits_img {
+	text-align: center;
+  	height: 55px
+}
+.benefits_cnt {
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.end_bg {
+	background: url(bg_2.png) no-repeat;
+	height: 781px;
+	padding-top: 280px;
+	/*margin-bottom: 60px;*/
+}
+.end_bg_text {
+	text-align: center;
+}
+.end_bg_text p {
+	font-size: 38px;
+	font-family: "Montserrat";
+	color: rgb( 61, 66, 70 );
+	line-height: 1.2;
+	font-weight: 500;
+	max-width: 893px;
+	height: 86px;
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 50px;
+}
+.end_bg_text a {
+	border-radius: 4px;
+	background-color: rgb( 0, 173, 239 );
+	border: 3px solid rgb( 0, 173, 239 );
+	width: 215px;
+	height: 70px;
+	font-size: 24.451px;
+	font-family: "Montserrat";
+	margin: 0px auto;
+	color: rgb( 255, 255, 255 );
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 54px;
+	text-align: center;
+}
+.footer_all {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: #fbfcfd;
+}
+.footer_menu {
+}
+.footer_menu ul {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.footer_menu ul li {
+	display: inline-block;
+	margin-right: 40px;
+}
+.footer_menu ul li a {
+	font-size: 21px;
+	font-family: "Poppins";
+	color: rgb( 90, 90, 90 );
+	line-height: 1.714;
+}
+.social_media {
+}
+.social_media ul {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.social_media ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.social_media ul li a {
+	color: #3d4246;
+	font-size: 25px;
+}
+.copyright {
+	text-align: center;
+}
+.copyright p {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb( 90, 90, 90 );
+	line-height: 2;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+@media only screen and (min-width : 290px) and (max-width :767px) {
+.my_smart {
+	height: 400px;
+	background-size: cover;
+	padding-top: 35px;
+	margin-bottom: 30px;
+	background-position: center;
+  	text-align:center
+}
+.my_smart_heading h1 {
+	font-size: 22px;
+	margin-bottom: 14px;
+}
+.my_smart_heading li {
+	font-size: 14px;
+}
+.my_smart_link {
+	width: 112px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 32px;
+}
+.my_smart_link_2 {
+	width: 112px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 32px;
+}
+.window_cover_heading h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.window_cover_heading h2:after {
+	width: 79%;
+	height: 4px;
+}
+.window_cover_heading p {
+	font-size: 16px;
+	width: 100%;
+}
+.window_cover_para {
+	margin-top: 30px;
+  	text-align:center
+}
+.window_cover_para p {
+	font-size: 16px;
+}
+.play_store {
+  	text-align:center
+}
+.MySmartBlinds {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.window_cover {
+	margin-bottom: 0;
+  	text-align:center
+}
+.MySmartBlinds_heading h3 {
+	font-size: 24px;
+}
+.MySmartBlinds_heading p {
+	font-size: 16px;
+	width: 100%;
+}
+.MySmartBlinds_heading h3:after {
+	height: 4px;
+}
+.MySmartBlinds_para {
+	margin-top: 30px;
+  	text-align:center
+}
+.MySmartBlinds_para p {
+	font-size: 16px;
+	margin-top: 0;
+  	text-align:center
+}
+.line_2 h6 {
+	margin-bottom: 15px;
+}
+.Automation_kit {
+	margin-bottom: 30px;
+  	text-align:center
+}
+.install_tool {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.tool_2 {
+  	text-align:center;
+	padding-left: 0;
+}
+.Smart_home_heading h3 {
+	font-size: 20px;
+	margin: 0px;
+	line-height: 30px;
+	padding-bottom: 12px;
+	margin-bottom: 30px;
+}
+.Smart_home_img img {
+	margin-left: 0;
+}
+.Smart_home_img {
+	margin-left: 10px;
+	padding-right: 10px;
+}
+.Smart_home {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.sell_sheet_heading h3 {
+	font-size: 22px;
+	line-height: 30px;
+	padding-bottom: 2px;
+	margin-bottom: 30px;
+}
+.sell_sheet_heading h3:after {
+	height: 4px;
+}
+.sell_sheet_cnt {
+	margin-top: 0;
+}
+.sell_sheet_cnt h4 a {
+	font-size: 22px;
+}
+.sell_sheet_link {
+	width: 140px;
+	height: 35px;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 20px;
+}
+.sell_sheet_cnt h4 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.sell_sheet {
+	margin-bottom: 30px;
+}
+.benefits {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.sell_sheet_heading p {
+	font-size: 16px;
+	width: 100%;
+	text-align: justify;
+}
+.benefits_text h3 {
+	font-size: 22px;
+}
+.benefits_text p {
+	font-size: 14px;
+}
+.end_bg {
+    height: 400px;
+    padding-top: 80px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+.end_bg_text p {
+	font-size: 19px;
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+.end_bg_text a {
+	width: 112px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 34px;
+}
+.footer_menu ul {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+.footer_menu ul li {
+	display: block;
+}
+.my_smart_link_main {
+	width: 100%;
+}
+.my_smart_heading ul {
+	width: 100%;
+	margin-bottom: 100px;
+}
+}
+@media only screen and (min-width : 768px) and (max-width :990px) {
+.my_smart {
+	height: auto;
+	padding-top: 120px;
+	margin-bottom: 78px;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 30px;
+}
+.my_smart_link, .my_smart_link_2 {
+    width: 195px;
+    height: 60px;
+    font-size: 21.451px;
+    line-height: 45px;
+}
+.my_smart_heading h1 {
+	font-size: 35px;
+	margin-bottom: 11px;
+}
+.my_smart_heading ul {
+	width: 224px;
+	margin: 0px auto;
+	margin-bottom: 340px;
+}
+.my_smart_heading li {
+	font-size: 20px;
+}
+.my_smart_heading ul {
+	width: 284px;
+	margin: 0px auto;
+	margin-bottom: 185px;
+}
+.MySmartBlinds_heading h3 {
+	font-size: 30px;
+}
+.window_cover_heading h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.sell_sheet_heading h3 {
+	font-size: 30px;
+}
+.window_cover_heading p {
+	font-size: 20px;
+	width: 100%;
+}
+.benefits_text h3 {
+    font-size: 23px;
+}
+.benefits_text p {
+    font-size: 16px;
+}
+.window_cover_para {
+	margin-top: 62px;
+}
+.window_cover {
+	margin-bottom: 30px;
+}
+.MySmartBlinds {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.MySmartBlinds_heading p {
+	font-size: 20px;
+	width: 100%;
+}
+.MySmartBlinds_para {
+	margin-top: 80px;
+}
+.MySmartBlinds_para p {
+	margin-top: 0;
+}
+.tool_2 p {
+	margin-bottom: 0;
+}
+.MySmartBlinds_para p {
+	font-size: 18px;
+}
+.MySmartBlinds_para {
+	margin-top: 37px;
+}
+.iphone_2 {
+	margin-top: 170px !important;
+}
+.Smart_home_heading h3 {
+	font-size: 22px;
+	line-height: 30px;
+}
+.sell_sheet_cnt h4 a {
+	font-size: 22px;
+}
+.sell_sheet_heading p {
+	font-size: 20px;
+	width: 100%;
+}
+.end_bg {
+	height: auto;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	padding-bottom: 60px;
+}
+.end_bg_text p {
+	font-size: 30px;
+}
+.footer_menu ul li {
+    margin-right: 22px;
+}
+.footer_menu ul li a {
+    font-size: 16px;
+}
+}
+@media only screen and (min-width : 991px) and (max-width :1050px) {
+.my_smart {
+	height: auto;
+	padding-top: 165px;
+	margin-bottom: 78px;
+	padding-bottom: 60px;
+	background-size: cover;
+	background-position: center;
+}
+.my_smart_link, .my_smart_link_2 {
+    width: 195px;
+    height: 60px;
+    font-size: 21.451px;
+    line-height: 45px;
+}
+.window_cover_heading h2 {
+	font-size: 35px;
+}
+.window_cover_heading p {
+	width: 100%;
+}
+.window_cover_para {
+	margin-top: 58px;
+}
+.MySmartBlinds_heading p {
+	width: 100%;
+}
+.MySmartBlinds_para {
+	margin-top: 50px;
+}
+.Smart_home_heading h3 {
+	font-size: 25px;
+	line-height: 35px;
+}
+.sell_sheet_heading p {
+	width: 100%;
+}
+.end_bg_text p {
+	font-size: 30px;
+}
+}
+
+@media only screen and (min-width : 1051px) and (max-width :1600px) {
+.my_smart {
+    height: 802px;
+    background-size: cover;
+}
+.my_smart_heading h1 {
+    font-size: 50px;
+}
+.my_smart_heading ul {
+    margin: 0px auto;
+    margin-bottom: 200px;
+}
+.my_smart_heading li {
+    font-size: 22px;
+}
+.my_smart_link, .my_smart_link_2 {
+    width: 190px;
+    height: 60px;
+    font-size: 21.451px;
+    line-height: 46px;
+}
+}

@@ -1,0 +1,1065 @@
+{%- include 'bold-product' with product, hide_action: 'break', output: 'none' -%}
+<div class="product-template__container page-width" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+  <meta itemprop="name" content="{{ product.title }}">
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+  <meta itemprop="image" content="{{ product.featured_image.src | img_url: '800x' }}">
+
+  {% comment %}
+  Get first variant, or deep linked one
+  {% endcomment %}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign product_image_zoom_size = '1024x1024' -%}
+  {%- assign product_image_scale = '2' -%}
+  {%- assign enable_zoom = section.settings.enable_zoom -%}
+
+  {% case section.settings.image_size %}
+  {% when 'small' %}
+  {%- assign product_image_width = 'medium-up--one-third' -%}
+  {%- assign product_description_width = 'medium-up--two-thirds' -%}
+  {%- assign product_thumbnail_width = 'medium-up--one-third' -%}
+  {%- assign height = 345 -%}
+  {% when 'medium' %}
+  {%- assign product_image_width = 'medium-up--one-half' -%}
+  {%- assign product_description_width = 'medium-up--one-half' -%}
+  {%- assign product_thumbnail_width = 'medium-up--one-quarter' -%}
+  {%- assign height = 530 -%}
+  {% when 'large' %}
+  {%- assign product_image_width = 'medium-up--two-thirds' -%}
+  {%- assign product_description_width = 'medium-up--one-third' -%}
+  {%- assign product_thumbnail_width = 'medium-up--one-fifth' -%}
+  {%- assign height = 720 -%}
+  {% when 'full' %}
+  {%- assign product_image_width = '' -%}
+  {%- assign product_description_width = '' -%}
+  {%- assign product_thumbnail_width = 'medium-up--one-eighth' -%}
+  {%- assign height = 1090 -%}
+  {%- assign enable_zoom = false -%}
+  {% endcase %}
+
+
+
+  <div class="grid product-single">
+    <div class="grid__item product-single__photos {{ product_image_width }}{% if section.settings.image_size == 'full' %} product-single__photos--full{% endif %}">
+      {%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
+      {% for image in product.images %}
+      {% capture img_id %}FeaturedImage-{{ section.id }}-{{ image.id }}{% endcapture %}
+      {% capture img_class %}product-featured-img{% endcapture %}
+      {% capture zoom_img_id %}FeaturedImageZoom-{{ section.id }}-{{ image.id }}{% endcapture %}
+      {% capture img_wrapper_id %}{{ zoom_img_id }}-wrapper{% endcapture %}
+      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+      {% include 'image-style' with small_style: true, width: height, height: height, wrapper_id: img_wrapper_id, img_id: img_id %}
+
+      <div id="{{ img_wrapper_id }}" class="product-single__photo-wrapper js">
+        <div id="{{ zoom_img_id }}" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;" class="product-single__photo{% if enable_zoom %} js-zoom-enabled{% endif %}{% if product.images.size > 1 %} product-single__photo--has-thumbnails{% endif %}{% unless featured_image == image %} hide{% endunless %}" data-image-id="{{ image.id }}"{% if enable_zoom %} data-zoom="{{ image | img_url: product_image_zoom_size, scale: product_image_scale }}"{% endif %}>
+          <img id="{{ img_id }}"
+               class="feature-row__image {{ img_class }} lazyload{% unless featured_image == image %} lazypreload{% endunless %}"
+               src="{{ image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ image.alt | escape }}">
+        </div>
+      </div>
+      {% endfor %}
+
+      <noscript>
+        {% capture product_image_size %}{{ height }}x{% endcapture %}
+        <img src="{{ featured_image | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_image.alt }}" id="FeaturedImage-{{ section.id }}" class="product-featured-img" style="max-width: {{ height }}px;">
+      </noscript>
+
+      {% if product.images.size > 1 %}
+      {% if product.images.size > 3 %}
+      {%- assign enable_thumbnail_slides = true -%}
+      {% endif %}
+
+      <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} thumbnails-slider--active{% endif %}">
+        {% if enable_thumbnail_slides == true %}
+        <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}">
+          {% include 'icon-chevron-left' %}
+          <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
+        </button>
+        {% endif %}
+        <ul class="grid grid--uniform product-single__thumbnails product-single__thumbnails-{{ section.id }}">
+          {% for image in product.images %}
+          <li class="grid__item {{ product_thumbnail_width }} product-single__thumbnails-item js">
+            <a href="{{ image.src | img_url: product_image_zoom_size, scale: product_image_scale }}"
+               class="text-link product-single__thumbnail product-single__thumbnail--{{ section.id }}"
+               data-thumbnail-id="{{ image.id }}"
+               {% if enable_zoom %}data-zoom="{{ image.src | img_url: product_image_zoom_size, scale: product_image_scale }}"{% endif %}>
+              <img class="product-single__thumbnail-image" src="{{ image.src | img_url: '110x110', scale: 2 }}" alt="{{ image.alt | escape }}">
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% if enable_thumbnail_slides == true %}
+        <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}">
+          {% include 'icon-chevron-right' %}
+          <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
+        </button>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="grid__item {{ product_description_width }}">
+      <div class="product-single__meta">
+
+        <h1 itemprop="name" class="product-single__title" style="margin-bottom: 10px;">{{ product.title }}</h1>
+
+        {% if section.settings.show_vendor %}
+        <p itemprop="brand" class="product-single__vendor">{{ product.vendor }}</p>
+        {% endif %}
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+          <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+          
+          <form action="/cart/add" data-productid="{{product.id}}" method="post" enctype="multipart/form-data" class="product-form product-form-{{ section.id }}{% unless section.settings.show_variant_labels %} product-form--hide-variant-labels{% endunless %}" data-section="{{ section.id }}"> 
+            {% if product.available %}{% include 'subscription-product' %}{% endif %} 
+            {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+            {% for option in product.options_with_values %}
+            <div class="selector-wrapper js product-form__item">
+              <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                {{ option.name }}
+              </label>
+              <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                {% for value in option.values %}
+                <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            {% endfor %}
+            {% endunless %}
+
+            <select name="id" data-productid="{{product.id }}" id="ProductSelect-{{ section.id }}" data-section="{{ section.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+              {% if variant.available %}
+              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                {{ variant.title }}
+              </option>
+              {% else %}
+              <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+
+            {% if section.settings.show_quantity_selector %}
+            {% if product.title != "Blinds" %}
+            <div class="product-form__item product-form__item--quantity">
+              <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
+              <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*">
+            </div>
+            {% endif %}
+            {% endif %}
+            
+            <style>
+              #bold_custom_price {
+                width: 100%; 
+                clear: both; 
+                width: 100%;
+                clear: both;
+                margin-left: 0px;
+                margin-top: -20px;
+                margin-bottom: 25px;" 
+              }
+
+              form .product-single__description.rte {
+                margin-top: 0; 
+              }
+              
+              #bold_custom_price .product-form__item.product-form__item--submit {
+                float: left;
+                margin-top: 10px;
+              }
+              
+              #bold_custom_price #product-price{
+                font-size: 30px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                float: left;
+              }
+              
+              #bold_custom_price .bold_dividing_line {
+                font-size: 30px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                clear: both;
+              }
+              
+              #bold_custom_price #demo {
+                font-size: 16px;
+                clear: both;
+              }
+              
+              .product-single__description.rte .btn.bold_compatibility_check {
+				margin: 10px 0!important;
+              }
+              
+              .product-single__description.rte ul {
+				margin-bottom: 0!important;
+              }
+            </style>
+            
+            <div class="product-single__description rte" itemprop="description">
+              {% if product.title != "Blinds1" %}
+              {{ product.description }}
+              {% endif %}
+            </div>
+            
+            <div id="bold_custom_price" class="bold_custom_hidden">
+              <!-- Product Price -->
+              <div id="product-price" class="product-single__price product-single__price-{{ section.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+                {% if current_variant.compare_at_price > current_variant.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <s id="ComparePrice-{{ section.id }}">{% assign geolizr_price =  current_variant.compare_at_price  %}{% include 'geolizr-currency' with geolizr_price %}{{ current_variant.compare_at_price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</s>
+                <span class="bold_option_price_display product-price__price product-price__price-{{ section.id }} product-price__sale product-price__sale--single">
+                  <span id="ProductPrice-{{ section.id }}" class="bold_option_price_display"
+                        itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+                    {% assign geolizr_price =  current_variant.price  %}{% include 'geolizr-currency' with geolizr_price %}{{ current_variant.price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}
+                  </span>
+                  <span class="product-price__sale-label product-price__sale-label-{{ section.id }}">{{ 'products.product.on_sale' | t }}</span>
+                </span>
+                {% else %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <s id="ComparePrice-{{ section.id }}" class="hide">{% assign geolizr_price =  current_variant.compare_at_price  %}{% include 'geolizr-currency' with geolizr_price %}{{ current_variant.compare_at_price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</s>
+                <span class="product-price__price product-price__price-{{ section.id }}">
+                  <span id="ProductPrice-{{ section.id }}" class="bold_option_price_display wpdcustom"
+                        itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+                    {% assign geolizr_price =  current_variant.price  %}{% include 'geolizr-currency' with geolizr_price %}{{ current_variant.price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}
+                  </span>
+                  <span class="product-price__sale-label product-price__sale-label-{{ section.id }} hide">{{ 'products.product.on_sale' | t }}</span>
+                </span>
+                {% endif %}
+              </div>
+              <!-- Product Price -->
+              <!-- AddToCart Button -->
+              <div class="product-form__item product-form__item--submit">
+                <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
+                  <span id="AddToCartText-{{ section.id }}">
+                    {% unless current_variant.available %}
+                    {{ 'products.product.sold_out' | t }}
+                    {% else %}
+                    {% if product.title == "Smart Hub" %}
+                    Pre-order
+                    {% else %}
+                    {{ 'products.product.add_to_cart' | t }}
+                    {% endif %}
+                    {% endunless %}
+                  </span>
+                </button>
+               </div>
+               <!-- AddToCart Button -->
+               <hr class="bold_dividing_line">
+               <p id="demo" content="{{ current_variant.price | divided_by: 600.00 }}">
+                 or as low as {% assign geolizr_price =  product.price | divided_by: 6.0  %}
+                 {% include 'geolizr-currency' with geolizr_price %}
+                 <span class="split_price bold_option_price_display">{{ product.price | divided_by: 6.0 | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</span> per month 
+                 <span style="font-size:12px;text-decoration:underline;"><a href="javascript:void(0)" onclick="openSplitit()">Details</a></span>
+              </p>   
+              <div class="ot-estimated-shipping"></div>
+            </div>            
+          </form>
+
+        </div>
+
+        <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
+        {% if section.settings.show_share_buttons %}
+        {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% comment %}
+
+  THIS IS THE BEGINNING OF THE DETAILS ON EACH PRODUCT PAGE
+
+  {% endcomment %}
+
+  {% case product.title %}
+  {% when "Automation Kit" %}
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/auto-kit-block.png?15944011449889455159');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 12%;">Simple to install, <br> no tools required</h4>
+      <center>
+        <a class="btn" href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/dzIBNVjznq4')"> Watch the Video </a>
+      </center>
+    </div>
+  </div>
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/blinds-compatibilty.png?8370783231373997764');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 12%;">Automation kit fits inside <br> 2"-3" horizontal blinds</h4>
+    </div>
+  </div>
+
+  <h1 style="text-align:center;"> Not compatible with the following other blind types </h1>
+
+  <div class="custom-product-details">
+    <div class="custom-smart-switch">
+      <ul>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/mini_43815c79-eeea-4a61-9658-26b9e0b65a91.png?17412478825586218942" height="180" width="180" />
+          mini <br> blinds
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/Rollar_Shade.png?17412478825586218942" height="180" width="180" />
+          roller <br> shade
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/cordless_f1282cc0-ec74-457e-8145-2ea0fa7ea7bd.png?17412478825586218942" height="180" width="180" />
+          cordless <br> blinds
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/Honeycomb.png?17412478825586218942" height="180" width="180" />
+          cellular or <br>honeycomb shade
+        </li>
+      </ul>
+    </div>
+    <span class="stretch"></span>
+  </div>
+
+
+  <div class="custom-product-image-text" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/solar-room.png?15007213615702422136');">
+    <!-- <div class="fade-right"> -->
+    <div class="custom-product-text-right" style="text-shadow: 2px 2px 10px black;">
+      <h3 style="font-size: 44px;margin-top:85px;color:white;">Powered by the sun.</h3>
+      <ul style="display:inline-block;color:white;">
+        <li>
+          <h4 style="font-size: 1.4em;margin: 10px;">- No need for periodic charging</h4>
+        </li>
+        <li>
+          <h4 style="font-size: 1.4em; margin: 10px;">- Sleek and slim design</h4>
+        </li>
+        <li>
+          <h4 style="font-size: 1.4em; margin: 10px;">- Multiple ways to mount</h4>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="page-width feature-row" style="margin-top:60px;">
+
+
+    <div class="feature-row">
+
+
+      <div class="feature-row__item">
+
+
+
+        <style>
+
+
+          @media screen and (min-width: 750px) { 
+            #FeatureRowImage-1505422623588 {
+              max-width: 465px;
+              max-height: 505px;
+            }
+            #FeatureRowImageWrapper-1505422623588 {
+              max-width: 465px;
+              max-height: 505px;
+            }
+          } 
+
+
+
+          @media screen and (max-width: 749px) {
+            #FeatureRowImage-1505422623588 {
+              max-width: 690.5940594059406px;
+              max-height: 750px;
+            }
+            #FeatureRowImageWrapper-1505422623588 {
+              max-width: 690.5940594059406px;
+            }
+          }
+
+        </style>
+
+        <div id="FeatureRowImageWrapper-1505422623588" class="feature-row__image-wrapper js">
+          <div style="padding-top:108.6021505%;">
+            <img id="FeatureRowImage-1505422623588" class="feature-row__image lazyloaded" src="//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600.png?v=1507305333" alt="">
+          </div>
+        </div>
+
+        <noscript>
+          &lt;img src="//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600@2x.png?v=1507305333" alt="" class="feature-row__image" /&gt;
+        </noscript>
+
+      </div>
+
+
+
+      <div class="feature-row__item feature-row__text feature-row__text--left">
+
+        <h2 class="h3" style="font-size: 49px;">App Controls</h2>
+
+
+        <div class="custom-feature-row-subtext">
+          <ul>
+            <li style="list-style: circle">
+              <h4 id="list-item-one" style="font-size: 1.4em; margin: 10px; color: rgb(0, 173, 239);"><a href="javascript:void(0)" onmouseover="indexOneClicked()">View and control all of the rooms in your home</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-two" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexTwoClicked()">Enable Energy Savings mode and customize your preferred temperature settings</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-three" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexThreeClicked()">Get battery updates and see when solar charging occurs</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-four" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexFourClicked()">Set daily and weekly schedules</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-five" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexFiveClicked()">Turn on sun-tracking to maintain the same light levels you prefer even as times and seasons change</a></h4>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <a href="https://itunes.apple.com/us/app/mysmartblinds/id1042778784?mt=8" class="btn" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/applestore.png?9631039859292085082');background-position: center;background-size:cover;background-repeat:no-repeat;width:189px;height:56px;">
+
+        </a>
+
+
+        <a href="https://play.google.com/store/apps/details?id=com.mysmartblinds2.android" class="btn" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/googlestore.png?9631039859292085082');background-position: center;background-size:cover;background-repeat:no-repeat;width:189px;height:56px;">
+
+        </a>
+
+      </div>
+
+
+
+
+      <script>
+        var selectedIndex = 0;
+
+        function indexOneClicked(){
+          selectedIndex = 0;
+          document.getElementById("list-item-one").style.color = "#00adef";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexTwoClicked(){
+          selectedIndex = 1;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "#00adef";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexThreeClicked(){
+          selectedIndex = 2;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "#00adef";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexFourClicked(){
+          selectedIndex = 3;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "#00adef";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexFiveClicked(){
+          selectedIndex = 4;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "#00adef";
+          updateImage();
+        }
+
+        function updateImage(){
+          var image = document.getElementById("FeatureRowImage-1505422623588");
+          if (selectedIndex == 0){
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600.png?v=1507305333"
+
+          }
+          else if (selectedIndex == 1) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone5_600x600.png?v=1507305369"
+
+          }
+          else if (selectedIndex == 2) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone3_2abff9cb-1b57-4b11-b611-9c9d143e6d16_600x600.png?v=1507305494"
+
+          }
+          else if (selectedIndex == 3) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone4_600x600.png?v=1507305361"
+
+          }
+          else if (selectedIndex == 4) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone2_79c08835-c2ad-4d49-b33f-9bd691eba79e_600x600.png?v=1507647606"
+
+          }
+        }
+
+      </script>
+
+    </div>
+
+
+  </div>
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/smart-switch-fade2.png?459668816782675327'); background-position: right; background-size: cover;">
+      <div class="fade-left">
+        <div class="custom-product-text-left">
+          <h3 style="font-size: 44px;">Smart Switch</h3>
+          <div class="custom-feature-row-subtext">
+            <ul>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em;margin: 10px;color: black;">Peel-and-stick wall switch</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">On demand control</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">Removable for portable use within Bluetooth range</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">Controls up to four groups of blinds</h4>
+              </li>
+            </ul>
+            <a class="btn" href="/products/smart-switch"> Buy Now </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ********************************************* BLINDS *********************************************-->
+
+  {% when "New Roller Shades testing" %}
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/Kitchen_rendering.jpg?16277869696997666579');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 9%;">Meet the world's <br>smartest window covering</h4>
+      <center>
+        <a class="btn" href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/Yi-a8iX5N2w')"> Watch the Video </a>
+      </center>
+    </div>
+  </div>
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/smart-lock2.png?7876036464603688181');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 12%;">Simple to install, <br> no tools required</h4>
+      <center>
+        <a class="btn" href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/nELcDoMRMmM')"> Watch the Video </a>
+      </center>
+    </div>
+  </div>
+
+  <h1 style="text-align:center;"> How to measure for your blinds </h1>
+
+  <div class="grid grid--no-gutters image-bar image-bar--medium">
+    <div class="grid__item medium-up--one-half js">
+      <a class="image-bar__link" href="/pages/my-smart-blinds-works-with-your-home">
+      </a><div class="image-bar__item box ratio-container lazyloaded" style="background-position: center top; background-image: url('https://cdn.shopify.com/s/files/1/2330/0585/files/inside_c3dcedc8-32fb-4abd-ac3b-e6cd1804741d.png?2049213428213810364');"><a class="image-bar__link" href="/pages/my-smart-blinds-works-with-your-home">
+
+      </a><div class="image-bar__content image-bar__overlay"><a class="image-bar__link" href="/pages/my-smart-blinds-works-with-your-home">
+      <div class="image-bar__text">
+        <h3 class="image-bar__caption">
+          Inside Mount
+        </h3>
+        <h3 class="image-bar__caption" style="font-size: 18px; padding-top: 50px;">  
+          <br>
+          More than 3 inches of depth
+        </h3>
+      </div>
+      </a><center><a class="image-bar__link" href="/pages/my-smart-blinds-works-with-your-home">
+      </a><div class="image-bar-button"><a class="image-bar__link" href="/pages/my-smart-blinds-works-with-your-home">
+      </a><a href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/5RxILPpqlKk')" class="btn-custom-learn-2 hero__cta">
+      Watch Video
+      </a>
+      </div>
+      </center>
+
+
+      </div>
+
+      <picture style="display: none;"><source data-srcset="//cdn.shopify.com/s/files/1/2330/0585/files/echo_180x.jpg?v=1505428641 180w 180h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_360x.jpg?v=1505428641 360w 360h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_540x.jpg?v=1505428641 540w 540h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_720x.jpg?v=1505428641 720w 720h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_900x.jpg?v=1505428641 900w 900h, //cdn.shopify.com/s/files/1/2330/0585/files/echo.jpg?v=1505428641 1000w 1000h" sizes="784px" srcset="//cdn.shopify.com/s/files/1/2330/0585/files/echo_180x.jpg?v=1505428641 180w 180h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_360x.jpg?v=1505428641 360w 360h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_540x.jpg?v=1505428641 540w 540h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_720x.jpg?v=1505428641 720w 720h, //cdn.shopify.com/s/files/1/2330/0585/files/echo_900x.jpg?v=1505428641 900w 900h, //cdn.shopify.com/s/files/1/2330/0585/files/echo.jpg?v=1505428641 1000w 1000h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="784px"></picture></div>
+
+    </div>
+    <noscript>
+      &lt;div class="grid__item medium-up--one-half" &gt;
+      &lt;div class="image-bar__item image-bar__item--1504645915060-0" style="background-image: url(//cdn.shopify.com/s/files/1/2330/0585/files/echo_2048x.jpg?v=1505428641);"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    </noscript>
+
+    <div class="grid__item medium-up--one-half js">
+
+      <a class="image-bar__link" href="/pages/my-smart-energy-savings">
+      </a><div class="image-bar__item box ratio-container lazyloaded" style="background-position: center center; background-image: url('https://cdn.shopify.com/s/files/1/2330/0585/files/outside_530b8629-69c9-4452-8e85-8b7b92fbfdb8.png?2049213428213810364');"><a class="image-bar__link" href="/pages/my-smart-energy-savings">   
+      </a><div class="image-bar__content image-bar__overlay"><a class="image-bar__link" href="/pages/my-smart-energy-savings">
+      <div class="image-bar__text">
+        <h3 class="image-bar__caption">     
+          Outside Mount
+        </h3>
+        <h3 class="image-bar__caption" style="font-size: 18px; padding-top: 50px;">  
+          <br>
+          Less than 3 inches of depth
+        </h3>
+      </div>
+      </a><center><a class="image-bar__link" href="/pages/my-smart-energy-savings">
+      </a><div class="image-bar-button"><a class="image-bar__link" href="/pages/my-smart-energy-savings">
+      </a><a href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/fTNYt2RbUus')" class="btn-custom-learn-2 hero__cta">
+      Watch Video
+      </a>
+      </div>
+      </center>
+      </div>
+      <picture style="display: none;"><source data-srcset="//cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_180x.jpg?v=1504821025 180w 180h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_360x.jpg?v=1504821025 360w 360h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_540x.jpg?v=1504821025 540w 540h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_720x.jpg?v=1504821025 720w 720h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_900x.jpg?v=1504821025 900w 900h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_1080x.jpg?v=1504821025 1080w 1080h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_1296x.jpg?v=1504821025 1296w 1296h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798.jpg?v=1504821025 1414w 1414h" sizes="784px" srcset="//cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_180x.jpg?v=1504821025 180w 180h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_360x.jpg?v=1504821025 360w 360h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_540x.jpg?v=1504821025 540w 540h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_720x.jpg?v=1504821025 720w 720h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_900x.jpg?v=1504821025 900w 900h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_1080x.jpg?v=1504821025 1080w 1080h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_1296x.jpg?v=1504821025 1296w 1296h, //cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798.jpg?v=1504821025 1414w 1414h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="784px"></picture></div>
+    </div>
+    <noscript>
+      &lt;div class="grid__item medium-up--one-half" &gt;
+      &lt;div class="image-bar__item image-bar__item--1504645915060-1" style="background-image: url(//cdn.shopify.com/s/files/1/2330/0585/files/Stocksy_txp68522b83gRW100_Medium_1300798_2048x.jpg?v=1504821025);"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    </noscript>
+
+  </div>
+
+  <div class="custom-product-image-text" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/solar-room.png?15007213615702422136');">
+    <!-- <div class="fade-right"> -->
+    <div class="custom-product-text-right" style="text-shadow: 2px 2px 10px black;">
+      <h3 style="font-size: 44px;margin-top:85px;color:white;">Powered by the sun.</h3>
+      <ul style="display:inline-block;color:white;">
+        <li>
+          <h4 style="font-size: 1.4em;margin: 10px;">- No need for periodic charging</h4>
+        </li>
+        <li>
+          <h4 style="font-size: 1.4em; margin: 10px;">- Sleek and slim design</h4>
+        </li>
+        <li>
+          <h4 style="font-size: 1.4em; margin: 10px;">- Multiple ways to mount</h4>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="page-width feature-row" style="margin-top:60px;">
+
+
+    <div class="feature-row">
+
+
+      <div class="feature-row__item">
+
+
+
+        <style>
+
+
+          @media screen and (min-width: 750px) { 
+            #FeatureRowImage-1505422623588 {
+              max-width: 465px;
+              max-height: 505px;
+            }
+            #FeatureRowImageWrapper-1505422623588 {
+              max-width: 465px;
+              max-height: 505px;
+            }
+          } 
+
+
+
+          @media screen and (max-width: 749px) {
+            #FeatureRowImage-1505422623588 {
+              max-width: 690.5940594059406px;
+              max-height: 750px;
+            }
+            #FeatureRowImageWrapper-1505422623588 {
+              max-width: 690.5940594059406px;
+            }
+          }
+
+        </style>
+
+        <div id="FeatureRowImageWrapper-1505422623588" class="feature-row__image-wrapper js">
+          <div style="padding-top:108.6021505%;">
+            <img id="FeatureRowImage-1505422623588" class="feature-row__image lazyloaded" src="//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600.png?v=1507305333" alt="">
+          </div>
+        </div>
+
+        <noscript>
+          &lt;img src="//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600@2x.png?v=1507305333" alt="" class="feature-row__image" /&gt;
+        </noscript>
+
+      </div>
+
+
+
+      <div class="feature-row__item feature-row__text feature-row__text--left">
+
+        <h2 class="h3" style="font-size: 49px;">App Controls</h2>
+
+
+        <div class="custom-feature-row-subtext">
+          <ul>
+            <li style="list-style: circle">
+              <h4 id="list-item-one" style="font-size: 1.4em; margin: 10px; color: rgb(0, 173, 239);"><a href="javascript:void(0)" onmouseover="indexOneClicked()">View and control all of the rooms in your home</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-two" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexTwoClicked()">Enable Energy Savings mode and customize your preferred temperature settings</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-three" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexThreeClicked()">Get battery updates and see when solar charging occurs</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-four" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexFourClicked()">Set daily and weekly schedules</a></h4>
+            </li>
+            <li style="list-style: circle">
+              <h4 id="list-item-five" style="font-size: 1.4em; margin: 10px; color: black;"><a href="javascript:void(0)" onmouseover="indexFiveClicked()">Turn on sun-tracking to maintain the same light levels you prefer even as times and seasons change</a></h4>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <a href="https://itunes.apple.com/us/app/mysmartblinds/id1042778784?mt=8" class="btn" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/applestore.png?9631039859292085082');background-position: center;background-size:cover;background-repeat:no-repeat;width:189px;height:56px;">
+
+        </a>
+
+
+        <a href="https://play.google.com/store/apps/details?id=com.mysmartblinds2.android" class="btn" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/googlestore.png?9631039859292085082');background-position: center;background-size:cover;background-repeat:no-repeat;width:189px;height:56px;">
+
+        </a>
+
+      </div>
+
+
+
+
+      <script>
+        var selectedIndex = 0;
+
+        function indexOneClicked(){
+          selectedIndex = 0;
+          document.getElementById("list-item-one").style.color = "#00adef";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexTwoClicked(){
+          selectedIndex = 1;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "#00adef";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexThreeClicked(){
+          selectedIndex = 2;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "#00adef";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexFourClicked(){
+          selectedIndex = 3;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "#00adef";
+          document.getElementById("list-item-five").style.color = "black";
+          updateImage();
+        }
+
+        function indexFiveClicked(){
+          selectedIndex = 4;
+          document.getElementById("list-item-one").style.color = "black";
+          document.getElementById("list-item-two").style.color = "black";
+          document.getElementById("list-item-three").style.color = "black";
+          document.getElementById("list-item-four").style.color = "black";
+          document.getElementById("list-item-five").style.color = "#00adef";
+          updateImage();
+        }
+
+        function updateImage(){
+          var image = document.getElementById("FeatureRowImage-1505422623588");
+          if (selectedIndex == 0){
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone1_600x600.png?v=1507305333"
+
+          }
+          else if (selectedIndex == 1) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone5_600x600.png?v=1507305369"
+
+          }
+          else if (selectedIndex == 2) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone3_2abff9cb-1b57-4b11-b611-9c9d143e6d16_600x600.png?v=1507305494"
+
+          }
+          else if (selectedIndex == 3) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone4_600x600.png?v=1507305361"
+
+          }
+          else if (selectedIndex == 4) {
+            image.src = "//cdn.shopify.com/s/files/1/2330/0585/files/phone2_79c08835-c2ad-4d49-b33f-9bd691eba79e_600x600.png?v=1507647606"
+
+          }
+        }
+
+      </script>
+
+    </div>
+
+
+  </div>
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background: url('https://cdn.shopify.com/s/files/1/2330/0585/files/smart-switch-fade2.png?459668816782675327'); background-position: right; background-size: cover;">
+      <div class="fade-left">
+        <div class="custom-product-text-left">
+          <h3 style="font-size: 44px;">Smart Switch</h3>
+          <div class="custom-feature-row-subtext">
+            <ul>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em;margin: 10px;color: black;">Peel-and-stick wall switch</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">On demand control</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">Removable for portable use within Bluetooth range</h4>
+              </li>
+              <li style="list-style: circle">
+                <h4 style="font-size: 1.4em; margin: 10px; color: black;">Controls up to four groups of blinds</h4>
+              </li>
+            </ul>
+            <a class="btn" href="/products/smart-switch"> Buy Now </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/freesample2.png?6174508423028888256');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 9%;">Free swatch sample of <br> MySmartBlinds</h4>
+      <center>
+        <a class="btn" href="/products/free-sample"> Get Now </a>
+      </center>
+    </div>
+  </div>
+
+  <!--   <div class="custom-product-details">
+<div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/Kitchen_rendering.jpg?16277869696997666579');background-position: center;background-size:cover;">
+<h4 class="custom-blinds-header-text" style="padding-top: 9%;">Get a free sample <br>of MySmartBlinds</h4>
+<center>
+<button type="submit" name="add" id="addToCart" class="btn" onclick="addToCart()">
+<span id="AddToCartText">
+Add To Cart
+</span>
+</button>            
+</center>
+</div>
+</div>
+
+<script>
+function addToCart(){
+console.log("ADDING TO CART"); 
+jQuery.post('/cart/update.js', {updates: {337591468055  : 1}});
+location.reload();
+}
+</script> -->
+
+
+  <!-- ********************************************* SMART SWITCH *********************************************-->
+
+  {% when "Smart Switch" %}
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/smart-lock2.png?7876036464603688181');background-position: center;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 12%;">Installs in seconds, <br> no tools required</h4>
+      <center>
+        <a class="btn" href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/-RJnUjvdQ10')"> Watch the Video </a>
+      </center>
+    </div>
+  </div>
+
+  <div class="custom-product-details">
+    <div class="custom-smart-switch">
+      <ul>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/demand-control.png?14228250849056066603" height="180" width="180" />
+          On demand<br>control
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/peel.png?14228250849056066603" height="180" width="180" />
+          Peel-and-stick<br>wall switch
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/home.png?14228250849056066603" height="180" width="180" />
+          Control up to 32<br>blinds with a single switch
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/range.png?14228250849056066603" height="180" width="180" />
+          Removable for<br>portable use
+        </li>
+      </ul>
+    </div>
+    <span class="stretch"></span>
+  </div>
+
+  <!-- ********************************************* HUB *********************************************-->
+
+  {% when "Smart Hub" %}
+  <div class="custom-product-details">
+    <div class="custom-product-image-text" style="background:url('https://cdn.shopify.com/s/files/1/2330/0585/files/smart-home.png?166830088442279468');background-position: bottom;background-size:cover;">
+      <h4 class="custom-blinds-header-text" style="padding-top: 9%;">"Alexa, tell MySmartBlinds <br>to open"</h4>
+      <center>
+        <a class="btn" href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/dkmn9g7_-Go')"> Watch the Video </a>
+      </center>
+    </div>
+  </div>
+
+  {% endcase %}
+</div>
+
+{% if collection %}
+<div class="text-center return-link-wrapper">
+  <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
+    {% include 'icon-arrow-left' %}
+    {{ 'products.product.back_to_collection' | t: title: collection.title }}
+  </a>
+</div>
+{% endif %}
+
+{% unless product == empty %}
+<script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+</script>
+{% endunless %}
+
+<div id="myVideo" class="custom-youtube-overlay">
+  <div id="screen" class="custom-youtube-overlay-content" style="top: 11%;">
+    <a href="javascript:void(0)" class="closebtn" style="color:#f1f1f1;" onclick="closeVideo('https://www.youtube.com/embed/yOa0I6xNYkg')">&times;</a>
+    <iframe id="myIframe" width="100%" height="100%" src="https://www.youtube.com/embed/yOa0I6xNYkg" frameborder="0" allowfullscreen autoplay="true"></iframe>
+  </div>
+</div>
+<div id="splititOverlay" class="custom-youtube-overlay">
+  <div id="whiteGloveBox" class="splitit-overlay-content">
+    <pre id="object"></pre>
+    <a href="javascript:void(0)" class="closebtn" style="color:#f1f1f1;" onclick="closeSplitit()">&times;</a>
+    <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/splitit.png?15421477240513741825" class="wg-img" style="width:23%;margin-top:20px"/>
+    <h2 class="wg-small" style="margin-top: 40px;font-size:20px;">Make up to 6 easy monthly payments with 0% APR </h2>
+    <h4 style="margin-bottom:60px;" class="wg-after-check"> Select Splitit at checkout </h4>
+<!--     <h3 class="wg-small" style="background: #f1f1f1; padding: 40px;">Subject to credit check and approval. Down payment may be required. For purchases under $100, limited payment options may be available. Estimated payment amount excludes taxes, add-ons and shipping fees. See www.splitit.com/faq for details.</h3> -->
+  </div>
+</div>
+<script>
+  function openSplitit() {
+    document.getElementById("splititOverlay").style.height = "100%";
+  }
+  function closeSplitit() {
+    document.getElementById("splititOverlay").style.height = "0%";
+  }
+  function openVideo(iSrc) {
+    document.getElementById("myVideo").style.height = "100%";
+    document.addEventListener("touchstart", function(){}, true)
+    var iframe = document.getElementById("myIframe");
+    iframe.src = iSrc + "?autoplay=1";
+    window.scrollTo(0, 500);
+  }
+  function closeVideo(iSrc) {
+    document.getElementById("myVideo").style.height = "0%";
+    var iframe = document.getElementById("myIframe");
+    iframe.src = iSrc;
+  }
+</script>
+{% schema %}
+{
+"name": "Product pages",
+"settings": [
+{
+"type": "select",
+"id": "image_size",
+"label": "Image size",
+"options": [
+{
+"value": "small",
+"label": "Small"
+},
+{
+"value": "medium",
+"label": "Medium"
+},
+{
+"value": "large",
+"label": "Large"
+},
+{
+"value": "full",
+"label": "Full-width"
+}
+],
+"default": "medium"
+},
+{
+"type": "checkbox",
+"id": "show_quantity_selector",
+"label": "Show quantity selector",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "show_variant_labels",
+"label": "Show variant labels",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_vendor",
+"label": "Show vendor",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "enable_zoom",
+"label": "Enable image zoom",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_share_buttons",
+"label": "Show social sharing buttons",
+"default": true
+}
+]
+}
+{% endschema %}
+<script type="text/javascript">
+  if(window.location.href.indexOf('www') != 0){
+  setInterval(function(){ 
+$('.split_price').html('$'+(parseFloat($('.wpdcustom').html().replace( /[^\d\.]*/g, ''))/6).toFixed(2));
+},1000)
+  }
+</script>

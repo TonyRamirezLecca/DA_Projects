@@ -1,0 +1,73 @@
+/* CSS 2 */
+.da_step-2 .hdr {
+   display: none;
+}
+
+.da_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1300px;
+    margin-top: -20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.da_section {
+}
+.da_section p {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.da_step-btn {
+    background-color:#40becd;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 200;
+    border-radius: 40px;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    background-position:left top;
+    cursor: pointer;
+}
+.da_step-btn:hover {
+	background-color:#097dc7;
+	color: #ffffff;
+	text-decoration: none;
+}
+.da_hide-btn {
+    display: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .da_wrapper {
+        flex-direction: column;
+    }
+    .da_section {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inner-container.content-area {
+        min-height: 900px;
+    }
+    .outer-container.content-area {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .inner-container.content-area {
+        min-height: 1000px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    .inner-container.content-area {
+        min-height: 1050px;
+    }
+}

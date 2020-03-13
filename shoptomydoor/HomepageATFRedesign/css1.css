@@ -1,0 +1,244 @@
+/*** CSS 1 ***/
+.fas.fa-shipping-fast.da_shipping-fast {
+}
+
+.fas.fa-map-marked-alt.da_map {
+}
+
+.fas.fa-plane-departure.da_plane {
+}
+
+.far.fa-calendar-alt.da_calendar {
+}
+
+.banner[_ngcontent-c1] {
+    flex-direction: row !important;
+    height: 600px !important;
+    display: flex !important;
+    overflow: hidden !important;
+}
+
+
+.da_left {
+    background: linear-gradient(to right, #d3d3d3, #d2d3d3);
+    flex: 1;
+    position: relative;
+}
+
+.da_circle {
+    height: 633px;
+    width: 825px;
+    background: #2295A3;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    transform: translate(0%, 45%);
+    z-index: 2;
+}
+
+.da_title-ctn {
+    position: relative;
+    z-index: 3;
+    padding-left: 250px;
+    padding-top: 30px;
+}
+
+.da_light-text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.da_large-font {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.da_light-text.da_large-font {
+    font-weight: 100;
+}
+
+.da_vp-ctn {
+    padding-left: 250px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.da_vp:first-child {
+    padding-top: 0px;
+}
+.da_vp:last-child {
+    padding-bottom: 0px;
+}
+.da_vp {
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.da_vp-icon {
+    margin-right: 10px;
+    height: 30px;;
+    width: 30px;
+}
+.da_vp:first-child .da_vp-icon {
+    width: 40px;
+    margin-left: -10px;
+}
+.da_vp-icon img {
+    height: 100%;
+}
+
+.da_vp-text {
+    white-space: nowrap;
+}
+
+.da_right {
+    position: relative;
+    display: flex;
+}
+.da_fist-pump {
+    bottom: 0;
+    object-fit: cover;
+    min-width: 500px;
+    width: 850px;
+}
+
+
+@media screen and (max-width: 1550px) {
+    .da_circle {
+        transform: translate(-20%, 45%);
+        z-index: 2;
+    }
+    .da_title-ctn {
+        padding-left: 100px;
+    }
+    .da_vp-ctn {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .da_title-ctn {
+        padding-left: 50px;
+    }
+    .da_vp-ctn {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .da_title-ctn {
+        padding-left: 20px;
+    }
+    .da_vp-ctn {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .da_title-ctn {
+        padding-left: 10px;
+    }
+    .da_vp-ctn {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .da_right {
+        display: none;
+    }   
+    .da_title-ctn {
+        padding-left: 33%;
+    }
+    .da_vp-ctn {
+        padding-left: 33%;
+    }
+    .da_circle {
+        left: 50%;
+        transform: translate(-50%, 45%);
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .da_right {
+        display: none;
+    }   
+    .da_title-ctn {
+        padding-left: 20%;
+    }
+    .da_vp-ctn {
+        padding-left: 20%;
+    }
+    .da_circle {
+        left: 50%;
+        transform: translate(-60%, 45%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .da_left {
+        background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/shop-to-my-door/homepage-atf-redesign/Hero-Image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: none;
+        height: 500px;
+    }
+    .da_title-ctn {
+        padding-left: 20px;
+    }
+    .da_vp-ctn {
+        padding-left: 20px;
+        position: absolute;
+        top: 90%;
+    }
+    .da_circle {
+        display: none;
+    }
+    .banner[_ngcontent-c1] {
+        margin-bottom: 300px !important;
+        overflow: visible !important;
+        height: 400px !important;
+        min-height: 200px !important;
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .da_large-font {
+        font-size: 38px !important;
+    }
+    .da_light-text {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .da_title-ctn {
+        white-space: normal !important;;
+    }
+    .da_large-font {
+        font-size: 36px !important;
+    }
+    .da_light-text {
+        font-size: 22px;
+    }
+    .da_fist-pump {
+        min-width: 0px;
+        max-width: 100%;
+    }
+    .da_light-text {
+        white-space: normal;
+    }
+
+.da_vp-text {
+    white-space: normal;
+}
+}

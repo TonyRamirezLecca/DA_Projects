@@ -1,0 +1,7 @@
+config.yml
+*.log
+node_modules/
+upload/
+*.swp
+*.swo
+dist/

@@ -1,0 +1,84 @@
+/* CSS 2 */
+.row.justify-content-center.p-3 > .col-12 {
+    position: fixed !important;
+    background: #fff !important;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    padding: 70px 40px;
+    display: none;
+    max-height: 90vh;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#form-section {
+    height: 400px !important;
+    margin: 0px !important;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px !important;
+    padding: 0px !important;
+    background: none !important;
+    box-shadow: 0px 0px 4px #888;
+}
+#form-section > .card.form {
+    box-shadow: none;
+}
+
+.row.justify-content-center.p-3 > .col-md-6:last-child p:last-child {
+    display: none;
+}
+.row.justify-content-center.p-3 > .col-md-6:nth-child(2) p:nth-child(3) {
+    display: none;
+}
+.d-flex-column {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+.d-flex-column > a {
+    margin-left: 0px !important;
+}
+.d-flex-column + .text-center.mb-5 {
+    display: none !important;
+}
+.da_dark-background {
+    background: rgb(40,40,40,.7);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 120vh;
+    z-index: 98;
+}
+.da_close-btn {
+    position: absolute;
+    top: 5px;;
+    right: 10px;
+    cursor: pointer;
+}
+
+form[action="api/submit_form_by_client_portal.php"] {
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .d-flex-column > a {
+        margin-left: auto !important;
+        font-size: 18px !important;
+        max-width: 100%;
+    }
+    #form-section {
+        overflow-y: scroll !important;
+        align-items: flex-start
+    }
+    .row.justify-content-center.p-3 > .col-12 {
+        max-width: 95% !important;
+        padding: 40px 15px;
+    }
+}

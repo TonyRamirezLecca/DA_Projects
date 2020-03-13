@@ -1,0 +1,128 @@
+/*CSS 2*/
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  background: none !important;
+  padding-left: 30px !important;
+  border-bottom: 10px !important;
+}
+#tab-description {
+  background: #fff !important;
+}
+
+#tab-description p {
+  color: #000 ;
+}
+#tab-description h2 {
+  color: #000 !important;
+}
+#tab-description h1 {
+  color: #000 !important;
+}
+
+#tab-description h3 {
+  color: #000 !important;
+}
+#tab-description h4 {
+  color: #000 !important;
+}
+#tab-description h5 {
+  color: #000 !important;
+}
+#tab-description h6 {
+  color: #000 !important;
+}
+
+#tab-additional_information {
+  background: #fff !important;
+  color: #000 !important;
+}
+#tab-additional_information h2 {
+  color: #000 !important;
+}
+
+#tab-title-additional_information {
+  display: none !important;
+}
+#tab-title-description {
+  opacity: 0;
+}
+
+
+
+.da_button-ctn {
+  position: absolute;
+  z-index: 4;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 30px !important;
+  border-bottom: 8px solid #9d0300;
+}
+
+.da_description {
+  background: #9d0300;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+      font-style: italic;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.da_additional-info {
+    background: #9d0300;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 0 10px;
+    font-style: italic;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.da_active {
+background-color: #520605 !important;
+  height: 90% !important;
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs {
+    height: 50px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .da_button-ctn {
+    padding-left: 0px !important;
+  }
+  .da_description {
+    flex: 1;
+  }
+  .da_additional-info {
+    flex: 1;
+    text-align: center;
+  }
+    .woocommerce div.product .woocommerce-tabs ul.tabs {
+    height: 65px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #tab-additional_information {
+    padding: 10px !important;
+  }
+  #tab-description {
+    padding: 10px !important;
+  }
+}

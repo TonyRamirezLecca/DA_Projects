@@ -1,0 +1,87 @@
+.da_banner {
+  background: #151313;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  font-family: Dosis;
+  cursor: default;
+}
+.da_vp-ctn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 520px;
+}
+
+.da_vp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  flex: 1;
+}
+
+.da_vp-img {
+  height: 30px;
+  margin-bottom: 7px;
+  max-width: 30px;
+  object-fit: contain;
+}
+
+
+.da_vp-text {
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: 'Dosis';
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1350px) {
+  .da_vp-ctn {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .da_vp-ctn {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .da_vp-ctn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .da_vp-ctn {
+    flex-direction: column;
+  }
+  .da_vp {
+    flex-direction: row;
+  }
+  .da_vp-img {
+    margin-bottom : 0px;
+  }
+  .da_vp-text {
+    text-align: left;
+  }
+
+  .da_vp:nth-child(1) .da_vp-img {
+    margin-right: 11px;
+    margin-left: 7px;
+  }
+  .da_vp:nth-child(2) .da_vp-img {
+    margin-right: 23px;
+    margin-left: 8px;
+  }
+  .da_vp:nth-child(3) .da_vp-img {
+    margin-right: 12px;
+  }
+    .da_vp:nth-child(4) .da_vp-img {
+    margin-right: 14px;
+  }
+}

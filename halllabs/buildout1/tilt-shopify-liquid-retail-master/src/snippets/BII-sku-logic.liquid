@@ -1,0 +1,137 @@
+{% assign measure = section.settings.bii_measure_id  %}
+{% assign install = section.settings.bii_install_id  %}
+{% assign automation_install = section.settings.bii_automation_handle %}
+{% assign covering_install = section.settings.bii_window_covering_handle %}
+
+{% assign measure_present = 0 %}
+{% assign install_present = 0 %}
+{% assign covering_install_present = false %}
+
+
+{% assign measure_key = "" %}
+{% assign install_key = "" %}
+{% assign install_removal = "" %}
+
+{% for item in cart.items %}
+
+  {% if item.product.handle == measure  %}
+    {% assign measure_present = 1 %}
+    {% if item.quantity > 1  %}
+      {% assign measure_present = 2  %}
+      {% assign measure_key = item.variant_id %}
+    {% endif %}
+  {% endif  %}
+
+  {% if item.product.handle == install %}
+    {% assign install_present = 1 %}
+    {% if item.quantity > 1 %}
+      {% assign install_present = 2 %}
+      {% assign install_key = item.key %}
+    {% endif %}
+  {% endif %}
+
+  {% if item.product.handle == covering_install %}
+    {% assign covering_install_present = true %}
+  {% endif %}
+  {% if item.product.handle == automation_install or item.product.handle == covering_install %}
+    {% assign  install_removal = install_removal | append: 'updates[' | append: item.key | append: ']=0&' %}
+  {% endif %}
+
+{% endfor %}
+
+<script type="text/javascript">
+  //console.log("items to be removed: {{ install_removal }}")
+
+  var xhr = new XMLHttpRequest();
+  var installKey = "{{ install_key }}";
+  var measureKey = "{{ measure_key | default: all_products[measure].variants[0].id }}";
+  var installRemoval = '{{ install_removal }}';
+  var installPresent = '{{ install_present }}';
+  var measurePresent = '{{ measure_present }}';
+  var coveringInstallPresent = '{{ covering_install_present }}'
+  var updates = "";
+  var needUpdate = false;
+
+  function postRequest(url, body, form){
+    xhr.open("POST", url, true);
+    if (form == true){
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    }
+    else{
+      xhr.setRequestHeader('Content-Type', 'application/json');
+    }
+    xhr.send(body);
+    xhr.onload = function() {
+      var data = JSON.parse(this.responseText);
+      //console.log('response:: ', data)
+      location.reload();
+    }
+  }
+
+  if (measurePresent > 1){
+    updates = updates + "updates[" + measureKey + "]=1&";
+    needUpdate = true;
+  }
+  if (installPresent > 1){
+    updates = updates + "updates[" + installKey + "]=1&";
+    needUpdate = true;
+  }
+  if (installPresent == 0 && coveringInstallPresent == true){
+    updates = installRemoval;
+    needUpdate = true;
+    if (measurePresent > 0){
+      updates = updates + 'updates[' + measureKey + ']=0&';
+    }
+  }
+  if (installPresent == 0 && measurePresent > 0){
+      updates = installRemoval;
+      needUpdate = true;
+      if (measurePresent > 0){
+        updates = updates + 'updates[' + measureKey + ']=0&';
+      }
+  }
+  //needUpdate = true;
+  //Prevents the cart from having more than one installation or measurement visit
+  if (needUpdate == true){
+    //console.log('updates: ', updates)
+    postRequest('/cart/update.js', updates, true);
+  }
+
+  //If measurement visit is missing but window covering installtion is present, add measurement visit
+  if (measurePresent == 0 && coveringInstallPresent == 'true'){
+    measureKey = parseInt(measureKey, 10);
+    var body = {
+      quantity: 1,
+      id: measureKey
+    }
+    body = JSON.stringify(body);
+    //console.log('BODY ', body)
+    postRequest('/cart/add.js', body);
+  }
+
+</script>
+{% comment %}For testing purposes for BII {% endcomment %}
+{% comment %}
+<button onclick="addMany()">Test button (don't press!)</button>
+
+<script type="text/javascript">
+function addMany(){
+  var urltest = '/cart/update.js';
+  var product1 = 19202042298426;
+  var product2 = 19252264894522;
+  var bodytest = "updates[" + product1 + "]=1&updates[" + product2 + "]=2";
+
+  xhr.open("POST", urltest);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  //  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(bodytest);
+  xhr.onload = function() {
+    var data = JSON.parse(this.responseText);
+    console.log('response:: ', data)
+  }
+  return false;
+
+}
+</script>
+
+{% endcomment %}

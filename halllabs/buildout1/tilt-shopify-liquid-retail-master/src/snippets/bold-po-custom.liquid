@@ -1,0 +1,22 @@
+{% if template contains 'product' %}
+<style>
+  .bold_custom_hidden {
+    display: none; 
+  }
+</style>
+<script>
+  if(window.BOLD
+     && BOLD.common
+     && BOLD.common.eventEmitter
+     && typeof BOLD.common.eventEmitter.on == 'function') {
+    BOLD.common.eventEmitter.on("BOLD_OPTIONS_total_changed", function(data){
+      setTimeout(function(){
+        var hidden_price_nodes = document.querySelectorAll(".bold_custom_hidden");
+        Array.from(hidden_price_nodes).forEach(function(node){
+          node.classList.remove("bold_custom_hidden");
+        });
+      }, 50);
+    });     
+  }
+</script>
+{% endif %}

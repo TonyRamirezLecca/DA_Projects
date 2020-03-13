@@ -1,0 +1,278 @@
+.da_get-started-cta {
+  background: #96d800;
+  color: #333f48;
+  padding: 13px 22px;
+  font-size: 18px;
+}
+.da_get-started-cta:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.da_get-started-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.white.form {
+  background: #55626d;
+  margin-top: 0px !important;
+}
+.col-lg-6.green-form > .get-started .row.margin-20 {
+  display: none;
+}
+
+
+
+
+.da_learn-more-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.da_learn-more-text{
+  font-weight: 100 !important;
+    font-family: Montserrat;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+}
+
+.da_learn-more-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  max-width: 1200px;
+}
+
+.da_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.da_register {
+  background: #96d800;
+  max-width: 370px;
+  color: #333f48;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.da_video {
+  height: 300px;
+  background: gray;
+  margin: 30px 0;
+  max-width: 500px;
+}
+
+.da_link-ctn {
+  display: flex;
+  flex-direction: column;
+}
+
+.da_link {
+  color: #96d800;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 3px 0;
+}
+.da_link:hover {
+  color: #96d800;
+}
+
+.fas.fa-download.da_download {
+  margin-right: 6px;
+}
+
+.da_buy-book-ctn {
+  height: 120px;
+  position: relative;
+  padding: 10px 30px;
+  padding-right: 0px;
+  margin-top: 50px;
+}
+
+.da_book-img {
+  width: 80px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.da_book-download {
+  background: #96d800;
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: 500;
+  padding: 12px ;
+  color: #333f48;
+  margin-left: 20px;
+}
+
+.da_blue-background {
+  background: #333f48;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  min-height: 100%;;
+  min-width: 100%;
+  z-index: -1;
+  width: 100vw;
+}
+
+.da_right {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.da_form {
+  border: 2px solid #333f48;
+  padding: 40px;
+  padding-bottom: 20px;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+.da_ready-to-get-started {
+  width: 100%;
+  background: none;
+  padding: 40px 0px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.da_ready-to-get-started .get-started {
+  padding: 10px;
+}
+
+.da_ready-to-get-started a {
+  max-width: 400px;
+}
+
+.da_footnote {
+  line-height: 18px;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  font-size: 11px;
+  max-width: 280px;
+}
+
+.managersvideo {
+  margin: 0px;
+}
+
+
+@media screen and (max-width: 1040px) {
+  .da_learn-more-content {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .da_blue-background {
+    background: #333f48;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;;
+    min-width: 100%;
+    z-index: -1;
+    width: 100vw;
+  }
+  .da_buy-book-ctn {
+    background: #333f48;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .da_book-img {
+    margin-top: 20px;
+  }
+  .da_book-download {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .da_left {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    align-items: center;
+  }
+  .da_right {
+    margin-right: 0px;
+  }
+  h1.da_learn-more-text{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .da_learn-more-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .da_link-ctn {
+    margin-top: 20px;
+    padding: 0px 5px;
+    max-width: 95vw;
+  }
+  .da_form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 10px 30px;
+  }
+  .da_form .title {
+    padding: 0px 20px;
+  }
+  .da_form img {
+    transform: translateX(20px);
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .da_video {
+    max-width: 90vw;
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+  section.white.form {
+    background: #55626d;
+    margin-top: 0px !important;
+  }
+}
+
+
+@media screen and (max-width: 765px) {
+  .da_form .title {
+    padding: 0px 50px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .da_form .title {
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .da_form .title {
+    padding: 0px 30px;
+  }
+}

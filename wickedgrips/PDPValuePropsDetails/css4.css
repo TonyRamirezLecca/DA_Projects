@@ -1,0 +1,252 @@
+/*** CSS 4 ***/
+
+/*CSS 2*/
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  background: none !important;
+  padding-left: 30px !important;
+  border-bottom: 10px !important;
+    border-radius: 0px !important;
+
+}
+#tab-description {
+  background: #fff !important;
+	position: relative;
+}
+
+#tab-description p {
+  color: #000 ;
+}
+#tab-description h2 {
+  color: #000 !important;
+}
+#tab-description h1 {
+  color: #000 !important;
+}
+
+#tab-description h3 {
+  color: #000 !important;
+}
+#tab-description h4 {
+  color: #000 !important;
+}
+#tab-description h5 {
+  color: #000 !important;
+}
+#tab-description h6 {
+  color: #000 !important;
+}
+
+#tab-additional_information {
+  background: #fff !important;
+  color: #000 !important;
+	position: relative;
+}
+#tab-additional_information h2 {
+  color: #000 !important;
+}
+
+#tab-title-additional_information {
+  display: none !important;
+}
+#tab-title-description {
+  opacity: 0;
+}
+
+.da_button-ctn {
+  position: absolute;
+  z-index: 4;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 50px !important;
+  border-bottom: 8px solid #9d0300;
+  background: #fff;
+}
+
+.da_description {
+  background: #9d0300;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+      font-style: italic;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.da_additional-info {
+    background: #9d0300;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 0 10px;
+    font-style: italic;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.da_active {
+background-color: #520605 !important;
+  height: 90% !important;
+
+}
+
+
+
+
+
+/*** CSS 3 ***/
+.da_banner-wrapper {
+  position: relative;
+  display: flex;
+  clear: both;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+	background: #fff;
+	padding-bottom: 30px;
+}
+
+.da_white-background {
+  background: #fff;
+  height: 100%;
+  width: 200vw;
+  margin-left: -50vw;
+  position: absolute;
+  z-index: 0;
+}
+
+.da_banner {
+  width: 100%;
+  z-index: 2;
+}
+
+.da_vp-ctn {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.da_vp {
+  flex: 1;
+  margin: 30px 30px;
+  ; }
+
+.da_img {
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h6.da_text {
+  color: #000 !important;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+p.da_sub-text {
+  color: #000;
+  position: relative;
+  z-index: 2;
+  font-size: 16px !important;
+  line-height: 20px;
+  text-align: center;
+}
+
+h6.da_sub-title {
+  color: #000 !important;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 45px;
+  margin-top: 0px;
+}
+h6.da_first-sub-title {
+  margin-bottom: 20px !important;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 993px) {
+  .da_img {
+    min-height: 240px;
+    min-width: 300px;
+    max-width: 300px;     
+    text-align: center;
+  }
+
+  .da_vp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     }
+
+  .da_vp-ctn {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs {
+    height: 50px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .da_button-ctn {
+    padding-left: 0px !important;
+  }
+  .da_description {
+    flex: 1;
+  }
+  .da_additional-info {
+    flex: 1;
+    text-align: center;
+  }
+    .woocommerce div.product .woocommerce-tabs ul.tabs {
+    height: 65px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .da_banner-wrapper {
+    padding-top: 20px;
+  }
+  .da_vp {
+    margin: 25px 0;
+  }
+  .da_img {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .da_vp-ctn {
+    margin-bottom: 20px;
+  }
+
+  #tab-additional_information {
+    padding: 10px !important;
+  }
+  #tab-description {
+    padding: 10px !important;
+  }
+}
+
+

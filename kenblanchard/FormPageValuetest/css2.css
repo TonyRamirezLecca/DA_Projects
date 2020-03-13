@@ -1,0 +1,230 @@
+/*** CSS 2 ***/
+.col-xs-12.breadcrumbs {
+    position: absolute;
+    bottom: -270px;
+}
+
+
+.da_form-ctn {
+    height: 600px;
+}
+.da_form {
+    transform: translateY(-220px);
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 8px #888;
+    padding: 0px;
+    display: flex;
+    max-width: 1300px;
+    width: 90%;
+}
+
+.da_form .form-group > label {
+    display: none !important;
+}
+
+.da_light {
+    color: #999999;
+}
+.da_form .form-group textarea {
+    padding: 10px;
+}
+.da_description {
+    font-size: 16px;
+    margin: 10px 0px;
+    padding: 15px;
+    text-align: left;
+}
+.da_form  input[type="submit"] {
+    min-width: 100%;
+}
+#form-submit-row {
+    display: flex;
+    margin: 0px;
+}
+#form-submit-row > div {
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.big-form > div:nth-child(7) {
+    display: flex;
+    justify-content: space-evenly;
+}
+.big-form > div:nth-child(7) > div:first-child {
+    flex: 1;
+    width: 50%;
+}
+.big-form > div:nth-child(7) > div{
+    height: 100px;
+    margin: 0px;
+}
+
+.da_left {
+    flex: 2.8;
+    padding: 0px 50px 50px 50px;
+}
+.da_right {
+    background: #333f48;
+    flex: 1;
+    padding: 40px;
+}
+.da_right-top {
+    height: 200px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: 100 !important;
+    font-family: open sans;
+}
+.da_right-top span {
+    font-style: italic;
+}
+.da_right-bottom {
+    border-top: 1px solid #888;
+    margin-top: 30px;
+}
+.da_right-bottom h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.da_right-bottom h4 a {
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .da_form-ctn {
+        height: 1000px;
+    }
+    .da_form {
+        flex-direction: column-reverse;
+        box-shadow: none;
+    }
+    .col-xs-12.breadcrumbs {
+        bottom: -750px;
+    }
+    .da_left {
+        box-shadow: 0px 0px 8px #aaa;
+    }
+    .da_right {
+        min-height: 400px;
+    }
+    .da_right-top {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .da_form-ctn {
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #get-started {
+        padding-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .da_form-ctn {
+        height: 1100px;
+    }
+    .col-xs-12.breadcrumbs {
+        bottom: -780px;
+    }
+    .da_left {
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .big-form > div:nth-child(7) {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .big-form > div:nth-child(7) > div:first-child {
+        width: 100%;
+        flex: 1;
+    }
+    .big-form > div:nth-child(7) > div:first-child span > div {
+        width: 100% !important;
+        margin: 0px;
+        margin-bottom: 15px;
+        margin-top: -40px;
+
+    }
+    .insights {
+        height: 20px;
+        display: flex;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .da_form-ctn {
+        height: 1450px;
+    }
+    .da_form {
+        width: 95%;
+    }
+    .col-xs-12.breadcrumbs {
+        bottom: -1150px;
+    }
+    #contact-us {
+        padding-top: 80px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 470px) {
+    .da_form-ctn {
+        height: 1500px;
+    }
+    .col-xs-12.breadcrumbs {
+        bottom: -1180px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .da_form-ctn {
+        height: 1500px;
+    }
+    .col-xs-12.breadcrumbs {
+        bottom: -1210px;
+    }
+    .da_form .form-group textarea { 
+        font-size: 12px !important;
+    }
+    .da_form .form-group input { 
+        font-size: 12px !important;
+    }
+    .da_form .form-group select { 
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .col-xs-12.breadcrumbs {
+        bottom: -1230px;
+    }
+    .da_form-ctn {
+        height: 1530px;
+    }
+}
+
+@media screen and (max-width: 357px) {
+    .col-xs-12.breadcrumbs {
+        bottom: -1250px;
+    }
+    .da_form-ctn {
+        height: 1550px;
+    }
+}

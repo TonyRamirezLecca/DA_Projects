@@ -1,0 +1,99 @@
+/*CSS 3*/
+.da_cta-ctn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.da_vp-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin: 0px 0px 30px 0px;
+
+}
+.da_cta-ctn a:last-child {
+	white-space: nowrap;
+}
+
+.da_row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+        margin: 10px 0px;
+
+}
+.da_row:last-child {
+    margin-left: -30px;
+}
+
+.da_vp {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.da_vp-icon {
+    max-height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.da_row:first-child .da_vp:nth-child(2) .da_vp-icon {
+    max-height: 20px;
+}
+
+.da_vp-text {
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .da_row {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .da_row {
+        flex-direction: column;
+        margin-left: 0px !important;
+        margin: 0px;
+    }
+
+    .da_vp-icon {
+    max-height: 26px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+    .da_row:first-child .da_vp:nth-child(2) .da_vp-icon {
+        max-height: 20px;
+    }
+    .da_vp {
+        margin: 7px 5px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .da_vp-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .da_vp-text {
+        font-size: 14px;
+        white-space: normal;
+    }
+    .da_vp {
+        justify-content: center;
+        aliqn-items: center;
+    }
+}

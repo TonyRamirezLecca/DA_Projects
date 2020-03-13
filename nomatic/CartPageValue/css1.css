@@ -1,0 +1,86 @@
+/*** CSS 1 ***/
+.da_mobile {
+	display: none;
+}
+.da_faq-ctn {
+    background: #f7f7f7;
+    padding: 40px 60px;
+    max-width: 750px;
+    margin-top: 40px;
+}
+
+.da_faq-header {
+	font-size: 24px;
+	font-weight: 800;
+	color: #332D31;
+	font-family: Arquitecta;
+	margin-bottom: 14px;
+}
+
+.da_faq-section {
+		color: #332D31;
+}
+.da_faq-section-header {
+	font-weight: 800;
+	display: inline;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.fas.fa-plus-circle.da_plus {
+	margin-left: 8px;
+}
+
+.fas.fa-minus-circle.da_minus {
+	margin-left: 8px;
+}
+
+.da_faq-section-content {
+    display: flex;
+    margin: 6px 0px 6px 24px;
+    line-height: 28px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms;
+}
+.da_faq-section-content.da_open {
+	max-height: 400px;
+}
+
+.da_answer-label {
+	font-weight: 800;
+	margin-right: 7px;
+}
+.da_faq-section-content div:nth-child(2) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+	.da_desktop {
+		display: none;
+	}
+	.da_mobile {
+		display: block;
+		margin-top: 25px;
+		padding: 8px
+	}
+	.da_faq-header {
+		text-align: center;
+	}
+	.da_faq-section-header {
+        font-size: 11px;
+     	white-space: nowrap;
+    }
+    .da_faq-section-content {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .fas.fa-plus-circle.da_plus {
+      margin-left: 0px;
+  }
+
+  .fas.fa-minus-circle.da_minus {
+      margin-left: 0px;
+  }
+}
+  

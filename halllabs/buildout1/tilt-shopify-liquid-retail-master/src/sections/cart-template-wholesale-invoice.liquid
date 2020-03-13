@@ -1,0 +1,518 @@
+<div class="page-width" data-section-id="{{ section.id }}" data-section-type="cart-template">
+  
+<script>
+window.pintrk && pintrk('track', 'addtocart');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt=""
+src="https://ct.pinterest.com/v3/?tid=2619515491174&event=addtocart&noscript=1"/>
+</noscript>
+
+  {% if cart.item_count > 0 %}
+    <div class="section-header text-center">
+      <h1>{{ 'cart.general.title' | t }}</h1>
+    </div>
+
+    <form action="/cart" method="post" class="cart">
+      <table>
+        <thead class="cart__row cart__header">
+          <th colspan="2">{{ 'cart.label.product' | t }}</th>
+          <th>{{ 'cart.label.price' | t }}</th>
+          <th class="text-center">{{ 'cart.label.quantity' | t }}</th>
+          <th class="text-right">{{ 'cart.label.total' | t }}</th>
+        </thead>
+        <tbody>
+          
+          {% for item in cart.items %}
+          
+          {% if item.properties._boldBuilderId  and item.properties._boldVariantIds == null %}
+          <input type="hidden" name="updates[]" id="updates_{{ item.key }}" class="cart__product-qty" value="{{ item.quantity }}" min="0" data-id="{{ item.key }}">
+          {% continue %}
+          {% endif %}
+
+          
+            <tr class="cart__row border-bottom line{{ forloop.index }} cart-flex{% if forloop.first %} border-top{% endif %} cart__row">
+              <td class="cart__image-wrapper cart-flex-item">
+                <a href="{{ item.url | within: collections.all }}">
+                  <img class="cart__image" src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}">
+                </a>
+              </td>
+              <td class="cart__meta small--text-left cart-flex-item">
+                <div class="list-view-item__title">
+                  <a href="{{ item.url }}">
+                    {{ item.product.title }}
+<span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
+<span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>                                
+                                
+                    {% if item.quantity > 1 %}
+                      <span class="medium-up--hide"><span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>(x{{ item.quantity }})</span>
+                    {% endif %}
+                  </a>
+                </div>
+                {% unless item.variant.title contains 'Default' %}
+                  <div class="cart__meta-text">
+                    {% for option in item.product.options %}
+                      {{ option }}: {{ item.variant.options[forloop.index0] }}<br/>
+                    {% endfor %}
+                  </div>
+                {% endunless %}
+
+                {% comment %}
+                  Optional, loop through custom product line items if available
+
+                  Line item properties come in as having two parts. The first part will be passed with the default form,
+                  but p.last is the actual custom property and may be blank. If it is, don't show it.
+
+                  For more info on line item properties, visit:
+                    - http://docs.shopify.com/support/your-store/products/how-do-I-collect-additional-information-on-the-product-page-Like-for-a-monogram-engraving-or-customization
+                {% endcomment %}
+                {%- assign property_size = item.properties | size -%}
+                <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span>{% if property_size > 0 %}
+                  <div class="cart__meta-text">
+                    {% for p in item.properties %}
+				   {%- if p.first.first == '_' -%}{%- continue -%}{%- endif -%}
+                      {% unless p.last == blank or p.first == "subscription_id" or p.first == "shipping_interval_frequency" or p.first == "shipping_interval_unit_type" %}
+                        {{ p.first }}:
+
+                        {% comment %}
+                          Check if there was an uploaded file associated
+                        {% endcomment %}
+                        {% if p.last contains '/uploads/' %}
+                          <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                        {% else %}
+                          {{ p.last }}
+                        {% endif %}<br/>
+                      {% endunless %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+              <div class="small--hide">
+                <div class="bold_edit_in_cart"></div>
+                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--secondary cart__remove bold_custom_remove_button">{{ 'cart.general.remove' | t }}</a>
+              </div>                
+              </td>
+
+              <td class="cart__price-wrapper cart-flex-item">
+
+                
+<span class="saso-cart-item-price" data-key="{{item.key}}"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" style="display:none !important;"></span>{{ item.price | money }}</span>
+
+
+                
+                {% for discount in item.discounts %}
+                  <div class="cart-item__discount medium-up--hide">{{ discount.title }}</div>
+                {% endfor %}
+
+                <div class="cart__edit medium-up--hide">
+                  <button type="button" class="btn btn--secondary btn--small js-edit-toggle cart__edit--active" data-target="line{{ forloop.index }}">
+                    <span class="cart__edit-text--edit">{{ 'cart.general.edit' | t }}</span>
+                    <span class="cart__edit-text--cancel">{{ 'cart.general.cancel' | t }}</span>
+                  </button>
+                </div>
+              </td>
+              <td class="cart__update-wrapper cart-flex-item text-right">
+                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--secondary cart__remove medium-up--hide">{{ 'cart.general.remove' | t }}</a>
+                <div class="cart__qty">
+                  {% if section.settings.bii_product_id contains item.product_id %}
+                    <p><muted>N/A</muted></p>
+                  {% else %}
+                  <label for="updates_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>
+                  <input data-product-variant-id-qty="{{ item.variant_id }}" class="cart__qty-input bold-quantity-update" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" pattern="[0-9]*">
+                  {% endif %}
+                </div>
+                <input type="submit" name="update" class="btn btn--small cart__update medium-up--hide" value="{{ 'cart.general.update' | t }}">
+              </td>
+              <td class="text-right small--hide">
+                {% if item.title == "Blinds" %}
+                
+                {% comment %}
+                  <div id="{% for p in item.properties %}{% if p.first == "Window Name" %} {{p.last}} {% endif %} {% endfor %}" class="cart-item__original-price"></div>
+                {% endcomment %}
+                
+                
+                <script>
+                  console.log("CUSTOM CALCULATION");
+                  var totalToAdd = 0.0;
+                  var pFirst = "";
+                  
+                  {% for p in item.properties %}
+                  {% if p.first contains "Width"%}
+                  console.log("Width");
+                  var cW = {{p.last}};
+                  if (cW >= 25 && cW <= 29) {
+                    totalToAdd += 10.0; 
+                  }
+                  else if (cW >= 30 && cW <= 34) {
+                    totalToAdd += 20.0; 
+                  }
+                  else if (cW >= 35 && cW <= 38) {
+                    totalToAdd += 32.0; 
+                  }
+                  else if (cW >= 39 && cW <= 44) {
+                    totalToAdd += 40.0; 
+                  }
+                  else if (cW >= 45 && cW <= 48) {
+                    totalToAdd += 54.0; 
+                  }
+                  else if (cW >= 49 && cW <= 53) {
+                    totalToAdd += 59.0; 
+                  }
+                  else if (cW >= 54 && cW <= 59) {
+                    totalToAdd += 69.0; 
+                  }
+                  else if (cW >= 60 && cW <= 63) {
+                    totalToAdd += 79.0; 
+                  }
+                  else if (cW >= 64 && cW <= 68) {
+                    totalToAdd += 88.0; 
+                  }
+                  else if (cW >= 69 && cW <= 74) {
+                    totalToAdd += 98.0; 
+                  }
+                  console.log(cW);
+                  {% elsif p.first contains "Height" %}
+                  console.log("Height");
+                  var cH = {{p.last}};
+                  if (cH >= 72 && cH <= 77) {
+                    totalToAdd += 10.0; 
+                  }
+                  else if (cH >= 78 && cH <= 82) {
+                    totalToAdd += 20.0; 
+                  }
+                  else if (cH >= 83 && cH <= 87) {
+                    totalToAdd += 30.0; 
+                  }
+                  else if (cH >= 88 && cH <= 92) {
+                    totalToAdd += 40.0; 
+                  }
+                  else if (cH >= 93 && cH <= 97) {
+                    totalToAdd += 50.0; 
+                  }
+                  else if (cH >= 98 && cH <= 102) {
+                    totalToAdd += 60.0; 
+                  }
+                  {% elsif p.first contains "Smart" %}
+                  console.log("Smart");
+                  {% if p.last == "Yes" %}
+                  console.log("Yes");
+                  totalToAdd += 99.0;
+                  {% else %}
+                  console.log("No");
+                  {% endif %}
+                  {% elsif p.first contains "Charging" %}
+                  console.log("Charging");
+                  {%if p.last == "Solar Panel" %}
+                  totalToAdd += 45.0;
+                  console.log("Solar Panel");
+                  {% elsif p.last == "Charging Cord" %}
+                  console.log("Charging Cord");
+                  totalToAdd += 14.0;
+                  {% else %}
+                  console.log("Neither");
+                  {% endif %}
+                  {% endif %}
+                  {% endfor %}
+					console.log(totalToAdd);
+                  totalToAdd += 85.0;
+                  (document.getElementById("{% for p in item.properties %}{% if p.first == "Window Name" %} {{p.last}} {% endif %} {% endfor %}")) && (document.getElementById("{% for p in item.properties %}{% if p.first == "Window Name" %} {{p.last}} {% endif %} {% endfor %}").innerHTML = "$" + totalToAdd + ".00");
+                </script>
+				{% comment %}  {% for p in item.properties %}
+                  
+                <p> {{p.first}} : {{p.last}}</p>
+                  
+                  {% endfor %}
+                {% endcomment %}
+                 
+                {% else %}
+                
+                  {% if item.original_line_price != item.line_price %}
+                  <div class="cart-item__original-price">{% assign geolizr_price =  item.original_line_price  %}{% include 'geolizr-currency' with geolizr_price %}{{ item.original_line_price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</div>
+                  {% endif %}  
+                {% endif %}
+
+             
+                <div class="cart-item__price">
+                  
+<span class="saso-cart-item-line-price" data-key="{{item.key}}"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" style="display:none !important;"></span>{{ item.line_price | money }}</span>
+
+                </div>
+                
+                {% for discount in item.discounts %}
+                  <div class="cart-item__discount">{{ discount.title }}</div>
+                {% endfor %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+      {% include 'hear-about-us' %}
+
+      <footer class="cart__footer">
+        <script>
+          var splititprice = 
+<span class="saso-cart-original-total">{{cart.total_price | divided_by: 6.0}}</span>
+<span class="saso-cart-total"></span>
+
+            console.log("CART PRICE SPLIT IT: 
+<span class="saso-cart-original-total">{{cart.total_price | divided_by: 600.0}}</span>
+<span class="saso-cart-total"></span>
+");
+          </script>
+        <div class="grid">
+          {% if section.settings.cart_notes_enable %}
+            <div class="grid__item medium-up--one-half cart-note">
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
+              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
+            </div>
+          {% endif %}
+          <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
+            <div>
+              <span class="cart__subtotal-title"><span id="">{{ 'cart.general.subtotal' | t }}</span></span>
+              <span class="cart__subtotal" style="font-size:30px;"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span><span id="">{% assign geolizr_price =  cart.total_price  %}{% include 'geolizr-currency' with geolizr_price %}
+<span class="saso-cart-original-total">{{ cart.total_price | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</span>
+<span class="saso-cart-total"></span>
+</span></span>
+            </div>
+            <div style="margin:10px;">
+              <span class="cart__subtotal-title_custom"> OR </span>
+            </div>
+            <div>
+              <span class="cart__subtotal-title" style="margin-right: -40px;">Payments from</span>
+              <span class="cart__subtotal" style=""><span id="splititprice">{% assign geolizr_price = cart.total_price | divided_by: 6.0  %}{% include 'geolizr-currency' with geolizr_price %}
+<span class="saso-cart-original-total">{{cart.total_price | divided_by: 6.0 | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</span>
+<span style="font-size:12px;">/mo.</span></span></span>
+              <span class="cart__subtotal-title" style="text-decoration: underline;font-size:12px;"><a href="javascript:void(0)" onclick="openSplitit()">Details ></a></span>
+            </div>
+            {% if cart.total_discounts > 0 %}
+              <div class="cart__savings">
+                {{ 'cart.general.savings' | t }}
+                <span class="cart__savings-amount">{% assign geolizr_price =  cart.total_discounts  %}{% include 'geolizr-currency' with geolizr_price %}{{ cart.total_discounts | money | prepend: geolizr_prepend_code | append: geolizr_append_code }}</span>
+              </div>
+            {% endif %}
+            <div class="cart__shipping">{{ 'cart.general.shipping_at_checkout' | t }}</div>
+            <a href="collections/all" class="btn btn--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
+            <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
+            <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
+            {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+            {% endif %}
+           <!-- <label for="po-reference">PO reference (optional):</label>
+             <input type="text" name="po-reference" id="po-reference"/>-->
+             <br />
+             <p class="cart-attribute__field">
+              <label for="po-reference-number-optional">PO reference number (optional)</label>
+              <input id="po-reference-number-optional" type="text" name="attributes[PO reference number (optional)]" value="{{ cart.attributes["PO reference number (optional)"] }}">
+            </p>
+
+          </div>
+
+        </div>
+      </footer>
+
+      {% comment %}
+      THIS FORM SUBMITS TO A EXTERNAL API THAT USES THE SHOPIFY API TO CREATE A DRAFT ORDER AND EMAILS THE USER AN INVOICE
+      {% endcomment %}
+
+
+    </form>
+    <form action="https://halllabs.free.beeceptor.com" method="post">
+      <input type="hidden" name="customer-id" value="{{ customer.id }}" />
+      {% for line_item in cart.items %}
+        <input type="hidden" name="{{ forloop.index }}-product-id" value="{{ line_item.variant_id }}" />
+        <input type="hidden" name="{{ forloop.index }}-product-quantity" value="{{ line_item.quantity }}" />
+      {% endfor %}
+      <input type="hidden" id="po-invoice" name="po-reference" value="{{ cart.attributes["PO reference number (optional)"] }}" />
+      <button>Invoice Instead</button>
+
+      <script type="text/javascript">//this keeps the PO reference in sync with the normal checkout form
+        var poReference = document.querySelector('#po-reference-number-optional');
+        var poInvoice = document.querySelector('#po-invoice');
+        poReference.addEventListener('input', function(e){
+          //console.log(this.value);
+          poInvoice.value = this.value;
+        })
+      </script>
+    </form>
+
+
+
+  {% else %}
+    <div class="empty-page-content text-center">
+      <h1>{{ 'cart.general.title' | t }}</h1>
+      <p class="cart--empty-message">{{ 'cart.general.empty' | t }}</p>
+      <div class="cookie-message">
+        <p>{{ 'cart.general.cookies_required' | t }}</p>
+      </div>
+      <a href="/" class="btn btn--has-icon-after cart__continue-btn">{{ 'general.404.link' | t }}{% include 'icon-arrow-right' %}</a>
+    </div>
+  {% endif %}
+</div>
+
+<div id="splititOverlay" class="custom-youtube-overlay">
+  			<div id="whiteGloveBox" class="splitit-overlay-content" style="top: 8%;">
+              <pre id="object"></pre>
+              <a href="javascript:void(0)" class="closebtn" style="color:#f1f1f1;" onclick="closeSplitit()">&times;</a>
+              <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/splitit.png?15421477240513741825" class="wg-img" style="width:23%;margin-top:20px"/>
+              <h2 class="wg-small" style="margin-top: 40px;font-size:20px;">Make up to 6 easy monthly payments with 0% APR </h2>
+              <h4 style="margin-bottom:60px;" class="wg-after-check"> Select Splitit as payment method during checkout </h4>
+              <h3 class="wg-small" style="background: #f1f1f1; padding: 40px;">Subject to credit check and approval. Down payment may be required. For purchases under $100, limited payment options may be available. Estimated payment amount excludes taxes, add-ons and shipping fees. See www.splitit.com/faq for details.</h3>
+  			</div>
+</div>
+
+        <!--<div id="whiteGlove" class="wg-overlay">
+  			<div id="whiteGloveBox" class="wg-overlay-content">
+              <pre id="object"></pre>
+              <img src="https://cdn.shopify.com/s/files/1/2330/0585/files/msbinstaller.png?16923609139657194692" class="wg-img"/>
+              <h3 id="alertTitle" class="wg-title"> WHITE GLOVE INSTALL</h3>
+              <h3 class="wg-price"> $149 Whole Home </h3>
+              <h2 class="wg-small">No window limit! </h2>
+              <button type="submit" name="add" id="addToCart" class="btn" onclick="addToCart()">
+                <span id="AddToCartText">
+                  	Add To Cart
+                </span>
+              </button>
+              <h4 style="" class="wg-after-check"> After checkout, you will receive an email <br> to schedule a service time.</h4>
+              <button type="submit" name="no" id="noThanks" class="btn-no-thanks" onclick="noThanks()">
+                No Thanks
+              </button>
+  			</div>
+		</div>-->
+
+        <script>
+          function openSplitit() {
+		document.getElementById("splititOverlay").style.height = "100%";
+    }
+  function closeSplitit() {
+        document.getElementById("splititOverlay").style.height = "0%";
+	}
+          var myLat = 0.000;
+          var myLong = 0.000;
+          var isLocationGiven = false;
+          var tooFar = false;
+        function getLocation() {
+          console.log("STARTING LOCATION");
+          console.log(tooFar);
+          {% for item in cart.items %}
+
+                            {% if item.id == 2638943256599 %}
+                                console.log("Setting tooFar to TRUE");
+                            tooFar = true;
+                    {% endif %}
+                    {% endfor %}
+          console.log(tooFar);
+          if(!tooFar){
+                      console.log("Getting location fuction called");
+    		if (navigator.geolocation) {
+              	navigator.geolocation.getCurrentPosition(
+                  function(position) {
+                    console.log("Retrieving location");
+                    myLat = position.coords.latitude;
+                    myLong = position.coords.longitude;
+                    isLocationGiven = true;
+                    console.log(distance(myLat, myLong, 40.429705 , -111.878811, "M"));
+
+          			if(distance(myLat, myLong, 40.213928, -111.648235, "M") > 40 || tooFar){
+            			tooFar = true; 
+          			}
+                    
+                    if(!tooFar){
+                     openWG(); 
+                    }
+    			  },
+    			  function(error){
+//          			alert("Location access not granted. Please go to your browser settings and allow mysmartblinds.com to access your location so we can find installers near you.");
+              		(document.getElementById("alertTitle")) && (document.getElementById("alertTitle").innerHTML = "Location access not granted. We can only find installers near you with your location setting turned on.")
+    			  }, {
+         			enableHighAccuracy: true
+              		,timeout : 5000
+    			  });	
+    		} else { 
+//               alert("Location access not granted. Please go to your browser settings and allow mysmartblinds.com to access your location so we can find installers near you.");
+              (document.getElementById("alertTitle")) && (document.getElementById("alertTitle").innerHTML = "Location access not granted. We can only find installers near you with your location setting turned on.")
+    		}
+          }
+          else {
+           console.log("ENDING LOCATION"); 
+          }
+		}
+        function openWG() {
+          
+    	  document.getElementById("whiteGlove").style.height = "100%";
+          
+        }
+		function closeWG() {
+    	  document.getElementById("whiteGlove").style.height = "0%";
+          document.getElementById("addToCart").style.display = "block";
+          myLat = 0.000;
+          myLong = 0.000;
+          isLocationGiven = false;
+          tooFar = false;
+		}
+          function noThanks(){
+            document.getElementById("whiteGlove").style.height = "0%";
+          document.getElementById("addToCart").style.display = "block";
+          myLat = 0.000;
+          myLong = 0.000;
+          isLocationGiven = false;
+          tooFar = false;
+          }
+        function distance(lat1, lon1, lat2, lon2, unit) {
+			var radlat1 = Math.PI * lat1/180
+			var radlat2 = Math.PI * lat2/180
+			var theta = lon1-lon2
+			var radtheta = Math.PI * theta/180
+			var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+			dist = Math.acos(dist)
+			dist = dist * 180/Math.PI
+			dist = dist * 60 * 1.1515
+			if (unit=="K") { dist = dist * 1.609344 }
+			if (unit=="N") { dist = dist * 0.8684 }
+			return Math.round(dist);
+		}
+          
+          function addToCart(){
+            debugger;
+           console.log("ADDING TO CART"); 
+            jQuery.post('/cart/update.js', {updates: {2638943256599 : 1}});
+            location.reload();
+          }
+        window.onload = getLocation;
+        </script>
+
+{% schema %}
+  {
+    "name": "Cart page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable cart notes",
+        "default": false
+      }, 
+	  {
+		"type": "checkbox",
+		"id": "enable_white_glove",
+		"label": "Enable White Glove Service",
+	   	"default": false
+	  },
+	  {
+		"type": "text",
+		"id": "white_glove_title",
+		"label": "Alert Title",
+		"default": "Change Me!"
+    },
+    {
+      "type": "header",
+      "content": "Buy It Installed Settings"
+    },
+    {
+      "type": "text",
+      "id": "bii_product_id",
+      "label": "BII service product id",
+      "info": "comma separated list of product ids"
+    }
+    ]
+  }
+{% endschema %}

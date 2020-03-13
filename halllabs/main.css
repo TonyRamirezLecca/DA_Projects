@@ -1,0 +1,123 @@
+.value_props-section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    padding: 80px 0px;
+}
+.value_props-ctn {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1100px;
+    width: 90%;
+}
+.value_prop-title {
+    margin-bottom: 50px;
+}
+.value_prop {
+    display: flex; 
+    flex: 1;
+    margin: 0px 40px;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.value_prop h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.value_prop h6 {
+    font-size: 18px;
+}
+.value_prop img {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .value_props-section {
+        padding-bottom :0px;
+    }
+    .value_props-ctn {
+        flex-direction: column;
+    }
+    .value_prop {
+            margin: 0px 20px;
+        margin-bottom :30px;
+    }
+}
+
+
+
+
+
+
+
+
+.informational_section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.informational_ctn:nth-child(2n -1) {
+    flex-direction: row-reverse;
+}
+.informational_ctn:nth-child(2n -1) img{
+    margin-left: 50px;
+}
+.informational_ctn:nth-child(2n) img{
+    margin-right: 50px;
+}
+
+
+.informational_ctn {
+     display: flex; 
+    justify-content: center;
+    margin: 30px 0px;
+}
+.informational_text-ctn {
+    flex: 1;
+}
+.informational_text-ctn h3 {
+    font-size: 38px;
+}
+.informational_text-ctn h6 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.informational_ctn img {
+    width: 60%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 850px) {
+    .informational_section {
+        width: 100%;
+    }
+    .informational_ctn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .informational_text-ctn {
+        width: 90%;
+    }
+    .informational_ctn:nth-child(2n -1) {
+        flex-direction: column;
+    }
+    .informational_ctn:nth-child(2n -1) img{
+        margin-left: 0px;
+    }
+    .informational_ctn:nth-child(2n) img{
+        margin-right: 0px;
+    }
+    .informational_ctn img {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 600px;
+    }
+}

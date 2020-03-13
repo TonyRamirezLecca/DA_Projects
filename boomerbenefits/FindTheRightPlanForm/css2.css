@@ -1,0 +1,9 @@
+/*** CSS 2***/
+.da_slide-down {
+    transition: all 400ms;
+    transform: translateY(100%);
+}
+.da_slide-up {
+    transform; translateY(0);
+    transition: all 400ms;
+}

@@ -1,0 +1,22 @@
+/*** CSS 1 ***/
+.da_vp-ctn {
+}
+
+.da_product-title h1 {
+}
+
+.da_vps {
+    padding-left: 13px;
+}
+
+.da_vp {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 759px) {
+    .da_vp-ctn {
+        margin-top: -40px;
+    }
+}

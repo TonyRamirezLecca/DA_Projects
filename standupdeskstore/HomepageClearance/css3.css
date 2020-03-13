@@ -1,0 +1,58 @@
+/*** CSS 3 ***/
+.da_banner {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    position: relative;
+}
+
+.da_banner-title {
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+}
+
+.da_banner-subtext {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+}
+
+.da_link {
+    color: #fff !important;
+    margin-top: 30px;
+    text-decoration: underline;
+
+}
+.da_orange-background {
+        background: #EF5928;
+        height: 100%;
+        width: 150vw;
+        margin-left: 25vw;
+        position: absolute;
+        z-index: -1;
+}
+.da_dash {
+    height: 1px;
+    width: 12px;
+    background: #000;
+    display: block;
+    position: absolute;
+    right: 101%;
+    top: 50%;
+}
+.da_banner-title br {
+	display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+	.da_banner-title br {
+		display: block;
+	}
+}

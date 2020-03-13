@@ -93,7 +93,7 @@ whenExists('.back, .step:nth-child(13)', function () {
 					}
 					break;
 				case 5:
-					if (document.querySelector('#address').value != "") {
+					if (document.querySelector('#address').value != "" && document.querySelector('#address').value.length > 3) {
 						progress.push('check');
 						updateSteps(progress.length);
 					}
@@ -117,7 +117,7 @@ whenExists('.back, .step:nth-child(13)', function () {
 					}
 					break;
 				case 9:
-					if (document.querySelector('#first_name').value != "" && document.querySelector('#last_name').value != "") {
+					if (document.querySelector('#first_name').value.length > 1 && document.querySelector('#last_name').value.length > 1 ) {
 						progress.push('check');
 						updateSteps(progress.length);
 					}

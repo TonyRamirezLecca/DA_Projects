@@ -1,0 +1,21 @@
+/*** CSS 2 ***/
+.custom-bar-text-line {
+    background: #B3D8F3   100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.announcement-bar {
+    background: none !important;
+}
+.custom-bar-text-line a {
+    font-weight: 800;
+}
+.site-header__icon.site-header__account.hidemobile.has-user-dropdown.custom-announcement-bar-need-help {
+    padding: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}

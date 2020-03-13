@@ -1,0 +1,55 @@
+/* CSS 1 */
+.da_vp-ctn {
+  margin: 24px 0;
+}
+
+.da_vp {
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.da_img {
+  height: 25px !important;
+  width: 25px !important;
+  object-fit: contain;
+}
+
+.da_vp:nth-child(1) .da_img {
+  height: 22px !important;
+  width: 22px !important;
+  margin-right: 6px;
+}
+
+.da_vp:nth-child(2) .da_img {
+  margin-right: 6px;
+  width: 22px !important;
+}
+
+.da_vp:nth-child(3) .da_img {
+  width: 25px !important;
+  margin-right: 3px
+}
+
+.da_text {
+  margin: 0px 0px 0px 4px;
+  line-height: 20px;
+}
+
+form.cart {
+  margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .da_vp {
+    margin: 8px 0;
+  }
+
+  .da_vp {
+    align-items: flex-start;
+  }
+
+  .da_img {
+    margin-right: 4px;
+  }
+}

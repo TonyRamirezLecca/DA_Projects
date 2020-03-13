@@ -1,0 +1,758 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#7796a8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#00b5e2",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 25,
+    "color_body_bg": "#fff",
+    "type_header_family": "Google_Montserrat_400_sans",
+    "type_header_base_size": "30px",
+    "type_base_family": "Google_Montserrat_400_sans",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/tiltsmarthome",
+    "social_facebook_link": "https:\/\/facebook.com\/tiltsmarthome",
+    "social_pinterest_link": "https:\/\/pinterest.com\/tiltsmarthome",
+    "social_instagram_link": "https:\/\/instagram.com\/tiltsmarthome",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCj5MzQnsRbBe8qWDwSQbM-A",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/Smarterhome-Logos-18.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Smarterhome-Logos_Logo-tilt-Smarterhome.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Raleway",
+    "checkout_body_font": "Raleway",
+    "checkout_accent_color": "#00b5e2",
+    "checkout_button_color": "#00b5e2",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/Smarterhome-Logos_Logo-tilt-Smarterhome.png",
+          "logo_max_width": "75",
+          "main_linklist": "tilt-main-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "Free shipping on all US orders ••• 0% APR financing available with Splitit",
+          "message_link": "",
+          "color_bg": "#00b5e2",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1558131844862": {
+            "type": "image_picker",
+            "settings": {
+              "sister-site": "Garage Smart",
+              "sister-url": "http:\/\/garagesmart.com",
+              "sister-logo": "shopify:\/\/shop_images\/GarageSmart_Logo_grey.png"
+            }
+          }
+        },
+        "block_order": [
+          "1558131844862"
+        ],
+        "settings": {
+          "footer_linklist": "tilt-footer-menu",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": false,
+          "show_payment_icons": true,
+          "sister-site-description": "Shop more Smarterhome products"
+        }
+      },
+      "1504645915060": {
+        "type": "image-bar",
+        "blocks": {
+          "1504645915060-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled_design_c6f1892c-2a6d-4a18-8597-6cad49df920c.png",
+              "alignment": "top",
+              "link": "shopify:\/\/pages\/tilt-works-with-your-home",
+              "cta_label": "tilt® works with or without your smart home",
+              "button1": "Learn More",
+              "button1-link": "shopify:\/\/pages\/tilt-works-with-your-home",
+              "button2": "",
+              "button2-link": ""
+            }
+          },
+          "1504645915060-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stocksy_txp68522b83gRW100_Medium_1300798.jpg",
+              "alignment": "center",
+              "link": "shopify:\/\/pages\/my-smart-energy-savings",
+              "cta_label": "So smart, they pay for themselves",
+              "button1": "Learn more",
+              "button1-link": "shopify:\/\/pages\/my-smart-energy-savings",
+              "button2": "",
+              "button2-link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1504645915060-0",
+          "1504645915060-1"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": false,
+          "show_share_buttons": true
+        }
+      },
+      "product-info-1": {
+        "type": "product-info-1",
+        "blocks": {
+          "1504714429213": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/marius-masalar-139960_a501103f-473b-44cc-a885-3c11719794ff.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": "Simple."
+            }
+          }
+        },
+        "block_order": [
+          "1504714429213"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "1504731014755": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I love having MySmartBlinds in my kids' rooms. The blinds open automatically letting the light come in. It is a great way for them to start the day! And I love coming home to privacy at night.<\/p>",
+              "author": "Miles J."
+            }
+          }
+        },
+        "block_order": [
+          "1504731014755"
+        ],
+        "settings": {
+          "title": "Testimonials"
+        }
+      },
+      "map": {
+        "type": "map",
+        "settings": {
+          "heading": "Our store",
+          "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+          "map_address": "80 Spadina Ave, Toronto",
+          "button_text": "Get directions",
+          "show_pin": true,
+          "api_key": "",
+          "background_image": "",
+          "background_image_position": "center center"
+        }
+      },
+      "1505422623588": {
+        "type": "custom-feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/favorites.png",
+          "image_text": "Set up favorites for quick access",
+          "image1": "shopify:\/\/shop_images\/bedroom_28e78fbd-4510-45b3-a50b-d92d59454e49.png",
+          "image_text1": "Get battery updates and see when solar charging occurs",
+          "image2": "shopify:\/\/shop_images\/time.png",
+          "image_text2": "Set daily and weekly schedules",
+          "image3": "shopify:\/\/shop_images\/automation_337e5d45-61d0-45fe-ab32-238387c2abb2.png",
+          "image_text3": "Use triggers to adjust your lighting when certain events occur",
+          "image4": "shopify:\/\/shop_images\/rooms.png",
+          "image_text4": "View and control all of the rooms in your home",
+          "layout": "left",
+          "title": "App Controls",
+          "text": "<p>1.see and control all of the rooms in your house 2- set energy savings mode to your preferred comfort level 3- know your battery and solar levels 4- set daily and weekly schedules 5-sunrise and sunset times automatically change &nbsp;as the seasons change<\/p>",
+          "button_label": "",
+          "button_link": "",
+          "button_label2": "",
+          "button_link2": ""
+        }
+      },
+      "1505428960980": {
+        "type": "image-bar",
+        "blocks": {
+          "1505428960980-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bright_white.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": "MySmartRollerShades",
+              "button1": "Customize new shades",
+              "button1-link": "shopify:\/\/products\/mysmartrollershades",
+              "button2": "Automate my shades",
+              "button2-link": "shopify:\/\/products\/mysmartrollershades-automation-kit"
+            }
+          },
+          "1505428960980-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sequence_10.00_00_00_06.Still001.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": "MySmartBlinds",
+              "button1": "Customize new blinds",
+              "button1-link": "shopify:\/\/products\/mysmartblinds",
+              "button2": "Automate my blinds",
+              "button2-link": "shopify:\/\/products\/mysmartblinds-automation-kit"
+            }
+          }
+        },
+        "block_order": [
+          "1505428960980-1",
+          "1505428960980-0"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": false,
+          "blog_show_date": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": false,
+          "blog_show_date": false,
+          "show_share_buttons": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": "3",
+          "rows": "5",
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": false
+        }
+      },
+      "1558029650392": {
+        "type": "featured-product-list",
+        "blocks": {
+          "1558029650392-0": {
+            "type": "product",
+            "settings": {
+              "product": "mysmartblinds"
+            }
+          },
+          "1558029650392-1": {
+            "type": "product",
+            "settings": {
+              "product": "mysmartrollershades"
+            }
+          },
+          "1558039798569": {
+            "type": "product",
+            "settings": {
+              "product": "mysmartblinds-automation-kit"
+            }
+          },
+          "1558039824717": {
+            "type": "product",
+            "settings": {
+              "product": "mysmartrollershades-automation-kit"
+            }
+          },
+          "1558029724502": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "tilt-accessories"
+            }
+          }
+        },
+        "block_order": [
+          "1558029650392-0",
+          "1558029650392-1",
+          "1558039798569",
+          "1558039824717",
+          "1558029724502"
+        ],
+        "settings": {
+          "title": "",
+          "grid": 5
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false,
+          "enable_white_glove": false,
+          "white_glove_title": "Change Me!",
+          "bii_measure_id": "professional-window-measurement",
+          "bii_install_id": "professional-installation",
+          "bii_automation_handle": "professional-automation-kit-installation",
+          "bii_window_covering_handle": "professional-window-covering-installation",
+          "bridge_warning_enable": false,
+          "rollershades_1": "mysmartrollershades",
+          "rollershades_2": "mysmartrollershades-automation-kit",
+          "blinds_1": "mysmartblinds",
+          "blinds_2": "mysmartblinds-automation-kit",
+          "bridge_warning_message": "If you plan on using the Smart Bridge to control both MySmartRollershades AND MySmartBlinds, you'll need to purchase two bridges, one for blinds and one for rollershades."
+        }
+      },
+      "1559762197788": {
+        "type": "page",
+        "settings": {
+          "pageid": "how-it-works"
+        }
+      },
+      "custom-feature-row": {
+        "type": "custom-feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/rooms.png",
+          "image_text": "View and control all of the rooms in your home",
+          "image1": "shopify:\/\/shop_images\/bedroom_28e78fbd-4510-45b3-a50b-d92d59454e49.png",
+          "image_text1": "Get battery updates and see when solar charging occurs",
+          "image2": "shopify:\/\/shop_images\/time.png",
+          "image_text2": "Set daily and weekly schedules",
+          "image3": "shopify:\/\/shop_images\/automation_337e5d45-61d0-45fe-ab32-238387c2abb2.png",
+          "image_text3": "Use triggers to adjust your lighting when certain events occur",
+          "image4": "shopify:\/\/shop_images\/favorites.png",
+          "image_text4": "Set up favorites for quick access",
+          "layout": "left",
+          "title": "App Controls",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": "",
+          "button_label2": "",
+          "button_link2": ""
+        }
+      },
+      "product-template-configurable": {
+        "type": "product-template-configurable",
+        "settings": {
+          "image_size": "medium",
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": true
+        }
+      },
+      "1558037688570": {
+        "type": "slideshow",
+        "blocks": {
+          "1558037761153": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/WiT1A8euYZo",
+              "video_type": "background",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2019-04-16_at_1.22.51_PM.png",
+              "title": "Meet tilt",
+              "subheading": "Custom-built, smart window coverings delivered straight to your doorstep",
+              "slide_cta": "Watch the video",
+              "slide_cta2": "",
+              "video_popup": true,
+              "link2": "http:\/\/youtube.com\/embed\/WiT1A8euYZo",
+              "link3": ""
+            }
+          },
+          "1563304047481": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/EuForNW97cs",
+              "video_type": "background",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2019-04-16_at_1.05.48_PM.png",
+              "title": "Make your existing window coverings smart",
+              "subheading": "with tilt's Automation Kits for blinds and roller shades",
+              "slide_cta": "Learn More",
+              "slide_cta2": "",
+              "video_popup": true,
+              "link2": "https:\/\/www.youtube.com\/embed\/HDPplkaHZJI",
+              "link3": ""
+            }
+          },
+          "1558039117944": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/youtu.be\/q8dp2DzCAbo",
+              "video_type": "background",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2019-04-16_at_1.17.47_PM.png",
+              "title": "MySmartWindows",
+              "subheading": "The world's first smart window opener",
+              "slide_cta": "Learn More",
+              "slide_cta2": "",
+              "video_popup": false,
+              "link2": "shopify:\/\/products\/mysmartwindows",
+              "link3": ""
+            }
+          }
+        },
+        "block_order": [
+          "1558037761153",
+          "1563304047481",
+          "1558039117944"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "15000",
+          "slideshow_height": "small",
+          "text_size": "medium"
+        }
+      },
+      "1574292427258": {
+        "type": "html-block",
+        "settings": {
+          "html": "<div class=\"page-width\">\n<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\" data-header-customisation-color=\"#000000\" data-header-customisation-font-size=\"18\" data-header-customisation-text=\"Real Reviews From Real Customers\" data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\" data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-autoplay-enabled=\"1\" data-autoplay-speed=\"3000\" data-show-navigation=\"1\"> <\/div>\n<\/div>"
+        }
+      }
+    },
+    "content_for_index": [
+      "1558037688570",
+      "1559762197788",
+      "1558029650392",
+      "1504645915060",
+      "1505422623588",
+      "1505428960980",
+      "1574292427258"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": "25",
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#757575",
+      "color_sale_text": "#ff574f",
+      "color_borders": "#e4e4e4",
+      "color_button": "#ff574f",
+      "color_button_text": "#ffffff",
+      "color_small_button": "#eaeaea",
+      "color_small_button_text": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": "30",
+      "color_body_bg": "#f8f8f8",
+      "type_header_family": "Google_Muli_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Muli_600_sans",
+      "type_base_size": "18px",
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": "135",
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": "6000",
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": "2",
+            "rows": "2",
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*** CSS 2 ***/
+.da_shop-clearance {
+    position: absolute;
+    right: 125%;
+    white-space: nowrap;
+    padding: 8px 20px;
+    background: #f04625;
+    border-radius: 5px;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 999px) {
+    .da_shop-clearance {
+        display: none;
+    }
+}

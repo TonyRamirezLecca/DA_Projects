@@ -1,0 +1,30 @@
+/*CSS 1*/
+header .header.links {
+    position: relative;
+}
+header .header.links li:not(:first-child):not(:nth-child(4)) a {
+    color: #000 !important;
+}
+header .header.links li:first-child a {
+	text-decoration: underline
+}
+.da_clearance-desktop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: underline;
+}
+.da_clearance-mobile {
+	display: none !important;
+}
+.da_clearance-mobile a{
+    color: #ef5928 !important;
+		text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 999px) {
+	.da_clearance-mobile {
+		display: block !important
+	}
+}

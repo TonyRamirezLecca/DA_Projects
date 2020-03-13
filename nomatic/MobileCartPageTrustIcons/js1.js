@@ -28,7 +28,7 @@ if (window.location.href.includes('/cart')) {
 
 				//Gets user's Country 
 				var country = 'United States';
-				jQuery.getJSON("http://api.db-ip.com/v2/free/self").then(addrInfo => {
+				jQuery.getJSON("http://api.db-ip.com/).then(addrInfo => {
 					country = addrInfo.countryName;
 				});
 
@@ -64,3 +64,20 @@ if (window.location.href.includes('/cart')) {
 	});
 }
 
+
+var jQuery_script = document.createElement("script");
+jQuery_script.type = 'text/javascript';
+jQuery_script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+document.querySelector("head").appendChild(jQuery_script);
+
+
+    window.onload = function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://jsonip.appspot.com/?callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+
+    function DisplayIP(response) {
+        console.log( response.ip);
+    }

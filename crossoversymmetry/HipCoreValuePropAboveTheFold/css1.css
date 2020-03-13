@@ -1,0 +1,30 @@
+/*** CSS 1 ***/
+.da_subtext {
+    font-size: 18px;
+    margin-top: -18px;
+    margin-left: 18px;
+    display: block;
+    font-weight: 400;
+    font-family: Raleway;
+}
+
+@media screen and (max-width: 800px) {
+  .da_subtext {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .da_subtext {
+    margin-left: 6px;
+		margin-top: -5px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .da_subtext {
+    margin-left: 6px;
+    line-height: 20px;
+    margin-top: 10px !important;
+  }
+}

@@ -1,0 +1,27 @@
+  {%- assign  product_image = product.images[0] -%}
+
+<div class="custom-product-grid-item">
+  <a href="{{ product.url }}" class="collection-grid-item__link">
+      <div class="custom-product-grid-item__overlay box ratio-container lazyload js"
+         data-bgset="{% include 'bgset', image: product_image %}"
+         data-sizes="auto"
+         data-parent-fit="cover"
+         style="background-image: url('{{ product_image | img_url: '1024' }}')">
+      </div>
+     <noscript>
+       <div class="custom-product-grid-item__overlay" style="background-image: url('{{ product_image | img_url: '1024x1024' }}')"></div>
+     </noscript>
+     
+    <div class="custom-product-grid-item__title-wrapper">
+      <h3 class="custom-product-grid-item__title">
+        {% if product.title == blank %}
+          {{ 'homepage.onboarding.product_title' | t }}
+        {% elsif product.metafields["global"]["title_img"]  %}
+          <img src="{{ product.metafields["global"]["title_img"] }}" title="{{ product.title }}" alt="{{ product.title }}" />
+        {% else %}
+          {{ product.title }}
+        {% endif %}
+      </h3>
+    </div>
+  </a>
+</div>

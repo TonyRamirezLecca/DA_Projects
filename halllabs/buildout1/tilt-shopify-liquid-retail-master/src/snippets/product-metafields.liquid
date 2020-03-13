@@ -1,0 +1,147 @@
+
+ <!--============-->
+{% for i in (1..7) %}
+
+  {% assign app_control_position = product.metafields["global"]["APP_CONTROLS_POSITION"] | plus: 0 %}{% comment %} type conversion {% endcomment %}
+
+  {% if app_control_position == i %}
+    {% comment %} {% include "app-controls" %}{% endcomment %}
+    <!-- <p>app-controls</p> -->
+  {% endif %}
+
+  {% capture enable %}{{i}}-CMS_BLOCK_ENABLE{% endcapture %}
+  {% assign enable = product.metafields["global"][enable] %}
+
+
+  {% capture first_cms_image %}{{ i }}-1-CMS_BLOCK_IMG{% endcapture %}
+  {% assign first_cms_image = product.metafields["global"][first_cms_image] %}
+
+  {% capture first_cms_text %}{{ i }}-1-CMS_BLOCK_TEXT{% endcapture %}
+  {% assign first_cms_text = product.metafields["global"][first_cms_text] %}
+
+  {% capture first_btn_url %}{{i}}-1-CMS_BLOCK_BUTTON_URL{% endcapture %}
+  {% assign first_btn_url = product.metafields["global"][first_btn_url] %}
+
+  {% capture first_btn_text %}{{i}}-1-CMS_BLOCK_BUTTON_TEXT{% endcapture %}
+  {% assign first_btn_text = product.metafields["global"][first_btn_text] %}
+
+  {% capture first_btn_video %}{{i}}-1-CMS_BLOCK_BUTTON_IS_VIDEO{% endcapture %}
+  {% assign first_btn_video = product.metafields["global"][first_btn_video] %}
+
+
+  {% capture second_cms_image%}{{ i }}-2-CMS_BLOCK_IMG{% endcapture %}
+  {% assign second_cms_image = product.metafields["global"][second_cms_image] %}
+
+  {% capture second_cms_text %}{{ i }}-2-CMS_BLOCK_TEXT{% endcapture %}
+  {% assign second_cms_text = product.metafields["global"][second_cms_text] %}
+
+  {% capture second_btn_url %}{{i}}-2-CMS_BLOCK_BUTTON_URL{% endcapture %}
+  {% assign second_btn_url = product.metafields["global"][second_btn_url] %}
+
+
+
+	{% if enable == 'true' %}
+
+      {% if second_cms_text or second_cms_image %}
+
+      <div class="grid grid--no-gutters image-bar image-bar--medium">
+        <div class="grid__item medium-up--one-half">
+          <div class="custom-product-image-text" style="background:url('{{ first_cms_image }}');background-position: center;background-size:cover;">
+            <div class="custom-blinds-header-text" style="padding-top: 12%;">
+              {{ first_cms_text }}
+            </div>
+            {% if first_btn_text and first_btn_url %}
+            <center>
+              <a class="btn" href="{{ first_btn_url }}" >{{ first_btn_text }}</a>
+
+            </center>
+            {% endif %}
+
+          </div>
+        </div>
+
+        <div class="grid__item medium-up--one-half">
+          <div class="custom-product-image-text" style="background:url('{{ second_cms_image }}');background-position: center;background-size:cover;">
+            <div class="custom-blinds-header-text" style="padding-top: 12%;">
+              {{ second_cms_text }}
+            </div>
+
+            {% if second_btn_text and second_btn_url %}
+            <center>
+              <a class="btn" href="{{ second_btn_url }}" >{{ second_btn_text }}</a>
+            </center>
+            {% endif %}
+
+          </div>
+        </div>
+
+
+      </div>
+
+      {% else %}
+
+      <div class="custom-product-details">
+        <div class="custom-product-image-text" style="background:url('{{ first_cms_image }}');background-position: center;background-size:cover;">
+          <div class="custom-blinds-header-text" style="padding-top: 12%;">
+            {{ first_cms_text }}
+          </div>
+
+          {% if first_btn_text and first_btn_url %}
+
+            <center>
+            {% if first_btn_video %}
+              <a class="btn" href="javascript:void(0)" onclick="openVideo('{{ first_btn_url }}')">{{ first_btn_text  }}</a>
+            {% else %}
+              <a class="btn" href="{{ first_btn_url }}" >{{ first_btn_text }}</a>
+            {% endif %}
+          {% endif %}
+          </center>
+
+        </div>
+      </div>
+
+
+      {% endif %}
+	{% endif %}
+{% endfor %}
+
+
+
+{% comment %}<!-- reviews no longer being used -->
+    <div class="custom-product-details">
+      <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+    </div>
+    {% endcomment %}
+</div>
+
+
+<div id="myVideo" class="custom-youtube-overlay">
+	<div id="screen" class="custom-youtube-overlay-content" style="top: 11%;">
+    	<a href="javascript:void(0)" class="closebtn" style="color:#f1f1f1; top: -50px; right: -40px;" onclick="closeVideo('https://www.youtube.com/embed/yOa0I6xNYkg')">&times;</a>
+        <iframe id="myIframe" width="100%" height="100%" src="https://www.youtube.com/embed/yOa0I6xNYkg" frameborder="0" allowfullscreen autoplay="true"></iframe>
+	</div>
+</div>
+
+<script>
+
+	function openVideo(iSrc) {
+    var iframe = document.getElementById("myIframe");
+    iframe.src = iSrc + "?autoplay=1";
+    openPopup('myVideo');
+    /*
+    document.getElementById("myVideo").style.height = "100%";
+        document.addEventListener("touchstart", function(){}, true)
+        var iframe = document.getElementById("myIframe");
+        iframe.src = iSrc + "?autoplay=1";
+        window.scrollTo(0, 500);
+*/
+  }
+
+	function closeVideo(iSrc) {
+        var iframe = document.getElementById("myIframe");
+        iframe.src = "";
+        closePopup('myVideo');
+	}
+
+</script>
+

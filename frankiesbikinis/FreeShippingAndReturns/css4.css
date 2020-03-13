@@ -1,0 +1,15 @@
+/*** CSS 4 ***/
+#CartDrawer .drawer__inner {
+    top: 135px !important;
+}
+.da_free-shipping {
+    margin-top: 70px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+    background: #B3D8F3   100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}

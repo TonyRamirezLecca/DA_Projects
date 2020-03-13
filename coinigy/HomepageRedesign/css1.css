@@ -1,0 +1,992 @@
+/*** CSS 1 ***/
+*, h1,h2,h3,h4,h5,h6 {
+	font-family: 'Muli', sans-serif;
+}
+#mainEmail {
+    color: #222;
+}
+#startTrial {
+    transition: all 300ms;
+}
+#startTrial:hover {
+    background: #49be86;
+}
+
+/*Sections*/
+.da_nav {
+    background: #121b24;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.da_header {
+    background: #121b24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.da_companies {
+    height: 250px;
+}
+
+.da_why-choose-coinigy {
+}
+
+.da_we-make-managing {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.da_pricing-section {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.da_and-its-working {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    
+}
+
+.da_rule-the-exchange {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 1300px;
+}
+
+.da_footer-section {
+}
+/*End Sections*/
+
+
+
+
+
+/*Menu */
+#desktop-menu {
+    float: none !important;
+}
+.da_desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.da_desktop-menu li {
+    list-style: none;
+}
+.da_desktop-menu_left {
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/homepage-rebuild/logo.png);
+    width: 300px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}
+
+.da_desktop-menu_middle {
+    flex: 1;
+}
+
+.da_desktop-menu_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.da_desktop-menu a {
+    color: #fff;
+    text-transform: none !important;
+}
+.da_desktop-menu_right li{
+    background: none;
+}
+
+.da_desktop-menu_right li a{
+    transition: all 300ms;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+.da_desktop-menu_right li:nth-child(2) a{
+    margin-left: 20px;
+    padding: 8px 20px;
+    background: #49aaea;
+    border-radius: 20px;
+}
+.da_login:hover a {
+    color: #fff;
+    padding: 8px 20px;
+    background: #49aaea;
+    border-radius: 20px;
+}
+.da_sign-up:hover a{
+    background: #49be86 !important;
+}
+/*End Menu*/
+
+
+
+
+/*Hero*/
+.da_header-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    max-width: 1400px;
+}
+.da_header-left {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 100px;
+    flex: 1;
+    max-width: 610px;
+}
+.da_header-left h1 {
+    color: #fff;
+    font-size: 36px;
+
+    font-weight: 500
+}
+.da_header-left p {
+    color: #d4d4d4;
+    font-size: 16px;
+}
+.da_step-1-of-2 {
+    display: block !important;
+    text-align: center;
+    color: #aaa !important;
+}
+.da_header-text {
+}
+
+.da_header-form {
+}
+.da-form h1 {
+    display: none;
+}
+.da-form p {
+    display: none;
+}
+.da-form img {
+    display: none;
+}
+.da-form form {
+    display: flex;
+    flex-direction: column;
+}
+.da-form button {
+    border-radius: 16px;
+    margin: 10px 0px;
+}
+.da-form input {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.da_header-apps {
+    display: flex;
+}
+.da_header-apps > div {
+    background: #0d1319;
+    border-radius: 5px;
+}
+.da_header-apps img {
+    object-fit: contain;
+}
+.da_header-apps-left {
+ display: inline;
+}
+
+.da_header-apps-right {
+  display: inline;
+  margin-left: 10px;
+}
+
+.da_header-right {
+    flex: 1.8;
+    transform: translateY(140px);
+    z-index: 5;
+    position: relative;
+}
+/*End Hero*/
+
+
+/*Brands and Big Coins*/
+.da_brand-logo-wrapper {
+    height: 400px;
+    background-size: cover;
+    margin-top: -100px;
+    position: relative;
+    width: 100vw;
+    background-position: center;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/homepage-rebuild/curved1.jpg);
+}
+.da_brand-logo-ctn {
+    height: 180px !important;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 400px;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://s3-us-west-1.amazonaws.com/static.disruptive.co/coinigy/homepage-rebuild/companybrands.jpg);
+}
+
+.da_big-coins-ctn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+.da_big-coins {
+    max-width: 100px;
+}
+/*End Brands and Big Coins*/
+
+
+
+
+/*Why Choose Coinigy?*/
+.da_why-choose-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.da_why-choose-title {
+}
+.da_why-choose-title h2 {
+    font-weight: 500
+}
+
+.da_why-choose-reasons-ctn {
+    display: flex;
+}
+
+.da_why-choose-reasons-left {
+}
+
+.da_why-choose-reason {
+    display: flex;
+}
+
+.da_why-choose-reason-img {
+    margin-top: 14px;
+    margin-right: 15px;
+}
+.da_why-choose-reason-img img {
+        min-width: 50px;
+}
+
+.da_why-choose-reason-text {
+}
+
+.da_why-choose-reasons-right {
+    margin-left: 100px;
+}
+/*End Why Choose Coinigy?*/
+
+
+
+
+/*We make managing cryptocurrency effortless*/
+.da_we-make-managing-title {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+.da_we-make-managing-title h2 {
+    font-weight: 500;
+}
+
+.da_we-make-managing-vp-ctn {
+    display: flex;
+}
+
+.da_we-make-managing-vp {
+    box-shadow: 0px 0px 8px #aaa;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    flex: 1;
+}
+
+.da_we-make-managing-vp-img-ctn {
+}
+
+
+.da_we-make-managing-vp-text-ctn h6 {
+	font-size: 17px;
+}
+
+.da_we-make-managing-vp-text-ctn a:last-child{
+    display: none;
+}
+.da_security-pledge {
+    color: #61ddad;
+}
+.da_security-pledge:hover {
+    color: #61dda0;
+}
+/*END we make managing cryptocurrency effortless*/
+
+
+/*Pricing*/
+.da_pricing-wrapper {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.da_pricing {
+    background: #fff;
+    margin: 25px;
+    max-width: 300px;
+    box-shadow: 0px 0px 8px #999;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.da_pricing:nth-child(1) .da_pricing-price {
+    background: #49aaea;
+}
+.da_pricing:nth-child(2) .da_pricing-price {
+        background: #49be86;
+}
+.da_pricing:nth-child(3) .da_pricing-price {
+        background: #121a24;
+}
+.da_pricing-title {
+   font-weight: 100;
+   font-size: 20px;
+   padding: 0px 20px;
+}
+
+.da_pricing-price {
+    padding: 6px 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.da_pricing-price h1 {
+    font-weight: 100;
+    margin: 0px;
+    font-size: 34px;
+       color: #fff
+
+}
+.da_pricing-price p {
+    margin: 0px;
+    font-size: 14px !important;
+       color: #fff
+
+}
+.da_pricing-price span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.da_pricing-info {
+}
+.da_pricing-info-section {
+    padding: 10px;
+}
+
+.da_pricing-info-section strong{
+	color: #000;
+}
+.da_pricing-info-section:nth-child(2n) {
+    background: #ebeff9;
+}
+
+.da_pricing-section-link {
+    background: #49be86;
+    margin: 0 auto;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 35px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+.da_pricing-section-link:hover {
+    color: #fff;
+    background: #49a9ea;
+}
+.da_curved2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* End Pricing */
+
+
+/*Quote Section */
+.da_and-its-working-left {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+}
+
+.da_and-its-working-text {
+}
+
+.da_its-working-face-img {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    max-width: 70px;
+}
+
+.da_its-working-img {
+    transform: translateX(-20px)
+}
+
+.da_and-its-working-right {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 40px;
+}
+.da_and-its-working-quote-text p:last-child {
+    color: #49be86;
+}
+.da_and-its-working-quote h2{
+	font-size: 25px
+}
+
+.da_and-its-working-quote-img {
+    height: 60px;
+    transform: translateX(-10px);
+          -webkit-filter: drop-shadow(0px 5px 5px #b9b9b9);
+      filter: drop-shadow(0px 5px 5px #b9b9b9);
+}
+
+/*End Quote: And Its Working*/
+
+
+
+
+/*Rule the Exchange*/
+.da_rule-the-exchange-title {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.da_rule-the-exchange-vp-ctn {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.da_rule-the-exhange-vp {
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 0px 8px #444;
+    flex: 1;
+    max-width: 700px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+.da_rule-the-exhange-vp:nth-child(2) {
+    margin-left: 30px;
+}
+
+.da_rule-the-exhange-vp-img-ctn {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.da_rule-the-exchange-vp-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.da_rule-the-exhange-vp:nth-child(1) .da_rule-the-exhange-vp-text {
+}
+.da_rule-the-exhange-vp-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.da_youll-wonder-how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-X: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+.da_youll-wonder-how-link {
+    color: #fff;
+    background: #49be86;
+    border-radius: 20px;
+    padding: 8px 35px;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 300ms;
+}
+.da_youll-wonder-how-link:hover {
+    color: #fff;
+    background: #49a9ea;
+}
+.da_youll-wonder-how-text-ctn {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+.da_curved3 {
+    position: absolute;
+    z-index: -1;
+        top: 0;
+
+    bottom: 0;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.da_youll-wonder-how-text-ctn p {
+    margin-top: 20px;
+    margin-top: 10px;
+}
+.da_youll-wonder-how-text-ctn h2 {
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #fff !important;
+    margin-top: 0px;
+    max-width: 400px;
+}
+.da_youll-wonder-how-text-ctn p:last-child {
+    color: #49be86;
+    margin-top: 0px;
+}
+.da_youll-wonder-how img {
+    width: 100%;
+}
+.da_youll-wonder-how img:first-child {
+    position: absolute;
+    width: 35%;
+    left: 0;
+    top: 40%;
+}
+.da_youll-wonder-how img:last-child{
+    position: absolute;
+    right: 0;
+    top: 35%; 
+    width: 35%;
+
+}
+/*End Rule the Exchange*/
+
+
+
+
+/*Footer */
+.footer {
+	background: #131c25;
+	padding-bottom: 200px
+}
+.da_footer-section > div > div > .col-sm-3:nth-child(1) tr:not(:nth-child(1)) td:first-child {
+	display: none;
+}
+
+.da_footer-section > div > div > .col-sm-3:nth-child(2) {
+	display: none;
+}
+.da_footer > .row {
+    display: flex;
+    justify-content: center;
+}
+#footer-logo {
+    border: none !important;
+    margin-top: -29px;
+}
+.footer h4:after {
+    display: none;
+}
+.da_footer-section > div > div > .col-sm-3:not(:first-child) {
+    padding: 0px 50px;
+
+}
+.da_footer-section > div > div > .col-sm-3:nth-child(3) {
+    border-left: 1px solid rgb(255,255,255,.1);
+    border-right: 1px solid rgb(255,255,255,.1);
+}
+
+/*End Footer*/
+
+
+
+
+
+
+
+
+
+/*Start MOBILE RESPONSIVENESS*/
+@media screen and (max-width: 1350px) {
+    .da_desktop-menu {
+        height: 55px;
+    }
+    .da_desktop-menu-left {
+        margin-top: 10px;
+    }
+    .da_desktop-menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        padding: 5px 20px;
+        background: #111a24;
+    }
+
+    .slicknav_btn {
+        background: none!important;
+    }
+}
+@media screen and (max-width: 1300px) {
+        .da_brand-logo-wrapper {
+        padding-bottom: 100px;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-top: -40px;
+    }
+    .da_brand-logo-ctn {
+        height: 180px !important;
+        position: absolute;
+        left: 7%;
+        top: 60%;
+        width: 350px;
+        transform: translateY(-30%);
+    }
+    .da_header {
+        background: #fff;
+    }
+    .da_header-wrapper {
+        background: #111a24;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .da_header-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 80px;
+    }
+    .da_header-right {
+        transform: none;
+        max-width: 600px;
+        width: 100%;
+    }
+    .da_header-left {
+        padding: 0px;
+        padding: 15px;
+        z-index: 2;
+    }
+        .da_pricing-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .da_pricing-section-link {
+        white-space: nowrap;
+        text-align: center;
+        width: 80%;
+        max-width: 260px;
+    }
+        .da_brand-logo-wrapper {
+        padding-bottom: 100px;
+        margin-bottom: 150px;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-top: -40px;
+    }
+    .da_brand-logo-ctn {
+        height: 180px !important;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        max-width: 400px;
+        width: 90%;
+        transform: translatex(-50%);
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .da_rule-the-exchange {
+        margin-top: -100px;
+    }
+    .da_rule-the-exchange-vp-ctn {
+        flex-direction: column;
+    }
+    .da_rule-the-exhange-vp:nth-child(2) {
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+    .da_curved3 {
+        object-fit: cover;
+    }
+    .da_rule-the-exchange-title {
+        margin-top: 180px;
+    }
+    .da_youll-wonder-how img {
+        display: none;
+    }
+    #footer-logo {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .da_desktop-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .da_brand-logo-wrapper {
+            background-size: 100% 100% !important;
+            height: 200px;
+            margin-top: 0px;
+    }
+    .da_big-coins {
+        width: 60px;
+    }
+    .da_header-left {
+        padding-top: 0px;
+    }
+    .da_header-text h1 {
+        margin-top: 0px;
+    }
+    .da_why-choose-title h2 {
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .da_why-choose-reasons-ctn {
+        flex-direction: column;
+    }
+    .da_why-choose-reasons-right {
+        margin: 0px;
+    }
+    .da_why-choose-reason {
+        flex-direction: column;
+    }
+    .da_why-choose-reason-img {
+        margin: 0px;
+        max-width: 40px;
+    }
+    .da_why-choose-reason-text h5 {
+        font-weight: 500;
+    }
+    .da_we-make-managing {
+        margin-top: 0px;
+    }
+    .da_we-make-managing-title h2 {
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .da_we-make-managing-vp-ctn {
+        flex-direction: column;
+    }
+
+
+    .da_and-its-working {
+        flex-direction: column;
+    }
+    .da_and-its-working-left {
+        position: relative;
+    }
+    .da_its-working-img {
+        transform: scale(1.2) translateX(-20%);
+    }
+    .da_its-working-face-img {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        max-width: 70px;
+    }
+    .da_and-its-working-quote {
+        position: absolute;
+        bottom :95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .da_and-its-working-quote img {
+        transform: none;
+          -webkit-filter: drop-shadow(0px 5px 5px #555);
+      filter: drop-shadow(0px 5px 5px #555);
+
+    }
+    .da_and-its-working {
+        position: relative;
+    }
+    .da_and-its-working-quote-text {
+        margin-top: 50px;
+    }
+    .da_and-its-working-right {
+        margin: 0px;
+        padding: 20px;
+    }
+    .da_and-its-working-quote-text h2 {
+        font-size: 26px;
+    }
+    .da_footer {
+        padding-bottom: 50px;
+    }
+    .da_footer > .row {
+        flex-direction: column;
+    }
+    .da_footer > .row > .col-sm-3 {
+        max-width: 300px;
+        width: 275px;
+        margin: 0 auto;
+        text-align: left !important;
+        padding: 0 30px !important;
+    }
+    .da_footer > .row > .col-sm-3 li {
+        text-align: left;
+        font-weight: 100 !important;
+    }
+    .da_footer > .row > .col-sm-3 td {
+        padding-left: 0px;
+    }
+    .da_footer > .row > .col-sm-3 h4 {
+        text-align: left;
+        padding-bottom: 0px;
+    }
+    .da_footer-section > div > div > .col-sm-3:not(:first-child) {
+        padding: 0px 50px;
+
+    }
+    .da_footer-section > div > div > .col-sm-3:nth-child(3) {
+        border: none;
+    }
+		.da_we-make-managing-vp-text-ctn a{
+			display: none
+		}
+		.da_we-make-managing-vp-text-ctn a:last-child{
+        display: block;
+        color: #61ddad;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .da_rule-the-exhange-vp {
+        flex-direction: column;
+    }
+    .da_rule-the-exhange-vp-img-ctn {
+        margin: 0px;
+    }
+    .da_rule-the-exhange-vp-text {
+        padding-top: 0px;
+    }
+    .da_rule-the-exhange-vp-text p{
+        margin: 0px;
+    }
+    .da_rule-the-exchange-title {
+        margin-top: 0px;
+        font-size: 30px;
+        padding-top: 320px;
+        text-align: center;
+    }
+    .da_youll-wonder-how {
+        margin-top: 40px;
+        overflow: hidden;
+        min-height: 300px;
+    }
+    .da_youll-wonder-how-text-ctn {
+        min-width: unset;
+    }
+    .da_youll-wonder-how h2 {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .slicknav_menu {
+        display: block;
+        padding: 5px 5px;
+        background: #111a24;
+    }
+    .da_rule-the-exchange {
+        display: block;
+        height: unset;
+    }
+    .da_rule-the-exhange-vp {
+        height: 300px !important;
+    }
+    .da_rule-the-exhange-vp-img-ctn {
+        height: 85px;
+        flex: 1;
+    }
+    .da_rule-the-exhange-vp-img-ctn img {
+        max-height: 95%;
+    }
+    .da_rule-the-exhange-vp:nth-child(2) img {
+        max-height: 105%;
+    }
+    .da_rule-the-exhange-vp-text {
+        flex: 1;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .da_brand-logo-wrapper {
+            background-size: 100% 100% !important;
+            height: 100px;
+            margin-top: 0px;
+            margin-bottom: 80px;
+    }
+    .da_header-wrapper {
+        padding-top: 50px;
+    }
+    .da_brand-logo-ctn {
+        height: 100px !important;
+    }
+}
+
+
+
+

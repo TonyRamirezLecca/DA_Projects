@@ -1,0 +1,434 @@
+<ul class="site-nav list--inline {{ nav_alignment }}" id="SiteNav">
+  {% for link in linklists[section.settings.main_linklist].links %}
+    {% comment %}
+      Check if third-level nav exists on each parent link.
+    {% endcomment %}
+    {%- assign three_level_nav = false -%}
+    {%- assign child_list_handle = link.title | handleize -%}
+
+    {% if linklists[child_list_handle].links != blank %}
+      {% for childlink in linklists[child_list_handle].links %}
+        {% assign grand_child_list_handle = childlink.title | handleize %}
+        {% if linklists[grand_child_list_handle].links != blank %}
+          {%- assign three_level_nav = true -%}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if linklists[child_list_handle].links != blank %}
+      <li class="site-nav--has-dropdown{% if three_level_nav %} site-nav--has-centered-dropdown{% endif %}{% if link.active %} site-nav--active{% endif %}" aria-has-popup="true" aria-controls="SiteNavLabel-{{ child_list_handle }}">
+        <a href="{{ link.url }}" class="site-nav__link site-nav__link--main" {% if link.title contains "Help" %} target="_blank" {% endif %}>
+          {{ link.title }}
+          {% include 'icon-chevron-down' %}
+          <span class="visually-hidden">{{ 'layout.navigation.expand' | t }}</span>
+        </a>
+<center>
+        <div class="{% if link.title == "All Products" %}custom-all-products-site-nav__dropdown{% else %}site-nav__dropdown{% endif %}{% if three_level_nav %} site-nav__dropdown--centered{% endif %}" id="SiteNavLabel-{{ child_list_handle }}" aria-expanded="false">
+          {% if three_level_nav %}
+            <div class="site-nav__childlist">
+              <div class="site-nav__childlist-grid">
+                
+                {% if linklists[child_list_handle].links != blank %}
+                
+                {% comment %}
+                <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+                	<a href="{{ link.url }}" class="site-nav__link">
+                  		{{ link.title }}
+                  		<span class="icon icon-arrow-down" aria-hidden="true"></span>
+                	</a>
+                	<ul class="site-nav__dropdown">
+                  		<div>
+                    		{% for childlink in linklists[child_list_handle].links %}
+                      		<li>
+                        		<a href="{{ childlink.url }}" class="site-nav__link {% if childlink.active %} site-nav--active {% endif %}">{{ childlink.title | escape }}</a>
+                      		</li>
+                    		{% endfor %}
+                  		</div>
+                  		<span class="arrow">&nbsp;</span>
+                	</ul>
+              	</li>
+                {% endcomment %}
+
+                  {% for childlink in linklists[child_list_handle].links %}
+                    {% assign grand_child_list_handle = childlink.title | handle %}
+
+                    <div class="site-nav__childlist-item">
+                      <a href="{{ childlink.url }}" class="site-nav__link site-nav__child-link site-nav__child-link--parent">{{ childlink.title | escape }}</a>
+                     
+                      <nav class="custom-header-nav">
+                      {% for grandchildlink in linklists[grand_child_list_handle].links %}
+                        <ul>
+                          <li>
+                            <a href="{{ grandchildlink.url }}" class="site-nav__link site-nav__child-link">{{ grandchildlink.title | escape }}</a>
+                          </li>
+                        </ul>
+                      {% endfor %}
+                      </nav>
+                    </div>
+                  {% endfor %}
+
+                {% endif %}
+              </div>
+            </div>
+          {% else %}
+            <ul>
+              {% for childlink in linklists[child_list_handle].links %}
+                <li {% if childlink.active %}class="site-nav--active"{% endif %}>
+                  <a href="{{childlink.url}}" class="site-nav__link site-nav__child-link{% if forloop.last %} site-nav__link--last{% endif %}">
+                  {% if link.title == "All Products" %}
+                    <img src="{{ childlink.object.images[0] | img_url }}" width="75" height="auto" href={{ childlink.url }} />
+                    {% comment %}
+                  	{% if childlink.title == "Blinds" %}
+                  		<img href="{{ childlink.url }}" src="https://cdn.shopify.com/s/files/1/2330/0585/files/blinds-nav-4.png?3136523867259332513" width="75" height="auto" />       		
+                    {% elsif childlink.title == "Automation Kit" %}
+                  		<img href="{{ childlink.url }}" src="https://cdn.shopify.com/s/files/1/2330/0585/files/kit-nav3.png?10165543422226524594" width="75" height="auto" />
+                    {% elsif childlink.title == "Bridge" %}
+                  		<img href="{{ childlink.url }}" src="https://cdn.shopify.com/s/files/1/2330/0585/files/hub-nav3.png?10165543422226524594" width="75" height="auto" />
+                    {% elsif childlink.title == "Smart Switch" %}
+                  		<img href="{{ childlink.url }}" src="https://cdn.shopify.com/s/files/1/2330/0585/files/smart-nav2.png?4976499182760789902" width="75" height="auto" />
+                  	{% else %}
+                  		<img href="{{ childlink.url }}" src="https://cdn.shopify.com/s/files/1/2330/0585/files/solar-nav-2.png?5614423459569240233" width="75" height="auto" />	
+                  	{% endif %}
+                  {% endcomment %}
+                  {% endif %}
+                  <p>{{ childlink.title | escape }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        </center>
+      </li>
+    {% else %}
+      <li {% if link.active %}class="site-nav--active"{% endif %}>
+        {% if link.title == "Find a Pro" %}
+        <a id="findProNav" href="javascript:void(0)" class="site-nav__link site-nav__link--main" onclick="openFindPro()">{{ link.title }}</a>
+        
+        <div id="myPro" class="overlay">
+  			<div id="zipEnter" class="overlay-content">
+              <pre id="object"></pre>
+              <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+              <h3 id="alertTitle" style="padding-top: 50px;padding-left: 20px;padding-right:20px;padding-bottom:25px;"> Don't want to do it yourself? Contact a MySmartBlinds approved installer near you</h3>
+  			  <input id="zipField" class="zip-field" type="text" name="zipcode" placeholder="Zip Code" align="bottom">
+  			  <input id="submitButton" class="zip-field" type="submit" value="Search Installers" align="bottom" onclick="openList()">
+              <div id="loader" class="custom-loader" style="display:none;"></div>
+              <table id="installerList" class="custom-table" style="display:none;">
+                <tbody id="tBody">
+                </tbody>
+              </table>
+              
+  			</div>
+		</div>
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+        <script>
+//           	var oLink = document.getElementById('findProNav');
+// 			oLink.addEventListener('click', openFindPro);
+          var myLat = 0.000;
+          var myLong = 0.000;
+          var isLocationGiven = false;
+          var tooFar = false;
+          var installerCount = 0;
+        function getLocation() {
+          console.log("Getting location fuction called");
+    		if (navigator.geolocation) {
+              	navigator.geolocation.getCurrentPosition(
+                  function(position) {
+                    console.log("Retrieving location");
+                    myLat = position.coords.latitude;
+                    myLong = position.coords.longitude;
+                    isLocationGiven = true;
+                    showList();
+    			  },
+    			  function(error){
+         			alert("Location access not granted. Please go to your browser settings and allow mysmartblinds.com to access your location so we can find installers near you.");
+                    document.getElementById("loader").style.display = "none";
+              		document.getElementById("alertTitle").innerHTML = "Location access not granted. We can only find installers near you with your location setting turned on."
+    			  }, {
+         			enableHighAccuracy: true
+              		,timeout : 5000
+    			  });	
+    		} else { 
+              alert("Location access not granted. Please go to your browser settings and allow mysmartblinds.com to access your location so we can find installers near you.");
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("alertTitle").innerHTML = "Location access not granted. We can only find installers near you with your location setting turned on."
+    		}
+		}
+        function openFindPro() {
+          
+    	  document.getElementById("myPro").style.height = "100%";
+          document.addEventListener("touchstart", function(){}, true)
+          
+          document.getElementById("alertTitle").innerHTML = "Don't want to do it yourself? Contact a MySmartBlinds approved installer near you"
+          document.getElementById("zipField").style.display = "none";
+
+        }
+		function closePro() {
+    	  document.getElementById("myPro").style.height = "0%";
+          document.getElementById("myPro").style.height = "0%";
+          document.getElementById("submitButton").style.display = "block";
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("alertTitle").innerHTML = "Don't want to do it yourself? Contact a MySmartBlinds approved installer near you"
+          document.getElementById("installerList").style.display = "none";
+          myLat = 0.000;
+          myLong = 0.000;
+          isLocationGiven = false;
+          tooFar = false;
+          installerCount = 0;
+          var myTable = document.getElementById("installerList");
+		  var rowCount = myTable.rows.length;
+		  for (var x=rowCount-1; x>=0; x--) {
+   			myTable.deleteRow(x);
+		  }
+		}
+        function openList() {
+    	  document.getElementById("zipField").style.display = "none";
+          document.getElementById("submitButton").style.display = "none";
+          document.getElementById("loader").style.display = "block";
+          document.getElementById("alertTitle").innerHTML = "Searching for installers near you..."
+//           	setTimeout(function() {  }, 3000);
+          getLocation();
+		}   
+        function showList() {  
+          document.getElementById("loader").style.display = "none";
+          
+          document.getElementById("installerList").style.display = "block";
+          fillTable();
+        }
+        function distance(lat1, lon1, lat2, lon2, unit) {
+			var radlat1 = Math.PI * lat1/180
+			var radlat2 = Math.PI * lat2/180
+			var theta = lon1-lon2
+			var radtheta = Math.PI * theta/180
+			var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+			dist = Math.acos(dist)
+			dist = dist * 180/Math.PI
+			dist = dist * 60 * 1.1515
+			if (unit=="K") { dist = dist * 1.609344 }
+			if (unit=="N") { dist = dist * 0.8684 }
+			return Math.round(dist);
+		}
+        function fillTable() {
+          const tTable = document.getElementById("installerList");
+          const tbody = document.getElementById("tBody");
+          var listString = ""; 
+          listString = {{shop.metafields["global"]["installer_string"] }};    
+          var partsOfStr = "";
+          partsOfStr = listString.split(',,,');
+
+          for (var i = 0; i < partsOfStr.length; i++) {
+        	var tr = document.createElement('tr');
+            var array = "";
+            array = partsOfStr[i].split(',');
+        	for (var j = 0; j < array.length; j++) {
+              if (i == 0){
+                if (j == 0){
+                  var td = document.createElement('th');
+               	  td.style.width = "20%";
+                  td.appendChild(document.createTextNode(array[j]));
+                  tr.appendChild(td)
+                }
+                if (j == 1){
+                  var td = document.createElement('th');
+               	  td.style.width = "20%";
+                  td.appendChild(document.createTextNode(array[j]));
+                  tr.appendChild(td)
+                }
+                else if (j == 2) {
+                  var td = document.createElement('th');
+               	  td.style.width = "20%";
+                  td.appendChild(document.createTextNode("Distance"));
+                  tr.appendChild(td)
+                }
+                else if (j > 4){
+                  var td = document.createElement('th');
+               	td.style.width = "20%";
+              	  td.appendChild(document.createTextNode(array[j]));
+                  tr.appendChild(td)
+                }
+                else {
+//                   var td = document.createElement('th');
+//                	td.style.width = "20%";
+//                   td.appendChild(document.createTextNode(array[j]));
+//                   tr.appendChild(td)
+                }
+                
+              }
+              else {
+                if (j == 0) { 
+                  var td = document.createElement('td');
+                  td.style.width = "20%";
+                  var installerImage = document.createElement("img");
+				  installerImage.src = array[j];
+                  td.appendChild(installerImage);
+                  tr.appendChild(td);
+                }
+                else if (j == 1) {
+                  var td = document.createElement('td');
+                  td.style.width = "20%";
+              	  td.appendChild(document.createTextNode(array[j]));
+				  tr.appendChild(td);
+                }
+                else if (j == 2) {
+                }
+                else if (j == 3) {
+                  var td = document.createElement('td');
+                  td.style.width = "20%";
+                  var mDistance = distance(myLat, myLong, array[3], array[4], "M");
+                  if (mDistance < 50) {
+                    tooFar = false;
+                    td.appendChild(document.createTextNode(mDistance + " miles"));
+                    tr.appendChild(td)
+                  }
+                  else {
+                    tooFar = true; 
+                  }
+                }
+                else if (j == 4) {
+                 
+                }
+                else if (j > 4) {
+                  
+                  if (j == 5) {
+                    //Set Up Phone 
+                    var td = document.createElement('td');
+                    td.style.width = "20%";
+                    var phoneTag = document.createElement('a');
+                    var myRef = "tel:" + array[j];
+                    phoneTag.href = myRef;
+                    phoneTag.target = "_top";
+                    phoneTag.innerHTML = array[j];
+                    phoneTag.style.fontSize = "15px";
+                    phoneTag.style.textDecoration = "underline";
+                    phoneTag.style.cursor = "pointer";
+                    td.appendChild(phoneTag);
+                    tr.appendChild(td);
+                  }
+                  
+                  else if (j == 6) {
+                   //Set Up Email 
+                    var td = document.createElement('td');
+                    td.style.width = "20%";
+                    var emailTag = document.createElement('a');
+                    var myRef = "mailto:"+array[j]+"?subject=Installing MySmartBlinds";
+                    emailTag.href = myRef;
+                    var emailClick = "openEmail(" + array[j] + ")";
+                    emailTag.onClick = emailClick;
+                    emailTag.target = "_top";
+                    emailTag.innerHTML = array[j];
+                    emailTag.style.fontSize = "15px";
+                    emailTag.style.textDecoration = "underline";
+                    emailTag.style.cursor = "pointer";
+                    td.appendChild(emailTag);
+                    tr.appendChild(td);
+                    
+                  }
+                  else if (j == 7) {
+                   //Set Up Web Link 
+                    var td = document.createElement('td');
+                    td.style.width = "20%";
+                    var webTag = document.createElement('a');
+                    var myRef = array[j];
+                    webTag.href = myRef;
+                    webTag.target = "_blank";
+                    webTag.innerHTML = array[j];
+                    webTag.style.fontSize = "15px";
+                    webTag.style.textDecoration = "underline";
+                    webTag.style.cursor = "pointer";
+                    td.appendChild(webTag);
+                    tr.appendChild(td);
+                  }
+                  else {
+                  var td = document.createElement('td');
+                  td.style.width = "20%";
+              	  td.appendChild(document.createTextNode(array[j]));
+				  tr.appendChild(td);
+                  }
+                }
+              }
+              
+            }
+            if (!tooFar){
+        		tbody.appendChild(tr);
+                installerCount = installerCount += 1;
+                tooFar = false;
+            }
+            tooFar = false;
+    	  }
+          if (installerCount > 2){
+            installerCount = installerCount - 2;
+          }
+          else if (installerCount < 2 ) {
+            installerCount = 0; 
+          }
+          document.getElementById("alertTitle").innerHTML = "We found " + (installerCount) + " installers in your area!";
+          sortTable();
+        }
+          
+          function openEmail(email){
+            console.log("Opening Email");
+          }
+          
+          function openWebsite(website){
+            console.log("Opening Website");
+          }
+          
+        function sortTable() {
+  			var table, rows, switching, i, x, y, shouldSwitch;
+  			table = document.getElementById("installerList");
+  			switching = true;
+  			/*Make a loop that will continue until
+  				no switching has been done:*/
+  			while (switching) {
+    			//start by saying: no switching is done:
+    			switching = false;
+    			rows = table.getElementsByTagName("tr");
+    			/*Loop through all table rows (except the
+    			first, which contains table headers):*/
+    			for (i = 1; i < (rows.length - 1); i++) {
+      				//start by saying there should be no switching:
+      				shouldSwitch = false;
+      				/*Get the two elements you want to compare,
+      				one from current row and one from the next:*/
+      				x = rows[i].getElementsByTagName("td")[2];
+      				y = rows[i + 1].getElementsByTagName("td")[2];
+      				//check if the two rows should switch place:
+                   
+                  	var txt = x;
+					var numbX = x.innerHTML.split(' ')[0];
+                    
+                    var txtY = y;
+                    if (y != null){
+                    var numbY = y.innerHTML.split(' ')[0];
+                  }
+                  else {
+                    var numbY = 100;
+                  }
+                  	
+      				if (parseInt(numbX) > parseInt(numbY)) {
+        			//if so, mark as a switch and break the loop:
+        			shouldSwitch= true;
+        			break;
+      				}
+    			}
+    			if (shouldSwitch) {
+      				/*If a switch has been marked, make the switch
+      				and mark that a switch has been done:*/
+      				rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      				switching = true;
+    			}
+  			}
+		}
+        
+        </script>
+		
+        {% else %}
+        <a href="{{ link.url }}" class="site-nav__link site-nav__link--main" {% if link.title contains "Help" %} target="_blank" {% endif %}>{{ link.title }}</a>
+        
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+

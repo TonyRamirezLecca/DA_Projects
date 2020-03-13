@@ -12,14 +12,14 @@ function whenExists(elements, callback) {
 			callback();
 			clearInterval(interval);
 		}
-	}, 100);
+	}, 20);
 }
-whenExists('.hello-banner', function () {
+whenExists('.login-logout, #search, .mini-basket-icon.img-responsive, .global-mini-basket-wrapper > a, #header-flex-container', function () {
 
-	document.querySelector('.hello-banner font:nth-child(2)').innerHTML = 'Free Custom Graphic or Digitized Design from Coldesi-Graphics with $100 Apparel Order <a href="/blanks">Learn more</a>';
 	document.querySelector('#header-flex-container').append(document.querySelector('.global-mini-basket-wrapper')); 
 	document.querySelector('#search').prepend(document.querySelector('.login-logout'));
 	$('.mini-basket-icon.img-responsive').addClass('da_desktop-cart').attr('src', 'https://s3-us-west-1.amazonaws.com/static.disruptive.co/colman-%26-company/nav-remove-distractions/Vector+Smart+Object.png');
 	$('<p class="da_cart-text">CART</p>').appendTo('#header-flex-container > .global-mini-basket-wrapper > a')
+//$('#search form[action="/search.html"] .ss-targeted')
 
 });

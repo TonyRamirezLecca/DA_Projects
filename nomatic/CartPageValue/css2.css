@@ -1,0 +1,38 @@
+/*** CSS 2 ***/
+.da_mobile {
+	display: none;
+}
+.da_faq-ctn {
+    background: #f7f7f7;
+    padding: 40px 60px;
+    max-width: 750px;
+    margin-top: 40px;
+}
+
+.da_faq-header {
+	font-size: 24px;
+	font-weight: 800;
+	color: #332D31;
+	font-family: Arquitecta;
+	margin-bottom: 14px;
+}
+
+
+@media screen and (max-width: 1199px) {
+	.da_desktop {
+		display: none;
+	}
+	.da_mobile {
+		display: block;
+		margin-top: 30px;
+		padding: 20px 15px;
+		margin-bottom: 30px;
+	}
+    .da_faq-header {
+        margin-bottom: 3px;
+    }
+    .da_text {
+        color: #332d31;
+        font-size: 14px;
+    }
+}
